@@ -1,4 +1,4 @@
-﻿<krpano version="1.21" title="Mactan Cebu International Airport"  onstart="initializeGyro();set(selectedLanguage, 'en');set(hideFloorPlan,false);">
+﻿<krpano version="1.21" title="Mactan Cebu International Airport"  onstart="set(fullscreen,true);initializeGyro();set(selectedLanguage, 'en');set(hideFloorPlan,false);">
  <include url="%VIEWER%/plugins/combobox.xml" />
     <!-- <include url="toolbox/toolbox.xml" /> -->
     <!-- <include url="thumbbar.xml" />  -->
@@ -4226,7 +4226,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     </layer>
 
         <layer name="introLayer" type="html" x="0" y="0" bgalpha="0.9" bgcolor="0x000000" width="100%" height="100%" enabled="true"
-               zorder="99" keep="true" visible="true" onclick="set(fullscreen,true);hideLayerFor2Seconds();" >
+               zorder="99" keep="true" visible="true" onclick="hideLayerFor2Seconds();" >
         
    
             <layer  url="skin/skin/introimage.png"    
