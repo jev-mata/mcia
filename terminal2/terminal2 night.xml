@@ -1,0 +1,38 @@
+﻿<krpano version="1.21" title="Virtual Tour">
+ 
+  
+ 
+
+	<scene name="scene_Terminal_2_Departure_Drop-off_Night" title="Terminal 2 Departure Drop-off Night" 
+	title_chinese="第2航站楼" 
+	title_korean="제2터미널" 
+	title_japanese="第2ターミナル" 
+	 
+
+	 onstart="" 
+	miniTitle="Streetview" 
+	miniTitle_chinese="街景" 
+	miniTitle_korean="스트리트 뷰" 
+	
+	isDayNight="true"
+	DayNightModeScene="scene_streetview_13_to_terminal_2_departure_drop_off"
+
+	thumburl="panos/Terminal_2_Departure_Drop-off_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Drop-off_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Drop-off_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+	<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="84.801" atv="-3.948" depth="1000.0" linkedscene="scene_streetview_12_to_terminal_2_departure" linkedscene_spot="spot1" linkedscene_hoffset="204.06" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-93.259" atv="-4.159" depth="1000.0" linkedscene="scene_streetview_13_to_terminal_2_departure_exit" linkedscene_spot="spot3" linkedscene_hoffset="451.87" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-3.694" atv="-3.343" linkedscene="scene_Terminal_2_Departure_Drop-off_Bridge_2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+
+</krpano>

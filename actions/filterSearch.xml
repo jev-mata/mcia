@@ -1,0 +1,197 @@
+<krpano>
+<action name="updateTooltip"> 
+    
+    <!-- Determine the tooltip text based on the selected language -->
+    if(selectedLanguage == 'en', set(temp_tooltip, get(en)));
+    if(selectedLanguage == 'chinese', set(temp_tooltip, get(chinese)));
+    if(selectedLanguage == 'japanese', set(temp_tooltip, get(japanese)));
+    if(selectedLanguage == 'korean', set(temp_tooltip, get(korean)));
+     
+</action>  
+    <action name="terminalToggle1">
+    set(thisTerminal,"terminal1"); 
+    if(contains(get(layer[get(name)].name),terminal1),
+        set(layer[get(name)].bgcolor,get(bgcolor_active));
+        set(layer[terminal1_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:white;vertical-align:center");
+        set(layer[terminal2].bgcolor,get(bgcolor_passive));
+        set(layer[terminal2_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:black;vertical-align:center");
+        set(thisTerminal,"1"); 
+         
+        if(get(selectedLanguage)==en,
+            set(layer[textTerminal1].text, "Terminal 1 Commercial Establishments"),
+			if(get(selectedLanguage)==korean,
+				set(layer[textTerminal1].text, "제1터미널 상업 시설"),
+				if(get(selectedLanguage)==chinese,
+				    set(layer[textTerminal1].text, "第 1 航站楼商业设施"),
+					if(get(selectedLanguage)==japanese,
+				        set(layer[textTerminal1].text, "第1ターミナル商業施設"),
+                        set(layer[textTerminal1].text, "Terminal 1 Commercial Establishments")
+					);
+				);
+			);
+		); 
+    ); 
+    if(contains(get(layer[get(name)].name),terminal2),
+        
+        set(layer[get(name)].bgcolor,get(bgcolor_active));
+        set(layer[terminal2_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:white;vertical-align:center");
+        set(layer[terminal1].bgcolor,get(bgcolor_passive));
+        set(layer[terminal1_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:black;vertical-align:center");
+
+        set(thisTerminal,"2");
+        if(get(selectedLanguage)==en,
+			set(layer[textTerminal1].text, "Terminal 2 Commercial Establishments"),
+			if(get(selectedLanguage)==korean,
+				set(layer[textTerminal1].text, "제2터미널 상업 시설"),
+				if(get(selectedLanguage)==chinese,
+				     set(layer[textTerminal1].text, "第 2 航站楼商业设施"),
+					if(get(selectedLanguage)==japanese,
+				        set(layer[textTerminal1].text, "第2ターミナル商業施設"),
+			            set(layer[textTerminal1].text, "Terminal 2 Commercial Establishments")
+					);
+				);
+			);
+		);  
+        
+    ); 
+    
+        action(filterItems);
+    </action>
+    <action name="startFilter"> 
+        if(layer[get(name)].tagArea, 
+            if(layer[get(name)].tagArea=='all',
+                resetTagButton();,
+                resetAreaButton();
+            );
+            set(layer[get(name)].bgcolor, get(layer[get(name)].bgcolor_active)); 
+            set(layer[get(name)].css, "color:white;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+        , 
+            if(layer[get(name)].tag,
+                resetTagButton();
+                set(layer[all_BTN_filter].bgcolor,get(layer[all_BTN_filter].bgcolor_passive));
+                set(layer[all_BTN_filter].css, "color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+            );	
+    
+            set(layer[get(name)].bgcolor,get(layer[get(name)].bgcolor_active));  
+            set(layer[get(name)].css, "color:white;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+        );  
+        
+        if(layer[get(name)].tag === "all", 
+            set(thisTag,"all");,
+            if(layer[get(name)].tag === "Services", 
+                set(thisTag,"Services");,
+                if(layer[get(name)].tag === "Food", 
+                    set(thisTag,"Food");,
+                    if(layer[get(name)].tag === "Retail", 
+                        set(thisTag,"Retail");, 
+                    );
+                );
+            );
+        );
+        
+        if(device.mobile,
+        
+            if(layer[departure_BTN_filter2].bgcolor == layer[departure_BTN_filter2].bgcolor_active,
+                set(thisArea,'Departure');,
+                set(thisArea,'Arrival');
+
+            );
+            ,
+            if(layer[departure_BTN_filter].bgcolor == layer[departure_BTN_filter].bgcolor_active,
+                set(thisArea,'Departure');,
+                set(thisArea,'Arrival');
+
+            );
+        );  
+        action(filterItems);
+        </action>
+        <action name="filter_init">
+         set(thisTag,"all");
+          set(thisArea,'Departure');
+          set(thisTerminal,'1');
+action(filterItems);
+</action>
+<action name="filterItems">
+<!-- get all layers and loop it to check one by one -->
+for(set(i,0),i LT get(layer.count), inc(i),
+
+<!-- check if the layers have isFilterItems that is equal to true-->
+    if(layer[get(i)].isFilterItems == true,
+    <!-- if the layers is have a isFilterItems is true then hide it first-->
+        set(layer[get(i)].visible,false);
+        if(contains(get(thisTag),"all") AND contains(get(layer[get(i)].terminal), get(thisTerminal)) AND contains(get(layer[get(i)].tagArea), get(thisArea)), 
+         
+    <!-- show it all when the selected tag is all-->
+            if(isset(textSearch) ,
+                if( contains(layer[get(i)].searchText, get(textSearch)),
+                    set(layer[get(i)].visible,true), 
+                    set(layer[get(i)].visible,false)    
+                );,
+                set(layer[get(i)].visible,true)
+            );
+            ,
+        
+    <!-- show  the selected tag that compare to the layer is se-->
+            if(contains(get(layer[get(i)].tag), get(thisTag)) AND contains(get(layer[get(i)].tagArea), get(thisArea)) AND contains(get(layer[get(i)].terminal), get(thisTerminal)) , 
+
+                if(isset(textSearch) ,
+                    if( contains(layer[get(i)].searchText,get(textSearch)),
+                        set(layer[get(i)].visible,true), 
+                        set(layer[get(i)].visible,false)    
+                    );,
+                    set(layer[get(i)].visible,true)
+                );
+            );       
+        );
+    );    
+);
+ 
+</action>
+    <action name="resetbuttonAll">
+    set(layer[map].url,get(layer[map].passive));
+    set(layer[home].url,get(layer[home].passive));
+    set(layer[streetview_btn].url,get(layer[streetview_btn].passive));
+    set(layer[establishment].url,get(layer[establishment].passive));
+    set(layer[floorplan].url,get(layer[floorplan].passive));
+    set(layer[flightInfo].url,get(layer[flightInfo].passive));
+    
+    </action> 
+    <action name="resetAreaButton">  
+    set(layer[departure_BTN_filter].bgcolor,get(layer[departure_BTN_filter].bgcolor_passive)); 
+    set(layer[departure_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[arrival_BTN_filter].bgcolor, get(layer[arrival_BTN_filter].bgcolor_passive));  
+    set(layer[arrival_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    
+    set(layer[departure_BTN_filter2].bgcolor,get(layer[departure_BTN_filter2].bgcolor_passive)); 
+    set(layer[departure_BTN_filter2].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[arrival_BTN_filter2].bgcolor, get(layer[arrival_BTN_filter2].bgcolor_passive));  
+    set(layer[arrival_BTN_filter2].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    
+    </action> 
+    <action name="resetTagButton"> 
+    set(layer[services_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;");  
+    set(layer[services_BTN_filter].bgcolor, get(layer[services_BTN_filter].bgcolor_passive)); 
+    set(layer[food_and_brev_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[food_and_brev_BTN_filter].bgcolor, get(layer[food_and_brev_BTN_filter].bgcolor_passive));  
+    set(layer[retail_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[retail_BTN_filter].bgcolor, get(layer[retail_BTN_filter].bgcolor_passive));   
+    
+    </action>  
+    <action name="showtext_translation">  
+			if(get(selectedLanguage)=='en',
+                set(tooltip_trans, get(hotspot[get(name)].en));   ,
+				if(get(selectedLanguage)=='korean',
+                   set(tooltip_trans, get(hotspot[get(name)].korean)); ,
+					if(get(selectedLanguage)=='chinese', 
+                        set(tooltip_trans,  get(hotspot[get(name)].chinese));,
+						if(get(selectedLanguage)=='japanese', 
+                           set(tooltip_trans,  get(hotspot[get(name)].japanese)); 
+						);
+					);
+				);
+			);
+
+showtext(get(tooltip_trans),showtext_2);
+    
+    </action>
+</krpano>

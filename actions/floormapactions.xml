@@ -1,0 +1,187 @@
+
+<krpano>
+  
+  
+	<action name="terminalToggle"> set(floorplan_Init,true);
+			set(layer[floormap_terminal1].bgcolor,get(layer[floormap_terminal1].bgcolor_passive));
+			set(layer[floormap_terminal2].bgcolor,get(layer[floormap_terminal2].bgcolor_passive)); 
+			set(layer[floormap_terminal1].css,"text-align:center;margin-top:3%;font-size:x-large;color:black");
+			set(layer[floormap_terminal2].css,"text-align:center;margin-top:3%;font-size:x-large;color:black");
+			if(get(name)=="floormap_terminal1",
+				set(layer[floormap_terminal1].bgcolor,get(layer[floormap_terminal1].bgcolor_active));
+				set(layer[floormap_terminal1].css,"text-align:center;margin-top:3%;font-size:x-large;color:white");
+				set(selected_terminal, "floormap_terminal1");
+				,
+				set(layer[floormap_terminal2].bgcolor,get(layer[floormap_terminal2].bgcolor_active));
+				set(layer[floormap_terminal2].css,"text-align:center;margin-top:3%;font-size:x-large;color:white");
+				set(selected_terminal, "floormap_terminal2");
+			);
+	change_floormap();
+</action>	
+<action name="floormap_init">
+
+			set(selected_terminal, "floormap_terminal1");
+			set(selected_floormap, "floormap_arrival");
+	<!-- change_floormap(); -->
+</action>	
+<action name="areaToggle">
+set(floorplan_Init,true);
+			set(layer[floormap_departure].bgcolor,get(layer[floormap_departure].bgcolor_passive));
+
+
+			set(layer[floormap_arrival].bgcolor,get(layer[floormap_arrival].bgcolor_passive)); 
+			set(layer[floormap_arrival].css,"text-align:center;margin-top:3%;font-size:x-large;color:black");
+			set(layer[floormap_departure].css,"text-align:center;margin-top:3%;font-size:x-large;color:black");
+	if(get(name)=="floormap_departure",
+		set(layer[floormap_departure].bgcolor,get(layer[floormap_departure].bgcolor_active));
+		set(layer[floormap_departure].css,"text-align:center;margin-top:3%;font-size:x-large;color:white");
+		set(selected_floormap, "floormap_departure");
+		,
+		set(layer[floormap_arrival].bgcolor,get(layer[floormap_arrival].bgcolor_active));
+		set(layer[floormap_arrival].css,"text-align:center;margin-top:3%;font-size:x-large;color:white");
+		set(selected_floormap, "floormap_arrival");
+	); 
+	change_floormap();
+</action>	
+<action name="refreshTooltips"> 
+for(set(countlayertooltip,0), countlayertooltip LT layer.count,  inc(countlayertooltip),   
+	if(layer[get(countlayertooltip)].type==text, 
+		if(layer[get(countlayertooltip)].isLanguage==true,  
+			if(get(selectedLanguage)==en,
+				set(layer[get(countlayertooltip)].text, get(layer[get(countlayertooltip)].en));
+				set(layer[textTerminal1].text, "Terminal 1 Commercial Establishments");,
+				if(get(selectedLanguage)==korean,
+					set(layer[get(countlayertooltip)].text, get(layer[get(countlayertooltip)].korean));
+					set(layer[textTerminal1].text, "제1터미널 상업 시설");,
+					if(get(selectedLanguage)==chinese,
+						set(layer[get(countlayertooltip)].text, get(layer[get(countlayertooltip)].chinese));
+				        set(layer[textTerminal1].text, "第 1 航站楼商业设施");,
+						if(get(selectedLanguage)==japanese,
+							set(layer[get(countlayertooltip)].text, get(layer[get(countlayertooltip)].japanese));
+				            set(layer[textTerminal1].text, "第1ターミナル商業施設");,
+						);
+					);
+				);
+			);
+
+		,);
+	, 
+		if(layer[get(countlayertooltip)].isLanguage==true,   
+			if(get(selectedLanguage)==en,
+				set(layer[get(countlayertooltip)].title,get(layer[get(countlayertooltip)].en));
+				set(layer[get(countlayertooltip)].tooltip,get(layer[get(countlayertooltip)].en));
+				set(layer[textTerminal1].text, "Terminal 1 Commercial Establishments");,
+				if(get(selectedLanguage)==korean,
+					set(layer[get(countlayertooltip)].title,get(layer[get(countlayertooltip)].korean));
+					set(layer[get(countlayertooltip)].tooltip,get(layer[get(countlayertooltip)].korean));
+				    set(layer[textTerminal1].text, "제1터미널 상업 시설");,
+					if(get(selectedLanguage)==chinese,
+						set(layer[get(countlayertooltip)].title, get(layer[get(countlayertooltip)].chinese));
+						set(layer[get(countlayertooltip)].tooltip, get(layer[get(countlayertooltip)].chinese));
+				        set(layer[textTerminal1].text, "第 1 航站楼商业设施");,
+						if(get(selectedLanguage)==japanese,
+							set(layer[get(countlayertooltip)].title, get(layer[get(countlayertooltip)].japanese));
+							set(layer[get(countlayertooltip)].tooltip, get(layer[get(countlayertooltip)].japanese));
+				            set(layer[textTerminal1].text, "第1ターミナル商業施設");,
+						);
+					);
+				);
+			);
+
+		,);
+	);
+
+);
+for(set(countScenetooltip,0), countScenetooltip LT scene.count,  inc(countScenetooltip),   
+ 
+	if(scene[get(countScenetooltip)].isLanguage==true, 
+		if(get(selectedLanguage)==en,
+			set(scene[get(countScenetooltip)].title, get(scene[get(countScenetooltip)].en)); ,
+			if(get(selectedLanguage)==korean,
+				set(scene[get(countScenetooltip)].title, get(scene[get(countScenetooltip)].korean)); ,
+				if(get(selectedLanguage)==chinese,
+					set(scene[get(countScenetooltip)].title, get(scene[get(countScenetooltip)].chinese)); ,
+					if(get(selectedLanguage)==japanese,
+						set(scene[get(countScenetooltip)].title, get(scene[get(countScenetooltip)].japanese)); ,
+
+					);
+				);
+			);
+		);
+		
+	);
+);
+set(countHotspot_language,0);
+ 
+	loadscene(get(xml.scene), null,KEEPVIEW,MERGE,BLEND(1));
+for(set(countHotspot_language,0), countHotspot_language LT hotspot.count,  inc(countHotspot_language),   
+ 
+	if(hotspot[get(countHotspot_language)].isLanguage==true, 
+		if(get(selectedLanguage)==en,
+			set(hotspot[get(countHotspot_language)].text, get(hotspot[get(countHotspot_language)].en)); ,
+			if(get(selectedLanguage)==korean,
+				<!-- set(layer[miniTitle].text, get(hotspot[get(countHotspot_language)].korean)); -->
+				set(hotspot[get(countHotspot_language)].text, get(hotspot[get(countHotspot_language)].korean)); ,
+				if(get(selectedLanguage)==chinese,
+					set(hotspot[get(countHotspot_language)].text, get(hotspot[get(countHotspot_language)].chinese)); ,
+					if(get(selectedLanguage)==japanese,
+						set(hotspot[get(countHotspot_language)].text, get(hotspot[get(countHotspot_language)].japanese)); ,
+
+					);
+				);
+			);
+		);
+		
+	);
+);
+</action>
+
+<action name="change_floormap">
+if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal1",
+
+	set(layer[textFloormapTitle].text,"Terminal 1 Arrival");
+	if(contains(xml.scene ,scene_Terminal_1_Arrival_Taxi_Bay_Waiting_Area) ,
+
+		,
+		if(get(xml.scene.name) == get(scene[scene_map-new].name),
+			<!-- loadscene("scene_Terminal_1_Arrival_Exit_Area", null,MERGE,BLEND(1)); -->
+			,
+		);
+		
+	);
+	,
+			
+	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal1",
+		set(layer[textFloormapTitle].text,"Terminal 1 Departure");
+		
+		if(contains(xml.scene ,scene_Terminal_1_Arrival_Taxi_Bay_Waiting_Area),
+
+			,
+			loadscene("scene_Terminal_1_Departure_Drop-off_Middle_Area", null,MERGE,BLEND(1));
+		);
+	);
+);
+if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal2",
+
+	set(layer[textFloormapTitle].text,"Terminal 2 Arrival");
+	if(contains(xml.scene ,scene_Terminal_1_Arrival_Taxi_Bay_Waiting_Area),
+
+		,
+		loadscene("scene_Terminal_2_Arrival_Middle_Area", null,MERGE,BLEND(1));
+	);
+	,
+	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal2",
+
+		set(layer[textFloormapTitle].text,"Terminal 2 Departure");
+		if(contains(xml.scene ,scene_Terminal_1_Arrival_Taxi_Bay_Waiting_Area),
+
+			,
+			loadscene("scene_Terminal_2_Departure_Entrance_Middle_Area", null,MERGE,BLEND(1));
+		); 
+	);
+);
+	
+</action>
+  
+</krpano>
+

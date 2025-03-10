@@ -1,0 +1,297 @@
+﻿<krpano version="1.21" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	title_japanese="第2ターミナル到着" >
+
+	<!-- <include url="skin/vtourskin.xml" /> -->
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	<scene name="scene_Terminal_2_Arrival_Drop-off_Area" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Drop-off_Night"
+	title_japanese="第2ターミナル到着"  onstart="" miniTitle="Drop Off"  isFloormap="true" thumburl="panos/Terminal_2_Arrival_Drop-off_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Drop-off_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Drop-off_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.654" atv="-1.240" linkedscene="scene_terminal_2_arrival_middle_area" linkedscene_hoffset="358.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-175.317" atv="4.721" linkedscene="scene_streetview_20_to_terminal_2_arrival_drop_off" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Drop-off_Night" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Drop-off_Area"
+	title_japanese="第2ターミナル到着"  onstart="" miniTitle="Drop Off"  isFloormap="true"  thumburl="panos/Terminal_2_Arrival_Drop-off_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Drop-off_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Drop-off_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.654" atv="-1.240" linkedscene="scene_Terminal_2_Arrival_Middle_Area_Night" linkedscene_hoffset="358.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-175.317" atv="4.721" linkedscene="scene_streetview_20_to_terminal_2_arrival_drop_off" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Middle_Area" title="Arrival Area" isFloormap="true" onstart="" 
+ 	miniTitle="Terminal 2 Arrival"
+	miniTitle_chinese="2 号航站楼到达" 
+	miniTitle_korean="제2터미널 도착" 
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Middle_Area_Night"
+	miniTitle_japanese="第2ターミナル到着"   thumburl="panos/Terminal_2_Arrival_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Middle_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Middle_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="179.652" atv="-0.788" linkedscene="scene_terminal_2_arrival_drop-off_area" linkedscene_hoffset="2.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.005" atv="-3.722" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="356.53" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Middle_Area_Night" title="Arrival Area" isFloormap="true" onstart="" 
+ 	miniTitle="Terminal 2 Arrival"
+	miniTitle_chinese="2 号航站楼到达" 
+	miniTitle_korean="제2터미널 도착" 
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Middle_Area"
+	miniTitle_japanese="第2ターミナル到着"   thumburl="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+			<hotspot name="spot2" style="skin_hotspotstyle" ath="179.652" atv="-0.788" linkedscene="scene_terminal_2_arrival_drop-off_Night" linkedscene_hoffset="2.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.005" atv="-3.722" linkedscene="scene_Terminal_2_Arrival_Camden_Night" linkedscene_hoffset="356.53" use3dtransition="true" />
+
+
+	</scene>
+
+	
+	<scene name="scene_Pathway_1" title="Pathway 1" onstart="" 
+ 	miniTitle="Terminal 2 Arrival"
+	miniTitle_chinese="2 号航站楼到达" 
+	miniTitle_korean="제2터미널 도착" 
+	miniTitle_japanese="第2ターミナル到着"   thumburl="panos/Pathway_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Pathway_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Pathway_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="180.903" atv="-2.991" linkedscene="scene_Pathway_2" linkedscene_hoffset="-180.59" use3dtransition="true" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="0.903" atv="-2.991" linkedscene="scene_Terminal_2_Arrival_Exit" linkedscene_hoffset="96.59" use3dtransition="true" />
+	</scene>
+
+	<scene name="scene_Pathway_2" title="Pathway" onstart="" 
+ 	miniTitle="Terminal 2 Arrival"
+	miniTitle_chinese="2 号航站楼到达" 
+	miniTitle_korean="제2터미널 도착" 
+	miniTitle_japanese="第2ターミナル到着"   thumburl="panos/Pathway_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Pathway_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Pathway_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="180.903" atv="-2.991" linkedscene="scene_Pathway_1" linkedscene_hoffset="-96.59" use3dtransition="true" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="0.903" atv="-2.991" linkedscene="scene_Terminal_1_Arrival_Right_Wing" linkedscene_hoffset="96.59" use3dtransition="true" />
+
+		<hotspot name="spot51" style="skin_hotspotstyle_text" text="To Terminal 2 Arrival" 
+		
+		 en="To Terminal 2 Arrival"
+		isLanguage="true"
+		 chinese="前往第 2 航站楼到达"
+		 japanese="第2ターミナル到着へ"
+		 korean="제2터미널 도착"
+		ath="180.903" atv="-8.991" linkedscene="scene_Pathway_1" linkedscene_hoffset="-96.59" use3dtransition="true" />
+		<hotspot name="spot61" style="skin_hotspotstyle_text" text="To Terminal 1 Arrival"
+		
+		 en="To Terminal 1 Arrival"
+		isLanguage="true"
+		 chinese="前往第 1 航站楼到达"
+		 japanese="第1ターミナル到着へ"
+		 korean="제1터미널 도착"
+		 ath="0.903" atv="-8.991" linkedscene="scene_Terminal_1_Arrival_Right_Wing" linkedscene_hoffset="96.59" use3dtransition="true" />
+	</scene>
+	
+
+	<scene name="scene_Terminal_2_Arrival_Camden" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Camden_Night"
+	title_japanese="第2ターミナル到着"  isFloormap="true" onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_2_Arrival_Camden.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Camden.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Camden.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="176.523" atv="-1.387" linkedscene="scene_terminal_2_arrival_middle_area" linkedscene_hoffset="3.47" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-84.510" atv="-1.857" linkedscene="scene_terminal_2_arrival_exit" linkedscene_hoffset="353.41" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="80.733" atv="-2.842" linkedscene="scene_terminal_2_arrival_elevator" linkedscene_hoffset="6.03" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Camden_Night" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	
+	isDayNight="true"
+	DayNightModeScene="scene_Terminal_2_Arrival_Camden"
+	title_japanese="第2ターミナル到着"  isFloormap="true" onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_2_Arrival_Camden_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Camden_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Camden_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+<hotspot name="spot3" style="skin_hotspotstyle" ath="176.523" atv="-1.387" linkedscene="scene_Terminal_2_Arrival_Middle_Area_Night" linkedscene_hoffset="3.47" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-84.510" atv="-1.857" linkedscene="scene_terminal_2_arrival_exit" linkedscene_hoffset="353.41" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="80.733" atv="-2.842" linkedscene="scene_terminal_2_arrival_elevator" linkedscene_hoffset="6.03" use3dtransition="true" />
+
+	</scene>
+
+	
+
+	<scene name="scene_Terminal_2_Arrival_Elevator" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	title_japanese="第2ターミナル到着"  isFloormap="true" onstart="" miniTitle="Elevator"  thumburl="panos/Terminal_2_Arrival_Elevator.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Elevator.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Elevator.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-93.240" atv="-1.505" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="353.97" use3dtransition="true" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="93.240" atv="-1.505" linkedscene="scene_Terminal_2_Departure_Entrance_Right_Wing" linkedscene_hoffset="176.985" use3dtransition="true" />
+		<hotspot name="spot51" style="skin_hotspotstyle_text" text="To Terminal 2 Departure ⇧" ath="93.240" atv="-6.505" linkedscene="scene_Terminal_2_Departure_Entrance_Right_Wing" linkedscene_hoffset="176.985" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Exit" 
+ 	title="Terminal 2 Arrival"
+	title_chinese="2 号航站楼到达" 
+	title_korean="제2터미널 도착" 
+	title_japanese="第2ターミナル到着"  isFloormap="true" onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_2_Arrival_Exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="88.903" atv="-2.991" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="6.59" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-48.903" atv="-2.991" linkedscene="scene_Terminal_2_Departure_Left_Wing" linkedscene_hoffset="6.59" use3dtransition="true" />
+		<hotspot name="spot31" style="skin_hotspotstyle_text"
+		 text="To Terminal Departure ⇧" 
+		
+		 en="To Terminal Departure ⇧"
+		isLanguage="true"
+		 chinese="前往航站楼出发 ⇧"
+		 japanese="ターミナル出発地​​へ ⇧"
+		 korean="터미널 출발 방향 ⇧"
+		ath="-48.903" atv="-5.991" linkedscene="scene_Terminal_2_Departure_Left_Wing" linkedscene_hoffset="6.59" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-98.903" atv="-2.991" linkedscene="scene_Pathway_1" linkedscene_hoffset="-96.59" use3dtransition="true" />
+		<hotspot name="spot41" style="skin_hotspotstyle_text"
+		 text="To Parking Area" 
+		 en="To Parking Area"
+		isLanguage="true"
+		 chinese="前往停车场"
+		 japanese="駐車場へ"
+		 korean="주차장으로"
+		ath="-98.903" atv="-11.991" linkedscene="scene_Pathway_1" linkedscene_hoffset="-96.59" use3dtransition="true" />
+		<hotspot name="spot42" style="skin_hotspotstyle_text" 
+		text="To Terminal 1"
+		 en="To Terminal 1"
+		isLanguage="true"
+		 chinese="前往 1 号航站楼"
+		 japanese="第1ターミナル行き"
+		 korean="제1터미널로"
+		 ath="-98.903" atv="-5.991" linkedscene="scene_Pathway_1" linkedscene_hoffset="-96.59" use3dtransition="true" />
+
+	</scene>
+
+	
+
+	
+
+
+</krpano>

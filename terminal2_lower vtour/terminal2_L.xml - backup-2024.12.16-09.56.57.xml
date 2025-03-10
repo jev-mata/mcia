@@ -1,0 +1,153 @@
+﻿<krpano version="1.21" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	<scene name="scene_Terminal_2_Arrival_Drop-off_Area" title="Terminal 2 Arrival" onstart="" thumburl="panos/Terminal_2_Arrival_Drop-off_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Drop-off_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Drop-off_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.654" atv="-1.240" linkedscene="scene_terminal_2_arrival_middle_area" linkedscene_hoffset="358.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Drop-off_Night" title="Terminal 2 Arrival Drop-off Night" onstart="" thumburl="panos/Terminal_2_Arrival_Drop-off_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Drop-off_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Drop-off_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Middle_Area" title="Terminal 2 Arrival Middle Area" onstart="" thumburl="panos/Terminal_2_Arrival_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Middle_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Middle_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="179.652" atv="-0.788" linkedscene="scene_terminal_2_arrival_drop-off_area" linkedscene_hoffset="2.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.005" atv="-3.722" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="356.53" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Middle_Area_Night" title="Terminal 2 Arrival Middle Area Night" onstart="" thumburl="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Middle_Area_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	
+
+	<scene name="scene_Terminal_2_Arrival_Camden" title="Terminal 2 Arrival Camden" onstart="" thumburl="panos/Terminal_2_Arrival_Camden.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Camden.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Camden.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="176.523" atv="-1.387" linkedscene="scene_terminal_2_arrival_middle_area" linkedscene_hoffset="3.47" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-84.510" atv="-1.857" linkedscene="scene_terminal_2_arrival_exit" linkedscene_hoffset="353.41" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="80.733" atv="-2.842" linkedscene="scene_terminal_2_arrival_elevator" linkedscene_hoffset="6.03" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Camden_Night" title="Terminal 2 Arrival Camden Night" onstart="" thumburl="panos/Terminal_2_Arrival_Camden_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Camden_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Camden_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	
+
+	<scene name="scene_Terminal_2_Arrival_Elevator" title="Terminal 2 Arrival Elevator" onstart="" thumburl="panos/Terminal_2_Arrival_Elevator.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Elevator.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Elevator.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-93.240" atv="-1.505" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="353.97" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Arrival_Exit" title="Terminal 2 Arrival Exit" onstart="" thumburl="panos/Terminal_2_Arrival_Exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Arrival_Exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Arrival_Exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="88.903" atv="-2.991" linkedscene="scene_terminal_2_arrival_camden" linkedscene_hoffset="6.59" use3dtransition="true" />
+
+	</scene>
+
+	
+
+	
+
+
+</krpano>

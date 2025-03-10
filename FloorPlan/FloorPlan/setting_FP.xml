@@ -1,0 +1,77 @@
+<krpano>
+
+	<plan_settings  
+			editor="true"
+			url_plan="%FIRSTXML%/FloorPlan/"
+			start_open_plan="true"
+			start_open_plan_mobila="false"
+			auto_show_plan="false"
+			point_url_1="start.png"
+			point_url_2="spot_off.png"
+			point_url_3="activ.png"
+			pointv_url_1="eye_1.png"
+			pointv_url_2="eye_2.png"
+			pointv_url_3="eye_3.png"
+			radar_scale="0.4"
+			title_spot="true"
+			loadscene_blend="OPENBLEND(1.5, 0.0, 0.6, 0.5, easeOutQuad)"
+			loadsc_flags="KEEPVIEW"
+			compass="true"
+			start_open_compass="true"
+			compass_on_plan="true"
+			click_spot_exit_fs="true"
+			click_v_exit_fs="true"
+			click_exit_fs="false"
+			click_plan_fs="false"
+			zoom="true"
+			width_plans_one_all="false"
+			auto_height="true"
+			list_plan="true"
+			button_fullscreen="true"
+			button_plus_minus="true"
+			angle_placemark="true"
+			drag_plan="true"
+			margin_fs="5"
+			max_scale="1.0"
+			prealign="true"
+			backup="false"
+			edit_panel_x="36"
+			edit_panel_y="57"
+			navigation="true"
+			click_navigation="true"
+			auto_arrow="false"
+			specific_picture_point="false"
+			lang="en"
+			
+	/>
+
+ 
+
+
+	<!-- popup text style when hovering the mouse pointer over a dot  -->
+	<textstyle name="showtext_1" origin="cursor" edge="bottom" xoffset="0" yoffset="-3" fadeintime="0.0" showtime="0.1" fadetime="0.0" font="Verdana" fontsize="12.0" bold="false" italic="false" textcolor="0xffffff" textalign="none" padding="3" css="" background="true" backgroundcolor="0x555555" backgroundalpha="0.8" border="false" roundedge="3" shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0" textshadow="0.0" textshadowrange="4.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1.0" noclip="true" />
+
+	<style name="arrow_navi_flpl" type="image" keep="false" edge="center" url="%FIRSTXML%/FloorPlan/image/arrow.png" atv="22.8" rx="-69.12" scale="0.33" alpha="0.0" distorted="true" linkedscene="" pit2="" onloaded="tween(alpha, 0.5);" onover="set(alpha, 1);" onout="set(alpha, 0.5);" ondown="drag_navi_hs();" scalemode="scale" scalechildren="true" capture="true" keep_v="true" onclick="set(global.click_hs, true); loadsc_fp(*keep_v, *linkedscene); delayedcall(1,  set(click_hs, false); );" />
+
+	<style name="pointflpl" keep="true" type="image" align="center" width="20" height="prop" scale="1" zorder="31" linkedscene="" title="" ah="" av="" ic_1="" ic_2="" onhover="if(plan_settings.title_spot AND title AND showtxt, showtext(*title, showtext_1));" keep_v="true" ondown="if(edit_pit, drag_p())" onclick="loadsc_fp(*keep_v, *linkedscene); click_spot_fp(*title);" />
+
+	<style name="pointflpl_v" keep="true" type="image" align="center" width="40" height="prop" ondown="drag_p_v()" title="" icon_1="" icon_2="" onhover="if(plan_settings.title_spot AND title, showtext(*title, showtext_1));" />
+
+	
+	<!--  Plan Container  -->
+	<layer name="cont_fp_all" style="cont_fp" width="304" height="179" x="60" y="41" edge="righttop" start_x="60" start_y="41" />
+	
+	<!--  Container of plans and buttons  -->
+	<layer name="plan_cont_fp2" style="cont_fp2" bgborder="1,1,1,1 0xFFFFFF 1.00" bgroundedge="4 4 4 4" bgshadow="0 1 13 0x000000 0.40" bgcolor="0x00" bgalpha="0.24" />
+
+	
+	<!-- ****************          PLANS          ******************* -->
+ 
+
+	<!-- ***************          POINTS          ******************* -->
+
+ 
+	<!-- *************          POINTS VIEW          **************** -->
+
+ 
+</krpano>

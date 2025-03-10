@@ -1,0 +1,2346 @@
+﻿<krpano version="1.21" title="Terminal 1 Departure">
+
+	<!-- <include url="skin/vtourskin.xml" /> -->
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+ 
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	
+	<scene name="scene_1_Coffee_Bean" 
+	
+	title="Coffee Bean" 
+	title_chinese="咖啡豆" 
+	title_korean="커피 콩" 
+	title_japanese="コーヒー豆"  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発"  
+
+
+	 onstart=""   isFloormap="true" thumburl="panos/1_Coffee_Bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_Coffee_Bean.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1_Coffee_Bean.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="33.620" atv="-1.100" linkedscene="scene_2d_-_coffee_bean" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_11_-_Plug_and_Play" 
+	
+	title="Plug and Play" 
+	title_chinese="即插即用" 
+	title_korean="플러그 앤 플레이" 
+	title_japanese="プラグアンドプレイ"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/11_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/11_-_Plug_and_Play.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/11_-_Plug_and_Play.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-90.950" atv="2.099" linkedscene="scene_2d_-_plug_and_play" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2__Watch_Republic" 
+	title="Watch Republic"
+	title_chinese="观看共和国" 
+	title_korean="워치 리퍼블릭" 
+	title_japanese="リパブリックを見る"    
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2__Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2__Watch_Republic.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/2__Watch_Republic.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="178.494" atv="-0.021" linkedscene="scene_2d_-_watch_republic" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-__Atm" 
+	
+	title="Atm" 
+	title_chinese="自动取款机" 
+	title_korean="자동 현금 인출기" 
+	title_japanese="エーティーエム"    
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-__Atm.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-__Atm.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-__Atm.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-__Aviator" 
+	title="Aviator" 
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-__Aviator.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-__Aviator.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-__Aviator.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Addidas" 
+	title="Adidas"  
+	title_chinese="阿迪达斯" 
+	title_korean="아디다스" 
+	title_japanese="アディダス"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Addidas.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Addidas.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Addidas.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.006" atv="-0.007" distorted="false" zoom="false" linkedscene="scene_adidas_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_AYERS_LECHON" title="AYERS LECHON" 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_AYERS_LECHON.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_AYERS_LECHON.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_AYERS_LECHON.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_BDO_ATM" title="BDO ATM" 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_BDO_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_BDO_ATM.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_BDO_ATM.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Belgian_Waffles" title="Belgian Waffles" 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Belgian_Waffles.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Belgian_Waffles.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Belgian_Waffles.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Bench" 
+	title="Bench" 
+	title_chinese="长椅" 
+	title_korean="벤치" 
+	title_japanese="ベンチ"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Bench.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Bench.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.055" atv="-0.009" distorted="false" zoom="false" linkedscene="scene_4_-_bench" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Bos_Coffee" title="Bos Coffee" 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Bos_Coffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Bos_Coffee.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Bos_Coffee.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Cafe_Laguna_1" 
+	title="Cafe Laguna" 
+	title_chinese="拉古纳咖啡馆" 
+	title_korean="카페 라구나" 
+	title_japanese="カフェ ラグーナ"
+    
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Cafe_Laguna_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Cafe_Laguna_1.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Cafe_Laguna_1.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Ceburiffic_Pasalubong_Center" 
+	
+		
+	title="Ceburiffic Pasalubong Center" 
+	title_chinese="中央商务区" 
+	title_korean="세부리픽 파살루봉 센터" 
+	title_japanese="セブリフィック パサルボン センター"
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Ceburiffic_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Ceburiffic_Pasalubong_Center.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Ceburiffic_Pasalubong_Center.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		
+
+	</scene>
+
+	<scene name="scene_2D_-_Chowking" 
+	title="Chowking" 
+	title_chinese="乔金" 
+	title_korean="차우킹" 
+	title_japanese="むしゃむしゃする"
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Chowking.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Chowking.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Chowking.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_CLN" 
+	
+	title="CLN" 
+	title_chinese="CLN" 
+	title_korean="CLN" 
+	title_japanese="CLN" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_CLN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_CLN.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_CLN.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.028" atv="-0.017" distorted="false" zoom="false" linkedscene="scene_cln_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Coffee_bean" 
+	title="Coffee Bean" 
+	title_chinese="咖啡豆" 
+	title_korean="커피 콩" 
+	title_japanese="コーヒー豆" 
+	 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Coffee_bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Coffee_bean.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Coffee_bean.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.072" atv="-0.001" distorted="false" zoom="false" linkedscene="scene_1_coffee_bean" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Coffee_Dream" 
+	title="Coffee Dream" 
+	title_chinese="咖啡梦" 
+	title_korean="커피드림" 
+	title_japanese="コーヒードリーム" 
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Coffee_Dream.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Coffee_Dream.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Coffee_Dream.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_DBP_ATM" 
+	title="DBP ATM"  
+	title_chinese="DBP ATM" 
+	title_korean="DBP ATM" 
+	title_japanese="DBP ATM" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_DBP_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_DBP_ATM.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_DBP_ATM.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_District_Fiesta_2" 
+	title="District Fiesta" 
+	title_chinese="区嘉年华" 
+	title_korean="디스트릭트 페스타" 
+	title_japanese="地区フェスタ" 
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_District_Fiesta_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_District_Fiesta_2.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_District_Fiesta_2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.052" atv="-0.009" distorted="false" zoom="false" linkedscene="scene_district_fiesta_-_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_District_Fiesta" 
+	title="District Fiesta"  
+	title_chinese="区嘉年华" 
+	title_korean="디스트릭트 페스타" 
+	title_japanese="地区フェスタ" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_District_Fiesta.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_District_Fiesta.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_District_Fiesta.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.002" atv="-0.011" distorted="false" zoom="false" linkedscene="scene_district_fiesta_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Dunkin_Donut" 
+	title="Dunkin Donut" 
+	title_chinese="던킨 도넛" 
+	title_korean="던킨 도넛" 
+	title_japanese="ダンキンドーナツ" 
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Dunkin_Donut.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Dunkin_Donut.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Dunkin_Donut.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Food_Avenue" 
+	
+	title="Food Avenue" 
+	title_chinese="美食大道" 
+	title_korean="푸드 애비뉴" 
+	title_japanese="フードアベニュー"  
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Food_Avenue.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Food_Avenue.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Food_Avenue.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Fraiche_Deli" 
+	title="Fraiche Deli"  
+	title_chinese="法式鲜美熟食店" 
+	title_korean="프라이쉬 델리" 
+	title_japanese="フレッシュデリ" 
+ 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Fraiche_Deli.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Fraiche_Deli.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Fraiche_Deli.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_HomeBakers" 
+	title="Home Bakers" 
+	title_chinese="家庭面包师" 
+	title_korean="홈 베이커" 
+	title_japanese="ホームベーカーズ" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_HomeBakers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_HomeBakers.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_HomeBakers.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Illy_Caffe" 
+	
+	title="Illy Caffe" 
+	title_chinese="意利咖啡" 
+	title_korean="일리카페" 
+	title_japanese="イリーカフェ"  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Illy_Caffe.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Illy_Caffe.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Illy_Caffe.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.017" atv="-0.023" distorted="false" zoom="false" linkedscene="scene_8_-_illy_caffee" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_IQOS" 
+	
+	title="IQOS" 
+	title_chinese="IQOS" 
+	title_korean="IQOS" 
+	title_japanese="IQOS"   
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_IQOS.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_IQOS.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_IQOS.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.158" atv="-0.016" distorted="false" zoom="false" linkedscene="scene_iqos_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Island_Souvenirs_2" 
+	
+	title="Island Souvenirs"  
+	title_chinese="岛屿纪念品" 
+	title_korean="섬 기념품" 
+	title_japanese="島のお土産"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Island_Souvenirs_2.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Island_Souvenirs_2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		
+
+	</scene>
+
+	<scene name="scene_2D_-_Island_Souvenirs" 
+	title="Island Souvenirs"  
+	title_chinese="岛屿纪念品" 
+	title_korean="섬 기념품" 
+	title_japanese="島のお土産"  
+	 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Island_Souvenirs.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Island_Souvenirs.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.003" atv="-0.014" distorted="false" zoom="false" linkedscene="scene_island_souvenir_-_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Jollibee_1" 
+	title="Jollibee" 
+	title_chinese="快乐蜂" 
+	title_korean="졸리비" 
+	title_japanese="ジョリビー"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Jollibee_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Jollibee_1.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_Jollibee_1.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.061" atv="-0.018" distorted="false" zoom="false" linkedscene="scene_jollibee_-_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Jue_DIng" 
+	
+	title="Jue DIng"  
+	title_chinese="丁珏" 
+	title_korean="주에 딘" 
+	title_japanese="ジュエディン"  
+	   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Jue_DIng.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Jue_DIng.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Jue_DIng.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.004" atv="-0.012" distorted="false" zoom="false" linkedscene="scene_jue_ding_360_3_0" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_k2_Pharmacy" 
+	title="k2 Pharmacy"  
+	title_chinese="k2 药房" 
+	title_korean="k2약국" 
+	title_japanese="k2薬局"  
+	
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_k2_Pharmacy.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_k2_Pharmacy.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_k2_Pharmacy.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.011" atv="-0.016" distorted="false" zoom="false" linkedscene="scene_k2_pharamacy_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Kenny_Roggers" 
+	title="Kenny Rogers" 
+	title_chinese="肯尼·罗杰斯" 
+	title_korean="케니 로저스" 
+	title_japanese="ケニー・ロジャース"  
+	   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Kenny_Roggers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Kenny_Roggers.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Kenny_Roggers.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.001" atv="-0.013" distorted="false" zoom="false" linkedscene="scene_kenny_rogers_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Kidoland" 
+	
+	title="Kidoland" 
+	title_chinese="儿童乐园" 
+	title_korean="키도랜드" 
+	title_japanese="キドランド"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Kidoland.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Kidoland.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.007" atv="-0.017" distorted="false" zoom="false" linkedscene="scene_5_-_kidoland" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Kultura" 
+	
+	title="Kultura" 
+	title_chinese="文化" 
+	title_korean="문화" 
+	title_japanese="文化"    
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Kultura.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Kultura.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_Kultura.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.094" atv="-0.016" distorted="false" zoom="false" linkedscene="scene_kultura_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Lolo_Pinoy_Lechon_de_Cebu" 
+	
+	title="Lolo Pinoy Lechon de Cebu"  
+	title_chinese="宿雾的洛洛·皮诺伊烤乳猪" 
+	title_korean="롤로 피노이 레촌 데 세부" 
+	title_japanese="ロロ ピノイ レチョン デ セブ"   
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Lolo_Pinoy_Lechon_de_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Lolo_Pinoy_Lechon_de_Cebu.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.620308" voffset="0.00">
+			<flat url="panos/2D_-_Lolo_Pinoy_Lechon_de_Cebu.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x1032,3200x1986,6400x3970" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Lulu_Money" 
+	title="Lulu Money"  
+	title_chinese="露露钱" 
+	title_korean="룰루머니" 
+	title_japanese="ルルマネー"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Lulu_Money.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Lulu_Money.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_Lulu_Money.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Macao" 
+	title="Macao" 
+	title_chinese="澳门" 
+	title_korean="마카오" 
+	title_japanese="マカオ"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Macao.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Macao.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.620308" voffset="0.00">
+			<flat url="panos/2D_-_Macao.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x1032,3200x1986,6400x3970" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Millies_Baked_Cookies" 
+	title="Millies Baked Cookies" 
+	title_chinese="米利斯烤饼干" 
+	title_korean="밀리 구운 쿠키" 
+	title_japanese="ミリーズのベイクドクッキー"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Millies_Baked_Cookies.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Millies_Baked_Cookies.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Millies_Baked_Cookies.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Miniso" 
+	
+	title="Miniso" 
+	title_chinese="名创优品" 
+	title_korean="미니소" 
+	title_japanese="ミニソ"   
+  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Miniso.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Miniso.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Miniso.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.008" atv="-0.011" distorted="false" zoom="false" linkedscene="scene_miniso_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Nomad_2" 
+	
+	title="Nomad"  
+	title_chinese="游牧者" 
+	title_korean="유목민" 
+	title_japanese="遊牧民"    
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Nomad_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Nomad_2.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Nomad_2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.000" atv="0.000" distorted="false" zoom="false" linkedscene="scene_nomad_2_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+		
+
+	</scene>
+
+	<scene name="scene_2D_-_Nomad" 
+	title="Nomad"  
+	title_chinese="游牧者" 
+	title_korean="유목민" 
+	title_japanese="遊牧民"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Nomad.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Nomad.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Nomad.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.035" atv="-0.018" distorted="false" zoom="false" linkedscene="scene_nomad_-_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Pasalubong_Center" 
+	title="Pasalubong Center"  
+	title_chinese="欢迎中心" 
+	title_korean="웰컴 센터" 
+	title_japanese="ウェルカムセンター"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Pasalubong_Center.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.571385" voffset="0.00">
+			<flat url="panos/2D_-_Pasalubong_Center.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x952,3200x1828,6400x3658" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Play_Ground" 
+	
+	title="Play Ground" 
+	title_chinese="操场" 
+	title_korean="운동장" 
+	title_japanese="遊び場"   
+  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Play_Ground.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Play_Ground.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_Play_Ground.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Plug_and_Play" 
+	title="Plug and Play" 
+	title_chinese="即插即用" 
+	title_korean="플러그 앤 플레이" 
+	title_japanese="プラグアンドプレイ"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Plug_and_Play.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Plug_and_Play.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.010" atv="-0.003" distorted="false" zoom="false" linkedscene="scene_11_-_plug_and_play" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_Potato_corners" 
+	title="Potato Corners"  
+	title_chinese="土豆角" 
+	title_korean="감자 코너" 
+	title_japanese="ポテトコーナー"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Potato_corners.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Potato_corners.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.598615" voffset="0.00">
+			<flat url="panos/2D_-_Potato_corners.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x996,3200x1916,6400x3832" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Ritazza" 
+	title="Ritazza" 
+	title_chinese="丽塔扎" 
+	title_korean="리타차" 
+	title_japanese="リタッツァ"   
+  
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Ritazza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Ritazza.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Ritazza.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Shakeys_Pizza" 
+	title="Shakeys Pizza" 
+	title_chinese="奶昔披萨" 
+	title_korean="셰이키 피자" 
+	title_japanese="シェーキーズピザ"   
+  
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Shakeys_Pizza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Shakeys_Pizza.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Shakeys_Pizza.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Shakeys" 
+	title="Shakeys" 
+	title_chinese="沙基斯" 
+	title_korean="셰이키스" 
+	title_japanese="シェーキーズ"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Shakeys.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Shakeys.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Shakeys.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Sweets___Stuff" 
+	title="Sweets Stuff" 
+	title_chinese="糖果的东西" 
+	title_korean="과자류" 
+	title_japanese="甘いもの"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Sweets___Stuff.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Sweets___Stuff.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Sweets___Stuff.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_The_Bakery" 
+	title="The Bakery" 
+	title_chinese="面包店" 
+	title_korean="베이커리" 
+	title_japanese="ザ・ベーカリー"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Bakery.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_The_Bakery.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_The_Bakery.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_The_Brew_House" 
+	title="The Brew House" 
+	title_chinese="酿酒厂" 
+	title_korean="더 브루 하우스" 
+	title_japanese="ザ ブリュー ハウス"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Brew_House.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_The_Brew_House.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_The_Brew_House.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_The_Spa_at_Cebu" 
+	title="The Spa at Cebu" 
+	title_chinese="宿务水疗中心" 
+	title_korean="세부의 스파" 
+	title_japanese="ザ・スパ・アット・セブ"   
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Spa_at_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_The_Spa_at_Cebu.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/2D_-_The_Spa_at_Cebu.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Travel_Free_Shop" 
+	
+	title="Travel Free Shop"
+	title_chinese="旅游免费店" 
+	title_korean="여행 무료 상점" 
+	title_japanese="トラベルフリーショップ"   
+  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Travel_Free_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Travel_Free_Shop.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Travel_Free_Shop.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_TSIM_SHA_TSUI" 
+	title="TSIM SHA TSUI"  
+	title_chinese="尖沙咀" 
+	title_korean="침사추이" 
+	title_japanese="尖沙咀"   
+ 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_TSIM_SHA_TSUI.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_TSIM_SHA_TSUI.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_TSIM_SHA_TSUI.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_Watch_Republic" 
+	title="Watch Republic"
+	title_chinese="观看共和国" 
+	title_korean="워치 리퍼블릭" 
+	title_japanese="リパブリックを見る"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_Watch_Republic.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_Watch_Republic.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.004" atv="-0.003" distorted="false" zoom="false" linkedscene="scene_2__watch_republic" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_2D_-_WH__Smith" 
+	
+	title="WH Smith"  
+	title_chinese="WH史密斯" 
+	title_korean="WH 스미스" 
+	title_japanese="WH・スミス"   
+   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_WH__Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_WH__Smith.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.577385" voffset="0.00">
+			<flat url="panos/2D_-_WH__Smith.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x962,3200x1848,6400x3696" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D_-_WH_Smith" 
+	
+	title="WH Smith"  
+	title_chinese="WH史密斯" 
+	title_korean="WH 스미스" 
+	title_japanese="WH・スミス"   
+ 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D_-_WH_Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_WH_Smith.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D_-_WH_Smith.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_2D-_Wagas_ukelele_shop" 
+	title="Wagas ukelele shop" 
+	title_chinese="沃歌斯尤克里里店" 
+	title_korean="와가스 우쿨렐레 가게" 
+	title_japanese="ワガスウクレレショップ"   
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/2D-_Wagas_ukelele_shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D-_Wagas_ukelele_shop.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/2D-_Wagas_ukelele_shop.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_4_-_Bench" 
+	
+	title="Bench" 
+	title_chinese="长椅" 
+	title_korean="벤치" 
+	title_japanese="ベンチ"   
+  
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/4_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/4_-_Bench.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/4_-_Bench.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="167.511" atv="0.517" linkedscene="scene_2d_-_bench" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_5_-_Kidoland" 
+	title="Kidoland" 
+	title_chinese="儿童乐园" 
+	title_korean="키도랜드" 
+	title_japanese="キドランド"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/5_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/5_-_Kidoland.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/5_-_Kidoland.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="171.030" atv="-3.174" linkedscene="scene_2d_-_kidoland" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_8_-_Illy_Caffee" 
+	title="Illy Caffe" 
+	title_chinese="意利咖啡" 
+	title_korean="일리카페" 
+	title_japanese="イリーカフェ" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/8_-_Illy_Caffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/8_-_Illy_Caffee.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/8_-_Illy_Caffee.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.539" atv="-2.976" linkedscene="scene_2d_-_illy_caffe" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Adidas_360" 
+	
+	title="Adidas"  
+	title_chinese="阿迪达斯" 
+	title_korean="아디다스" 
+	title_japanese="アディダス"   
+   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Adidas_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Adidas_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Adidas_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0" atv="-1.023" linkedscene="scene_2d_-_addidas" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_ato-ni-2D" 
+	title="Ato Ni" 
+	title_chinese="阿托尼" 
+	title_korean="아토니" 
+	title_japanese="あとに"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/ato-ni-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ato-ni-2D.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/ato-ni-2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.033" atv="-0.005" distorted="false" zoom="false" linkedscene="scene_ceburiffic_pasalubong_center_360" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Beauty_360" 
+	title="Beauty" 
+	title_chinese="美丽" 
+	title_korean="아름다움" 
+	title_japanese="美しさ"   
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Beauty_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Beauty_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Beauty_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Bellissimo_-_2D" 
+	title="Bellissimo" 
+	title_chinese="美丽的" 
+	title_korean="아름다운" 
+	title_japanese="美しい"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Bellissimo_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Bellissimo_-_2D.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/Bellissimo_-_2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Brew_House_360" 
+	title="Brew House"  
+	title_chinese="酿酒厂" 
+	title_korean="브루 하우스" 
+	title_japanese="ブリューハウス"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Brew_House_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Brew_House_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Brew_House_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Ceburiffic_Pasalubong_Center_360" 	
+	title="Ceburiffic Pasalubong Center" 
+	title_chinese="中央商务区" 
+	title_korean="세부리픽 파살루봉 센터" 
+	title_japanese="セブリフィック パサルボン センター"
+
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Ceburiffic_Pasalubong_Center_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ceburiffic_Pasalubong_Center_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Ceburiffic_Pasalubong_Center_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-147.442" atv="-1.909" linkedscene="scene_ato-ni-2d" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_CLN_360" 
+	title="CLN" 
+	title_chinese="CLN" 
+	title_korean="CLN" 
+	title_japanese="CLN"
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/CLN_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CLN_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CLN_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-121.706" atv="-1.634" linkedscene="scene_2d_-_cln" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_district_fiesta_-_360" 
+	title="District Fiesta"  
+	title_chinese="区嘉年华" 
+	title_korean="디스트릭트 페스타" 
+	title_japanese="地区フェスタ" 
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/district_fiesta_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/district_fiesta_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/district_fiesta_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="167.545" atv="-4.338" linkedscene="scene_2d_-_district_fiesta_2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_District_Fiesta_360" 
+	title="District Fiesta"  
+	title_chinese="区嘉年华" 
+	title_korean="디스트릭트 페스타" 
+	title_japanese="地区フェスタ" 
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/District_Fiesta_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/District_Fiesta_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/District_Fiesta_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.849" atv="-1.108" linkedscene="scene_2d_-_district_fiesta" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Food_Avenue_-_360" 
+	title="Food Avenue" 
+	title_chinese="美食大道" 
+	title_korean="푸드 애비뉴" 
+	title_japanese="フードアベニュー" 
+  
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Food_Avenue_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Food_Avenue_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Food_Avenue_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Freshly_Made_Donuts_-_2D" 
+	title="Freshly Made Donuts" 
+	title_chinese="新鲜制作的甜甜圈" 
+	title_korean="갓 만든 도넛" 
+	title_japanese="作りたてのドーナツ" 
+  
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Freshly_Made_Donuts_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Freshly_Made_Donuts_-_2D.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/Freshly_Made_Donuts_-_2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IQOS_360" 
+	title="IQOS" 
+	title_chinese="IQOS" 
+	title_korean="IQOS" 
+	title_japanese="IQOS"  
+	 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/IQOS_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/IQOS_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/IQOS_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="154.955" atv="-3.892" linkedscene="scene_2d_-_iqos" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Island_Souvenir_-_360"
+	title="Island Souvenirs"  
+	title_chinese="岛屿纪念品" 
+	title_korean="섬 기념품" 
+	title_japanese="島のお土産"  
+	 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Island_Souvenir_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Island_Souvenir_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Island_Souvenir_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.492" atv="-2.998" linkedscene="scene_2d_-_island_souvenirs" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Jollibee_-_360_Dine_Area" 
+	title="Jollibee - Dine Area" 
+	title_chinese="快乐蜂" 
+	title_korean="졸리비" 
+	title_japanese="ジョリビー"  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Jollibee_-_360_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Jollibee_-_360_Dine_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Jollibee_-_360_Dine_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-85.519" atv="-1.726" linkedscene="scene_jollibee_-_360" linkedscene_hoffset="354.65" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-166.033" atv="-2.825" linkedscene="scene_2d_-_jollibee_1" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Jollibee_-_360" 
+	title="Jollibee" 
+	title_chinese="快乐蜂" 
+	title_korean="졸리비" 
+	title_japanese="ジョリビー"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Jollibee_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Jollibee_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Jollibee_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="89.132" atv="-1.243" linkedscene="scene_jollibee_-_360_dine_area" linkedscene_hoffset="5.35" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Jue_Ding_360_3_0" 
+	title="Jue DIng"  
+	title_chinese="丁珏" 
+	title_korean="주에 딘" 
+	title_japanese="ジュエディン"  
+	 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Jue_Ding_360_3_0.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Jue_Ding_360_3_0.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Jue_Ding_360_3_0.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="94.200" atv="-3.776" linkedscene="scene_2d_-_jue_ding" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_K2_Pharamacy_360" 
+	title="k2 Pharmacy"  
+	title_chinese="k2 药房" 
+	title_korean="k2약국" 
+	title_japanese="k2薬局"  
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/K2_Pharamacy_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/K2_Pharamacy_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/K2_Pharamacy_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="65.095" atv="-5.619" linkedscene="scene_2d_-_k2_pharmacy" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Kenny_Rogers_360" 
+	title="Kenny Rogers" 
+	title_chinese="肯尼·罗杰斯" 
+	title_korean="케니 로저스" 
+	title_japanese="ケニー・ロジャース"  
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Kenny_Rogers_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Kenny_Rogers_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Kenny_Rogers_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="71.944" atv="3.931" linkedscene="scene_2d_-_kenny_roggers" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_KULTURA_360" 
+	title="Kultura" 
+	title_chinese="文化" 
+	title_korean="문화" 
+	title_japanese="文化"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/KULTURA_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/KULTURA_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/KULTURA_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.100" atv="-0.319" linkedscene="scene_2d_-_kultura" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Lolo_Pinoy_Lechon_de_Cebu_-_2D" 
+	title="Lolo Pinoy Lechon de Cebu"  
+	title_chinese="宿雾的洛洛·皮诺伊烤乳猪" 
+	title_korean="롤로 피노이 레촌 데 세부" 
+	title_japanese="ロロ ピノイ レチョン デ セブ"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Miniso_360" 
+	title="Miniso" 
+	title_chinese="名创优品" 
+	title_korean="미니소" 
+	title_japanese="ミニソ"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Miniso_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Miniso_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Miniso_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.030" atv="-1.717" linkedscene="scene_2d_-_miniso" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_nipon-2D" 
+	title="Nipon" 
+	title_chinese="厚的" 
+	title_korean="두꺼운" 
+	title_japanese="厚い"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/nipon-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/nipon-2D.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.577385" voffset="0.00">
+			<flat url="panos/nipon-2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x962,3200x1848,6400x3696" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_NOMAD_-_360" 
+	title="Nomad"  
+	title_chinese="游牧者" 
+	title_korean="유목민" 
+	title_japanese="遊牧民"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/NOMAD_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/NOMAD_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/NOMAD_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.660" atv="-2.434" linkedscene="scene_2d_-_nomad" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_NOMAD_2_360" 
+	title="Nomad"  
+	title_chinese="游牧者" 
+	title_korean="유목민" 
+	title_japanese="遊牧民"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/NOMAD_2_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/NOMAD_2_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/NOMAD_2_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-178.690" atv="-2.809" linkedscene="scene_2d_-_nomad_2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Play_Ground_-_360" 
+	title="Play Ground" 
+	title_chinese="操场" 
+	title_korean="운동장" 
+	title_japanese="遊び場"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Play_Ground_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Play_Ground_-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Play_Ground_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Restaurants_Avenue-_360" 
+	title="Restaurants Avenue" 
+	title_chinese="餐厅大道" 
+	title_korean="레스토랑 애비뉴" 
+	title_japanese="レストラン アベニュー"   
+
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Restaurants_Avenue-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Restaurants_Avenue-_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Restaurants_Avenue-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Shakey_s_360" 
+	title="Shakeys" 
+	title_chinese="沙基斯" 
+	title_korean="셰이키스" 
+	title_japanese="シェーキーズ"    
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Shakey_s_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Shakey_s_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Shakey_s_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Travel_Free_Shop_360" 
+	title="Travel Free Shop"
+	title_chinese="旅游免费店" 
+	title_korean="여행 무료 상점" 
+	title_japanese="トラベルフリーショップ"   
+  
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/Travel_Free_Shop_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Travel_Free_Shop_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Travel_Free_Shop_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_wagas-360" 
+	title="Wagas " 
+	title_chinese="纯粹" 
+	title_korean="전혀" 
+	title_japanese="純粋に"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/wagas-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wagas-360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/wagas-360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_WH_Smith_360" 
+	
+	title="WH Smith"  
+	title_chinese="WH史密斯" 
+	title_korean="WH 스미스" 
+	title_japanese="WH・スミス"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/WH_Smith_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/WH_Smith_360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/WH_Smith_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_wh-smith-360" 
+	title="WH Smith"  
+	title_chinese="WH史密斯" 
+	title_korean="WH 스미스" 
+	title_japanese="WH・スミス"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ onstart=""   isFloormap="true" thumburl="panos/wh-smith-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wh-smith-360.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/wh-smith-360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+
+</krpano>

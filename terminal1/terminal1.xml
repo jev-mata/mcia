@@ -1,0 +1,584 @@
+﻿<krpano version="1.21" title="Terminal 1">
+ 
+<!-- <include url="skin/vtourskin.xml" /> -->
+ 
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+
+	
+
+	<scene name="scene_Terminal_1_Arrival_Exit_1" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_1_Arrival_Exit_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Exit_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Exit_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Exit_2" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_1_Arrival_Exit_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Exit_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Exit_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Exit_3" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_1_Arrival_Exit_3.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Exit_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Exit_3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+<scene name="scene_Terminal_1_Arrival_Exit_Area" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ isFloormap="true" onstart="" miniTitle="Passenger Exit Area"  thumburl="panos/Terminal_1_Arrival_Exit_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Exit_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Exit_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-178.618" atv="-8.585" linkedscene="scene_terminal_1_departure_standee_logo" linkedscene_hoffset="267.53" use3dtransition="true" />
+
+		<hotspot name="spot11" style="skin_hotspotstyle_text" 
+		text="To Terminal 1 Departure"
+		 en="To Terminal 1 Departure"
+		isLanguage="true"
+		 chinese="前往 1 号航站楼出发"
+		 japanese="第1ターミナル出発へ"
+		 korean="제1터미널 출발 방향"
+		ath="-178.618" atv="-10.585" 
+         type="text" 
+         renderer="auto" 
+         oversampling="1.0"
+         mipmapping="false"
+		 linkedscene="scene_terminal_1_departure_standee_logo" linkedscene_hoffset="267.53" use3dtransition="true" />
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="120.370" atv="-7.207" linkedscene="scene_terminal_1_arrival_right_wing" linkedscene_hoffset="349.24" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle_text" ath="120.370" atv="-16.207" linkedscene="scene_terminal_1_arrival_right_wing" 
+         type="text"
+         renderer="auto" 
+		 text="To Terminal 2" 
+		 en="To Terminal 2"
+		isLanguage="true"
+		 chinese="前往第 2 航站楼 "
+		 japanese="第2ターミナルへ"
+		 korean="제2터미널로"
+         oversampling="1.0"
+         mipmapping="false"
+		 linkedscene_hoffset="349.24" use3dtransition="true" />
+		<hotspot name="spot41" style="skin_hotspotstyle_text" ath="120.370" atv="-9.207" linkedscene="scene_terminal_1_arrival_right_wing" 
+         type="text"
+         renderer="auto" 
+		 text="To Parking Area"
+		isLanguage="true"
+		 en="To Parking Area"
+		 chinese="前往停车场"
+		 japanese="駐車場へ"
+		 korean="주차장으로"
+         oversampling="1.0"
+         mipmapping="false"
+		 linkedscene_hoffset="349.24" use3dtransition="true"  />
+
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-120.370" atv="-7.207" linkedscene="scene_streetview_36_terminal_1_arrival_taxi_bay" linkedscene_hoffset="349.24" use3dtransition="true" />
+		<hotspot name="spot31" 
+		ath="-120.370" atv="-10.207" 
+         type="text"
+		 style="skin_hotspotstyle_text" 
+		text="Exit Pick Up Area"
+		isLanguage="true"
+		 en="To Parking Area"
+		 chinese="退出接送区"
+		 japanese="ピックアップエリアを出る"
+		 korean="픽업 장소에서 나가기"
+         renderer="auto" 
+         oversampling="1.0"
+         mipmapping="false"
+		 linkedscene="scene_streetview_36_terminal_1_arrival_taxi_bay" linkedscene_hoffset="349.24" use3dtransition="true" />
+
+	</scene>
+ 
+
+	<scene name="scene_Terminal_1_Arrival_Right_Wing" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+  isFloormap="true"  onstart="" miniTitle="Waiting Area"  thumburl="panos/Terminal_1_Arrival_Right_Wing.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Right_Wing.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Right_Wing.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-90.201" atv="-2.127" linkedscene="scene_terminal_1_arrival_exit_area" linkedscene_hoffset="10.76" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="90.201" atv="-2.127" linkedscene="scene_Pathway_2" linkedscene_hoffset="10.76" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Taxi_Bay_Exit" title="Taxi Bay Exit" onstart="" 
+
+ 	miniTitle="Terminal 1 Arrival"
+	miniTitle_chinese="1 号航站楼到达" 
+	miniTitle_korean="제1터미널 도착" 
+	miniTitle_japanese="第1ターミナル到着" 
+  thumburl="panos/Terminal_1_Arrival_Taxi_Bay_Exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Taxi_Bay_Exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Taxi_Bay_Exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Taxi_Bay_Middle" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ onstart="" miniTitle="Taxi Bay"  thumburl="panos/Terminal_1_Arrival_Taxi_Bay_Middle.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Taxi_Bay_Middle.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Taxi_Bay_Middle.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Taxi_Bay_Waiting_Area" 
+
+ 	
+ 	title="Terminal 1 Arrival"
+	title_chinese="1 号航站楼到达" 
+	title_korean="제1터미널 도착" 
+	title_japanese="第1ターミナル到着" 
+ onstart="" miniTitle="Taxi Waiting Area"  thumburl="panos/Terminal_1_Arrival_Taxi_Bay_Waiting_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Taxi_Bay_Waiting_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Taxi_Bay_Waiting_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Arrival_Taxi_Bay" title="Taxi Bay" onstart=""  
+
+ 	
+ 	miniTitle="Terminal 1 Arrival"
+	miniTitle_chinese="1 号航站楼到达" 
+	miniTitle_korean="제1터미널 도착" 
+	miniTitle_japanese="第1ターミナル到着" 
+  thumburl="panos/Terminal_1_Arrival_Taxi_Bay.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Arrival_Taxi_Bay.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Arrival_Taxi_Bay.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_1" title="Departure Area" onstart="" 
+ 	miniTitle="Terminal 1"
+	miniTitle_chinese="1 号航站楼到达" 
+	miniTitle_korean="제1터미널 도착" 
+	miniTitle_japanese="第1ターミナル到着"   thumburl="panos/Terminal_1_Departure_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Drop-off_2_Day_Panorama" 
+	title="Terminal 1 Departure"
+	title_chinese="1 号航站楼出发" 
+	title_korean="제1터미널 출발" 
+	title_japanese="第1ターミナル出発" 
+ onstart="" miniTitle="Drop Off"  thumburl="panos/Terminal_1_Departure_Drop-off_2_Day_Panorama.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Drop-off_2_Day_Panorama.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Drop-off_2_Day_Panorama.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Drop-off_Middle_Area_Night" 
+	title="Terminal 1 Departure"
+	title_chinese="1 号航站楼出发" 
+	title_korean="제1터미널 출발" 
+	title_japanese="第1ターミナル出発" 
+ onstart="" miniTitle="Drop Off"  thumburl="panos/Terminal_1_Departure_Drop-off_Middle_Area_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Drop-off_Middle_Area_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Drop-off_Middle_Area_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-3.027" atv="-39.435" linkedscene="scene_terminal_1_departure_drop-off_middle_area" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Drop-off_Middle_Area" 
+	title="Terminal 1 Departure"
+	title_chinese="1 号航站楼出发" 
+	title_korean="제1터미널 출발" 
+	title_japanese="第1ターミナル出発" 
+ onstart="" miniTitle="Drop Off"  thumburl="panos/Terminal_1_Departure_Drop-off_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Drop-off_Middle_Area.tiles/preview.jpg" />
+
+		<image >
+			<cube url="panos/Terminal_1_Departure_Drop-off_Middle_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.619" atv="-39.306" linkedscene="scene_terminal_1_departure_drop-off_panorama" linkedscene_hoffset="0.0" use3dtransition="true" />
+		
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="84.698" atv="-3.435" linkedscene="scene_terminal_1_departure_drop-off_panorama" linkedscene_hoffset="61.62" use3dtransition="true" />
+
+	</scene>
+ 
+	<scene name="scene_Terminal_1_Departure_Drop-off_Panorama" 
+	title="Terminal 1 Departure"
+	title_chinese="1 号航站楼出发" 
+	title_korean="제1터미널 출발" 
+	title_japanese="第1ターミナル出発" 
+ onstart="" miniTitle="Drop Off"  thumburl="panos/Terminal_1_Departure_Drop-off_Panorama.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Drop-off_Panorama.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Drop-off_Panorama.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="136.904" atv="-3.416" linkedscene="scene_terminal_1_departure_right_wing" linkedscene_hoffset="-180.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-32.747" atv="-1.536" linkedscene="scene_terminal_1_departure_drop-off_middle_area" linkedscene_hoffset="298.38" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Entrance_Night_Panorama" 
+	title="Terminal 1 Departure"
+	title_chinese="1 号航站楼出发" 
+	title_korean="제1터미널 출발" 
+	title_japanese="第1ターミナル出発" 
+ onstart="" miniTitle="Drop Off"  thumburl="panos/Terminal_1_Departure_Entrance_Night_Panorama.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Entrance_Night_Panorama.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Entrance_Night_Panorama.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Middle_Area" title="Departure Area" onstart="" miniTitle="Terminal 1"  thumburl="panos/Terminal_1_Departure_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Middle_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Middle_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-89.373" atv="1.020" linkedscene="scene_terminal_1_departure_right_wing" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.701" atv="-6.914" linkedscene="scene_terminal_1_departure_drop-off_panorama" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Right_Wing" title="Departure Area" onstart="" miniTitle="Terminal 1"  thumburl="panos/Terminal_1_Departure_Right_Wing.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Right_Wing.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Right_Wing.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="104.443" atv="-7.344" linkedscene="scene_terminal_1_departure_drop-off_panorama" linkedscene_hoffset="540.0" use3dtransition="true" />
+
+	</scene>
+
+
+	<scene name="scene_Terminal_1_Departure_Standee_Logo" title="Facade"  isFloormap="true"  onstart=""
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+  thumburl="panos/Terminal_1_Departure_Standee_Logo.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Standee_Logo.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Standee_Logo.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="7.734" atv="-1.181" linkedscene="scene_terminal_1_arrival_exit_area" linkedscene_hoffset="92.47" use3dtransition="true" />
+		<hotspot name="spot21" style="skin_hotspotstyle_text"  
+		 text="To Terminal 1 Arrival"  
+		isLanguage="true"
+		 en="To Terminal 1 Arrival"
+		 chinese="前往 1 号航站楼到达"
+		 japanese="第1ターミナル到着へ"
+		 korean="제1터미널 도착"
+		 ath="7.734" atv="-5.181" linkedscene="scene_terminal_1_arrival_exit_area" linkedscene_hoffset="92.47" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-180.020" atv="-8.345" linkedscene="scene_streetview_29_terminal_1_departure_drop_off_day"  linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Taxi_Area_1" title="Taxi Area" onstart=""
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+  thumburl="panos/Terminal_1_Departure_Taxi_Area_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Taxi_Area_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Taxi_Area_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Departure_Taxi_Area_2" title="Taxi Area" onstart="" miniTitle="Terminal 1  Departure"  thumburl="panos/Terminal_1_Departure_Taxi_Area_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Departure_Taxi_Area_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Departure_Taxi_Area_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_1_Proceeding_to_Departure" title="Proceeding to Departure" onstart="" 
+
+ 	
+ 	miniTitle="Terminal 1 Arrival"
+	miniTitle_chinese="1 号航站楼到达" 
+	miniTitle_korean="제1터미널 도착" 
+	miniTitle_japanese="第1ターミナル到着" 
+  thumburl="panos/Terminal_1_Proceeding_to_Departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		
+		 
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_1_Proceeding_to_Departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_1_Proceeding_to_Departure.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+
+</krpano>

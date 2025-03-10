@@ -1,0 +1,124 @@
+﻿<krpano version="1.21" title="Virtual Tour"  logkey="true" debugmode="true">
+  
+    <include url="skin/HomePageMCIA.xml" />
+<include url="FloorPlan/xml/floorplan_SM.xml" />
+     
+    <!-- Customize skin settings -->
+    <skin_settings maps="false"
+                   maps_type="google"
+                   maps_bing_api_key=""
+                   maps_google_api_key=""
+                   maps_zoombuttons="false"
+                   maps_loadonfirstuse="true"
+                   gyro="true"
+                   gyro_keeplookingdirection="false"
+                   webvr="true"
+                   webvr_keeplookingdirection="true"
+                   webvr_prev_next_hotspots="true"
+                   autotour="false"
+                   littleplanetintro="false"
+                   followmousecontrol="false"
+                   title="true"
+                   thumbs="true"
+                   thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+                   thumbs_opened="false"
+                   thumbs_text="true"
+                   thumbs_dragging="true"
+                   thumbs_onhoverscrolling="false"
+                   thumbs_scrollbuttons="false"
+                   thumbs_scrollindicator="false"
+                   thumbs_loop="false"
+                   tooltips_buttons="true"
+                   tooltips_thumbs="true"
+                   tooltips_hotspots="true"
+                   tooltips_mapspots="true"
+                   deeplinking="false"
+                   loadscene_flags="MERGE"
+                   loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+                   loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+                   loadscene_blend_next="SLIDEBLEND(0.5, 0, 0.75, linear)"
+                   loadingtext="loading..."
+                   layout_width="0%"
+                   layout_maxwidth="814"
+                   controlbar_width="-24"
+                   controlbar_height="40"
+                   controlbar_offset="20"
+                   controlbar_offset_closed="-40"
+                   controlbar_overlap.no-fractionalscaling="10"
+                   controlbar_overlap.fractionalscaling="0"
+                   design_skin_images="vtourskin.png"
+                   design_bgcolor="0x2D3E50"
+                   design_bgalpha="0.8"
+                   design_bgborder="0"
+                   design_bgroundedge="1"
+                   design_bgshadow="0 4 10 0x000000 0.3"
+                   design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+                   design_thumbborder_padding="2"
+                   design_thumbborder_bgroundedge="0"
+                   design_text_css="color:#FFFFFF; font-family:Arial;"
+                   design_text_shadow="1"
+                   /> 
+    
+ 
+      <scene name="scene_map-new" title="map-new" onstart="start();" thumburl="panos/map-new.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        <control bouncinglimits="calc:image.cube ? true : false" />
+        <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+        <preview url="panos/map-new.tiles/preview.jpg" />
+        <image hfov="1.00" vfov="0.481924" voffset="0.00">
+            <flat url="panos/map-new.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1664x802,3328x1604" />
+        </image>
+        <!-- Hotspots -->
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061); "
+          name="terminal-1" style="terminal-1"  ath="-0.157" atv="-0.043"  distorted="true" linkedscene="scene_streetview_29_terminal_1_departure_drop_off_day" use3dtransition="true" />
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061); "
+         name="waterfront" zorder="1" style="waterfront" ath="-0.23" atv="0.00"   distorted="true" linkedscene="scene_streetview_5_waterfront" use3dtransition="true" />
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061); "
+         name="terminal-2" style="terminal-2" ath="0.235" atv="-0.055"   distorted="true" linkedscene="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" />
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061);showtext(*title, showtext_2); "
+         name="caap-tower" style="caap-tower" ath="0.001" atv="-0.0395"  title="CAAP Tower" distorted="true"  use3dtransition="true" />
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061); "
+         name="streetview" style="streetview" ath="0" atv="0.12" distorted="true" linkedscene="scene_streetview_1" use3dtransition="true" />
+        <hotspot capture="false" 
+         onhover="set(layer[get(name)].scale,0.061); "
+         name="MCIAa-building" style="MCIAa-building" ath="-0.088" atv="0.087"   distorted="true" linkedscene="scene_streetview_7" use3dtransition="true" />
+    
+        <hotspot name="terminal-1_pulse" style="pulse"  ath="-0.155" atv="-0.016"  distorted="true"
+	      />
+        <hotspot name="waterfront_pulse" style="pulse" ath="-0.23" atv="0.051"   distorted="true"
+	       />
+        <hotspot name="terminal-2_pulse" style="pulse" ath="0.25" atv="0.015"  distorted="true" 
+	      />
+        <hotspot name="caap-tower_pulse" style="pulse" ath="-0.004" atv="0.015"   distorted="true" 
+	      />
+        <hotspot name="streetview_pulse"  style="pulse" ath="0.1" atv="0.11" distorted="true"  
+	     />
+        <hotspot name="MCIAa-building_pulse" pname="MCIAa-building" style="pulse" ath="-0.09" atv="0.139"  distorted="true" 
+	       />
+   
+   
+   
+   <layer name="welcomeLayer" type="container"  height="90%" width="100%"    visible="true" alpha="1" 
+   >
+        <layer name="welcomeAvatar"  url="%FIRSTXML%/skin/new-skin/v2/MCIA PSA Female_cropped.png"
+            alpha="1" visible="true" align="bottomright" height="50%" width="prop"
+            x="-20%" onloaded="delayedcall(1,tween(layer[welcomeAvatar].x, 0%, 1.5););"
+        />
+   </layer>
+   
+   
+	
+	</scene>
+
+
+    <include url="terminal1/terminal1.xml" /> 
+    <include url="terminal2_lower vtour/terminal2_L.xml" /> 
+    <include url="terminal2_upper vtour/terminal2_U.xml" /> 
+    <include url="streetview/streetview.xml" /> 
+    <include url="skin/waterdroplets.xml" /> 
+    <include url="establishments/establishments.xml" />  
+</krpano>

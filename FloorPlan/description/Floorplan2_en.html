@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!--
+Template Name: Merciano
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="en">
+
+<head>
+ 
+
+	<meta charset="utf-8">
+	<meta name="author" content="Novosibpano<Novosibpano@ya.ru>">
+
+	<meta name="keywords" content="Editor krpano plugin window example parameters file change">
+	<meta name="description" content="Plugin for creating floor plans in krpano">
+	<title>Creating Floor Plans</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	 
+
+</head>
+
+<body id="top">
+	<i>&#160;</i>
+	<div style="float:right;margin-right:10px;">
+		<i class="fa fa-envelope-o"></i> &#160;novosibpano@yandex.ru&#160;&#160;&#160; <a id="Telegramm"
+			href="https://t.me/Aleksandr_krp">Telegram: Aleksandr</a>
+	</div>
+	
+	
+	<div class="pay">
+		<a class="styled"  href="#pay">BUY 49€</a>
+	</div>
+ 
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<div class="wrapper row3">
+		<main class="hoc container clear">
+			<!-- main body -->
+			<!-- ################################################################################################ -->
+			<div class="sidebar one_quarter first">
+				<!-- ################################################################################################ -->
+				<h6>Contents</h6>
+				<nav class="sdb_holder">
+
+					<ul class="style2">
+						<li><a href="#description1">Features </a></li>
+						<li><a href="#conect">How to connect the plugin</a></li>
+						<li><a href="#disable">How to disable the editor</a></li>
+						<li><a href="#pin">Activation of the plugin.</a></li>
+						<li><a href="#plan">Create a plan</a></li>
+						<li><a href="#prealign">Alignment of panoramas</a></li>
+						<li><a href="#spot">Creating points, setting up a compass and radar</a></li>
+						<li><a href="#spot2">Create points to display selected views</a></li>
+						<li><a href="#okno">Design settings</a></li>
+						<li><a href="#navi_FP">Navigation, auto arrows.</a></li>
+						<li><a href="#save_FP">Saving</a></li>
+						<li><a href="#setting_FP">Settings in the setting_FP.xml file. Advanced settings</a></li>
+						<li><a href="#style_FP">Styles in the style_Flpl.xml file.</a></li>
+						<li><a href="#download_example">Download demo version</a></li>
+						<li><a href="#pay">Purchase plugin</a></li>
+						<li><a href="#changes">Changes</a></li>
+						<li><a href="#license">Note</a></li>
+						<li><a href="#Comments">Comments</a></li>
+					</ul>
+				</nav>
+
+				<div class="sdb_holder">
+					<h6>Links</h6>
+					<div>
+						<a href=""><img src="images/forum.png" width="30" alt="" /></a><br>
+						<a id="forum" href="https://krpano.com/forum/wbb/index.php?page=Thread&threadID=16318">
+							<p><b>Discussion at Forum krpano</b></p>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://t.me/plugins_krpano"><img src="images/telegramm.png" style="width:50px; "
+								alt="" /></a><br>
+						<a id="Telegram1" href="https://t.me/plugins_krpano">
+							<p><b>Telegram</b></p>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://www.youtube.com/channel/UCWdcxXhdnVfi4w4uLAQk2OA/videos?view_as=subscriber"><img
+								src="images/youtube.png" style="width:50px;" alt="" /></a><br>
+						<a href="https://www.youtube.com/channel/UCWdcxXhdnVfi4w4uLAQk2OA/videos?view_as=subscriber">
+							<p><b>Youtube channel</b></p>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="sdb_holder">
+					<article>
+						<img src="images/text.png" alt="" />
+						<h3 class="btmspace-50 center"><a id="changes">Changes</a>
+						</h3>
+						<ul><li><a href="Floorplan2_change_en.html#v2.21">Version 2.21/14.02.2024</a></li>
+							<li><a href="Floorplan2_change_ru.html#v2.2">Version 2.2/25.01.2024</a></li>
+							<li><a href="Floorplan2_change_ru.html#v2.1">Version 2.1/10.10.2023</a></li>
+							<li><a href="Floorplan2_change_en.html#v2.0">Version 2.0/06.06.2023</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.48">Version 1.48/14.01.2023</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.47">Version 1.47/17.03.2022</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.46">Version 1.46/27.09.2021</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.45">Version 1.45/08.02.2021</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.44">Version 1.44/21.04.2020</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.43">Version 1.43/19.03.2020</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.42">Version 1.42/08.10.2019</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.41">Version 1.41/03.10.2019</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.4">Version 1.4/26.08.2019</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.3">Version 1.3/03.08.2019</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.2">Version 1.2/08.07.2019</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.1">Version 1.1/07.11.2018</a></li>
+							<li><a href="Floorplan2_change_en.html#v1.0">Version 1.0/17.07.2018</a></li>
+						</ul>
+					</article>
+				</div>
+				<!-- ################################################################################################ -->
+			</div>
+			<!-- ################################################################################################ -->
+			<!-- ################################################################################################ -->
+			<div class="content three_quarter">
+				<!-- ################################################################################################ -->
+
+				<div class="btmspace-50 center">
+					<h1 class="btmspace-10"><strong>Creating Floor Plans v2.21.</strong></h1><br />
+					<b><span style="color:red;"> HTML5. krpano version 1.21 !</strong></b><br><br>
+					<img src="images/flpl_2/flpl.jpg" alt="" />
+				</div>
+
+
+				<h3 class="btmspace-50 center"><a id="description1">Features</a></h3>
+				<ul>
+					<li>All work is done in a browser window and does not require writing or editing code.</li>
+					<li>Creating floor plans, arranging transition points for panoramas. Adding drawings, diagrams,
+						images and placing points on them with transition to selected places on the tour.</li>
+					<li>Window settings (location, size, positioning, show/hide at startup).</li>
+					<li>Setting the window design with a plan (color, transparency, border, curves, shadows).</li>
+					<li>Enabling the compass in the plan window and viewing window (the ability to show/hide or disable
+						the compass).</li>
+					<li>Selecting images of points before and after viewing the scene, adjusting their scale.</li>
+					<li>Pop-up text - appears when you hover over points.</li>
+
+					<li>Movement effect. When moving to the next scene, the direction of view and viewing angle are
+						maintained.</li>
+					<li>The plan image is scaled relative to the cursor location on the plan (the place under the cursor
+						does not shift to the side).</li>
+					<li>When moving to the next scene, the plan is automatically centered in the window relative to the
+						spot of this scene.</li>
+					<li>The window with the plan moves across the screen, its size changes (if you drag the corner of
+						the window). </li>
+					<li>When the navigation module is connected, automatic placement of arrows in the tour, selection
+						and correction of the displayed arrows. Click forward navigation in the direction of the arrow.
+					</li>
+
+				</ul>
+
+
+				<div>
+
+					<hr><br>
+
+					<div>
+						<strong><a id="example1" class="selflink">Editing points with radars on the
+								plan.</a></strong><br>
+						<strong><i>YouTube</i></strong><br>
+						<iframe style="width:100%; height:400px" src="https://www.youtube.com/embed/ZMIQ_YDRucs"
+							allowfullscreen></iframe>
+						<br><br>
+					</div>
+
+					<!-- 				<div>
+						<strong><i>Пример в 3D туре.</i></strong>
+
+						<footer><a class="btn" href="https://novosibpano.ru/VT/flpl/">Раскрыть на полный экран.</a>
+						</footer><br>
+						<iframe src="https://novosibpano.ru/VT/flpl/" id="tour_frame"
+							style="border: 0px; width:100%; height:400px" allowfullscreen></iframe><br><br>
+					</div> -->
+
+					<hr><br>
+
+					<!-- ############################### _______________Подключение________________ ######################################### -->
+
+					<div>
+						<h3><a id="conect" href="#conect">How to connect.</a></h3>
+
+						<p>
+							To connect the editor, place the folder <b>"FloorPlan"</b> in the folder with the tour
+							and write in the tour.xml file: <br>
+						</p>
+
+						<pre style="background:#EEEEEE;  padding:2px;"><i>&lt;krpano&gt;
+    &lt;include url="<span style="color:red;">FloorPlan/xml/floorplan_SM.xml</span>" /&gt;
+    .
+    .
+&lt;/krpano&gt;</i></pre>
+
+						<p><span style="color:red;"><b><i>Make sure that the tour plugins folder contains the files
+										combobox.js, radar.js and showtext.xml! </i></b></span><br>
+					</div>
+					<hr><br>
+
+
+					<!-- ############################## ___________Активация плагина __________  ################################### -->
+
+					<div class="paragraph">
+						<h3><a href="#pin" href="#pin" id="pin" class="selflink">Plugin activation.</a></h3>
+						<img src="images/add_hotspot/mail.jpg" width="500" alt="panel_1"
+							style="margin: 0px 0px 15px 15px; float: right;">
+						<p align="justify">Without activating the plugin, it will be fully functional, but the message
+							“Demo version” will be displayed.<br>
+							When purchasing a plugin, you need to send me the email that was specified when registering
+							your krpano. It can be seen in "krpano Tools". After this, you will receive a link to
+							download the plugin and key file by email - key_flpl.xml. <br>
+							<br>
+							You just need to replace the file FloorPlan/xml/key_flpl.xml and the “Demo version” sign
+							will disappear.
+
+						</p>
+					</div>
+					<hr>
+
+					<!-- ############################## ___________Создаем план_____________  ################################### -->
+
+					<div class="paragraph">
+						<h2><a id="plan" href="#plan" class="selflink"> Let's create a plan.</a></h2> <img
+							src="images/flpl_2/add_plan.jpg" width="384"
+							style="float: right; margin-top:0px; margin-left:10px; margin-right:0px; margin-bottom:10px;"
+							alt="add_plan">
+						<p>
+							Place the plan images in the <b><i>FloorPlan/plan.</i></b> folder
+						</p>
+
+						<p><b><i>Add plan - </i></b>
+							To add a plan, click the "Add plan" button. A default plan image appears with the name
+							plansm_№, where № is the serial number of the plan. <br>
+							A drop-down list of names is created at the top of the window. Clicking on the triangle
+							opens the list, clicking on a name from the list opens the corresponding plan.
+						</p>
+
+						<p><b><i>Select an image - </i></b>
+							Click on the thumbnail with the image of the plan - an explorer window will open. Select
+							image of the plan from the FloorPlan/plan folder and it will appear in the window with the
+							plan <br>
+						</p>
+
+						<p><b><i>Open at startup - </i></b>
+							Green indicator - the plan window is open when the tour starts, gray indicator - the window
+							is minimized.
+						</p>
+
+						<p><b><i>Open at startup (mobile)- </i></b> For mobile devices.
+							Green indicator - the plan window is open when the tour starts, gray indicator - the window
+							is returned.
+						</p>
+
+						<p><b><i>Click on the plan - [br]Collapse/expand the plan - </i></b>
+							Green indicator - clicking on the plan collapses/expands the plan.
+						</p>
+
+
+						<p><b><i>Start scene - </i></b>
+							Selecting the scene that will start when the plan is opened. Open the plan, launch the
+							desired scene belonging to this plan.
+							Click the <b>"Start scene"</b>button and the name of the current scene will appear next to
+							it.
+							The next time you open this plan, the selected scene will be launched.
+						</p>
+
+
+						<img src="images/flpl_2/Positioning.jpg" width="384"
+							style="float: right; margin-top:0px; margin-left:10px; margin-right:0px; margin-bottom:10px;"
+							alt="Positioning">
+						<p>
+						<p><b><i>Positioning - </i></b>
+							Set the plan's anchor point to the screen. Possible values: top left, left, bottom left,
+							top, center, bottom, top right, right, bottom right.
+							Default value: top right
+						</p>
+
+						<!--  
+						<p><b><i>Plan window position and size - </i></b>
+							Перед сохранением проекта разместите окно с планом в нужном месте, перетаскивая его мышкой за верхнюю часть. Наведите курсор на угол окна -  измените размер окна.<br>
+							Сохраните проект и перезагрузите браузер - окно с планом раскроется с внесенными изменениями.
+						</p> -->
+
+						<p><b><i>Delete plan - </i></b>
+							Deletes the current plan.</p>
+
+						<p><b><i>Editor design - </i></b>
+							Opens an additional panel for editing the window design. More detailed
+							information <a href="#okno"> here. </a></p>
+
+
+					</div>
+
+					<br>
+
+					<hr><br>
+
+
+					<!-- ############################## ___________Выравнивание панорам_____________  ################################### -->
+
+					<div class="paragraph">
+						<h2><a id="prealign" href="#prealign" class="selflink">Aligning panoramas.</a></h2>
+
+						<img src="images/flpl_2/prealign.jpg" width="356"
+							style="float: right; margin-top:0px; margin-left:10px; margin-right:0px; margin-bottom:10px;"
+							alt="prealign">
+						<p>
+							In order for the radar on the plan to correctly show the direction of view and when
+							navigating through the tour while maintaining the direction, you must first orient the
+							center of the panoramas to the “north”.
+							You can do this in advance:
+						<ul>
+							<li>When assembling panoramas. </li>
+							<li>In the native editor "krpano Tools"</li>
+						</ul>
+
+						If you have already done this, skip this section.<br>
+
+						By default, the center of the panorama is the zero point (0 degrees horizontal) and is
+						considered "north"<br>
+						On plans and maps, north is at the top by default.<br>
+						The default direction of the "radar" on the plan is up (to the north) and its value is 0
+						degrees, which corresponds to 0 degrees in the panorama (center of the panorama)<br><br>
+
+
+						<b><i>prealign</i></b> - Enables alignment editing mode. A crosshair and horizontal angle
+						indication appears. <br>
+						Rotate the panorama so that the crosshairs point to the “north” in the panorama, click on the
+						angle indication or spacebar, the Center of the panorama will be reassigned.<br>
+						Look at the example on <a href="https://youtu.be/ZMIQ_YDRucs?t=50" target="_blank">youtube</a>
+						.<br><br>
+
+						It often happens that it is inconvenient to align to the north; it is at an angle to the walls.
+						It is much more convenient to align perpendicular to walls, openings, etc.
+						Choose an alignment direction that is convenient for you, such as perpendicular to the wall.
+						Align all panoramas in this direction.
+						Because now the zero point of the panoramas is not north, make a correction in the compass.
+						<img src="images/flpl_2/comp.jpg" style="float:right; margin: 10px 10px 10px 10px;" alt="comp">
+						Grab the compass strip at the top of the screen and move it until it aligns with the real north
+						direction.<br>
+
+						See example at <a href="https://youtu.be/ZMIQ_YDRucs?t=349" target="_blank">youtube</a>
+						.<br><br>
+
+
+
+						</p>
+
+						<hr><br>
+
+						<!-- ############################## ___________Создаем точки и настраииваем компас и радар _____________  ################################### -->
+
+						<div class="paragraph">
+							<h2><a id="spot" href="#spot" class="selflink"> Creating points, setting up a compass and
+									radar.</a></h2>
+
+							<img src="images/flpl_2/select.jpg" width="356"
+								style="float: right; margin-top:0px; margin-left:10px; margin-right:0px; margin-bottom:10px;"
+								alt="select">
+
+							Pre-place the point images in the <b><i>FloorPlan/iconPoint</i></b><br> folder
+
+							<b><i>Scale radar</i></b> - Click on the button and drag the mouse left/right to change the
+							size of the radar. <br>
+
+							<b><i>Start</i></b> - selecting a point image before viewing the scene. Clicking on the dot
+							image thumbnail will open the explorer, select the image. <br>
+
+							<b><i>Viewed</i></b> - selecting a point image after viewing the scene.<br>
+
+							<b><i>Active</i></b> - image of the active point (with radar).<br>
+
+
+							<p>
+								• Turn on the editing mode - the <b><i>"Edit scene point"</i></b> button turns red,
+								intersecting red lines appear (for ease of positioning).<br><br>
+
+								• Open a panorama, click on the plan in the place where this panorama is located. A
+								radar dot will appear. By default, the radar will be directed to the north of the
+								panorama (which was set in advance). <b><i>Only one point can be created for each
+										panorama.</i></b>. <br><br>
+
+								<img src="images/flpl_2/heading radar.jpg"
+									style="float: right; margin: 0px 0px 10px 10px;" alt="radar">
+								• Buttons on the plan (only in plan point editing mode)<br><br>
+								<b><i>Size</i></b>- click and drag left/right to change the size of the point. The
+								changes will apply to all points on this plan. <br><br>
+								<b><i>Delete</i></b> - delete a point.<br><br>
+
+								<!-- <img src="images/flpl_2/heading radar.jpg" style="float: right; margin: 0px 0px 10px 10px;" alt="" > -->
+								<b><i><a id="heading radar" href="#heading radar" class="selflink">heading
+											radar</i></b></a>- radar correction. Click and drag left/right to adjust the
+								radar direction.<br>
+
+								If the north on the plan is not at the top or the north was corrected when aligning the
+								panoramas, then turn the radar in the north direction.
+								<br><br>
+								• <b><i>Show text</i></b>- Pop-up text when you hover the mouse. By default, the text is
+								taken from the title scene.
+								You can enter your own name for each point.<br><br>
+							</p>
+
+						</div>
+
+
+
+						<hr><br>
+
+
+
+
+						<!-- ########## ________Создаем точки показа видов_______################# -->
+
+						<div class="paragraph">
+							<h2><a id="spot2" href="#spot2" class="selflink">We create points to display the selected
+									views.</a></h2>
+							<img src="images/flpl_2/vid_2.jpg" width="530"
+								style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2">
+							<p>
+								You can create icons (hereinafter referred to as dots) and assign them to open panoramas
+								with a given magnification and viewing direction.
+								Place them on plans, drawings, documents, diagrams that you can add to the plans window.
+							</p>
+							<p>
+								<b><i>Edit view point</i></b> - enable/disable point editing.<br>
+								Clicking on the plan will create a point icon. It will automatically be assigned to the
+								opening of the current view.<br>
+							</p>
+
+							<b><i>Selecting a point image:</i></b>
+							<ul>
+								<li><b><i>start</i></b> - selecting a point image before viewing the scene. Clicking on
+									the point image thumbnail will open Explorer, select the image in the
+									<b><i>floorplan_SM/iconPoint</i></b> folder. </li>
+								<li><b><i>viewed</i></b> - selecting a point image after viewing the scene in the same
+									folder.</li>
+							</ul>
+							If the editor is enabled <b><i>Edit view point</i></b>, then the image will be assigned to
+							the active point. If the editor is disabled, the image will be assigned when creating a new
+							point.<br> <br>
+
+							<b><i>Show text</i></b> - Enter text into the line. Show text on mouse hover. <br> <br>
+
+							<b><i>Buttons on the plan:</i></b><br>
+							<b><i>Set view</i></b> - Select the angle of the place in the panorama that you want to
+							show, click on the button. The view will be saved at the point and will be opened when you
+							click on it.<br>
+							<b><i>Scale</i></b> - changes the scale of the point image. Press the button and move while
+							pressed to the left (zoom out), to the right (zoom in). <br>
+							<b><i>Delete</i></b> - delete a point.<br> <br>
+
+							Example on <a href="https://youtu.be/ZMIQ_YDRucs?t=968" target="_blank">youtube</a> . Points
+							for opening selected places on the tour.<br>
+							Example on <a href="https://youtu.be/ZMIQ_YDRucs?t=1093" target="_blank">youtube</a> .
+							Document, drawing with opening points of marked places on the tour.<br>
+
+						</div>
+
+
+
+						<hr><br>
+
+						<!-- #################         Compass             ############################# -->
+						<b><i>Compass:</i></b><br><img src="images/flpl_2/compass.jpg"
+							style="float: right; margin-top:0px; margin: 0px 10px 0px 10px;" alt="compass">
+						<ul <li><b><i>enabled</i></b> - turning off the compass. The compass release button is removed
+							and
+							compass on floor plans</li>
+							<li><b><i>start open</i></b> - the compass is deployed at start. </li>
+							<li><b><i>on plan</i></b> - display of the compass in the window with the plan. </li>
+						</ul>
+
+						<hr><br>
+
+						<p>
+							<b><i>Keepwiew</i></b><br><img src="images/flpl_2/keep.jpg"
+								style="float: right; margin-top:0px; margin-left:10px; margin-right:0px; margin-bottom:10px;"
+								alt="keep">
+
+							Creates a moving effect. When moving to the next scene, the direction is maintained
+							view and viewing angle. No prior identical
+							alignment of all panoramas during stitching.
+						</p>
+
+
+						<hr><br>
+						<!-- ################# _______________Дизайн_________________ ############################# -->
+
+						<div class="paragraph">
+							<h3><a id="okno" href="#okno" class="selflink">Design customization.</a></h3>
+							<p>
+								Click on the <b><i>"Editor design"</i></b> button - the design settings panel will
+								open.<br>
+								<img src="images/flpl_2/skin.jpg" width="530"
+									style="margin-top:10px; margin-bottom:10px;" alt="skin" <br>
+
+								The panel conventionally shows the plan window.
+								Round buttons on the border to change parameters. Click on it and drag the mouse
+								left/right.<br>
+								If you click on the circle that is located on the corner, it will change the rounding of
+								the corresponding corner of the plan window.
+								Circle on side (border) - will change the thickness of the border to the corresponding
+								side.<br>
+								You can change the radii of all corners or the width of all borders at the same
+								time.<br>
+								Next to the round buttons there are windows - they display a numerical value. You can
+								enter your parameter values.
+
+								<b><i>Shadov layer</i></b> - Offset the window shadow. <br>
+								<b><i> blur </i></b> - Blur the shadow. <br>
+
+								<b><i>Changing color and transparency</i></b>
+								Below are three windows that open the color palette for changing color and
+								transparency:<br>
+								<b><i>fill </i></b>- Color and transparency of the background of the window with the
+								plan. <br>
+								<b><i> border </i></b>- Color and transparency of the border.<br>
+								<b><i> shadov </i></b>- Color and transparency of the shadow.<br>
+								You can copy or paste RGB color or transparency<br>
+
+								Example on <a href="https://youtu.be/ZMIQ_YDRucs?t=827" target="_blank">youtube</a>
+							</p><br>
+
+
+<!-- Настройка размеров и положения. -->
+
+							<h3><a id="sizes" href="#sizes" class="selflink">Adjust dimensions and position.</a></h3>
+							<img src="images/flpl_2/size.jpg" width="530"
+								style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2">
+							<p>
+								At the bottom of the window, adjust the size and position of the plan window.<br>
+
+								<b><i>Plan name</i></b> - The name of the current plan to which the changes will be
+								applied. <br>
+								<b><i>starting size and position</i></b> - Show the size and position of the plan at
+								start. <br>
+								<b><i>x y</i></b> - Starting values "x" "y" in pixels from the positioning point.<br>
+								You can enter the value manually.<br>
+								<b><i>get current x and y</i></b> - Move the window with the plan to the desired
+								position with the mouse and click this button - the x y values will be set as the
+								starting ones.<br><br>
+
+								If you grab the corner of the plan window, you can resize it.<br>
+								<b><i>Width</i></b> - Current width of the plan. You can enter it manually or set it by
+								stretching the window with the mouse. <br>
+								<b><i>Height</i></b> - Current height of the plan. Can be entered manually or set by
+								stretching the window with the mouse, provided that "auto height" is not set <br>
+								<b><i>auto height</i></b> - If active (Green indicator), the height will be set
+								automatically depending on the set width, in proportion to the plan image.<br>
+								 
+								<b><i>W.mob</i></b> - Window width on mobile devices. <br>
+								<b><i>H.mob</i></b> - Window height on mobile devices (if "auto height" is not set) <br>
+								<b><i>set current W H</i></b> - set the current size of the plan window for mobile devices. You can pre-set the size by pulling the window corner. <br><br>
+												 
+
+								<b><i>Keep current size</i></b> - apply the set sizes as starting ones. <br>
+								<b><i>current plans/all plans</i></b> - apply the set sizes as starting ones to the
+								current plan (individually)/to all plans. <br>
+							</p><br>
+						</div>
+
+						<hr><br>
+
+
+						<!-- #############________НАВИГАЦИЯ________#################### -->
+
+						<div class="paragraph">
+							<h3><a id="navi_FP" href="#navi_FP" class="selflink">Navigation, auto arrows.</a></h3>
+							<img src="images/flpl_2/navi.jpg" width="530"
+								style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2">
+							<p><span style="color:red;">
+									When updating the plugin, this feature is paid. When purchasing a plugin, it is
+									included in the price.
+								</span></p>
+							<p>
+								Navigation works provided that all panoramas are aligned in the same direction (see <a
+									href="#prealign">prealign</a> ) and all points are placed on the plans.<br>
+								To navigate by arrows, simply click in an empty space in the direction of the arrow.
+							</p>
+
+
+							<b><i>Navigation</i></b> - if the indicator opposite the inscription is green, then
+							navigation is enabled. Clicking on the indicator will switch to the opposite state.<br><br>
+							<b><i>Auto</i></b>- Arrows in the tour are placed automatically for all panoramas located on
+							the plan. There is no option to exclude or move arrows.<br><br>
+
+							<img src="images/flpl_2/arrov_m.jpg" width="530"
+								style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2">
+
+							<b><i>Manual selection</i></b> - Arrows are created automatically, but you can choose to
+							display the desired arrows, and you can adjust the position of the arrow.<br>
+							When this mode is activated, a red arrow indicator appears on the plan near each point.<br>
+							Click on the indicator - it will turn green and an arrow will appear in the panorama.<br>
+							You can adjust the position of the arrow by dragging it with the mouse.<br><br>
+
+							Below are buttons for changing arrow options, which apply to all arrows.<br>
+							To change a parameter, you need to click on the button and move the mouse (left/right).<br>
+							You will immediately see the changes.<br>
+
+
+							<b><i>🡸 Scale 🡺</i></b> - Change the size of the arrows. <br>
+							<b><i>🡸 Height 🡺</i></b> - Vertical offset of the arrows.<br>
+							<b><i>🡸 Incline 🡺</i></b> - Tilt the arrow forward.<br><br>
+							<b><i>Print <\></i></b> - Copy the code of hotspots that are in the current panorama to the
+							clipboard. <br>You can paste the copied code into the scene code and edit the parameters as
+							you wish.<br><br>
+
+							<img src="images/flpl_2/manual2.jpg" width=""
+								style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2">
+							The transition to another floor must be specified manually. <br>
+							Press the <b><i>transition to floor 🡺</i></b> button, a list of panoramas with miniatures
+							(which are present on the plans) will appear. Select the panorama you want to go to from the
+							list - an arrow will appear in the crosshairs. Adjust its position.<br>
+							<b><i>Remowe arrow</i></b> - Remove the arrow for moving to another floor.<br>
+						</div><br>
+
+						<hr><br>
+
+						<!-- #############________Сохранение________#################### -->
+
+						<div class="paragraph">
+							<h3><a id="save_FP" href="#save_FP" class="selflink">Save project.</a></h3>
+							<img src="images/flpl_2/save.jpg" style="float: right; margin: 0px 0px 10px 10px;"
+								alt="vid_2">
+							<p>
+								Click the save button, in the drop-down window specify the path to save the file <b><i>
+										FloorPlan/setting_FP.xml</i></b><br>
+								If your browser automatically saves to downloads, then manually replace the file in the
+								<b><i> FloorPlan/setting_FP.xml</i></b><br> folder with it.
+								Restart your browser - the tour will be updated with the saved changes.
+							</p>
+
+							If backup <a href="#backup">"backup"</a> is activated, the backup file is first saved with
+							the save date in the file name.
+
+						</div><br>
+
+						<hr><br>
+
+						<!-- #############________Настройки в файле setting_FP.xml________#################### -->
+
+						<div class="paragraph">
+						<h3><a id="setting_FP" class="selflink"> Advanced settings.</a></h3>
+
+							
+
+						<img src="images/flpl_2/advanced.jpg"  style="float: right; margin: 0px 0px 10px 10px;" alt="vid_2" >
+						<p>
+							<img src="images/flpl_2/shesterenka.png" alt="shesterenka" width="30"
+								style="margin: 0px 20px 0px 0px; float: left;">
+							- Open the panel with advanced settings.
+						</p>
+
+						<p>
+							Customize the settings to your liking. Clicking the switch on the right will change the state.<br>
+							On the top left is a language switch button (en/ru)
+						</p>
+						
+						
+							<p>
+								<b>Setting panel for individual icons for a point</b> - activates a floating panel for individual editing of a point.
+								 
+							</p>
+							<img src="images/flpl_2/edit_p.jpg" alt="shesterenka" width="30"
+									style="margin: 0px 30px 0px 0px;  ">
+									
+							<p>
+								<b>1</b> - click will open the folder for selecting the icon of the unviewed panorama.<br>
+								<b>2</b> - click will open the folder for selecting the icon of the viewed panorama.<br>
+								<b>reset</b> - setting icons to default .<br>
+								<b>3</b> - Disable/enable saving the view when switching to a panorama. When disabled, the panorama will load with a preset view. <br>
+							</p>
+
+
+							<h3><a id="setting_FP2" class="selflink2">Settings in the setting_FP.xml file. </a></h3>
+
+							<p>
+							When you finish working with the plan, you <a href="#save_FP">save</a> all the settings in this file <b><i>"setting_FP.xml"</i></b>. Some
+							You can change the parameters in this file manually.<br>
+							</p>
+										 
+							<b><i>point_url_1</i></b> - Name of the image of a point on the plan (unviewed scene).<br>
+							<b><i>point_url_2</i></b> - Name of the image of the active point on the plan.<br>
+							<b><i>point_url_3</i></b> - Name of the image of a point on the plan (viewed scene).<br>
+							<b><i>pointv_url_1</i></b> - Name of the point image in the document (unviewed scene).<br>
+							<b><i>pointV_url_2</i></b> - Name of the point image in the document (viewed scene)<br>
+
+							Icons should be located in the <b><i>FloorPlan/iconPoint</i></b><br><br> folder
+							<b><i>radar_scale</i></b> - Default radar scale. <br>
+							<b><i>lang</i></b> - Default language in the advanced settings panel(en/ru).
+
+
+							<p>
+								Below are the styles and layers:<br>
+								<b><i>action name="prealignFLPL" </i></b> - Action for aligning panoramas<br>
+
+								<b><i>textstyle name="showtext_1" </i></b> - Style of pop-up text when hovering over
+								points. <br>
+								<b><i>style name="arrow_navi_flpl" </i></b> - Style of navigation arrows. <br>
+								<b><i>style name="pointflpl" </i></b> - Style of points on the plan (with radar).<br>
+								<b><i>style name="pointflpl_v" </i></b> - Style of points on the plan for opening
+								views.<br>
+								<b><i>layer name="cont_fp_all"</i></b> - The main container of the window with a layout
+								for plans and buttons.<br>
+								<b><i>layer name="plan_cont_fp2"</i></b> - container for layers with images of
+								plans.<br>
+
+							</p>
+						</div>
+						<hr><br>
+
+
+						<div class="paragraph">
+							<h3><a id="style_FP" class="selflink">Styles in the file style_Flpl.xml..</a></h3>
+
+							<p>
+								Krpano knowledge required!
+							</p>
+
+							<p>
+								The file <b><i>FloorPlan/xml/style_Flpl.xml</i></b> contains the styles, layers and
+								settings of some plugin elements, the showtext.xml and combobox.xml plugins are
+								connected.<br>
+								You can customize the button design, position in the plan window (expand to full screen,
+								close, compass, +, -), configure the radar.<br>
+
+								You can configure the parameters of the combo box with the list of plans, and move it
+								outside the plan window.<br>
+
+								Set up compass marks and signatures. <br>
+								Configure auto navigation settings.
+
+							</p>
+
+
+						</div>
+						<hr><br>
+
+
+	 
+
+						<!-- ############################### Получить ######################################### -->
+	  
+
+<!-- ############################### License ######################################### -->
+						<div>
+							<h3><a id="license">License.</a></h3>
+							<p>
+								Plugin is provided "As Is" without warranty of any kind, either express or implied,
+								including any
+								warranty of quality, merchantability, or fitness for a particular purpose. In no event
+								will author of plugin be liable for loss of data,
+								costs of procurement of substitute goods or services or any special, consequential or
+								incidental damages, under any cause of action and regardless
+								of whether or not plugin author have been advised of possibility of such damage. This
+								limitation will apply notwithstanding any failure
+								of essential purpose of any limited remedy provided herein. In any event plugin author
+								will have no liability arising out of this agreement.
+							</p><br><br>
+						</div>
+						<hr><br>
+						 
+					 
+				 
+					 
+
+					</div>
+				</div>
+		</main>
+	</div>
+
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<div class="wrapper row4">
+		<footer id="footer" class="hoc clear">
+			<div class="one_quarter first">
+				<h6 class="title"><a id="contact" style="color:#FFFFFF;">Contacts</a></h6>
+				<ul class="nospace">
+					<li class="btmspace-10"><a id="Telegramm" href="https://t.me/Aleksandr_krp"><img
+								src="images/telegramm.png" alt="Telegram"> Aleksandr</a></li>
+					<li><i class="fa fa-envelope-o"></i> novosibpano@yandex.ru</li>
+				</ul>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">Social network</h6>
+				<ul class="nospace linklist">
+					<li><img src="images/telegramm.png" alt="Telegram">
+						<a id="Telegramm" href="https://t.me/plugins_krpano">Telegram</a>
+					</li>
+					<li><img src="images/youtube.png" alt="YouTube">
+						<a href="https://www.youtube.com/channel/UCWdcxXhdnVfi4w4uLAQk2OA/videos?view_as=subscriber">
+							YouTube</a>
+					</li>
+				</ul>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">WWW</h6>
+				<a href="https://novosibpano.ru/Plugins"> www.novosibpano.ru/Plugins</a>
+			</div>
+		</footer>
+	</div>
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<div class="wrapper row5">
+		<div id="copyright" class="hoc clear">
+			<!-- ################################################################################################ -->
+			<p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">novosibpano.ru</a></p>
+			<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/"
+					title="Free Website Templates">OS Templates</a></p>
+			<!-- ################################################################################################ -->
+		</div>
+	</div>
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
+	<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+	<!--соцсети -->
+	<script src="https://yastatic.net/share2/share.js" async="async"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter45981777 = new Ya.Metrika({
+						id: 45981777,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				} catch (e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/45981777" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	
+	<script src="layout/shablon.js"></script>
+	
+</body>
+
+</html>

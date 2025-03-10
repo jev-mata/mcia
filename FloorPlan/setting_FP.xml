@@ -1,0 +1,812 @@
+<krpano>
+
+
+	<plan_settings  
+			editor="false"
+			url_plan="%FIRSTXML%/FloorPlan/"
+			start_open_plan="false"
+			start_open_plan_mobila="false"
+			auto_show_plan="false"
+			point_url_1="start.png"
+			point_url_2="spot_off.png"
+			point_url_3="activ.png"
+			pointv_url_1="eye_1.png"
+			pointv_url_2="eye_2.png"
+			pointv_url_3="eye_3.png"
+			radar_scale="4.4"
+			title_spot="true"
+			loadscene_blend="OPENBLEND(1.5, 0.0, 0.6, 0.5, easeOutQuad)"
+			loadsc_flags="KEEPVIEW"
+			compass="false"
+			start_open_compass="false"
+			compass_on_plan="false"
+			click_spot_exit_fs="true"
+			click_v_exit_fs="true"
+			click_exit_fs="true"
+			click_plan_fs="false"
+			zoom="true"
+			width_plans_one_all="true"
+			auto_height="true"
+			list_plan="false"
+			button_fullscreen="false"
+			button_plus_minus="false"
+			angle_placemark="true"
+			drag_plan="false"
+			margin_fs="5"
+			max_scale="1.0"
+			prealign="true"
+			backup="false"
+			edit_panel_x="492"
+			edit_panel_y="37"
+			navigation="true"
+			click_navigation="true"
+			auto_arrow="false"
+			specific_picture_point="false"
+			lang="en"
+			
+	/>
+
+ 
+
+	<action name="prealignFLPL" autorun="onstart">
+		set(scene[scene_terminal_1_arrival_exit_area].imgpr,0|269.492|0); 
+ 		set(scene[scene_adidas_360].imgpr,0|183.629|0);
+ 		set(scene[scene_1_coffee_bean].imgpr,0|94.564|0);
+ 		set(scene[scene_terminal_1_arrival_right_wing].imgpr,0|-96.036|0);
+ 		set(scene[scene_food_avenue_-_360].imgpr,0|-87.031|0);
+ 		set(scene[scene_wh_smith_360].imgpr,0|172.494|0);
+ 		set(scene[scene_miniso_360].imgpr,0|-90.282|0);
+ 		set(scene[scene_island_souvenir_-_360].imgpr,0|90.06|0);
+ 		set(scene[scene_kultura_360].imgpr,0|182.505|0);
+ 		set(scene[scene_nomad_-_360].imgpr,0|182.146|0);
+ 		set(scene[scene_8_-_illy_caffee].imgpr,0|-90.114|0);
+ 		set(scene[scene_district_fiesta_360].imgpr,0|-88.867|0);
+ 		set(scene[scene_nomad_2_360].imgpr,0|195.832|0);
+ 		set(scene[scene_11_-_plug_and_play].imgpr,0|93.734|0);
+ 		set(scene[scene_3_mciaa_-luggage_free].imgpr,0|88.164|0);
+ 		set(scene[scene_1_mciaa_-candem].imgpr,0|-87.044|0);
+ 		set(scene[scene_duty_free_-_inside_1].imgpr,0|91.712|0);
+ 		set(scene[scene_16__mciaa_-_mactan_travel_pod__3_-_1].imgpr,0|89.63|0);
+ 		set(scene[scene_12__mciaa_-_lacoste_1].imgpr,0|180.963|0);
+ 		set(scene[scene_19__mciaa_-mactan_travel_pod_beauty_1].imgpr,0|267.874|0); 
+ 		set(scene[scene_23__mciaa_-_new_era].imgpr,0|-90.972|0);
+ 		set(scene[scene_24__mciaa_-_nippon_rame].imgpr,0|175.599|0);
+ 	</action>
+
+
+
+	<!-- popup text style when hovering the mouse pointer over a dot  -->
+	<textstyle name="showtext_1" origin="cursor" edge="bottom" xoffset="0" yoffset="-3" fadeintime="0.0" showtime="0.1" fadetime="0.0" font="Verdana" fontsize="22.0" bold="false" italic="false" textcolor="0xffffff" textalign="none" padding="3 10" css="" background="true" backgroundcolor="0xff9900" backgroundalpha="1" border="true" borderwidth="2" bordercolor="0xFFFFFF" roundedge="5"  shadow="5" shadowrange="5.0" shadowangle="45"  shadowcolor="0x000000" shadowalpha="1.0" textshadow="0.0" textshadowrange="4.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1.0" noclip="true" />
+
+	<style name="arrow_navi_flpl" type="image" keep="false" edge="center" url="%FIRSTXML%/FloorPlan/image/arrow.png" atv="22.8" rx="-69.12" scale="0.33" alpha="0.0" distorted="true" linkedscene=""  pit2="" onloaded="tween(alpha, 0.5);" onover="set(alpha, 1);" onout="set(alpha, 0.5);" ondown="drag_navi_hs();" scalemode="scale" scalechildren="true" capture="true" keep_v="true" onclick="set(global.click_hs, true); loadsc_fp(*keep_v, *linkedscene); delayedcall(1,  set(click_hs, false); );" />
+
+	<style name="pointflpl" keep="true" type="image" align="center"  width="90" height="prop" scale="1" zorder="31" linkedscene="" title="" ah="" av="" ic_1="" ic_2="" onhover="if(plan_settings.title_spot AND title AND showtxt, showtext(*title, showtext_1));" keep_v="true" ondown="if(edit_pit, drag_p())" onclick="loadsc_fp(*keep_v, *linkedscene); click_spot_fp(*title);minimizeFloorPlan();" />
+
+	<style name="pointflpl_v" keep="true" type="image" align="center" width="40" height="prop" ondown="drag_p_v()" title="" icon_1="" icon_2="" onhover="if(plan_settings.title_spot AND title, showtext(*title, showtext_1));" />
+
+	<style name="pointflpl1" keep="true" align="center" 
+	width="90" height="prop" scale="1" linkedscene=""  ah="" av="" ic_1="" ic_2=""   
+	enabled="false" bgcapture="false" 
+	zorder="99"  onhover="if(plan_settings.title_spot AND title AND showtxt, showtext(*title, showtext_1));"
+	keep_v="true"   />	
+	<style name="pointflpl2" keep="true" align="center" 
+	width="90" height="prop" scale="1" linkedscene=""  ah="" av="" ic_1="" ic_2=""   
+	enabled="true" bgcapture="true" 
+	zorder="99"  onhover="if(plan_settings.title_spot AND title AND showtxt, showtext(*title, showtext_1));"
+	keep_v="true"   />
+	<!--  Plan Container  -->
+
+
+<layer name="floormapLayer"  
+    visible="false"
+    alpha="0" 
+    keep="true" type="container" width="100%" height.desktop="89.5%" height.mobile="94%" height.tablet="94%" align="top" zorder="11"
+    bgalpha="0.8"
+    enabled="true"
+    bgcolor="0x000000" 
+        bgcapture="true" 
+        onclick="floormapLayerToggle()"
+    >  
+    <layer  
+        visible="true"
+        keep="true" type="text" width.desktop="60%" width.mobile="90%" width.tablet="90%" height.desktop="90%" height.tablet="90%" height.mobile="75%" align="center"  
+        bgalpha="1" 
+        bgroundedge="30"
+        enabled="true"  
+        >  
+           <layer   
+        visible="true"
+        keep="true" type="text" width="90%" height="90%" align="center"  
+        bgalpha="1"  
+        bgroundedge="30"
+        enabled="true" 
+        flowchildren="v"
+		onloaded="floormap_init()"
+        >  <layer
+            height="9%" 
+            type="container" 
+            keep="true" 
+            enabled="true" 
+            width="100%"
+            bgalpha="0"  
+            bgcolor="0x000000"  
+            >
+            <layer 
+            name="textFloormapTitle"
+             type="text"  
+                text="Terminal 1 Arrival Floormap" 
+                align="left"
+                bgalpha="0"   
+                bgcolor="0x000000"
+                height="100%" 
+                css="color:black;font-size:calc((3vw + 3vh) / 2); margin-left:auto;margin-right:auto;  font-weight:bold;"
+                scale="1"  
+                width="90%" 
+                />   
+            </layer>
+            
+                <layer  
+                    visible="true"
+                    keep="true" type="text" width="100%" height="75%" align="topleft"  edge="topleft"
+                    bgalpha="0" 
+                    bgroundedge="30"
+                    enabled="true" 
+                    flowchildren="h"
+                    flowoverflow="true"
+                            bgcolor="0x000000"  
+                    >  
+				<layer name="floormap_container" type="container" width="100%" height="85%" align="center" edge="center" keep="true">
+					<layer name="floormap_child_container" type="container" width="100%" height="100%" align="center" edge="center" keep="true" bgcolor="0x000000" bgalpha="0">
+					
+
+					</layer>
+				</layer>
+              <layer  
+                    visible="true"
+                    keep="true" type="text" width="100%"  height.desktop="14%" height.mobile="14%"  height.tablet="14%" align="topcenter"  edge="topcenter"
+                    bgalpha="0"   
+                    bgroundedge="30"
+                    enabled="true" 
+                    flowchildren="v" 
+                    flowoverflow="true"
+                        flowspacing="10"
+                    bgcolor="0x000000"  
+                    >   
+                    <layer  
+                        visible="true"
+                        keep="true" type="container" width="65%" height.desktop="100%"  height.mobile="auto"  height.tablet="100%"  align.desktop="topcenter" align.mobile="middlecenter" align.tablet="middlecenter" 
+                        bgroundedge="30" 
+                        enabled="true" 
+                        flowchildren="h"   bgalpha="0" 
+                        flowspacing="10"
+						flowoverflow="true"
+                        bgcolor="0xFFFFF"  
+                        >   
+                        <layer     
+                        name="floormap_arrival"
+                        type="text"
+                        text=" Arrival Area " 
+                        css="text-align:center;font-size:calc((1.5vh + 2.25vw)/2);color:white" 
+                        onclick="areaToggle()"
+                            bgalpha="1"   
+                            tag="arrival"
+                            terminal="2"
+						padding.desktop="8 22 8 22"
+						padding.tablet="8 22 8 22"
+						padding.mobile="5 14 5 14"
+                            bgroundedge="10"
+                            bgcolor="0xff7525"
+                            bgborder="0" 
+                            bgshadow="0 2 15 0x000000 0.5"
+                            bgcolor_active="0xff7525"  
+                            bgcolor_passive="0xFFFFFF"  
+                            width="45%"  
+                            height="auto" 
+                            scale="1"   
+                             
+                            />  
+						 <layer     
+                        name="floormap_departure"
+                        type="text"
+                        text="Departure Area" 
+                        css="text-align:center;font-size:calc((1.5vh + 2.25vw)/2);color:black"
+                        onclick="areaToggle()"
+                        bgalpha="1"   
+                        tag="departure"
+                        bgroundedge="10"
+                        bgcolor="0xFFFFFF"
+                        bgborder="0" 
+                        bgcolor_active="0xff7525"  
+						padding.desktop="8 15 8 15"
+						padding.tablet="8 15 8 15"
+						padding.mobile="5 9 5 9"
+                        bgcolor_passive="0xFFFFFF"  
+                        bgshadow="0 2 15 0x000000 0.5"
+                        width="45%"  
+                        height="auto" 
+                        scale="1"    
+                        terminal="1"
+                        flowspacing="10"
+                            />  
+                	</layer>  
+					
+                </layer>
+				
+                    <layer  
+                        visible="true"
+                        onloaded="filter_init"
+                        keep="true" type="text" width="100%" height.desktop="15%" height.mobile="12.5%"  height.tablet="15%" align="top"  edge="top"
+                        bgalpha="0" 
+                        bgroundedge="30"
+                        enabled="true" 
+                        flowchildren="h" 
+                             bgshadow="0 2 15 0x000000 0.5"
+                        bgcolor="0x000000"  
+						flowspacing="10" 
+                        >  
+                        <layer     
+                        name="floormap_terminal1"
+                        type="container"  
+						bgcapture="true"
+                        enabled="true"
+                        onclick="terminalToggle()"
+                            bgalpha="1"   
+                            tag="ATM"
+                            bgroundedge="30 0 0 30"
+                            bgcolor="0xff7525"
+                            bgborder="0" 
+                            bgcolor_active="0xff7525"  
+                            bgcolor_passive="0xFFFFFF"  
+                            width="50%"  
+                            height="100%" 
+                            scale="1"    
+                            terminal="1"
+                            >  
+                        <layer     
+                        name="floormap_terminal1_text"
+						align="centermiddle"
+						edge="centermiddle"
+						enabled="false"
+                        type="text"
+                        text="Terminal 1" 
+                            bgcolor="0xff7525"
+							bgalpha="0"
+                        css="text-align:center; font-size:calc((5vh + 1vw)/2); color:white; height:auto; margin-top:auto;margin-bottom:auto;" 
+                            />  
+							
+                	</layer>
+                        <layer     
+                        name="floormap_terminal2"
+                        type="container"  
+                        enabled="true"
+						bgcapture="true"
+                        onclick="terminalToggle()"
+                            bgalpha="1"   
+                            tag="ATM"
+                            terminal="2"
+                            bgroundedge="0 30 30 0"
+                            bgcolor="0xFFFFFF"
+                            bgborder="0" 
+                            bgcolor_active="0xff7525"  
+                            bgcolor_passive="0xFFFFFF"  
+                            width="50%"  
+                            height="100%" 
+                            scale="1"   
+                              
+                            >  
+							
+                        <layer     
+                        name="floormap_terminal2_text"
+						align="centermiddle"
+						edge="centermiddle"
+						enabled="false"
+                        type="text"
+                        text="Terminal 2" 
+							bgalpha="0"
+                        css="text-align:center; font-size: calc((5vh + 1vw)/2); color:black; margin-top:auto;margin-bottom:auto;" 
+                            scale="1"   
+                             
+                            />  
+                	</layer>
+                	</layer>
+            </layer>
+        </layer>
+
+    </layer>
+</layer>
+
+
+	<layer name="cont_fp_all" style="cont_fp" align="bottomright" edge="bottomright" scale="0.4" 
+	x.desktop="0" x.tablet="0" x.mobile="0" y.desktop="-13%" y.tablet="-13%"  y.mobile="-13%"    
+	onclick="
+	stopdelayedcall(imageListMainContainer2_d);	
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);  
+	"
+	bgcapture="true" enabled="true" />
+	
+	<!--  Container of plans and buttons  -->
+	<layer name="plan_cont_fp2" style="cont_fp2" bgalpha="0"  onclick="
+	stopdelayedcall(imageListMainContainer2_d);
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);   
+	" bgcapture="true" enabled="true" />
+
+
+	<layer name="plan_1" 
+	style="style_plan" 
+	url="%FIRSTXML%/FloorPlan/plan/t1-arrival-final.png" 
+	title_fp="arrival_terminal1" 
+	start_scene="scene_map-new" 
+	start_w="900" start_h="400"  onclick.addevent="
+	stopdelayedcall(imageListMainContainer2_d);	
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);  floormapShowMap();"
+	
+	radar_scale="2.14" 
+	plan_ur="t1-arrival-final.png" />
+
+	<layer name="plan_2" 
+	style="style_plan" 
+	url="%FIRSTXML%/FloorPlan/plan/t1-departure-final.png" 
+	title_fp="departure_area_terminal1"
+	 start_scene="scene_Terminal_1_Departure_Standee_Logo" 
+	start_w="900" start_h="400"  onclick.addevent="
+	stopdelayedcall(imageListMainContainer2_d);	
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);  floormapShowMap();"
+	 pit_width="60" radar_scale="2.14" 
+	 plan_ur="t1-departure-final.png" />
+
+	<layer name="plan_3" style="style_plan" 
+	url="%FIRSTXML%/FloorPlan/plan/t2-departure-final.png" 
+	title_fp="departure_terminal2" 
+	start_scene="scene_Terminal_2_Departure_Entrance_Middle_Area" 
+	start_w="900" start_h="200" pit_width="57"  onclick.addevent="
+	stopdelayedcall(imageListMainContainer2_d);	
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);  floormapShowMap();"
+	radar_scale="2.14" 
+	plan_ur="t2-departure-final.png" />
+
+	<layer name="plan_4" style="style_plan" 
+	url="%FIRSTXML%/FloorPlan/plan/t2-arrival-final.png" 
+	title_fp="arrival_terminal2" 
+	start_scene="scene_terminal_2_arrival_middle_area" 
+	start_w="900" start_h="250" 
+	 onclick.addevent="
+	stopdelayedcall(imageListMainContainer2_d);	
+	stopdelayedcall(introLayer_d);
+	stopdelayedcall(backtomap_v);
+	stopdelayedcall(upperRightTittle_v);
+	stopdelayedcall(welcomeAvatar_a); 
+	stopdelayedcall(cont_fp_all_al);
+	stopdelayedcall(close_fp_bg_v);
+	stopdelayedcall(floormapLayer_v);
+	stopdelayedcall(isFloormap_act);
+	stopdelayedcall(open_flpl_b_v); 
+	stopdelayedcall(cbsettings_a);  floormapShowMap();"
+	radar_scale="2.14" 
+	plan_ur="t2-arrival-final.png" />
+	
+	
+	<!-- ****************          PLANS          ******************* -->
+   
+     
+	<layer name="plan_1_22" style="pointflpl" parent="plan_1" x="731" y="701" linkedscene="scene_01_salon_de_rose_-_barber_area" title="Salon De Rose" url="hotspot/salonderose.png" /> 
+	<layer name="plan_1_14" style="pointflpl" parent="plan_1" x="1528" y="699" linkedscene="scene_01_luggage_storage_-_shelf_area" title="01 Luggage Storage - Shelf Area" />
+	<layer name="plan_1_24" style="pointflpl" parent="plan_1" x="-1504" y="702" linkedscene="scene_seafood_paradise_-_dining_area" title="Seafood Paradise" url="hotspot/seafoodparadise.png"/>
+	<layer name="plan_1_251" style="pointflpl" parent="plan_1" x="-405" y="534" linkedscene="scene_the_travel_store_-_middle_area" title="The Travel Store" url="hotspot/thetravelstore.png"/>
+	<layer name="plan_1_261" style="pointflpl" parent="plan_1" x="-1592" y="201" linkedscene="scene_2D_-_Jollibee" title="Jollibee"  url="hotspot/jollibee.png" width="120" />
+	<layer name="plan_1_271" style="pointflpl" parent="plan_1" x="-710" y="364" linkedscene="scene_cafe_laguna_-_dine_area" title="Cafe Laguna" url="hotspot/cafelaguna.png"/>
+	<layer name="plan_1_28" style="pointflpl" parent="plan_1" x="-380" y="360" linkedscene="scene_macao_imperial_-_dine_area" title="Macao Imperial" url="hotspot/macaoimperial.png"/>
+	<layer name="plan_1_29" style="pointflpl" parent="plan_1" x="320" y="346" linkedscene="scene_nippon_ramen_-_dine_area" title="Nippon Ramen" url="hotspot/nipponramen.png"/>
+	<layer name="plan_1_30" style="pointflpl" parent="plan_1" x="621" y="365" linkedscene="scene_casa_verde_-_counter_area" title="Casa Verde"  url="hotspot/casaverde.png"/>
+	
+	<layer name="plan_1_6" style="pointflpl" parent="plan_1" x="-50" y="702" linkedscene="scene_duty_free_-_fragrance_area" title="Duty Free - Fragrance Area" /> 
+    <layer name="plan_1_34" style="pointflpl" parent="plan_1" linkedscene="scene_2D__-_ATM_Right_Side" url="hotspot/ATM.png" title="ATM" x="957" y="186" />
+	<layer name="plan_1_4" style="pointflpl" parent="plan_1" x="-790" y="701" linkedscene="scene_starbucks_360"  url="hotspot/starbucks.png"  title="Starbucks" />
+	<layer name="plan_1_5" style="pointflpl" parent="plan_1" x="554" y="704" linkedscene="scene_2d_-_7_eleven" title="7 ELEVEN" url="hotspot/711.png" /> 
+	<layer name="plan_1_7" style="pointflpl" parent="plan_1" x="-1208" y="397" linkedscene="scene_2d_-_car_rentals" title="Car Rentals" url="hotspot/rentacar.png"  />
+	<layer name="plan_1_8" style="pointflpl" parent="plan_1" x="-1080" y="206" linkedscene="scene_2d_-_atm_left" title="ATM Left" url="hotspot/ATM.png"/>
+	<layer name="plan_1_9" style="pointflpl" parent="plan_1" x="-958" y="357" linkedscene="scene_Bread_Talk_-_Counter_Area" title="BreadTalk" url="hotspot/breadtalk.png"/> 
+	<layer name="plan_1_11" style="pointflpl" parent="plan_1" x="-844" y="491" linkedscene="scene_2d_-_ngo_hiong" title="Ngo Hiong" url="hotspot/hongohiong.png"/>
+	<layer name="plan_1_12" style="pointflpl" parent="plan_1" x="-841" y="565" linkedscene="scene_2d_-_ultimate_sandwich_station" title="Ultimate Sandwich Station" url="hotspot/ultimatesandwich.png"/> 
+	
+	<layer name="plan_1_10" style="pointflpl" parent="plan_1" x="630" y="522" linkedscene="scene_01_bo_s_coffee_-_dine_area" title="Bo's Coffee - Dine Area" />
+	<layer name="plan_1_16" style="pointflpl" parent="plan_1" x="-502" y="357" linkedscene="scene_krispy_kreme_-_counter_area" title="Krispy Kreme"  url="hotspot/krispykreme.png"/> 
+	<layer name="plan_1_18" style="pointflpl" parent="plan_1" x="-164" y="249" linkedscene="scene_2d_-_amery_flower_shop" title="Amery Flower Shop" url="hotspot/ameryflowershop.png"/>
+	<layer name="plan_1_19" style="pointflpl" parent="plan_1" x="317" y="352" linkedscene="scene_Nippon_Ramen_-_Dine_Area" title="Nippon Rame" /> 
+	<layer name="plan_1_21" style="pointflpl" parent="plan_1" x="805" y="263" linkedscene="scene_2d_-_hotel_booths" title="Hotel Booths" url="hotspot/hotelcounters.png"/>
+	<layer name="plan_1_1" style="pointflpl" parent="plan_1" x="-623" y="527" title="Ayers Lechon" linkedscene="scene_2D_-_Ayer_s_Lechon_2D" />
+	<layer name="plan_1_41" style="pointflpl" parent="plan_1" x="209" y="555" title="Zip N Sip" linkedscene="scene_2D_-_Zip_N_Sip"/>
+	<layer name="plan_1_51" style="pointflpl" parent="plan_1" x="210" y="495" title="Lechon Belly" linkedscene="scene_2D_-_Zip_N_Sip" />
+	<layer name="plan_1_121" style="pointflpl" parent="plan_1" x="414" y="553" title="Potato Corners" linkedscene="scene_2D_-__Potato_Corner" />
+	<layer name="plan_1_13" style="pointflpl" parent="plan_1" x="416" y="491" title="Leylam" linkedscene="scene_2D_-__Potato_Corner" />
+	<!-- <layer name="plan_1_15" style="pointflpl" parent="plan_1" x="415" y="270" title="Sim Card Booths" linkedscene="scene_2D_-_Sim_Cards_1"/>
+	<layer name="plan_1_17" style="pointflpl" parent="plan_1" x="523" y="268" title="Curex Money Changer" linkedscene="scene_2D_-_Curex"/>
+	<layer name="plan_1_211" style="pointflpl" parent="plan_1" x="624" y="271" title="Hertz Car Rental" linkedscene="scene_2D_-_Car_Rentals"/>
+	<layer name="plan_1_23" style="pointflpl" parent="plan_1" x="-524" y="269" title="Hertz Car Rental" linkedscene="scene_2D_-_Car_Rentals"/> 
+	<layer name="plan_1_25" style="pointflpl" parent="plan_1" x="-626" y="268"  title="Curex Money Changer" linkedscene="scene_2D_-_Curex"/>
+	<layer name="plan_1_26" style="pointflpl" parent="plan_1" x="-729" y="269" title="Sim Card Booths" linkedscene="scene_2D_-_Sim_Cards_1"/> -->
+	<!-- <layer name="plan_1_27" style="pointflpl" parent="plan_1" x="839" y="357" title="Tah-mee Frozen Yogurt" linkedscene="scene_Sweets___Stuff_-_360"/> -->
+	<layer name="plan_1_2" style="pointflpl" parent="plan_1" x="-63" y="333" linkedscene="scene_terminal_1_arrival_exit_area" title="Terminal 1 Arrival Exit Area" />
+     
+	<layer name="plan_1_3" style="pointflpl" parent="plan_1" x="1089" y="508" linkedscene="scene_terminal_1_arrival_right_wing" title="Terminal 1 Arrival Right Wing" />
+<!-- _________________For Logo____________________ -->
+	<layer name="plan_1_22_1" style="pointflpl1" parent="plan_1" x="731" y="701" linkedscene="scene_01_salon_de_rose_-_barber_area" title="Salon De Rose" url="hotspot/salonderose.png" />
+	<layer name="plan_1_23_1" style="pointflpl1" parent="plan_1" x="1528" y="699" linkedscene="scene_01_Luggage_Storage_-_Shelf_Area" title="Luggage Free"  url="hotspot/luggagestorage.png" />
+	<layer name="plan_1_24_1" style="pointflpl1" parent="plan_1" x="-1504" y="702" linkedscene="scene_seafood_paradise_-_dining_area" title="Seafood Paradise" url="hotspot/seafoodparadise.png"/>
+	<layer name="plan_1_25_1" style="pointflpl1" parent="plan_1" x="-405" y="534" linkedscene="scene_the_travel_store_-_middle_area" title="The Travel Store" url="hotspot/thetravelstore.png"/>
+	<layer name="plan_1_26_1" style="pointflpl1" parent="plan_1" x="-1592" y="201" linkedscene="scene_2D_-_Jollibee" title="Jollibee"  url="hotspot/jollibee.png" width="120" />
+	<layer name="plan_1_27_1" style="pointflpl1" parent="plan_1" x="-710" y="364" linkedscene="scene_cafe_laguna_-_dine_area" title="Cafe Laguna" url="hotspot/cafelaguna.png"/>
+	<layer name="plan_1_28_1" style="pointflpl1" parent="plan_1" x="-380" y="360" linkedscene="scene_macao_imperial_-_dine_area" title="Macao Imperial" url="hotspot/macaoimperial.png"/>
+	<layer name="plan_1_29_1" style="pointflpl1" parent="plan_1" x="320" y="346" linkedscene="scene_nippon_ramen_-_dine_area" title="Nippon Ramen" url="hotspot/nipponramen.png"/>
+	<layer name="plan_1_30_1" style="pointflpl1" parent="plan_1" x="621" y="365" linkedscene="scene_casa_verde_-_counter_area" title="Casa Verde"  url="hotspot/casaverde.png"/>
+    <layer name="plan_1_22_11" style="pointflpl1" parent="plan_1" linkedscene="scene_Duty_Free_-_Fragrance_Area" url="hotspot/dutyfree.png" title="Duty Free" x="-50" y="702" />  
+    <layer name="plan_1_34_1" style="pointflpl1" parent="plan_1" linkedscene="scene_2d-atm" url="hotspot/ATM.png" title="ATM" x="957" y="186" />
+	<layer name="plan_1_4_1" style="pointflpl1" parent="plan_1" x="-790" y="701" linkedscene="scene_starbucks_360"  url="hotspot/starbucks.png"  title="Starbucks" />
+	<layer name="plan_1_5_12" style="pointflpl1" parent="plan_1" x="554" y="704" linkedscene="scene_2d_-_7_eleven" title="7 ELEVEN" url="hotspot/711.png" /> 
+	<layer name="plan_1_7_1" style="pointflpl1" parent="plan_1" x="-1208" y="397" linkedscene="scene_2d_-_car_rentals" title="Car Rentals" url="hotspot/rentacar.png"  />
+	<layer name="plan_1_8_1" style="pointflpl1" parent="plan_1" x="-1080" y="206" linkedscene="scene_2d_-_atm_left" title="ATM Left" url="hotspot/ATM.png"/>
+	<layer name="plan_1_9_1" style="pointflpl1" parent="plan_1" x="-958" y="357" linkedscene="scene_Bread_Talk_-_Counter_Area" title="BreadTalk" url="hotspot/breadtalk.png"/> 
+	<layer name="plan_1_11_1" style="pointflpl1" parent="plan_1" x="-844" y="491" linkedscene="scene_2d_-_ngo_hiong" title="Ngo Hiong" url="hotspot/hongohiong.png"/>
+	<layer name="plan_1_12_1" style="pointflpl1" parent="plan_1" x="-841" y="565" linkedscene="scene_2d_-_ultimate_sandwich_station" title="Ultimate Sandwich Station" url="hotspot/ultimatesandwich.png"/>
+	<layer name="plan_1_13_1" style="pointflpl1" parent="plan_1" x="630" y="522" linkedscene="scene_2d_-_bos_coffee" title="Bos Coffee" url="hotspot/boscoffee.png" />  
+	<layer name="plan_1_16_1" style="pointflpl1" parent="plan_1" x="-502" y="357" linkedscene="scene_krispy_kreme_-_counter_area" title="Krispy Kreme"  url="hotspot/krispykreme.png"/> 
+	<layer name="plan_1_18_1" style="pointflpl1" parent="plan_1" x="-164" y="249" linkedscene="scene_2d_-_amery_flower_shop" title="Amery Flower Shop" url="hotspot/ameryflowershop.png"/>
+	<layer name="plan_1_19_1" style="pointflpl1" parent="plan_1" x="317" y="352" linkedscene="scene_Nippon_Ramen_-_Dine_Area" title="Nippon Rame" /> 
+	<layer name="plan_1_21_1" style="pointflpl1" parent="plan_1" x="805" y="263" linkedscene="scene_2d_-_hotel_booths" title="Hotel Booths" url="hotspot/hotelcounters.png"/>
+	<layer name="plan_1_1_1" style="pointflpl1" parent="plan_1" x="-623" y="527" title="Ayers Lechon" linkedscene="scene_2D_-_Ayer_s_Lechon_2D"  url="hotspot/ayerslechon.png"/>
+	<layer name="plan_1_4_11" style="pointflpl1" parent="plan_1" x="209" y="555" title="Zip N Sip" linkedscene="scene_2D_-_Zip_N_Sip" url="hotspot/foodavenue.png"/>
+	<layer name="plan_1_5_11" style="pointflpl1" parent="plan_1" x="210" y="495" title="Lechon Belly" linkedscene="Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles"  url="hotspot/lolopinoylechon.png"/>
+	<layer name="plan_1_12_11" style="pointflpl1" parent="plan_1" x="414" y="553" title="Potato Corners" linkedscene="scene_2D_-_Potato_corners"  url="hotspot/potatocorner.png"/>
+	<layer name="plan_1_13_11" style="pointflpl1" parent="plan_1" x="416" y="491" title="Potato Corners" linkedscene="scene_2D_-_Potato_corners"  url="hotspot/potatocorner.png"/>
+	<!-- <layer name="plan_1_15_1" style="pointflpl1" parent="plan_1" x="415" y="270" title="Sim Card Booths" linkedscene="scene_2D_-_Sim_Cards_1" url="hotspot/simcardbooths.png"/>
+	<layer name="plan_1_17_1" style="pointflpl1" parent="plan_1" x="523" y="268" title="Curex Money Changer" linkedscene="scene_2D_-_Curex" url="hotspot/curex.png"/>
+	<layer name="plan_1_21_11" style="pointflpl1" parent="plan_1" x="624" y="271" title="Hertz Car Rental" linkedscene="scene_2D_-_Car_Rentals" url="hotspot/rentacar.png"/>
+	<layer name="plan_1_23_11" style="pointflpl1" parent="plan_1" x="-524" y="269" title="Hertz Car Rental" linkedscene="scene_2D_-_Car_Rentals" url="hotspot/rentacar.png"/> 
+	<layer name="plan_1_25_11" style="pointflpl1" parent="plan_1" x="-626" y="268"  title="Curex Money Changer" linkedscene="scene_2D_-_Curex" url="hotspot/curex.png"/>
+	<layer name="plan_1_26_11" style="pointflpl1" parent="plan_1" x="-729" y="269" title="Sim Card Booths" linkedscene="scene_2D_-_Sim_Cards_1" url="hotspot/simcardbooths.png"/> -->
+	<!-- <layer name="plan_1_27_11" style="pointflpl1" parent="plan_1" x="839" y="357" title="Tah-mee Frozen Yogurt" linkedscene="scene_Sweets___Stuff_-_360" url="hotspot/sweetnstuff.png"/>  -->
+
+<!-- _______________End FOr Logo Layer 1___________________ -->
+
+	<!-- <layer name="plan_4_1" style="pointflpl" parent="plan_4" x="129" y="704" linkedscene="scene_terminal_2_arrival_middle_area" title="Terminal 2 Arrival Middle Area" /> -->
+
+	<!-- <layer name="plan_2_1" style="pointflpl" parent="plan_2" x="303" y="1229" linkedscene="scene_streetview_29_terminal_1_departure_drop_off_day" title="Terminal 1 Departure Drop-off Middle Area" /> -->
+	<!-- <layer name="plan_3_1" style="pointflpl" parent="plan_3" x="186" y="1004" linkedscene="scene_terminal_2_departure_entrance_middle_area" title="Terminal 2 Departure Entrance Middle Area" /> -->
+	<!-- *************          POINTS VIEW          **************** -->
+
+	<layer name="plan_2_4" style="pointflpl1" parent="plan_2"  x="-47" y="779" title="Wagas" linkedscene="scene_wagas-360" url="hotspot/wagas.png"/>
+	<layer name="plan_2_122" style="pointflpl1" parent="plan_2"  x="1020" y="928"   title="Ato Ni" linkedscene="scene_ato-ni-2D" url="hotspot/atoni.png"/>
+	<layer name="plan_2_6" style="pointflpl1" parent="plan_2"  x="143" y="768" title="Belgian Waffles"  url="hotspot/belgianwaffles.png"/>
+	<layer name="plan_2_7" style="pointflpl1" parent="plan_2"  x="367" y="775"  title="Ayers Lechon" url="hotspot/ayerslechon.png"/>
+	<layer name="plan_2_8" style="pointflpl1" parent="plan_2"  x="577" y="775" title="Coffee Dream" linkedscene="scene_2D_-_Coffee_Dream" url="hotspot/coffeedream.png"/> 
+	<layer name="plan_2_10" style="pointflpl1" parent="plan_2"  x="909" y="954" title="K2 Pharmacy" linkedscene="scene_K2_Pharamacy_360" url="hotspot/k2pharmacy.png"  />
+	<layer name="plan_2_12" style="pointflpl1" parent="plan_2"  x="-534" y="941"   title="Ato Ni" linkedscene="scene_Ceburiffic_Pasalubong_Center_360" url="hotspot/ceburrific.png"/>
+	<layer name="plan_2_123" style="pointflpl1" parent="plan_2"  x="1121" y="934"  title="District Fiesta" linkedscene="scene_district_fiesta_-_360" url="hotspot/districtfiesta.png"/>
+	<layer name="plan_2_124" style="pointflpl1" parent="plan_2"  x="908" y="734" title="Kenny Rogers" linkedscene="scene_kenny_rogers_360" url="hotspot/kennyrogers.png"/>
+	<layer name="plan_2_225" style="pointflpl1" parent="plan_2"  x="-113" y="700" title="ATM"  url="hotspot/ATM.png"/>
+	<layer name="plan_2_315" style="pointflpl1" parent="plan_2"  x="-249" y="528"  title="Shakeys" linkedscene="scene_Shakey_s_360" url="hotspot/shakeys.png"/>
+	<layer name="plan_2_218" style="pointflpl1" parent="plan_2"  x="-669" y="347"  title="Airport Pasalubong" linkedscene="scene_2D_-_Pasalubong_Center" url="hotspot/airportpasalubong.png"/>
+	<layer name="plan_2_1127" style="pointflpl1" parent="plan_2"  x="-453" y="349"  title="Island Souvenir" linkedscene="scene_2D_-_Island_Souvenirs_2" url="hotspot/islandsouvenirs.png"/>
+	<layer name="plan_2_2116" style="pointflpl1" parent="plan_2"  x="-216" y="368"  title="Coffee Beans and Tea Leaf" linkedscene="scene_1_Coffee_Bean" url="hotspot/coffeebean.png"/>
+	<layer name="plan_2_21231" style="pointflpl1" parent="plan_2"  x="-815" y="-139"  title="Food Avenue" linkedscene="scene_2D_-_Food_Avenue" url="hotspot/foodavenue.png"/>
+	<layer name="plan_2_1243" style="pointflpl1" parent="plan_2"  x="1332" y="-137"    title="Food Avenue" linkedscene="scene_Food_Avenue_-_360" url="hotspot/foodavenue.png"/>
+	<layer name="plan_2_23122" style="pointflpl1" parent="plan_2"  x="-559" y="-141"  title="WH Smith" linkedscene="scene_WH_Smith_360" url="hotspot/whsmith.png"/>
+	<layer name="plan_2_12323" style="pointflpl1" parent="plan_2"  x="-451" y="-132" title="Adidas" linkedscene="scene_Adidas_360" url="hotspot/adidas.png"/>
+	<layer name="plan_2_2124" style="pointflpl1" parent="plan_2"  x="-360" y="-139"  title="Miniso" linkedscene="scene_Miniso_360" url="hotspot/miniso.png"/>
+	<layer name="plan_2_21235" style="pointflpl1" parent="plan_2"   x="821" y="-135"  title="Island Souvenirs" linkedscene="scene_Island_Souvenir_-_360" url="hotspot/islandsouvenirs.png"/>
+	<layer name="plan_2_2126" style="pointflpl1" parent="plan_2"  x="-138" y="-139"  title="Kultura" linkedscene="scene_KULTURA_360" url="hotspot/kultura.png"/>
+	<!-- <layer name="plan_2_2327" style="pointflpl1" parent="plan_2"  x="-4" y="-214"  title="ATM"  url="hotspot/ATM.png"/> -->
+	<!-- <layer name="plan_2_2347" style="pointflpl1" parent="plan_2"  x="1603" y="-216" linkedscene="scene_2D_-__Atm"  title="ATM" url="hotspot/ATM.png"/> -->
+	<layer name="plan_2_3225" style="pointflpl1" parent="plan_2" x="652" y="-224" linkedscene="scene_2d_-__atm" title="Atm"  url="hotspot/ATM.png" />
+	<layer name="plan_2_4321" style="pointflpl1" parent="plan_2"  x="941" y="-137"   title="Nomad" linkedscene="scene_NOMAD_-_360" url="hotspot/nomad.png"/>
+	<layer name="plan_2_4325" style="pointflpl1" parent="plan_2"  x="1958" y="-148"   title="Illy's Cafe" linkedscene="scene_8_-_Illy_Caffee" url="hotspot/illycafe.png"/>
+	<layer name="plan_2_12346" style="pointflpl1" parent="plan_2"  x="2111" y="-150"   title="The Spa At Cebu" linkedscene="scene_2D_-_The_Spa_at_Cebu" url="hotspot/thespa.png"/>
+	<layer name="plan_2_3230" style="pointflpl1" parent="plan_2"  x="-408" y="-272"  title="Cafe Ritazaa" linkedscene="scene_2D_-_Ritazza" url="hotspot/caferitazza.png" />
+	<!-- <layer name="plan_2_349" style="pointflpl1" parent="plan_2"  x="1117" y="-281"   title="Travel Free Shop: Chocolate" linkedscene="scene_2D_-_Travel_Free_Shop" url="hotspot/travelfreeshop.png"/> -->
+	<layer name="plan_2_33122" style="pointflpl1" parent="plan_2"  x="-180" y="-410"  title="Travel Free Shop: Liquor" linkedscene="scene_Travel_Free_Shop_360" url="hotspot/travelfreeshop.png" />
+	<layer name="plan_2_31250" style="pointflpl1" parent="plan_2"  x="1723" y="-279" linkedscene="scene_District_Fiesta_360"  title="District Fiesta" url="hotspot/districtfiesta.png"/>
+	<!-- <layer name="plan_2_5151" style="pointflpl1" parent="plan_2"  x="1725" y="-427"   title="Nomad Express" linkedscene="scene_NOMAD_2_360" url="hotspot/nomad.png"/> -->
+	<layer name="plan_2_43128" style="pointflpl1" parent="plan_2"  x="1427" y="-281" linkedscene="scene_11_-_Plug_and_Play"  title="Plug N' Play" url="hotspot/plugplay.png"/>
+	<layer name="plan_2_54151" style="pointflpl1" parent="plan_2"  x="1221" y="-481" title="Jollibee" linkedscene="scene_jollibee_-_360" url="hotspot/jollibee.png"/>
+	<layer name="plan_2_4139" style="pointflpl1" parent="plan_2"  x="770" y="-430" linkedscene="scene_4_-_Bench"  title="Bench" url="hotspot/bench.png"/>
+	<layer name="plan_2_3516" style="pointflpl1" parent="plan_2"  x="231" y="-430" linkedscene="scene_Brew_House_360" title="The Brewhouse" url="hotspot/thebrewhouse.png"/>
+	<layer name="plan_2_5133" style="pointflpl1" parent="plan_2"  x="-4" y="-414"  title="MTR Beauty" linkedscene="scene_Beauty_360"/>
+	<layer name="plan_2_3511" style="pointflpl1" parent="plan_2"  x="-306" y="-410" title="CLN" linkedscene="scene_CLN_360" url="hotspot/cln.png" />
+	<layer name="plan_2_34" style="pointflpl1" parent="plan_2"  x="-1041" y="-457"  title="Dunkin Donut" linkedscene="scene_2D_-_Dunkin_Donut" url="hotspot/dunkindonuts.png"/>
+	<layer name="plan_2_3154" style="pointflpl1" parent="plan_2"  x="-1021" y="-515"  title="Potato Corner" linkedscene="scene_2D_-_Potato_corners" url="hotspot/potatocorner.png"/>
+	<layer name="plan_2_73542" style="pointflpl1" parent="plan_2" x="-1023" y="-568"  title="Tsim Sha Tsui" linkedscene="scene_2D_-_TSIM_SHA_TSUI" url="hotspot/tsimshatsui.png"/>
+	<layer name="plan_2_73545" style="pointflpl1" parent="plan_2" x="-857" y="-467"   title="Bos Coffee" linkedscene="scene_2D_-_Bos_Coffee" url="hotspot/boscoffee.png"/>
+	<layer name="plan_2_73546" style="pointflpl1" parent="plan_2" x="-849" y="-557"  title="Cafe Laguna" linkedscene="scene_2D_-_Cafe_Laguna_1" url="hotspot/cafelaguna.png"/>
+	<layer name="plan_2_4361" style="pointflpl1" parent="plan_2" x="-1953" y="-538" linkedscene="scene_2D_-_Millies_Baked_Cookies" title="Millies Baked Cookies" url="hotspot/milliescookies.png" />
+	<layer name="plan_2_4471" style="pointflpl1" parent="plan_2" x="-1224" y="-464" linkedscene="scene_2D_-_Fraiche_Deli" title="Fraiche Deli" url="hotspot/fraichedeli.png" />
+
+  
+	<layer name="plan_2_44" style="pointflpl" parent="plan_2" x="-1224" y="-464" linkedscene="scene_2D_-_Fraiche_Deli" title="Fraiche Deli" />
+	<layer name="plan_2_43" style="pointflpl" parent="plan_2" x="-1953" y="-538" linkedscene="scene_2D_-_Millies_Baked_Cookies" title="Millies Baked Cookies" />
+	<layer name="plan_2_41" style="pointflpl" parent="plan_2" x="-857" y="-467" linkedscene="scene_2d_-_bos_coffee" title="Bos Coffee" />
+	<layer name="plan_2_42" style="pointflpl" parent="plan_2" x="-1023" y="-568" linkedscene="scene_2d_-_tsim_sha_tsui" title="TSIM SHA TSUI" />
+	<layer name="plan_2_31" style="pointflpl" parent="plan_2" x="-849" y="-557" linkedscene="scene_2d_-_cafe_laguna_1" title="Cafe Laguna" />
+	<layer name="plan_2_38" style="pointflpl" parent="plan_2" x="-1021" y="-515" linkedscene="scene_2d_-_potato_corners" title="Potato corners" />
+	<layer name="plan_2_39" style="pointflpl" parent="plan_2" x="-1041" y="-457" linkedscene="scene_2d_-_dunkin_donut" title="Dunkin Donut" />
+	<layer name="plan_2_32" style="pointflpl" parent="plan_2" x="-309" y="-405" linkedscene="scene_cln_360" title="CLN 360" />
+	<layer name="plan_2_36" style="pointflpl" parent="plan_2" x="-1" y="-409" linkedscene="scene_beauty_360" title="Beauty 360" />
+	<layer name="plan_2_37" style="pointflpl" parent="plan_2" x="229" y="-435" linkedscene="scene_brew_house_360" title="Brew House 360" />
+	<layer name="plan_2_29" style="pointflpl" parent="plan_2" x="768" y="-428" linkedscene="scene_4_-_bench" title="4 - Bench" />
+	<layer name="plan_2_541" style="pointflpl" parent="plan_2"  x="1221" y="-481" title="Jollibee" linkedscene="scene_jollibee_-_360" url="hotspot/jollibee.png"/>
+	<layer name="plan_2_28" style="pointflpl" parent="plan_2" x="1429" y="-278" linkedscene="scene_11_-_plug_and_play" title="11 - Plug and Play" />
+	<!-- <layer name="plan_2_51" style="pointflpl" parent="plan_2"  x="1725" y="-427"   title="Nomad Express" linkedscene="scene_NOMAD_2_360" url="hotspot/nomad.png"/> -->
+	<layer name="plan_2_27" style="pointflpl" parent="plan_2" x="1728" y="-273" linkedscene="scene_district_fiesta_360" title="District Fiesta" />
+	<layer name="plan_2_33" style="pointflpl" parent="plan_2" x="-178" y="-404" linkedscene="scene_travel_free_shop_360" title="Travel Free Shop 360" />
+	<!-- <layer name="plan_2_49" style="pointflpl" parent="plan_2"  x="1117" y="-281"   title="Travel Free Shop: Chocolate" linkedscene="scene_2D_-_Travel_Free_Shop" url="hotspot/travelfreeshop.png"/> -->
+	<layer name="plan_2_30" style="pointflpl" parent="plan_2"  x="-408" y="-272"  title="Cafe Ritazaa" linkedscene="scene_2D_-_Ritazza"  url="hotspot/caferitazza.png" />
+	<layer name="plan_2_46" style="pointflpl" parent="plan_2"  x="2111" y="-150"   title="The Spa At Cebu" linkedscene="scene_2D_-_The_Spa_at_Cebu" url="hotspot/thespa.png"/>
+	<layer name="plan_2_40" style="pointflpl" parent="plan_2" x="1957" y="-139" linkedscene="scene_8_-_illy_caffee" title="8 - Illy Caffee" />
+	<layer name="plan_2_26" style="pointflpl" parent="plan_2" x="943" y="-134" linkedscene="scene_nomad_-_360" title="NOMAD" />
+	<layer name="plan_2_25" style="pointflpl" parent="plan_2" x="652" y="-224" linkedscene="scene_2d_-__atm" title="Atm" />
+	<!-- <layer name="plan_2_47" style="pointflpl" parent="plan_2"  x="1603" y="-216" linkedscene="scene_2D_-__Atm"  title="ATM" url="hotspot/ATM.png"/> -->
+	<!-- <layer name="plan_2_27" style="pointflpl" parent="plan_2"  x="-4" y="-214"  title="ATM"  url="hotspot/ATM.png"/> -->
+	<layer name="plan_2_24" style="pointflpl" parent="plan_2" x="-135" y="-143" linkedscene="scene_kultura_360" title="KULTURA" />
+	<layer name="plan_2_23" style="pointflpl" parent="plan_2"  x="821" y="-135" linkedscene="scene_island_souvenir_-_360" title="Island Souvenir" />
+	<layer name="plan_2_22" style="pointflpl" parent="plan_2" x="-360" y="-139" linkedscene="scene_miniso_360" title="Miniso" />
+	<layer name="plan_2_20" style="pointflpl" parent="plan_2" x="-454" y="-132" linkedscene="scene_adidas_360" title="Adidas" />
+	<layer name="plan_2_19" style="pointflpl" parent="plan_2" x="-562" y="-140" linkedscene="scene_wh_smith_360" title="WH Smith" /> 
+	<layer name="plan_2_16" style="pointflpl" parent="plan_2" x="1332" y="-137"  linkedscene="scene_food_avenue_-_360" title="Food Avenue" /> 
+	<layer name="plan_2_21" style="pointflpl" parent="plan_2"  x="-815" y="-139"  title="Food Avenue" linkedscene="scene_2D_-_Food_Avenue" url="hotspot/foodavenue.png"/>
+	<layer name="plan_2_17" style="pointflpl" parent="plan_2" x="-221" y="367" linkedscene="scene_1_coffee_bean" title="1 Coffee Bean" heading="-90.0" />
+	<layer name="plan_2_15" style="pointflpl" parent="plan_2"  x="-453" y="349"  linkedscene="scene_2D_-_Island_Souvenirs_2" title="Island Souvenir" /> 
+	<layer name="plan_2_18" style="pointflpl" parent="plan_2"  x="-669" y="347"  title="Airport Pasalubong" linkedscene="scene_2D_-_Pasalubong_Center" url="hotspot/airportpasalubong.png"/>
+	<layer name="plan_2_57" style="pointflpl" parent="plan_2" x="-249" y="528" linkedscene="scene_shakey_s_360" title="Shakey's" /> 
+	<layer name="plan_2_5" style="pointflpl" parent="plan_2"  x="-113" y="700" title="ATM" linkedscene="scene_2D_-_BDO_ATM" url="hotspot/ATM.png"/>
+	<layer name="plan_2_14" style="pointflpl" parent="plan_2"  x="908" y="734" title="Kenny Rogers" linkedscene="scene_kenny_rogers_360" url="hotspot/kennyrogers.png"/>
+	<layer name="plan_2_13" style="pointflpl" parent="plan_2"  x="1121" y="934"  title="District Fiesta" linkedscene="scene_district_fiesta_-_360" url="hotspot/districtfiesta.png"/>
+	<layer name="plan_2_9" style="pointflpl" parent="plan_2" x="-534" y="941" linkedscene="scene_ceburiffic_pasalubong_center_360" title="Ato Ni" /> 
+	<layer name="plan_2_3" style="pointflpl" parent="plan_2" x="909" y="954" linkedscene="scene_k2_pharamacy_360" title="K2 Pharamacy" /> 
+	<layer name="plan_2_412" style="pointflpl" parent="plan_2"  x="-47" y="779" title="Wagas" linkedscene="scene_wagas-360" url="hotspot/wagas.png"/>
+	<layer name="plan_2_8123" style="pointflpl" parent="plan_2"  x="577" y="775" title="Coffee Dream" linkedscene="scene_2D_-_Coffee_Dream" url="hotspot/coffeedream.png"/> 
+	<layer name="plan_2_7123" style="pointflpl" parent="plan_2"  x="367" y="775"  title="Ayers Lechon" linkedscene="scene_2D_-_AYERS_LECHON" url="hotspot/ayerslechon.png"/>
+	<layer name="plan_2_632" style="pointflpl" parent="plan_2"  x="143" y="768" title="Belgian Waffles" linkedscene="scene_2D_-_Belgian_Waffles" url="hotspot/belgianwaffles.png"/>
+
+	<layer name="plan_2_11" style="pointflpl" parent="plan_2"  x="942" y="885" title="Forex" linkedscene="scene_2D_-_Lulu_Money" />  
+
+	<layer name="plan_2_35" style="pointflpl2" parent="plan_2"  x="31" y="-510" title="IQOs Vaping Lounge"  url="hotspot/iqos.png"/>
+	<!-- <layer name="plan_2_40" style="pointflpl2" parent="plan_2"  x="824" y="-132"  title="Island Souvenirs" url="hotspot/islandsouvenirs.png"/> -->
+	<!-- <layer name="plan_2_52" style="pointflpl2" parent="plan_2"  x="1627" y="-427"   title="Beauty Bar" url="hotspot/beautyshop.png"/> -->
+
+
+
+
+
+	<layer name="plan_2_2" style="pointflpl" parent="plan_2" x="250" y="736" linkedscene="scene_terminal_1_departure_standee_logo" title="Terminal 1 Departure Standee Logo" />
+	<layer name="plan_2_1" style="pointflpl" parent="plan_2"  x="1020" y="928"   title="Ceburiffic Pasalubong Center" linkedscene="scene_2D_-_Ceburiffic_Pasalubong_Center" />
+	<layer name="plan_2_121" style="pointflpl" parent="plan_2" x="265" y="732" linkedscene="scene_terminal_1_departure_standee_logo" title="b" />
+	<!-- <layer name="plan_2_28" style="pointflpl" parent="plan_2"  x="-952" y="-288"  title="Catch-A-Price"/>
+	<layer name="plan_2_29" style="pointflpl" parent="plan_2"  x="-837" y="-274"  title="Aquaflask"/> -->
+	<!-- <layer name="plan_2_37" style="pointflpl" parent="plan_2"  x="504" y="-425"   title="Crocs"/> -->
+	<!-- <layer name="plan_2_38" style="pointflpl" parent="plan_2"  x="617" y="-430"   title="Digital Walker"/> -->
+	<!-- <layer name="plan_2_42" style="pointflpl" parent="plan_2"  x="1054" y="-132"   title="Urbanize"/> -->
+
+	<!-- <layer name="plan_2_44" style="pointflpl" parent="plan_2"  x="1614" y="-68"   title="JTI Smoking Lounge"/> -->
+	<!-- <layer name="plan_2_53" style="pointflpl" parent="plan_2"  x="1426" y="-483"   title="Kusina Sugbo"/> -->
+	<layer name="plan_2_54" style="pointflpl" parent="plan_2"  x="1221" y="-481" title="Jollibee" linkedscene="scene_jollibee_-_360" url="hotspot/jollibee.png"/>
+	<!-- <layer name="plan_2_55" style="pointflpl" parent="plan_2"  x="335" y="-803"  title="Mabuhay Lounge"/>
+	<layer name="plan_2_56" style="pointflpl" parent="plan_2"  x="128" y="-834"  title="Plaza Premium Lounge"/> -->
+	<layer name="plan_4_5123" style="pointflpl1" parent="plan_4" x="682" y="215" title="Luggage Free" linkedscene="scene_3_MCIAA_-Luggage_Free" url="hotspot/luggagefree.png"/>
+	<layer name="plan_4_6132" style="pointflpl1" parent="plan_4" x="596" y="74" title="ATMs" linkedscene="scene_2D_-_ATM_1" url="hotspot/ATM.png"/>
+	<layer name="plan_4_842" style="pointflpl1" parent="plan_4" x="143" y="73" title="Camden Food Co" linkedscene="scene_1_MCIAA_-Candem" url="hotspot/camdenfoodco.png" />
+	<layer name="plan_4_140" style="pointflpl1" parent="plan_4" x="-215" y="-43"  title="Hotel Counters" linkedscene="scene_2D_Hotels_-1" url="hotspot/hotelcounters.png"/>
+	<layer name="plan_4_141" style="pointflpl1" parent="plan_4" x="-346" y="-104"   title="Curex Money Changer" linkedscene="scene_2D_-_Curex" url="hotspot/curex.png" /> 
+	<layer name="plan_4_95" style="pointflpl1" parent="plan_4" x="155" y="-56" title="Duty Free" linkedscene="scene_Duty_Free_-_Inside_1" url="hotspot/dutyfree.png"/> 
+	<layer name="plan_3_56" style="pointflpl1" parent="plan_3" x="419" y="231" linkedscene="scene_2d-ritazza" title="Cafe Ritazaa" url="hotspot/caferitazza.png"/>
+	<layer name="plan_3_6516" style="pointflpl1" parent="plan_3" x="553" y="337" linkedscene="scene_2d-curex" title="Curex Money Changer"  url="hotspot/curex.png"/>
+	<!-- <layer name="plan_3_864" style="pointflpl1" parent="plan_3" x="-238" y="382" linkedscene="scene_2d-lulumoney" title="Lulu Exchange"  url="hotspot/Lulu.png"/> -->
+	<layer name="plan_3_6745" style="pointflpl1" parent="plan_3"  x="-225" y="297" linkedscene="scene_2d-atm" title="ATM" url="hotspot/ATM.png"/>
+	<layer name="plan_3_665" style="pointflpl1" parent="plan_3" x="419" y="231" linkedscene="scene_2d-ritazza" title="Cafe Ritazaa" url="hotspot/caferitazza.png"/>
+	<layer name="plan_3_166" style="pointflpl1" parent="plan_3" x="890" y="113" linkedscene="scene_2d-curex2" title="Curex Money Changer" url="hotspot/curex.png" />
+	<layer name="plan_3_187" style="pointflpl1" parent="plan_3" x="1301" y="-48" linkedscene="scene_10__MCIAA_-_IQOS" title="IQOs Vaping Lounge"  url="hotspot/iqos.png" />
+	<layer name="plan_3_98719" style="pointflpl1" parent="plan_3" x="684" y="-48" linkedscene="scene_2_MCIAA_-_Burger_King" title="Burger King" url="hotspot/burgerking.png"/>
+	<layer name="plan_3_18" style="pointflpl1" parent="plan_3" x="833" y="-158" linkedscene="scene_3_MCIAA_-_Coffee_Bean" title="Coffee Beans and Tea Leaf" url="hotspot/coffeebean.png" />
+	<layer name="plan_3_21" style="pointflpl1" parent="plan_3" x="512" y="-137" linkedscene="scene_26_MCIAA_-_The_Spa"  title="The Spa At Cebu" url="hotspot/thespa.png" />
+	<!-- <layer name="plan_4_47" style="pointflpl1" parent="plan_4" x="406" y="217" title="Nomad Express" linkedscene="scene_2d-nomad" url="hotspot/nomad.png"/> -->
+	<layer name="plan_3_280" style="pointflpl1" parent="plan_3" x="493" y="-205" linkedscene="scene_2d-nomad"   title="Nomad Express" url="hotspot/nomad.png"/>
+	<layer name="plan_3_272" style="pointflpl1" parent="plan_3" x="511" y="-418" linkedscene="scene_16__MCIAA_-_Mactan_Travel_Pod__3_-_1"  title="Mactan Travel Pod 3" url="hotspot/mactantravelpod.png" />
+	<layer name="plan_3_923" style="pointflpl1" parent="plan_3" x="341" y="-362" linkedscene="scene_2d-jewelmer" title="Jewelmer" url="hotspot/jewelmer.png"/>
+	<layer name="plan_3_715" style="pointflpl1" parent="plan_3" x="159" y="-217" linkedscene="scene_19__MCIAA_-Mactan_Travel_Pod_Beauty_1" title="Mactan Travel Pod 1: Beautry | Duty Free" url="hotspot/mactantravelpod.png"  />
+	<layer name="plan_3_832" style="pointflpl1" parent="plan_3" x="-216" y="-424" linkedscene="scene_14__mciaa_-_mactan_travel_pod_2_-_1" title="14  MCIAA - Mactan Travel Pod 2 - 1" url="hotspot/mactantravelpod.png" />
+	<layer name="plan_3_814" style="pointflpl1" parent="plan_3" x="-232" y="-117" linkedscene="scene_12__MCIAA_-_Lacoste_1" title="Lacoste" url="hotspot/lacoste.png" />
+	<layer name="plan_3_173" style="pointflpl1" parent="plan_3" x="-379" y="-190" linkedscene="" title="Ritazza" url="hotspot/caferitazza.png" />
+	<layer name="plan_3_160" style="pointflpl1" parent="plan_3" x="-658" y="-115" linkedscene="scene_23__MCIAA_-_New_Era" title="New Era" url="hotspot/newera.png" />
+	<layer name="plan_3_911" style="pointflpl1" parent="plan_3" x="-757" y="-109" linkedscene="scene_2d-nomad" title="Nomad" url="hotspot/nomad.png"/>
+	<layer name="plan_3_978" style="pointflpl1" parent="plan_3" x="-457" y="-40" linkedscene="scene_1_MCIAA_-_Asian_Kitchen" title="Asian Kitchen" url="hotspot/asiankitchen.png"/>
+	<layer name="plan_3_172" style="pointflpl1" parent="plan_3" x="-458" y="-178" linkedscene="scene_2d-bonchon" title="Bonchon Chicken" url="hotspot/bonchon.png" />
+	<layer name="plan_3_9226" style="pointflpl1" parent="plan_3" x="51" y="-594" linkedscene="scene_24__MCIAA_-_Nippon_Rame" title="Nippon Ramen" url="hotspot/nipponramen.png" />
+
+
+    
+	<layer name="plan_3_26" style="pointflpl" parent="plan_3" x="51" y="-594" linkedscene="scene_24__MCIAA_-_Nippon_Rame" title="Nippon Ramen" url="hotspot/nipponramen.png" />
+	<layer name="plan_3_12" style="pointflpl" parent="plan_3" x="-458" y="-178" linkedscene="scene_2d-bonchon" title="Bonchon Chicken" url="hotspot/bonchon.png" />
+	<layer name="plan_3_10" style="pointflpl" parent="plan_3" x="-458" y="-32" linkedscene="scene_1_mciaa_-_asian_kitchen" title="1 MCIAA - Asian Kitchen" />
+	<layer name="plan_3_11" style="pointflpl" parent="plan_3" x="-757" y="-109" linkedscene="scene_2d-nomad" title="Nomad" url="hotspot/nomad.png"/>
+	<layer name="plan_3_9" style="pointflpl" parent="plan_3" x="-661" y="-109" linkedscene="scene_23__mciaa_-_new_era" title=" New Era" />
+	<layer name="plan_3_13" style="pointflpl" parent="plan_3" x="-379" y="-190" linkedscene="scene_2d-ritazza2" title="Ritazza" url="hotspot/caferitazza.png" />
+	<layer name="plan_3_15" style="pointflpl" parent="plan_3" x="-230" y="-114" linkedscene="scene_12__mciaa_-_lacoste_1" title="12  MCIAA - Lacoste 1" />
+	<layer name="plan_3_32" style="pointflpl" parent="plan_3" x="-216" y="-424" linkedscene="scene_14__mciaa_-_mactan_travel_pod_2_-_1" title="14  MCIAA - Mactan Travel Pod 2 - 1" />
+	<layer name="plan_3_33" style="pointflpl" parent="plan_3" x="158" y="-214" linkedscene="scene_19__mciaa_-mactan_travel_pod_beauty_1" title="19  MCIAA -Mactan Travel Pod Beauty 1" />
+	<layer name="plan_3_23" style="pointflpl" parent="plan_3" x="341" y="-362" linkedscene="scene_2d-jewelmer" title="Jewelmer" url="hotspot/jewelmer.png"/>
+	<layer name="plan_3_31" style="pointflpl" parent="plan_3" x="511" y="-416" linkedscene="scene_16__mciaa_-_mactan_travel_pod__3_-_1" title="16  MCIAA - Mactan Travel Pod  3" />
+	<layer name="plan_3_20" style="pointflpl" parent="plan_3" x="493" y="-205" linkedscene="scene_2d-nomad"   title="Nomad Express" url="hotspot/nomad.png"/>
+	<!-- <layer name="plan_4_4" style="pointflpl" parent="plan_4" x="406" y="217" title="Nomad Express" linkedscene="scene_2d-nomad" url="hotspot/nomad.png"/> -->
+	<layer name="plan_3_271" style="pointflpl" parent="plan_3" x="512" y="-137" linkedscene="scene_26_MCIAA_-_The_Spa"  title="The Spa At Cebu" url="hotspot/thespa.png" />
+	<layer name="plan_3_108" style="pointflpl" parent="plan_3" x="833" y="-158" linkedscene="scene_3_MCIAA_-_Coffee_Bean" title="Coffee Beans and Tea Leaf" url="hotspot/coffeebean.png" />
+	<layer name="plan_3_19" style="pointflpl" parent="plan_3" x="684" y="-48" linkedscene="scene_2_MCIAA_-_Burger_King" title="Burger King" url="hotspot/burgerking.png"/>
+	<layer name="plan_3_17" style="pointflpl" parent="plan_3" x="1301" y="-48" linkedscene="scene_10__MCIAA_-_IQOS" title="IQOs Vaping Lounge"  url="hotspot/iqos.png" />
+	<layer name="plan_3_16" style="pointflpl" parent="plan_3" x="890" y="113" linkedscene="scene_2d-curex2" title="Curex Money Changer" url="hotspot/curex.png" />
+	<layer name="plan_3_6" style="pointflpl" parent="plan_3" x="419" y="231" linkedscene="scene_2d-ritazza" title="Cafe Ritazza" url="hotspot/caferitazza.png"/>
+	<layer name="plan_3_674" style="pointflpl" parent="plan_3" x="-225" y="297" linkedscene="scene_2d-atm" title="ATM" />
+	<layer name="plan_3_64" style="pointflpl" parent="plan_3" x="-238" y="382" linkedscene="scene_2d-lulumoney" title="Lulu Exchange" /> 
+	<layer name="plan_3_616" style="pointflpl" parent="plan_3" x="553" y="337" linkedscene="scene_2d-curex" title="Curex Money Changer" />
+	<layer name="plan_3_626" style="pointflpl" parent="plan_3" x="289" y="796" linkedscene="scene_2d-ticketing3" title="Ticketing" />
+	<layer name="plan_3_636" style="pointflpl" parent="plan_3" x="29" y="796" linkedscene="scene_2d-ticketing4" title="Ticketing" />
+	<layer name="plan_4_5" style="pointflpl" parent="plan_4" x="156" y="-49" linkedscene="scene_duty_free_-_inside_1" title="Duty Free - Inside 1" />
+	<layer name="plan_4_11" style="pointflpl" parent="plan_4" x="-346" y="-104"   title="Curex Money Changer" linkedscene="scene_2D_-_Curex" url="hotspot/curex.png" /> 
+	<layer name="plan_4_10" style="pointflpl" parent="plan_4" x="-215" y="-43"  title="Hotel Counters" linkedscene="scene_2D_Hotels_-1" url="hotspot/hotelcounters.png"/>
+	<layer name="plan_4_3" style="pointflpl" parent="plan_4" x="140" y="70" linkedscene="scene_1_mciaa_-candem" title="1 MCIAA -Candem" />
+	<layer name="plan_4_2" style="pointflpl" parent="plan_4" x="686" y="218" linkedscene="scene_3_mciaa_-luggage_free" title="3 MCIAA -Luggage Free" />
+	<layer name="plan_4_6" style="pointflpl" parent="plan_4" x="596" y="74" title="ATMs" linkedscene="scene_2D_-_ATM_1" url="hotspot/ATM.png"/>
+
+	<layer name="plan_4_1" style="pointflpl" parent="plan_4" x="156" y="811" linkedscene="scene_terminal_2_arrival_middle_area" title="Terminal 2 Arrival Middle Area" />
+	
+	<layer name="plan_4_13" style="pointflpl" parent="plan_4" x="154" y="1010" linkedscene="scene_terminal_2_arrival_drop-off_area" title="Terminal 2 Arrival" />
+	<layer name="plan_4_14" style="pointflpl" parent="plan_4" x="147" y="276" linkedscene="scene_terminal_2_arrival_camden" title="Terminal 2 Arrival Camden" />
+	<layer name="plan_4_15" style="pointflpl" parent="plan_4" x="409" y="148" linkedscene="scene_terminal_2_arrival_elevator" title="Terminal 2 Arrival Elevator" />
+	<layer name="plan_4_16" style="pointflpl" parent="plan_4" x="-330" y="195" linkedscene="scene_terminal_2_arrival_exit" title="Terminal 2 Arrival Exit" />
+	
+	<!-- <layer name="plan_4_7" style="pointflpl2" parent="plan_4" x="406" y="74" title="Lolo Pinoy de Cebu" url="hotspot/lolopinoylechon.png"  /> -->
+	<layer name="plan_3_7" style="pointflpl2" parent="plan_3" x="-115" y="242" linkedscene="" title="k2 Pharmacy" url="hotspot/k2pharmacy.png" />
+	<!-- <layer name="plan_3_25" style="pointflpl2" parent="plan_3" x="151" y="-507" linkedscene="" title="Cabin Bar" url="hotspot/cabinbar.png"/> -->
+
+	
+	<layer name="plan_3_1" style="pointflpl" parent="plan_3" x="153" y="891" linkedscene="scene_terminal_2_departure_entrance_middle_area" title="Terminal 2 Departure Entrance Middle Area" />
+	<layer name="plan_3_2" style="pointflpl" parent="plan_3" x="-134" y="877" linkedscene="scene_terminal_2_departure_left_wing" title="Terminal 2 Departure Left Wing" />
+	<layer name="plan_3_3" style="pointflpl" parent="plan_3" x="456" y="888" linkedscene="scene_terminal_2_departure_entrance_right_wing" title="Terminal 2 Departure Entrance Right Wing" />
+	<layer name="plan_3_4" style="pointflpl" parent="plan_3" x="159" y="1042" linkedscene="scene_terminal_2_departure_drop-off_bridge" title="Terminal 2 Departure Drop-off Bridge" />
+	<layer name="plan_3_5" style="pointflpl" parent="plan_3" x="162" y="1143" linkedscene="scene_terminal_2_departure_drop-off_bridge_2" title="Terminal 2 Departure Drop-off Bridge 2" />
+	<!-- <layer name="plan_3_9" style="pointflpl" parent="plan_3" x="-576" y="-112" linkedscene="" title="Tabacalera" /> -->
+
+
+	<layer name="plan_3_27" style="pointflpl" parent="plan_3" x="-595" y="-462" linkedscene="" title="Plaza Premium Lounge" />
+	<layer name="plan_3_28" style="pointflpl" parent="plan_3" x="-439" y="-749" linkedscene="" title="Mabuhay Lounge" />
+	<!-- <layer name="plan_3_29" style="pointflpl" parent="plan_3" x="-225" y="749" linkedscene="" title="Wagas Ukelele" url="hotspot/wagas.png"/> -->
+	<layer name="plan_3_30" style="pointflpl" parent="plan_3" x="544" y="751" linkedscene="" title="Island Souvenirs" url="hotspot/islandsouvenirs.png" />
+	<!-- ***************          POINTS          ******************* -->
+
+ 
+	<!-- *************          POINTS VIEW          **************** -->
+
+	<action name="terminalToggle"> 
+			set(layer[floormap_terminal1].bgcolor,get(layer[floormap_terminal1].bgcolor_passive));
+			set(layer[floormap_terminal2].bgcolor,get(layer[floormap_terminal2].bgcolor_passive)); 
+			set(layer[floormap_terminal1_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:black");
+			set(layer[floormap_terminal2_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:black");
+			if(get(name)=="floormap_terminal1",
+				set(layer[floormap_terminal1].bgcolor,get(layer[floormap_terminal1].bgcolor_active));
+				set(layer[floormap_terminal1_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:white");
+				set(selected_terminal, "floormap_terminal1");
+				,
+				set(layer[floormap_terminal2].bgcolor,get(layer[floormap_terminal2].bgcolor_active));
+				set(layer[floormap_terminal2_text].css,"text-align:center;font-size:calc((5vh + 1vw)/2);color:white");
+				set(selected_terminal, "floormap_terminal2");
+			);
+	change_floormap();
+</action>	
+<action name="floormap_init">
+
+			set(selected_terminal, "floormap_terminal1");
+			set(selected_floormap, "floormap_arrival");
+	<!-- change_floormap(); -->
+</action>	
+<action name="areaToggle">
+			set(layer[floormap_departure].bgcolor,get(layer[floormap_departure].bgcolor_passive));
+
+
+			set(layer[floormap_arrival].bgcolor,get(layer[floormap_arrival].bgcolor_passive)); 
+			set(layer[floormap_arrival].css,"text-align:center;font-size:calc((2vh + 2vw)/2);color:black");
+			set(layer[floormap_departure].css,"text-align:center;font-size:calc((2vh + 2vw)/2);color:black");
+	if(get(name)=="floormap_departure",
+		set(layer[floormap_departure].bgcolor,get(layer[floormap_departure].bgcolor_active));
+		set(layer[floormap_departure].css,"text-align:center;font-size:calc((2vh + 2vw)/2); color:white");
+		set(selected_floormap, "floormap_departure");
+		,
+		set(layer[floormap_arrival].bgcolor,get(layer[floormap_arrival].bgcolor_active));
+		set(layer[floormap_arrival].css,"text-align:center;font-size:calc((2vh + 2vw)/2); color:white");
+		set(selected_floormap, "floormap_arrival");
+	); 
+	change_floormap();
+</action>	
+<action name="change_floormap">
+set(currentActiveScene,get(xml.scene));
+if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal1",
+
+	set(layer[textFloormapTitle].text,"Terminal 1 Arrival Floormap");
+	if(get(currentActiveScene) == "scene_Terminal_1_Arrival_Exit_Area",
+ 
+		,
+		loadscene("scene_Terminal_1_Arrival_Exit_Area", null,MERGE,BLEND(1)); 
+		
+	);
+	,
+			
+	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal1",
+		set(layer[textFloormapTitle].text,"Terminal 1 Departure Floormap");
+		
+	    if(get(currentActiveScene) ==  "scene_terminal_1_departure_standee_logo",  
+			,
+			loadscene("scene_terminal_1_departure_standee_logo", null,MERGE,BLEND(1));
+		);
+	);
+);
+if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal2",
+
+	set(layer[textFloormapTitle].text,"Terminal 2 Arrival Floormap");
+	if(get(currentActiveScene) == "scene_Terminal_2_Arrival_Middle_Area",   
+		,
+		loadscene("scene_Terminal_2_Arrival_Middle_Area", null,MERGE,BLEND(1));
+	);
+,
+	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal2",
+
+		set(layer[textFloormapTitle].text,"Terminal 2 Departure Floormap");
+	    if(get(currentActiveScene) == "scene_Terminal_2_Departure_Entrance_Middle_Area",    
+		,
+			loadscene("scene_Terminal_2_Departure_Entrance_Middle_Area", null,MERGE,BLEND(1));
+		); 
+	);
+);
+	
+		
+</action>
+ 
+</krpano>

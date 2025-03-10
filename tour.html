@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mactan Cebu International Airport - Virtual Tour</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+	<meta property="og:title" content="Mactan Cebu International Airport - Virtual Tour">
+	<meta property="og:description"
+		content="Discover the gateway to the Queen City of the South like never before with the Mactan Cebu International Airport Virtual Tour! This immersive experience offers a detailed exploration of one of the Philippines' busiest and most modern airports.
+
+	Navigate through the airport's sleek terminals, inspired by Cebu's rich cultural heritage and modern design. From the grand, wave-like wooden structures of Terminal 2 to the bustling international and domestic lounges, this virtual tour brings every corner to life.
+	
+	Experience the vibrant retail and dining areas showcasing local flavors and global brands, and get a glimpse of the efficient passenger services, world-class amenities, and sustainable features that make this airport a symbol of progress. Whether you're planning your trip or simply curious, this virtual tour offers a convenient and interactive way to familiarize yourself with the airport's layout and facilities.
+	
+	Step into the heart of Cebu's aviation hub without leaving your home. Start your Mactan Cebu International Airport Virtual Tour today!">
+	<meta property="og:image" content="https://www.mata.ph/mcia3/thumbnail.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.mata.ph/mcia3/">
+
+	<!-- Twitter Card (Optional) -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Mactan Cebu International Airport - Virtual Tour">
+	<meta name="twitter:description"
+		content="Discover the gateway to the Queen City of the South like never before with the Mactan Cebu International Airport Virtual Tour! This immersive experience offers a detailed exploration of one of the Philippines' busiest and most modern airports.
+
+	Navigate through the airport's sleek terminals, inspired by Cebu's rich cultural heritage and modern design. From the grand, wave-like wooden structures of Terminal 2 to the bustling international and domestic lounges, this virtual tour brings every corner to life.
+	
+	Experience the vibrant retail and dining areas showcasing local flavors and global brands, and get a glimpse of the efficient passenger services, world-class amenities, and sustainable features that make this airport a symbol of progress. Whether you're planning your trip or simply curious, this virtual tour offers a convenient and interactive way to familiarize yourself with the airport's layout and facilities.
+	
+	Step into the heart of Cebu's aviation hub without leaving your home. Start your Mactan Cebu International Airport Virtual Tour today!">
+	<meta name="twitter:image" content="https://www.mata.ph/mcia3/thumbnail.png">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="icon" href="https://www.mata.ph/mcia3/skin/assets/icons/favicon.png" type="image/png">
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+	<script src="tour.js"></script>
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: #FFFFFF;
+			background-color: #202020;
+		}
+
+		#loading {
+			display: block;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background-color: white;
+		}
+
+		#loading img {
+			width: 50%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body id="body" onload="">
+
+	<div id="pano" style="width:100%;height:100%;display: none;">
+		<noscript>
+			<table style="width:100%;height:100%;">
+				<tr style="vertical-align:middle;">
+					<td>
+						<div style="text-align:center;">ERROR:<br /><br />Javascript not activated<br /><br /></div>
+					</td>
+				</tr>
+			</table>
+		</noscript>
+
+	</div>
+	<div id="errorMessage"
+		style="display: none; text-align: center; font-size: xx-large; width:80%; background: #202020;color: #f5f5f5;left: 10%; right: 10%;display: block;position: absolute; top:30%;bottom: 40%;">
+		<img src="/mcia3/skin/rotate_device.png"
+			style="width: 80%; height: auto; margin-left: auto;margin-right: auto; aspect-ratio: auto;" />
+		<div id="msg">
+
+			For the best viewing experience, rotate your device.
+		</div>
+		<button onclick="window.location.reload()"
+			style="padding: 2%; border:none; font-size: xx-large;border-radius: 15px; background-color: transparent; color: #00e2c4;">Refresh</button>
+
+	</div>
+	<div id="loading">
+		<img src="../mcia/skin/assets/loading/loading.png" />
+	</div>
+	<script>
+		function getDeviceType() {
+			const userAgent = navigator.userAgent.toLowerCase();
+
+			if (/android/i.test(userAgent) && !/mobile/i.test(userAgent)) {
+				return "tablet"; // Android tablets
+			} else if (/ipad|tablet|playbook|silk/i.test(userAgent)) {
+				return "tablet"; // Other tablets
+			} else if (/android|iphone|ipod/i.test(userAgent)) {
+				return "mobile"; // Mobile devices
+			} else {
+				return "desktop"; // Everything else
+			}
+		}
+
+		console.log(getDeviceType()); // Test output
+
+
+		// console.log("Width Pixel: "+window.innerWidth);
+		// console.log("Height Pixel: "+window.innerHeight);
+		function orientationchange() {
+			const isLandscape = window.innerWidth > window.innerHeight; // Check if the device is in 
+
+			if (isMobileDevice() == "mobile") {
+
+				if (isLandscape) {
+					// // Hide pano container and show error message
+					// document.getElementById("pano").style.display = "none";
+					// document.getElementById("errorMessage").style.display = "block";
+					// document.getElementById("msg").innerText = "For the best viewing experience, rotate your mobile device to Portrait";
+					// console.log("isLandscape and isMobileDevice");
+
+					KRpanoLoad();
+				} else {
+					KRpanoLoad();
+					console.log("is Portrait and isMobileDevice");
+				}
+			} else if (isMobileDevice() == "tablet") {
+
+				if (!isLandscape) {
+					document.getElementById("pano").style.display = "none";
+					document.getElementById("errorMessage").style.display = "block";
+					document.getElementById("msg").innerText = "For the best viewing experience, rotate your  device to Portrait";
+					console.log("isLandscape");
+				} else {
+					KRpanoLoad();
+					console.log("is Portrait");
+				}
+			} else {
+				if (!isLandscape) {
+					document.getElementById("pano").style.display = "none";
+					document.getElementById("errorMessage").style.display = "block";
+					document.getElementById("msg").innerText = "For the best viewing experience, rotate your  device to Portrait";
+					console.log("isLandscape");
+				} else {
+					KRpanoLoad();
+					console.log("is Portrait");
+				}
+			}
+
+		}
+		function KRpanoLoad() {
+			// Hide error message and display pano
+			document.getElementById("errorMessage").style.display = "none";
+			document.getElementById("pano").style.display = "block";
+
+			// Embed the panorama
+			embedpano({
+				swf: "krpano.swf",
+				xml: "tour.xml",
+				target: "pano",
+				html5: "auto",
+				mobilescale: 1.0,
+				passQueryParameters: true,
+				onready: krpanoLoaded
+			});
+		}
+		orientationchange();
+		window.addEventListener("resize", orientationchange);
+		function krpanoLoaded(krpano) {
+			console.log("KRPano is ready!");
+			document.getElementById("pano").style.display = "block";
+		}
+
+	</script>
+</body>
+
+
+</html>

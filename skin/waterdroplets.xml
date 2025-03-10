@@ -1,0 +1,17 @@
+<krpano version="1.20" xmlns="http://www.krpano.com/xml/krpano">
+
+    <action name="init">
+        set(plugin[hotspot].visible, true);
+        set(plugin[hotspot].scale, 1); 
+        pulse_hotspot();
+    </action>
+ 
+     
+    <action name="pulse_hotspot"> 
+        set(hotspot[pulse_hotspot].scale, 1.5);
+        delay(0.5);
+        set(hotspot[pulse_hotspot].scale, 1);
+        delay(0.5);
+        pulse_hotspot();  
+    </action>
+</krpano>

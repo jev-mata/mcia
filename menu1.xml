@@ -1,0 +1,66 @@
+<krpano>
+
+  <layer type="container" 
+        bgalpha="1"  
+        width="100%" 
+        bgcolor="0xFFFFFF" 
+        height="10.5%"   
+        flowchildren="h"     
+        align="center">
+            
+            <layer type="container" 
+                bgalpha="1"  
+                width="30%" 
+                bgcolor="0xFFFFFF" 
+                height="100%"   
+                flowchildren="h"     
+                align="center"> 
+                <layer name="map" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-map-2.png"  
+                    url="skin/new-skin/v2/menu-map-2.png"  
+                    active="skin/new-skin/v2/menu-map-active 2.png"   
+                        bgalpha="0"    
+                        scale="0.07" />
+                        
+                    <layer name="home" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-home-passive.png"  
+                    url="skin/new-skin/v2/menu-home-active.png"  
+                    active="skin/new-skin/v2/menu-home-active.png"   
+                        bgalpha="0"    
+                        scale="0.1"  />
+                        
+                    <layer name="streetview" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-streetview-passive.png" 
+                    url="skin/new-skin/v2/menu-streetview-passive.png"  
+                    active="skin/new-skin/v2/menu-streetview-active.png"   
+                        bgalpha="0"      
+                        scale="0.1" />
+                    <layer name="establishment" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-establishment-passive.png"  
+                    url="skin/new-skin/v2/menu-establishment-passive.png"  
+                    active="skin/new-skin/v2/menu-establishment-active.png"   
+                        bgalpha="0"    
+                        scale="0.1" />
+                    <layer name="floorplan" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-floorplan-passive.png"  
+                    url="skin/new-skin/v2/menu-floorplan-passive.png"  
+                    active="skin/new-skin/v2/menu-floorplan-active.png"   
+                        bgalpha="0"    
+                        scale="0.1"  />
+                    <layer name="floorplan2" 
+                style="menuBTN"
+                    passive="skin/new-skin/v2/menu-floorplan-passive.png" 
+                    url="skin/new-skin/v2/menu-floorplan-passive.png"   
+                    active="skin/new-skin/v2/menu-floorplan-active.png"   
+                        bgalpha="0"   
+                        scale="0.1"  />
+                        
+                </layer>
+        </layer>
+
+</krpano>

@@ -1,0 +1,213 @@
+<krpano>
+
+	<plan_settings  
+			editor="true"
+			url_plan="%FIRSTXML%/FloorPlan/"
+			start_open_plan="false"
+			start_open_plan_mobila="false"
+			auto_show_plan="false"
+			point_url_1="start.png"
+			point_url_2="spot_off.png"
+			point_url_3="activ.png"
+			pointv_url_1="eye_1.png"
+			pointv_url_2="eye_2.png"
+			pointv_url_3="eye_3.png"
+			radar_scale="4.4"
+			title_spot="true"
+			loadscene_blend="OPENBLEND(1.5, 0.0, 0.6, 0.5, easeOutQuad)"
+			loadsc_flags="KEEPVIEW"
+			compass="false"
+			start_open_compass="false"
+			compass_on_plan="false"
+			click_spot_exit_fs="true"
+			click_v_exit_fs="true"
+			click_exit_fs="true"
+			click_plan_fs="false"
+			zoom="true"
+			width_plans_one_all="true"
+			auto_height="true"
+			list_plan="true"
+			button_fullscreen="false"
+			button_plus_minus="false"
+			angle_placemark="true"
+			drag_plan="false"
+			margin_fs="5"
+			max_scale="1.0"
+			prealign="true"
+			backup="false"
+			edit_panel_x="492"
+			edit_panel_y="37"
+			navigation="true"
+			click_navigation="true"
+			auto_arrow="false"
+			specific_picture_point="false"
+			lang="en"
+			
+	/>
+
+
+	<action name="prealignFLPL" autorun="onstart">
+		set(scene[scene_terminal_1_arrival_exit_area].imgpr,0|269.492|0);
+ 	</action>
+
+
+	<!-- popup text style when hovering the mouse pointer over a dot  -->
+	<textstyle name="showtext_1" origin="cursor" edge="bottom" xoffset="0" yoffset="-3" fadeintime="0.0" showtime="0.1" fadetime="0.0" font="Verdana" fontsize="12.0" bold="false" italic="false" textcolor="0xffffff" textalign="none" padding="3" css="" background="true" backgroundcolor="0x555555" backgroundalpha="0.8" border="false" roundedge="3" shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0" textshadow="0.0" textshadowrange="4.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1.0" noclip="true" />
+
+	<style name="arrow_navi_flpl" type="image" keep="false" edge="center" url="%FIRSTXML%/FloorPlan/image/arrow.png" atv="22.8" rx="-69.12" scale="0.33" alpha="0.0" distorted="true" linkedscene="" pit2="" onloaded="tween(alpha, 0.5);" onover="set(alpha, 1);" onout="set(alpha, 0.5);" ondown="drag_navi_hs();" scalemode="scale" scalechildren="true" capture="true" keep_v="true" onclick="set(global.click_hs, true); loadsc_fp(*keep_v, *linkedscene); delayedcall(1,  set(click_hs, false); );" />
+
+	<style name="pointflpl" keep="true" type="image" align="center" width="90" height="prop" scale="1" zorder="31" linkedscene="" title="" ah="" av="" ic_1="" ic_2="" onhover="if(plan_settings.title_spot AND title AND showtxt, showtext(*title, showtext_1));" keep_v="true" ondown="if(edit_pit, drag_p())" onclick="loadsc_fp(*keep_v, *linkedscene); click_spot_fp(*title);" />
+
+	<style name="pointflpl_v" keep="true" type="image" align="center" width="40" height="prop" ondown="drag_p_v()" title="" icon_1="" icon_2="" onhover="if(plan_settings.title_spot AND title, showtext(*title, showtext_1));" />
+
+	
+	<!--  Plan Container  -->
+	<layer name="cont_fp_all" style="cont_fp" height="462" x="30" y="30" align="center" edge="center" bgcolor="0xffffff" start_x="30" start_y="30" />
+	
+	<!--  Container of plans and buttons  -->
+	<layer name="plan_cont_fp2" style="cont_fp2" bgshadow="0 0 0 0х000001 0.5" bgcolor="0xffffff" bgalpha="0" />
+
+	
+	<!-- ****************          PLANS          ******************* -->
+
+	<layer name="plan_1" style="style_plan" url="%FIRSTXML%/FloorPlan/plan/t1-arrival-final.png" title_fp="arrival_terminal1" start_scene="scene_map-new" start_w="900" start_h="400" heading_rad="273" radar_scale="4.14" plan_ur="t1-arrival-final.png" />
+	<layer name="plan_2" style="style_plan" url="%FIRSTXML%/FloorPlan/plan/t1-departure-final.png" title_fp="departure_area_terminal1" start_scene="scene_Terminal_1_Departure_Standee_Logo" start_w="900" start_h="400" pit_width="60" radar_scale="4.14" plan_ur="t1-departure-final.png" />
+	<layer name="plan_3" style="style_plan" url="%FIRSTXML%/FloorPlan/plan/t2-departure-final.png" title_fp="departure_terminal2" start_scene="scene_Terminal_2_Departure_Entrance_Middle_Area" start_w="900" pit_width="57" radar_scale="4.14" plan_ur="t2-departure-final.png" />
+	<layer name="plan_4" style="style_plan" url="%FIRSTXML%/FloorPlan/plan/t2-arrival-final.png" title_fp="arrival_terminal2" start_scene="scene_terminal_2_arrival_middle_area" start_w="900" start_h="250" radar_scale="4.14" plan_ur="t2-arrival-final.png" />
+	
+
+	<!-- ***************          POINTS          ******************* -->
+
+	<layer name="plan_1_22" style="pointflpl" parent="plan_1" x="-50" y="702" linkedscene="scene_2d-dutyfree" title="Duty Free" />
+	<layer name="plan_1_23" style="pointflpl" parent="plan_1" x="-524" y="269" linkedscene="scene_2D_-_Car_Rentals" title="Hertz Car Rental" />
+	<layer name="plan_1_24" style="pointflpl" parent="plan_1" x="-1504" y="702" linkedscene="scene_seafood_paradise_-_dining_area" title="Seafood Paradise" />
+	<layer name="plan_1_25" style="pointflpl" parent="plan_1" x="-626" y="268" linkedscene="scene_2D_-_Curex" title="Curex Money Changer" />
+	<layer name="plan_1_26" style="pointflpl" parent="plan_1" width="120" x="-729" y="269" linkedscene="scene_2D_-_Sim_Cards_1" title="Sim Card Booths" />
+	<layer name="plan_1_27" style="pointflpl" parent="plan_1" x="839" y="357" linkedscene="scene_Sweets___Stuff_-_360" title="Tah-mee Frozen Yogurt" />
+	<layer name="plan_1_28" style="pointflpl" parent="plan_1" x="-380" y="360" linkedscene="scene_macao_imperial_-_dine_area" title="Macao Imperial" />
+	<layer name="plan_1_29" style="pointflpl" parent="plan_1" x="320" y="346" linkedscene="scene_nippon_ramen_-_dine_area" title="Nippon Ramen" />
+	<layer name="plan_1_30" style="pointflpl" parent="plan_1" x="621" y="365" linkedscene="scene_casa_verde_-_counter_area" title="Casa Verde" />
+	<layer name="plan_1_34" style="pointflpl" parent="plan_1" x="957" y="186" linkedscene="scene_2d-atm" title="ATM" />
+	<layer name="plan_1_4" style="pointflpl" parent="plan_1" x="209" y="555" linkedscene="scene_2D_-_Zip_N_Sip" title="Zip N Sip" />
+	<layer name="plan_1_5" style="pointflpl" parent="plan_1" x="210" y="495" linkedscene="Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles" title="Lechon Belly" />
+	<layer name="plan_1_7" style="pointflpl" parent="plan_1" x="-1208" y="397" linkedscene="scene_2d_-_car_rentals" title="Car Rentals" />
+	<layer name="plan_1_8" style="pointflpl" parent="plan_1" x="-1080" y="206" linkedscene="scene_2d_-_atm_left" title="ATM Left" />
+	<layer name="plan_1_9" style="pointflpl" parent="plan_1" x="-958" y="357" linkedscene="scene_2d_-__breadtalk" title="BreadTalk" />
+	<layer name="plan_1_11" style="pointflpl" parent="plan_1" x="-844" y="491" linkedscene="scene_2d_-_ngo_hiong" title="Ngo Hiong" />
+	<layer name="plan_1_12" style="pointflpl" parent="plan_1" x="414" y="553" linkedscene="scene_2D_-_Potato_corners" title="Potato Corners" />
+	<layer name="plan_1_13" style="pointflpl" parent="plan_1" x="416" y="491" linkedscene="scene_2D_-_Potato_corners" title="Potato Corners" />
+	<layer name="plan_1_16" style="pointflpl" parent="plan_1" x="-502" y="357" linkedscene="scene_krispy_kreme_-_counter_area" title="Krispy Kreme" />
+	<layer name="plan_1_18" style="pointflpl" parent="plan_1" x="-164" y="249" linkedscene="scene_2d_-_amery_flower_shop" title="Amery Flower Shop" />
+	<layer name="plan_1_19" style="pointflpl" parent="plan_1" x="317" y="352" linkedscene="scene_Nippon_Ramen_-_Dine_Area" title="Nippon Rame" />
+	<layer name="plan_1_21" style="pointflpl" parent="plan_1" x="624" y="271" linkedscene="scene_2D_-_Car_Rentals" title="Hertz Car Rental" />
+	<layer name="plan_1_1" style="pointflpl" parent="plan_1" x="-623" y="527" linkedscene="scene_Food_Avenue_-_360" title="Food Avenue" />
+	<layer name="plan_1_15" style="pointflpl" parent="plan_1" x="415" y="270" linkedscene="scene_2D_-_Sim_Cards_1" title="Sim Card Booths" />
+	<layer name="plan_1_17" style="pointflpl" parent="plan_1" x="523" y="268" linkedscene="scene_2D_-_Curex" title="Curex Money Changer" />
+	<layer name="plan_1_2" style="pointflpl" parent="plan_1" x="-63" y="333" linkedscene="scene_terminal_1_arrival_exit_area" title="Terminal 1 Arrival Exit Area" />
+	<layer name="plan_1_3" style="pointflpl" parent="plan_1" x="1089" y="508" linkedscene="scene_terminal_1_arrival_right_wing" title="Terminal 1 Arrival Right Wing" />
+	<layer name="plan_2_2" style="pointflpl" parent="plan_2" x="265" y="732" linkedscene="scene_terminal_1_departure_standee_logo" title="b" />
+	<layer name="plan_2_1" style="pointflpl" parent="plan_2" x="-534" y="941" title="a" />
+	<layer name="plan_2_3" style="pointflpl" parent="plan_2" x="-228" y="897" title="c" />
+	<layer name="plan_2_4" style="pointflpl" parent="plan_2" x="-47" y="779" title="d" />
+	<layer name="plan_2_5" style="pointflpl" parent="plan_2" x="-113" y="700" title="e" />
+	<layer name="plan_2_6" style="pointflpl" parent="plan_2" x="143" y="768" title="f" />
+	<layer name="plan_2_7" style="pointflpl" parent="plan_2" x="367" y="775" title="g" />
+	<layer name="plan_2_8" style="pointflpl" parent="plan_2" x="577" y="775" title="h" />
+	<layer name="plan_2_10" style="pointflpl" parent="plan_2" x="919" y="954" title="j" />
+	<layer name="plan_2_11" style="pointflpl" parent="plan_2" x="942" y="885" title="h" />
+	<layer name="plan_2_12" style="pointflpl" parent="plan_2" x="1020" y="928" />
+	<layer name="plan_2_13" style="pointflpl" parent="plan_2" x="1121" y="934" />
+	<layer name="plan_2_14" style="pointflpl" parent="plan_2" x="908" y="734" />
+	<layer name="plan_2_15" style="pointflpl" parent="plan_2" x="-249" y="528" />
+	<layer name="plan_2_16" style="pointflpl" parent="plan_2" x="-216" y="368" />
+	<layer name="plan_2_17" style="pointflpl" parent="plan_2" x="-453" y="349" />
+	<layer name="plan_2_18" style="pointflpl" parent="plan_2" x="-669" y="347" />
+	<layer name="plan_2_19" style="pointflpl" parent="plan_2" x="1011" y="340" />
+	<layer name="plan_2_20" style="pointflpl" parent="plan_2" x="1220" y="344" />
+	<layer name="plan_2_21" style="pointflpl" parent="plan_2" x="-815" y="-139" />
+	<layer name="plan_2_22" style="pointflpl" parent="plan_2" x="-559" y="-141" />
+	<layer name="plan_2_23" style="pointflpl" parent="plan_2" x="-451" y="-132" />
+	<layer name="plan_2_24" style="pointflpl" parent="plan_2" x="-360" y="-139" />
+	<layer name="plan_2_25" style="pointflpl" parent="plan_2" x="-246" y="-139" />
+	<layer name="plan_2_26" style="pointflpl" parent="plan_2" x="-138" y="-139" />
+	<layer name="plan_2_27" style="pointflpl" parent="plan_2" x="-4" y="-214" />
+	<layer name="plan_2_28" style="pointflpl" parent="plan_2" x="-952" y="-288" />
+	<layer name="plan_2_29" style="pointflpl" parent="plan_2" x="-837" y="-274" />
+	<layer name="plan_2_30" style="pointflpl" parent="plan_2" x="-408" y="-272" />
+	<layer name="plan_2_31" style="pointflpl" parent="plan_2" x="-306" y="-410" />
+	<layer name="plan_2_32" style="pointflpl" parent="plan_2" x="-180" y="-410" />
+	<layer name="plan_2_33" style="pointflpl" parent="plan_2" x="-4" y="-414" />
+	<layer name="plan_2_34" style="pointflpl" parent="plan_2" x="-941" y="-507" />
+	<layer name="plan_2_35" style="pointflpl" parent="plan_2" x="31" y="-510" />
+	<layer name="plan_2_36" style="pointflpl" parent="plan_2" x="231" y="-430" />
+	<layer name="plan_2_37" style="pointflpl" parent="plan_2" x="504" y="-425" />
+	<layer name="plan_2_38" style="pointflpl" parent="plan_2" x="617" y="-430" />
+	<layer name="plan_2_39" style="pointflpl" parent="plan_2" x="770" y="-430" />
+	<layer name="plan_2_40" style="pointflpl" parent="plan_2" x="824" y="-132" />
+	<layer name="plan_2_41" style="pointflpl" parent="plan_2" x="941" y="-137" />
+	<layer name="plan_2_42" style="pointflpl" parent="plan_2" x="1054" y="-132" />
+	<layer name="plan_2_43" style="pointflpl" parent="plan_2" x="1332" y="-137" />
+	<layer name="plan_2_44" style="pointflpl" parent="plan_2" x="1614" y="-68" />
+	<layer name="plan_2_45" style="pointflpl" parent="plan_2" x="1958" y="-148" />
+	<layer name="plan_2_46" style="pointflpl" parent="plan_2" x="2111" y="-150" />
+	<layer name="plan_2_47" style="pointflpl" parent="plan_2" x="1603" y="-216" />
+	<layer name="plan_2_48" style="pointflpl" parent="plan_2" x="1427" y="-281" />
+	<layer name="plan_2_49" style="pointflpl" parent="plan_2" x="1117" y="-281" />
+	<layer name="plan_2_50" style="pointflpl" parent="plan_2" x="1723" y="-279" />
+	<layer name="plan_2_51" style="pointflpl" parent="plan_2" x="1725" y="-427" />
+	<layer name="plan_2_52" style="pointflpl" parent="plan_2" x="1627" y="-427" />
+	<layer name="plan_2_53" style="pointflpl" parent="plan_2" x="1426" y="-483" />
+	<layer name="plan_2_54" style="pointflpl" parent="plan_2" x="1221" y="-481" />
+	<layer name="plan_2_55" style="pointflpl" parent="plan_2" x="335" y="-803" />
+	<layer name="plan_2_56" style="pointflpl" parent="plan_2" x="128" y="-834" />
+	<layer name="plan_4_1" style="pointflpl" parent="plan_4" x="156" y="921" linkedscene="scene_terminal_2_arrival_middle_area" title="Terminal 2 Arrival Middle Area" />
+	<layer name="plan_4_13" style="pointflpl" parent="plan_4" x="154" y="1010" linkedscene="scene_terminal_2_arrival_drop-off_area" title="Terminal 2 Arrival" />
+	<layer name="plan_4_14" style="pointflpl" parent="plan_4" x="147" y="276" linkedscene="scene_terminal_2_arrival_camden" title="Terminal 2 Arrival Camden" />
+	<layer name="plan_4_15" style="pointflpl" parent="plan_4" x="409" y="148" linkedscene="scene_terminal_2_arrival_elevator" title="Terminal 2 Arrival Elevator" />
+	<layer name="plan_4_16" style="pointflpl" parent="plan_4" x="-330" y="195" linkedscene="scene_terminal_2_arrival_exit" title="Terminal 2 Arrival Exit" />
+	<layer name="plan_4_4" style="pointflpl" parent="plan_4" x="406" y="217" title="3" />
+	<layer name="plan_4_5" style="pointflpl" parent="plan_4" x="682" y="215" title="4" />
+	<layer name="plan_4_6" style="pointflpl" parent="plan_4" x="596" y="74" title="5" />
+	<layer name="plan_4_7" style="pointflpl" parent="plan_4" x="406" y="74" title="6" />
+	<layer name="plan_4_8" style="pointflpl" parent="plan_4" x="143" y="73" title="7" />
+	<layer name="plan_4_9" style="pointflpl" parent="plan_4" x="155" y="-56" title="8" />
+	<layer name="plan_4_10" style="pointflpl" parent="plan_4" x="-215" y="-43" title="9" />
+	<layer name="plan_4_11" style="pointflpl" parent="plan_4" x="-346" y="-104" title="10" />
+	<layer name="plan_4_12" style="pointflpl" parent="plan_4" x="153" y="-457" title="11" />
+	<layer name="plan_3_1" style="pointflpl" parent="plan_3" x="153" y="891" linkedscene="scene_terminal_2_departure_entrance_middle_area" title="Terminal 2 Departure Entrance Middle Area" />
+	<layer name="plan_3_2" style="pointflpl" parent="plan_3" x="-134" y="877" linkedscene="scene_terminal_2_departure_left_wing" title="Terminal 2 Departure Left Wing" />
+	<layer name="plan_3_3" style="pointflpl" parent="plan_3" x="456" y="888" linkedscene="scene_terminal_2_departure_entrance_right_wing" title="Terminal 2 Departure Entrance Right Wing" />
+	<layer name="plan_3_4" style="pointflpl" parent="plan_3" x="159" y="1042" linkedscene="scene_terminal_2_departure_drop-off_bridge" title="Terminal 2 Departure Drop-off Bridge" />
+	<layer name="plan_3_5" style="pointflpl" parent="plan_3" x="162" y="1143" linkedscene="scene_terminal_2_departure_drop-off_bridge_2" title="Terminal 2 Departure Drop-off Bridge 2" />
+	<layer name="plan_3_6" style="pointflpl" parent="plan_3" x="419" y="231" title="6" />
+	<layer name="plan_3_7" style="pointflpl" parent="plan_3" x="-115" y="242" title="7" />
+	<layer name="plan_3_8" style="pointflpl" parent="plan_3" x="-457" y="-40" title="8" />
+	<layer name="plan_3_9" style="pointflpl" parent="plan_3" x="-576" y="-112" title="9" />
+	<layer name="plan_3_10" style="pointflpl" parent="plan_3" x="-658" y="-115" title="10" />
+	<layer name="plan_3_11" style="pointflpl" parent="plan_3" x="-757" y="-109" title="11" />
+	<layer name="plan_3_12" style="pointflpl" parent="plan_3" x="-458" y="-178" title="12" />
+	<layer name="plan_3_13" style="pointflpl" parent="plan_3" x="-379" y="-190" title="13" />
+	<layer name="plan_3_14" style="pointflpl" parent="plan_3" x="-232" y="-117" title="14" />
+	<layer name="plan_3_15" style="pointflpl" parent="plan_3" x="159" y="-217" title="15" />
+	<layer name="plan_3_16" style="pointflpl" parent="plan_3" x="890" y="113" title="16" />
+	<layer name="plan_3_17" style="pointflpl" parent="plan_3" x="1301" y="-48" title="17" />
+	<layer name="plan_3_18" style="pointflpl" parent="plan_3" x="833" y="-158" title="18" />
+	<layer name="plan_3_19" style="pointflpl" parent="plan_3" x="684" y="-48" title="19" />
+	<layer name="plan_3_20" style="pointflpl" parent="plan_3" x="493" y="-205" title="20" />
+	<layer name="plan_3_21" style="pointflpl" parent="plan_3" x="512" y="-137" title="21" />
+	<layer name="plan_3_22" style="pointflpl" parent="plan_3" x="511" y="-418" title="22" />
+	<layer name="plan_3_23" style="pointflpl" parent="plan_3" x="341" y="-362" title="23" />
+	<layer name="plan_3_24" style="pointflpl" parent="plan_3" x="-213" y="-426" title="24" />
+	<layer name="plan_3_25" style="pointflpl" parent="plan_3" x="151" y="-507" title="25" />
+	<layer name="plan_3_26" style="pointflpl" parent="plan_3" x="51" y="-594" title="26" />
+	<layer name="plan_3_27" style="pointflpl" parent="plan_3" x="-595" y="-462" title="27" />
+	<layer name="plan_3_28" style="pointflpl" parent="plan_3" x="-439" y="-749" title="28" />
+	<layer name="plan_3_29" style="pointflpl" parent="plan_3" x="-225" y="749" title="29" />
+	<layer name="plan_3_30" style="pointflpl" parent="plan_3" x="544" y="751" title="30" />
+	
+
+	<!-- *************          POINTS VIEW          **************** -->
+
+	
+
+</krpano>

@@ -1,0 +1,849 @@
+﻿<krpano version="1.22" title="Virtual Tour">
+  
+<include url="skin/vtourskin.xml" />
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	
+	<scene name="scene_streetview_1" title="Streetview" onstart="" thumburl="panos/streetview_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="3.588" atv="-5.139" depth="1000.0" linkedscene="scene_streetview_2_security_stop" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_2_security_stop" title="Security Stop" onstart="" thumburl="panos/streetview_2_security_stop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_2_security_stop.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_2_security_stop.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-162.706" atv="-0.377" depth="1000.0" linkedscene="scene_streetview_1" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="6.72" atv="-2.159" depth="1000.0" linkedscene="scene_streetview_3" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_3" title="Streetview" onstart="" thumburl="panos/streetview_3.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="170.499" atv="-4.71" depth="1000.0" linkedscene="scene_streetview_2_security_stop" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="9.035" atv="-2.751" depth="1000.0" linkedscene="scene_streetview_4" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_4" title="Streetview 2" onstart="" thumburl="panos/streetview_4.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_4.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="0.285" atv="-1.165" depth="1000.0" linkedscene="scene_streetview_5_waterfront" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-179.794" atv="-4.07" depth="1000.0" linkedscene="scene_streetview_3" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_5_waterfront" title="Waterfront" onstart="" 
+	isLanguage="true"
+	en="Waterfront" 
+	chinese="街景" 
+	korean="ストリートビュー" 
+	japanese="스트리트 뷰" 
+	thumburl="panos/streetview_5_waterfront.tiles/thumb.jpg" lat="" lng="" alt="" heading="" >
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_5_waterfront.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_5_waterfront.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="6.104" atv="-4.487" depth="1000.0" linkedscene="scene_streetview_6" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-175.773" atv="-5.068" depth="1000.0" linkedscene="scene_streetview_4" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_6" title="Streetview" onstart="" thumburl="panos/streetview_6.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_6.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_6.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="157.169" atv="-2.447" depth="1000.0" linkedscene="scene_streetview_5_waterfront" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-14.201" atv="-2.198" depth="1000.0" linkedscene="scene_streetview_7" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_7" title="MCIAA" onstart="" thumburl="panos/streetview_7.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_7.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_7.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-127.187" atv="-5.221" depth="1000.0" linkedscene="scene_streetview_6" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="25.807" atv="-3.619" depth="1000.0" linkedscene="scene_streetview_8_to_terminal_2" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-8.166" atv="-4.205" depth="1000.0" linkedscene="scene_streetview_25_to_terminal_1_departure" linkedscene_spot="spot4" linkedscene_hoffset="121.7" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_8_to_terminal_2" title="To Terminal 2" onstart="" thumburl="panos/streetview_8_to_terminal_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_8_to_terminal_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_8_to_terminal_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="155.161" atv="-4.118" depth="1000.0" linkedscene="scene_streetview_7" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-3.178" atv="-3.712" depth="1000.0" linkedscene="scene_streetview_9_to_terminal_2" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_9_to_terminal_2" title="Streetview" onstart="" thumburl="panos/streetview_9_to_terminal_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_9_to_terminal_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_9_to_terminal_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-179.709" atv="-4.229" depth="1000.0" linkedscene="scene_streetview_8_to_terminal_2" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="4.655" atv="-3.443" depth="1000.0" linkedscene="scene_streetview_10_to_terminal_2_departure" linkedscene_spot="spot3" linkedscene_hoffset="84.83" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-7.461" atv="-3.270" depth="1000.0" linkedscene="scene_streetview_16_to_terminal_2_arrival" linkedscene_spot="spot4" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_10_to_terminal_2_departure" title="To Terminal 2 Departure" onstart="" thumburl="panos/streetview_10_to_terminal_2_departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_10_to_terminal_2_departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_10_to_terminal_2_departure.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1536,2816,5632" />
+		</image>
+
+		
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="65.960" atv="-2.916" depth="1000.0" linkedscene="scene_streetview_11_to_terminal_2_departure" linkedscene_spot="spot1" linkedscene_hoffset="-23.56" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-91.134" atv="-2.089" linkedscene="scene_streetview_9_to_terminal_2" linkedscene_hoffset="275.17" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_11_to_terminal_2_departure" title="Streetview" onstart="" thumburl="panos/streetview_11_to_terminal_2_departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_11_to_terminal_2_departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_11_to_terminal_2_departure.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-137.603" atv="-1.99" depth="1000.0" linkedscene="scene_streetview_10_to_terminal_2_departure" linkedscene_spot="spot2" linkedscene_hoffset="383.56" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-33.039" atv="-3.821" depth="1000.0" linkedscene="scene_streetview_12_to_terminal_2_departure" linkedscene_spot="spot3" linkedscene_hoffset="111.73" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_12_to_terminal_2_departure" title="Streetview" onstart="" thumburl="panos/streetview_12_to_terminal_2_departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_12_to_terminal_2_departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_12_to_terminal_2_departure.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,640,1280,2688,5376" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-101.312" atv="-1.842" depth="1000.0" linkedscene="scene_streetview_11_to_terminal_2_departure" linkedscene_spot="spot2" linkedscene_hoffset="248.27" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="108.856" atv="-6.96" depth="1000.0" linkedscene="scene_streetview_13_to_terminal_2_departure_drop_off" linkedscene_spot="spot2" linkedscene_hoffset="155.94" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_13_to_terminal_2_departure_drop_off" title="Streetview" onstart="" thumburl="panos/streetview_13_to_terminal_2_departure_drop_off.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_13_to_terminal_2_departure_drop_off.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_13_to_terminal_2_departure_drop_off.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="84.801" atv="-3.948" depth="1000.0" linkedscene="scene_streetview_12_to_terminal_2_departure" linkedscene_spot="spot1" linkedscene_hoffset="204.06" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-93.259" atv="-4.159" depth="1000.0" linkedscene="scene_streetview_13_to_terminal_2_departure_exit" linkedscene_spot="spot3" linkedscene_hoffset="451.87" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-3.694" atv="-3.343" linkedscene="scene_Terminal_2_Departure_Drop-off_Bridge_2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_13_to_terminal_2_departure_exit" title="Streetview" onstart="" thumburl="panos/streetview_13_to_terminal_2_departure_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_13_to_terminal_2_departure_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_13_to_terminal_2_departure_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="178.609" atv="-3.461" depth="1000.0" linkedscene="scene_streetview_13_to_terminal_2_departure_drop_off" linkedscene_spot="spot1" linkedscene_hoffset="-91.87" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-2.244" atv="-3.986" depth="1000.0" linkedscene="scene_streetview_14_to_terminal_2_departure_exit" linkedscene_spot="spot2" linkedscene_hoffset="96.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_14_to_terminal_2_departure_exit" title="Terminal 2 Departure Exit" onstart="" thumburl="panos/streetview_14_to_terminal_2_departure_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_14_to_terminal_2_departure_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_14_to_terminal_2_departure_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-86.246" atv="-3.452" depth="1000.0" linkedscene="scene_streetview_13_to_terminal_2_departure_exit" linkedscene_spot="spot1" linkedscene_hoffset="264.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="75.38" atv="-4.499" depth="1000.0" linkedscene="scene_streetview_15_to_terminal_2_departure_exit" linkedscene_spot="spot3" linkedscene_hoffset="13.62" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_15_to_terminal_2_departure_exit" title="Streetview" onstart="" thumburl="panos/streetview_15_to_terminal_2_departure_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_15_to_terminal_2_departure_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_15_to_terminal_2_departure_exit.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,640,1280,2816,5632" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-90.998" atv="-3.517" depth="1000.0" linkedscene="scene_streetview_14_to_terminal_2_departure_exit" linkedscene_spot="spot1" linkedscene_hoffset="346.38" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="88.01" atv="-4.966" depth="1000.0" linkedscene="scene_streetview_5_waterfront" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_16_to_terminal_2_arrival" title="To Terminal 2 Arrival" onstart="" thumburl="panos/streetview_16_to_terminal_2_arrival.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_16_to_terminal_2_arrival.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_16_to_terminal_2_arrival.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-90.658" atv="-3.313" depth="1000.0" linkedscene="scene_streetview_9_to_terminal_2" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="91.295" atv="-5.52" depth="1000.0" linkedscene="scene_streetview_17_to_terminal_2_arrival" linkedscene_spot="spot3" linkedscene_hoffset="13.64" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_17_to_terminal_2_arrival" title="streetview-17-to-terminal-2-arrival" onstart="" thumburl="panos/streetview_17_to_terminal_2_arrival.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_17_to_terminal_2_arrival.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_17_to_terminal_2_arrival.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-75.066" atv="-2.481" depth="1000.0" linkedscene="scene_streetview_16_to_terminal_2_arrival" linkedscene_spot="spot2" linkedscene_hoffset="346.36" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="77.175" atv="-3.516" depth="1000.0" linkedscene="scene_streetview_18_to_terminal_2_arrival" linkedscene_spot="spot2" linkedscene_hoffset="65.39" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_18_to_terminal_2_arrival" title="streetview-18-to-terminal-2-arrival" onstart="" thumburl="panos/streetview_18_to_terminal_2_arrival.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_18_to_terminal_2_arrival.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_18_to_terminal_2_arrival.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-37.431" atv="-3.477" depth="1000.0" linkedscene="scene_streetview_17_to_terminal_2_arrival" linkedscene_spot="spot1" linkedscene_hoffset="294.61" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="31.943" atv="-2.71" depth="1000.0" linkedscene="scene_streetview_19_to_terminal_2_arrival" linkedscene_spot="spot3" linkedscene_hoffset="37.52" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_19_to_terminal_2_arrival" title="streetview-19-to-terminal-2-arrival" onstart="" thumburl="panos/streetview_19_to_terminal_2_arrival.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_19_to_terminal_2_arrival.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_19_to_terminal_2_arrival.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-110.537" atv="-4.701" depth="1000.0" linkedscene="scene_streetview_18_to_terminal_2_arrival" linkedscene_spot="spot1" linkedscene_hoffset="322.48" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="89.988" atv="-2.83" depth="1000.0" linkedscene="scene_streetview_20_to_terminal_2_arrival_drop_off" linkedscene_spot="spot2" linkedscene_hoffset="178.97" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_20_to_terminal_2_arrival_drop_off" title="streetview-20-to-terminal-2-arrival-drop-off" onstart="" thumburl="panos/streetview_20_to_terminal_2_arrival_drop_off.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_20_to_terminal_2_arrival_drop_off.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_20_to_terminal_2_arrival_drop_off.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="88.961" atv="-2.317" depth="1000.0" linkedscene="scene_streetview_19_to_terminal_2_arrival" linkedscene_spot="spot1" linkedscene_hoffset="181.03" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-90.016" atv="-5.098" depth="1000.0" linkedscene="scene_streetview_21_terminal_2_arrival_exit" linkedscene_spot="spot3" linkedscene_hoffset="177.47" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-3.209" atv="-1.425" linkedscene="scene_Terminal_2_Arrival_Drop-off_Area" linkedscene_hoffset="0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_21_terminal_2_arrival_exit" title="streetview-21-terminal-2-arrival-exit" onstart="" thumburl="panos/streetview_21_terminal_2_arrival_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_21_terminal_2_arrival_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_21_terminal_2_arrival_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-92.547" atv="-1.436" depth="1000.0" linkedscene="scene_streetview_20_to_terminal_2_arrival_drop_off" linkedscene_spot="spot1" linkedscene_hoffset="182.53" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="78.66" atv="-5.728" depth="1000.0" linkedscene="scene_streetview_22_terminal_2_arrival_to_city" linkedscene_spot="spot2" linkedscene_hoffset="22.89" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="93.572" atv="-5.831" depth="1000.0" linkedscene="scene_streetview_24_terminal_2_arrival_to_terminal_1" linkedscene_spot="spot4" linkedscene_hoffset="-1.77" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-3.209" atv="-1.425" linkedscene="scene_streetview_20_to_terminal_2_arrival_drop_off" linkedscene_hoffset="180.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_22_terminal_2_arrival_to_city" title="streetview-22-terminal-2-arrival-to-city" onstart="" thumburl="panos/streetview_22_terminal_2_arrival_to_city.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_22_terminal_2_arrival_to_city.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_22_terminal_2_arrival_to_city.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-78.45" atv="2.188" depth="1000.0" linkedscene="scene_streetview_21_terminal_2_arrival_exit" linkedscene_spot="spot1" linkedscene_hoffset="337.11" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="88.408" atv="-4.611" depth="1000.0" linkedscene="scene_streetview_23_terminal_2_arrival_exit" linkedscene_spot="spot3" linkedscene_hoffset="360.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_23_terminal_2_arrival_exit" title="streetview-23-terminal-2-arrival-exit" onstart="" thumburl="panos/streetview_23_terminal_2_arrival_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_23_terminal_2_arrival_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_23_terminal_2_arrival_exit.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,640,1280,2816,5632" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="268.408" atv="-4.611" depth="1000.0" linkedscene="scene_streetview_22_terminal_2_arrival_to_city" linkedscene_spot="spot1" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="88.482" atv="-4.684" depth="1000.0" linkedscene="scene_streetview_5_waterfront" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_24_terminal_2_arrival_to_terminal_1" title="Terminal 2 Arrival To Terminal 1" onstart="" thumburl="panos/streetview_24_terminal_2_arrival_to_terminal_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_24_terminal_2_arrival_to_terminal_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_24_terminal_2_arrival_to_terminal_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot4" style="skin_hotspotstyle_streetview" ath="-88.2" atv="-3.109" depth="1000.0" linkedscene="scene_streetview_21_terminal_2_arrival_exit" linkedscene_spot="spot2" linkedscene_hoffset="361.77" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="91.75" atv="-3.974" depth="1000.0" linkedscene="scene_streetview_25_to_terminal_1_departure" linkedscene_spot="spot2" linkedscene_hoffset="-43.5" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_25_to_terminal_1_departure" title="To Terminal 1 and Car Park" onstart="" thumburl="panos/streetview_25_to_terminal_1_departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_25_to_terminal_1_departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_25_to_terminal_1_departure.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-131.753" atv="-0.824" depth="1000.0" linkedscene="scene_streetview_24_terminal_2_arrival_to_terminal_1" linkedscene_spot="spot1" linkedscene_hoffset="403.5" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="77.641" atv="-4.541" depth="1000.0" linkedscene="scene_streetview_26_terminal_1_departure_parking" linkedscene_spot="spot3" linkedscene_hoffset="78.36" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle_streetview" ath="-66.467" atv="-1.768" depth="1000.0" linkedscene="scene_streetview_7" linkedscene_spot="spot3" linkedscene_hoffset="238.3" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_26_terminal_1_departure_parking" title="Parking Entrance" onstart="" thumburl="panos/streetview_26_terminal_1_departure_parking.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_26_terminal_1_departure_parking.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_26_terminal_1_departure_parking.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-23.996" atv="-3.071" depth="1000.0" linkedscene="scene_streetview_25_to_terminal_1_departure" linkedscene_spot="spot1" linkedscene_hoffset="281.64" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="90.053" atv="-5.855" depth="1000.0" linkedscene="scene_streetview_27_terminal_1_departure" linkedscene_spot="spot2" linkedscene_hoffset="22.2" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-132.102" atv="-0.472" depth="1000.0" linkedscene="scene_streetview_39_parking_entrance" linkedscene_spot="spot4" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot4" style="skin_hotspotstyle_streetview" ath="-100.472" atv="-0.606" depth="1000.0" linkedscene="scene_streetview_40_parking_ticket_motor" linkedscene_spot="spot5" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_27_terminal_1_departure" title="To Terminal 1 Departure" onstart="" thumburl="panos/streetview_27_terminal_1_departure.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_27_terminal_1_departure.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_27_terminal_1_departure.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-67.747" atv="0.391" depth="1000.0" linkedscene="scene_streetview_26_terminal_1_departure_parking" linkedscene_spot="spot1" linkedscene_hoffset="337.8" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="104.732" atv="-6.044" depth="1000.0" linkedscene="scene_streetview_28_terminal_1_departure_day" linkedscene_spot="spot3" linkedscene_hoffset="206.99" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_28_terminal_1_departure_day" title="Terminal 1 Departure" onstart="" thumburl="panos/streetview_28_terminal_1_departure_day.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_28_terminal_1_departure_day.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_28_terminal_1_departure_day.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="135.592" atv="-4.353" depth="1000.0" linkedscene="scene_streetview_27_terminal_1_departure" linkedscene_spot="spot1" linkedscene_hoffset="153.01" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-30.509" atv="-1.857" depth="1000.0" linkedscene="scene_streetview_29_terminal_1_departure_drop_off_day" linkedscene_spot="spot2" linkedscene_hoffset="293.78" use3dtransition="true" />
+
+	</scene>
+<!-- scene_Terminal_1_Departure_Drop-off_Middle_Area-->
+	<scene name="scene_streetview_29_terminal_1_departure_drop_off_day" title="Terminal 1 departure" 
+	isLanguage="true"
+	en="Terminal 1 departure"
+	japanese="第1ターミナル出発"
+	chinese="1 号航站楼出发"
+	korean="제1터미널 출발"
+	onstart="" thumburl="panos/streetview_29_terminal_1_departure_drop_off_day.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_29_terminal_1_departure_drop_off_day.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_29_terminal_1_departure_drop_off_day.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="83.266" atv="-3.057" depth="1000.0" linkedscene="scene_streetview_28_terminal_1_departure_day" linkedscene_spot="spot1" linkedscene_hoffset="66.22" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-85.225" atv="-2.789" depth="1000.0" linkedscene="scene_streetview_30_terminal_1_departure_taxi_bay_entrance" linkedscene_spot="spot3" linkedscene_hoffset="179.06" use3dtransition="true" />
+
+	</scene>
+
+<!-- scene_Terminal_1_Departure_Drop-off_Middle_Area_Night-->
+	<scene name="scene_streetview_29_terminal_1_departure_drop_off_night" title="streetview-29-terminal-1-departure-drop-off-night" onstart="" thumburl="panos/streetview_29_terminal_1_departure_drop_off_night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_29_terminal_1_departure_drop_off_night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_29_terminal_1_departure_drop_off_night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_streetview_30_terminal_1_departure_taxi_bay_entrance" title="Terminal 1 Departure Taxi Bay Entrance" onstart="" thumburl="panos/streetview_30_terminal_1_departure_taxi_bay_entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_30_terminal_1_departure_taxi_bay_entrance.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_30_terminal_1_departure_taxi_bay_entrance.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-86.161" atv="-2.991" depth="1000.0" linkedscene="scene_streetview_29_terminal_1_departure_drop_off_day" linkedscene_spot="spot1" linkedscene_hoffset="180.94" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="91.471" atv="-3.141" depth="1000.0" linkedscene="scene_streetview_31_terminal_1_exit" linkedscene_spot="spot2" linkedscene_hoffset="-3.13" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="177.121" atv="-1.218" depth="1000.0" linkedscene="scene_streetview_35_terminal_1_taxi_waiting_area" linkedscene_spot="spot4" linkedscene_hoffset="-83.26" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_31_terminal_1_exit" title="Terminal 1 Exit" onstart="" thumburl="panos/streetview_31_terminal_1_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_31_terminal_1_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_31_terminal_1_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-91.663" atv="-3.617" depth="1000.0" linkedscene="scene_streetview_30_terminal_1_departure_taxi_bay_entrance" linkedscene_spot="spot1" linkedscene_hoffset="363.13" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="80.523" atv="-4.486" depth="1000.0" linkedscene="scene_streetview_32_terminal_1_exit" linkedscene_spot="spot3" linkedscene_hoffset="58.03" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="119.115" atv="-4.129" depth="1000.0" linkedscene="scene_streetview_36_terminal_1_arrival_taxi_bay" linkedscene_spot="spot4" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_32_terminal_1_exit" title="Terminal 1 Exit" onstart="" thumburl="panos/streetview_32_terminal_1_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_32_terminal_1_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_32_terminal_1_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-38.704" atv="-2.593" depth="1000.0" linkedscene="scene_streetview_31_terminal_1_exit" linkedscene_spot="spot1" linkedscene_hoffset="301.97" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="52.418" atv="-3.527" depth="1000.0" linkedscene="scene_streetview_33_terminal_1_exit" linkedscene_spot="spot2" linkedscene_hoffset="32.15" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_33_terminal_1_exit" title="Terminal 1 Exit" onstart="" thumburl="panos/streetview_33_terminal_1_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_33_terminal_1_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_33_terminal_1_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="83.267" atv="-6.607" depth="1000.0" linkedscene="scene_streetview_34_terminal_1_exit" linkedscene_spot="spot3" linkedscene_hoffset="9.81" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-98.503" atv="-2.506" depth="1000.0" linkedscene="scene_streetview_38_terminal_1_arrival_taxi_bay_exit" linkedscene_spot="spot1" linkedscene_hoffset="361.84" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_34_terminal_1_exit" title="Streetview Terminal 1 Exit" onstart="" thumburl="panos/streetview_34_terminal_1_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_34_terminal_1_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_34_terminal_1_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-86.926" atv="-0.426" depth="1000.0" linkedscene="scene_streetview_33_terminal_1_exit" linkedscene_spot="spot1" linkedscene_hoffset="350.19" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="95.593" atv="-5.909" depth="1000.0" linkedscene="scene_streetview_4" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_35_terminal_1_taxi_waiting_area" title="Terminal 1 Taxi Waiting Area" onstart="" thumburl="panos/streetview_35_terminal_1_taxi_waiting_area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_35_terminal_1_taxi_waiting_area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_35_terminal_1_taxi_waiting_area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot4" style="skin_hotspotstyle_streetview" ath="-86.143" atv="-3.179" depth="1000.0" linkedscene="scene_streetview_30_terminal_1_departure_taxi_bay_entrance" linkedscene_spot="spot2" linkedscene_hoffset="443.26" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="87.18" atv="-2.73" depth="1000.0" linkedscene="scene_streetview_35_1_terminal_1_bus_waiting_area" linkedscene_spot="spot2" linkedscene_hoffset="237.09" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_36_terminal_1_arrival_taxi_bay" title="Terminal 1 Arrival Taxi Bay" onstart="" thumburl="panos/streetview_36_terminal_1_arrival_taxi_bay.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_36_terminal_1_arrival_taxi_bay.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_36_terminal_1_arrival_taxi_bay.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="154.007" atv="-2.395" depth="1000.0" linkedscene="scene_streetview_35_1_terminal_1_bus_waiting_area" linkedscene_spot="spot1" linkedscene_hoffset="122.91" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-90.268" atv="-1.632" depth="1000.0" linkedscene="scene_streetview_37_terminal_1_arrival_taxi_bay" linkedscene_spot="spot3" linkedscene_hoffset="360.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_37_terminal_1_arrival_taxi_bay" title="streetview-37-terminal-1-arrival-taxi-bay" onstart="" thumburl="panos/streetview_37_terminal_1_arrival_taxi_bay.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_37_terminal_1_arrival_taxi_bay.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_37_terminal_1_arrival_taxi_bay.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="89.732" atv="-1.632" depth="1000.0" linkedscene="scene_streetview_36_terminal_1_arrival_taxi_bay" linkedscene_spot="spot1" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-151.715" atv="-3.13" depth="1000.0" linkedscene="scene_streetview_38_terminal_1_arrival_taxi_bay_exit" linkedscene_spot="spot2" linkedscene_hoffset="274.68" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_38_terminal_1_arrival_taxi_bay_exit" title="streetview-38-terminal-1-arrival-taxi-bay-exit" onstart="" thumburl="panos/streetview_38_terminal_1_arrival_taxi_bay_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_38_terminal_1_arrival_taxi_bay_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_38_terminal_1_arrival_taxi_bay_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-57.031" atv="-5.898" depth="1000.0" linkedscene="scene_streetview_37_terminal_1_arrival_taxi_bay" linkedscene_spot="spot1" linkedscene_hoffset="85.32" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="83.337" atv="-5.494" depth="1000.0" linkedscene="scene_streetview_33_terminal_1_exit" linkedscene_spot="spot3" linkedscene_hoffset="-1.84" use3dtransition="true" />
+
+	</scene>
+	<scene name="scene_streetview_35_1_terminal_1_bus_waiting_area" title="Tterminal 1 Bus Waiting Area" onstart="" thumburl="panos/streetview_35_1_terminal_1_bus_waiting_area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_35_1_terminal_1_bus_waiting_area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_35_1_terminal_1_bus_waiting_area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-24.166" atv="-2.578" depth="1000.0" linkedscene="scene_streetview_36_terminal_1_arrival_taxi_bay" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="-171.105" atv="-4.203" depth="1000.0" linkedscene="scene_streetview_35_terminal_1_taxi_waiting_area" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_39_parking_entrance" title="Parking Entrance" onstart="" thumburl="panos/streetview_39_parking_entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_39_parking_entrance.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/streetview_39_parking_entrance.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-0.016" atv="0.002" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_40_parking_ticket_car" linkedscene_spot="spot2" linkedscene_hoffset="360.02" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_40_parking_ticket_car" title="Parking Ticket Car" onstart="" thumburl="panos/streetview_40_parking_ticket_car.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_40_parking_ticket_car.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/streetview_40_parking_ticket_car.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="180.0" atv="0.018" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_39_parking_entrance" linkedscene_spot="spot1" linkedscene_hoffset="-0.02" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="0.386" atv="0.004" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_41_parking_exit" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle_streetview" ath="-0.392" atv="-0.001" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_39_parking_entrance" linkedscene_spot="spot4" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_40_parking_ticket_motor" title="Parking Ticket Motor" onstart="" thumburl="panos/streetview_40_parking_ticket_motor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_40_parking_ticket_motor.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/streetview_40_parking_ticket_motor.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_streetview_41_parking_exit" title="streetview-41-parking-exit" onstart="" thumburl="panos/streetview_41_parking_exit.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_41_parking_exit.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_41_parking_exit.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="1.405" atv="-3.748" depth="1000.0" linkedscene="scene_streetview_40_parking_ticket_car" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="137.708" atv="-3.106" depth="1000.0" linkedscene="scene_streetview_42_parking_area_day" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_42_parking_area_day" title="streetview-42-parking-area-day" onstart="" thumburl="panos/streetview_42_parking_area_day.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_42_parking_area_day.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_42_parking_area_day.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="55.433" atv="-1.44" depth="1000.0" linkedscene="scene_streetview_43_exit_payment" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_streetview_42_parking_area_night" title="streetview-42-parking-area-night" onstart="" thumburl="panos/streetview_42_parking_area_night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_42_parking_area_night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/streetview_42_parking_area_night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_streetview_43_exit_payment" title="streetview-43-exit-payment" onstart="" thumburl="panos/streetview_43_exit_payment.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/streetview_43_exit_payment.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520462" voffset="0.00">
+			<flat url="panos/streetview_43_exit_payment.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle_streetview" ath="-0.376" atv="0.018" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_42_parking_area_day" linkedscene_spot="spot2" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle_streetview" ath="0.417" atv="0.018" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_streetview_21_terminal_2_arrival_exit" linkedscene_spot="spot3" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+
+
+</krpano>

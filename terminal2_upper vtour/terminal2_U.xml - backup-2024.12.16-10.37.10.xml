@@ -1,0 +1,188 @@
+﻿<krpano version="1.21" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	<scene name="scene_Terminal_2_Departure_Drop-off_Bridge_2" title="Terminal 2 Departure Drop-off Bridge 2" onstart="" thumburl="panos/Terminal_2_Departure_Drop-off_Bridge_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Drop-off_Bridge_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Drop-off_Bridge_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.550" atv="-1.792" linkedscene="scene_terminal_2_departure_drop-off_bridge" linkedscene_hoffset="357.05" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Drop-off_bridge_2_night" title="Terminal 2 Departure Drop-off bridge 2 night" onstart="" thumburl="panos/Terminal_2_Departure_Drop-off_bridge_2_night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Drop-off_bridge_2_night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Drop-off_bridge_2_night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Drop-off_Bridge" title="Terminal 2 Departure Drop-off Bridge" onstart="" thumburl="panos/Terminal_2_Departure_Drop-off_Bridge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Drop-off_Bridge.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Drop-off_Bridge.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="178.602" atv="-0.782" linkedscene="scene_terminal_2_departure_drop-off_bridge_2" linkedscene_hoffset="2.95" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.276" atv="-3.280" linkedscene="scene_terminal_2_departure_entrance_middle_area" linkedscene_hoffset="1.72" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Drop-off_bridge_middle_area_night" title="Terminal 2 Departure Drop-off bridge middle area night" onstart="" thumburl="panos/Terminal_2_Departure_Drop-off_bridge_middle_area_night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Drop-off_bridge_middle_area_night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Drop-off_bridge_middle_area_night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+	
+
+	<scene name="scene_Terminal_2_Departure_Entrance_Middle_Area" title="Terminal 2 Departure Entrance Middle Area" onstart="" thumburl="panos/Terminal_2_Departure_Entrance_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Entrance_Middle_Area.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Entrance_Middle_Area.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-178.559" atv="0.405" linkedscene="scene_terminal_2_departure_drop-off_bridge" linkedscene_hoffset="358.28" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="94.719" atv="-0.772" linkedscene="scene_terminal_2_departure_entrance_right_wing" linkedscene_hoffset="5.98" use3dtransition="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-88.710" atv="-1.878" linkedscene="scene_terminal_2_departure_left_wing" linkedscene_hoffset="353.54" use3dtransition="true" />
+		
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Middle_Area_Entrance_Night" title="Terminal 2 Departure Middle Area Entrance Night" onstart="" thumburl="panos/Terminal_2_Departure_Middle_Area_Entrance_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Middle_Area_Entrance_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Middle_Area_Entrance_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+
+	<scene name="scene_Terminal_2_Departure_Entrance_Right_Wing" title="Terminal 2 Departure Entrance Right Wing" onstart="" thumburl="panos/Terminal_2_Departure_Entrance_Right_Wing.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Entrance_Right_Wing.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Entrance_Right_Wing.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-79.824" atv="-0.883" linkedscene="scene_terminal_2_departure_entrance_middle_area" linkedscene_hoffset="349.45" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Right_Wing_Entrance_Night" title="Terminal 2 Departure Right Wing Entrance Night" onstart="" thumburl="panos/Terminal_2_Departure_Right_Wing_Entrance_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Right_Wing_Entrance_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Right_Wing_Entrance_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Terminal_2_Departure_Left_Wing" title="Terminal 2 Departure Left Wing" onstart="" thumburl="panos/Terminal_2_Departure_Left_Wing.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Left_Wing.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Left_Wing.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="84.828" atv="-0.603" linkedscene="scene_terminal_2_departure_entrance_middle_area" linkedscene_hoffset="6.46" use3dtransition="true" />
+
+		</scene>
+
+	<scene name="scene_Terminal_2_Departure_Left_Wing_Entrance_Night" title="Terminal 2 Departure Left Wing Entrance Night" onstart="" thumburl="panos/Terminal_2_Departure_Left_Wing_Entrance_Night.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Terminal_2_Departure_Left_Wing_Entrance_Night.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Terminal_2_Departure_Left_Wing_Entrance_Night.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+		
+
+		
+
+	
+
+	
+
+	</scene>
+
+	
+
+	
+
+
+</krpano>
