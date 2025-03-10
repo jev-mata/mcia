@@ -4232,7 +4232,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
             <layer  url="skin/skin/introimage.png"    
             align="center"
             edge="center"
-            height.desktop="calc:((stagewidth * 0.50) + (stageheight * 0.5)) / 2" 
+            height.desktop="calc:((stagewidth * 0.80) + (stageheight * 0.5)) / 2" 
             height.tablet="calc:((stagewidth * 0.50) + (stageheight * 0.6)) / 2" 
             height.mobile="calc:((stagewidth * 0.50) + (stageheight * 0.6)) / 2" 
 
