@@ -132,7 +132,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     >  
     <layer  
         visible="true"
-        keep="true" type="text" width.desktop="60%" width.tablet="80%" width.mobile="90%" height.desktop="90%"  height.mobile="75%" height.tablet="85%" align="center"  
+        keep="true" type="text" width.desktop="55%" width.tablet="80%" width.mobile="90%" height.desktop="90%"  height.mobile="75%" height.tablet="85%" align="center"  
         bgalpha="1" 
         maxwidth.tablet="650"
         bgroundedge="30" 
@@ -140,7 +140,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         >  
            <layer   
         visible="true"
-        keep="true" type="text" width="90%" height="90%" align="center"  
+        keep="true" type="text" width="80%" height="90%" align="center"  
         bgalpha="1"  
         bgroundedge="30"
         enabled="true" 
@@ -4947,7 +4947,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                 align="centermiddle"
                 edge="centermiddle"
                 > 
-                <layer name="map" 
+                <!-- <layer name="map" 
                 style="menuBTN"
                 tooltip="Map"
                 isLanguage="true"
@@ -4960,7 +4960,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     active="%FIRSTXML%/skin/new-skin/v2/menu-map-active 2.png"   
                         bgalpha="0"      
 
-                        />
+                        /> -->
                         
                     <layer name="home" 
                 style="menuBTN"
@@ -5153,8 +5153,7 @@ for(set(countHotspot_language,0), countHotspot_language LT hotspot.count,  inc(c
                     set(layer[open_flpl_b].enabled,true);
                     tween(layer[open_flpl_b].alpha, 1, 0.5,easeInOutCubic);
                     set(layer[open_flpl_b].visible,true);
-                ,
-                    minimizeFloorPlan();
+                , 
                     open_flpl();
                     set(close_pl_butt, true);
                     set(layer[open_flpl_b].visible,false);
@@ -5203,14 +5202,14 @@ for(set(countHotspot_language,0), countHotspot_language LT hotspot.count,  inc(c
             
             set(layer[open_flpl_b].visible,false);
             set(layer[open_flpl_b].enabled,false);
-            set(layer[open_flpl_b].alpha,0);
+            set(layer[open_flpl_b].alpha,0); 
     );
     if( get(scene[get(xml.scene)].isDayNight),
-    set(layer[day_night_layer].visible, true);
-    tween(layer[day_night_layer].y,5%);
-    stopdelayedcall(DayNightModeScene_dc);
-    delayedcall(DayNightModeScene_dc,10,loadscene(get(scene[get(xml.scene)].DayNightModeScene), null,MERGE|KEEPVIEW,BLEND(2)););
-    <!-- delayedcall(DayNightModeScene_dc,5,loadscene(get(scene[scene[get(xml.scene)].DayNightModeScene].image.cube.url), null,MERGE|KEEPVIEW,BLEND(2));); -->
+        set(layer[day_night_layer].visible, true);
+        tween(layer[day_night_layer].y,5%);
+        stopdelayedcall(DayNightModeScene_dc);
+        delayedcall(DayNightModeScene_dc,10,loadscene(get(scene[get(xml.scene)].DayNightModeScene), null,MERGE|KEEPVIEW,BLEND(2)););
+        <!-- delayedcall(DayNightModeScene_dc,5,loadscene(get(scene[scene[get(xml.scene)].DayNightModeScene].image.cube.url), null,MERGE|KEEPVIEW,BLEND(2));); -->
     ,
     
     tween(layer[day_night_layer].y,-10%,0.5,,

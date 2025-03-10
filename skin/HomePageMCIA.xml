@@ -646,14 +646,14 @@ set(layer[floorplan].url, get(layer[floorplan].active));
 			set(layer[plan_cont_fp2].visible,true	);
 
 			
-			<!-- close_flpl(); --> 
+			close_flpl(); 
 			
 			tween(layer[close_fp_bg].alpha,1, 0.5, easeInOutCubic); 
 			set( layer[close_fp_bg].visible,true); 
 
 			set(close_pl_butt, true);
-			tween(layer[open_flpl_b].alpha,0, 0.5, easeInOutCubic); 
-			delayedcall(open_flpl_b_v,0.5, set(layer[open_flpl_b].visible,false)); 
+			<!-- tween(layer[open_flpl_b].alpha,0, 0.5, easeInOutCubic); 
+			delayedcall(open_flpl_b_v,0.5, set(layer[open_flpl_b].visible,false));  -->
 			
 	
 	
@@ -754,7 +754,7 @@ width.desktop="24.99%"
 scale="1"
 width.mobile="49.9%"   
 width.tablet="49.9%"  
-maxwidth.tablet="300"   
+maxwidth.tablet="300"    
 onover="on_filterItemHover()"  
 enabled="true"
 bgcapture="true" onout="out_filterItemHover" onclick="filterLayerToggle();loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic));">
@@ -763,7 +763,7 @@ bgcapture="true" onout="out_filterItemHover" onclick="filterLayerToggle();loadsc
 
 align="top"
 edge="top"
-	width="100%" bgalpha="0" height.mobile="calc:(stageheight * 0.022)"  height.tablet="calc:(stageheight * 0.042)"  height.desktop="calc:(stageheight * 0.042)"   keep="true" css="color:#dd7a00;text-align:center;margin-top:0.7vh;font-size:calc((1.3vh + 1.3vw)/2);font-weight:bold; "
+	width="100%" bgalpha="0" height.mobile="calc:(stageheight * 0.022)"  height.tablet="calc:(stageheight * 0.042)"  height.desktop="calc:(stageheight * 0.062)"   keep="true" css="color:#dd7a00;text-align:center;margin-top:0.7vh;font-size:calc((1.3vh + 1.3vw)/2);font-weight:bold; "
 />
 
 <style name="filterListItemImg"  type="container" enabled="false" bgcapture="false"   
