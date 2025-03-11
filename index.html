@@ -187,13 +187,38 @@
 			}
 
 		}
+		let idleTime = 0;
+
+		let isNotClick = true;
+
+		// Function to reset idle time
+		function resetIdleTime() {
+			idleTime = 0;
+			isNotClick=false;
+		}
+
+		// Idle timer logic (checks every second)
+		const idleInterval = setInterval(() => {
+			idleTime++;
+			if (idleTime >= 60 && !isNotClick) { // 600 seconds = 10 minutes
+				
+				KRpanoLoad();
+				resetIdleTime();
+				isNotClick=true;
+			}
+		}, 1000);
+
+		// Detect user interactions (Mouse & Touch)  
+		document.addEventListener("click", resetIdleTime);
+		document.addEventListener("touchstart", resetIdleTime);
+
 		function KRpanoLoad(isMobileDevice) {
 
 			document.getElementById("loading").style.display = "flex";
 			// Hide error message and display pano
 			document.getElementById("errorMessage").style.display = "none";
 			document.getElementById("pano").style.display = "block";
-			
+
 			// Embed the panorama
 			embedpano({
 				safearea: "true",

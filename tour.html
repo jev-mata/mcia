@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Mactan Cebu International Airport - Virtual Tour</title>
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover,user-scalable=no " />
 	<meta property="og:title" content="Mactan Cebu International Airport - Virtual Tour">
 	<meta property="og:description"
 		content="Discover the gateway to the Queen City of the South like never before with the Mactan Cebu International Airport Virtual Tour! This immersive experience offers a detailed exploration of one of the Philippines' busiest and most modern airports.
@@ -18,6 +18,7 @@
 	<meta property="og:image" content="https://www.mata.ph/mcia3/thumbnail.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://www.mata.ph/mcia3/">
+	<link rel="canonical" href="https://www.mata.ph/mcia3/">
 
 	<!-- Twitter Card (Optional) -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -37,6 +38,15 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<link rel="icon" href="https://www.mata.ph/mcia3/skin/assets/icons/favicon.png" type="image/png">
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL6LE3CVKZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZL6LE3CVKZ');
+	</script>
 
 	<script src="tour.js"></script>
 	<style>
@@ -55,25 +65,24 @@
 			background-color: #202020;
 		}
 
-		#loading {
-			display: block;
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background-color: white;
-		}
+		@keyframes pulse {
 
-		#loading img {
-			width: 50%;
-			height: auto;
+			0%,
+			100% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0.5;
+			}
 		}
 	</style>
 </head>
 
-<body id="body" onload="">
+<body id="body" onload="enableFullscreen();">
+	<h1 style="display: none;">Mactan Cebu International Airport - Virtual Tour</h1>
 
-	<div id="pano" style="width:100%;height:100%;display: none;">
+	<div id="pano" style="width:100%;height:100%;">
 		<noscript>
 			<table style="width:100%;height:100%;">
 				<tr style="vertical-align:middle;">
@@ -86,20 +95,42 @@
 
 	</div>
 	<div id="errorMessage"
-		style="display: none; text-align: center; font-size: xx-large; width:80%; background: #202020;color: #f5f5f5;left: 10%; right: 10%;display: block;position: absolute; top:30%;bottom: 40%;">
-		<img src="/mcia3/skin/rotate_device.png"
-			style="width: 80%; height: auto; margin-left: auto;margin-right: auto; aspect-ratio: auto;" />
-		<div id="msg">
+		style="display: none; text-align: center; font-size: xx-large; width: 100%; height: 100%; background: #202020; color: #f5f5f5; position: absolute; top: 0; left: 0;">
 
-			For the best viewing experience, rotate your device.
+		<div
+			style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+			<img src="./skin/rotate_device.png" style="width: 60%; max-width: 400px; height: auto;" />
+			<div id="msg" style="margin-top: 20px;">
+				For the best viewing experience, rotate your device.
+			</div>
+			<button onclick="window.location.reload()"
+				style="margin-top: 20px; padding: 10px 20px; border: none; font-size: xx-large; border-radius: 15px; background-color: transparent; color: #00e2c4;">
+				Refresh
+			</button>
 		</div>
-		<button onclick="window.location.reload()"
-			style="padding: 2%; border:none; font-size: xx-large;border-radius: 15px; background-color: transparent; color: #00e2c4;">Refresh</button>
 
 	</div>
-	<div id="loading">
-		<img src="../mcia/skin/assets/loading/loading.png" />
+
+
+
+	<div id="loading" style="
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: white; 
+	top: 0; 
+	left: 0;
+">
+		<img style="
+		max-width: 150%; 
+		max-height: 150%; 
+		animation: pulse 1s infinite;" src="./skin/assets/loading/loading.png" />
 	</div>
+
 	<script>
 		function getDeviceType() {
 			const userAgent = navigator.userAgent.toLowerCase();
@@ -115,61 +146,30 @@
 			}
 		}
 
-		console.log(getDeviceType()); // Test output
-
-
-		function goFullScreen() {
-			const elem = document.documentElement; // Fullscreen the entire page
-			if (elem.requestFullscreen) {
-				elem.requestFullscreen();
-			} else if (elem.mozRequestFullScreen) { // Firefox
-				elem.mozRequestFullScreen();
-			} else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
-				elem.webkitRequestFullscreen();
-			} else if (elem.msRequestFullscreen) { // IE/Edge
-				elem.msRequestFullscreen();
-			}
-		}
-		goFullScreen();
-		// Exit fullscreen
-		function exitFullScreen() {
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-			} else if (document.mozCancelFullScreen) {
-				document.mozCancelFullScreen();
-			} else if (document.webkitExitFullscreen) {
-				document.webkitExitFullscreen();
-			} else if (document.msExitFullscreen) {
-				document.msExitFullscreen();
-			}
-		}
-
 		// console.log("Width Pixel: "+window.innerWidth);
 		// console.log("Height Pixel: "+window.innerHeight);
 		function orientationchange() {
 			const isLandscape = window.innerWidth > window.innerHeight; // Check if the device is in 
 
-			if (isMobileDevice() == "mobile") {
+			if (getDeviceType() == "mobile") {
 
 				if (isLandscape) {
-					// // Hide pano container and show error message
-					// document.getElementById("pano").style.display = "none";
-					// document.getElementById("errorMessage").style.display = "block";
-					// document.getElementById("msg").innerText = "For the best viewing experience, rotate your mobile device to Portrait";
-					// console.log("isLandscape and isMobileDevice");
+					// Hide pano container and show error message
+					document.getElementById("pano").style.display = "none";
+					document.getElementById("errorMessage").style.display = "block";
+					document.getElementById("msg").innerText = "For the best viewing experience, rotate your mobile device to Portrait";
+					console.log("isLandscape and isMobileDevice");
 
-					KRpanoLoad();
+					// KRpanoLoad();
 				} else {
 					KRpanoLoad();
 					console.log("is Portrait and isMobileDevice");
 				}
-			} else if (isMobileDevice() == "tablet") {
+			} else if (getDeviceType() == "tablet") {
+				if (isLandscape) {
 
-				if (!isLandscape) {
-					document.getElementById("pano").style.display = "none";
-					document.getElementById("errorMessage").style.display = "block";
-					document.getElementById("msg").innerText = "For the best viewing experience, rotate your  device to Portrait";
-					console.log("isLandscape");
+					KRpanoLoad();
+					console.log("is isLandscape");
 				} else {
 					KRpanoLoad();
 					console.log("is Portrait");
@@ -187,29 +187,67 @@
 			}
 
 		}
-		function KRpanoLoad() {
+		let idleTime = 0;
+
+		let isNotClick = true;
+
+		// Function to reset idle time
+		function resetIdleTime() {
+			idleTime = 0;
+			isNotClick=false;
+		}
+
+		// Idle timer logic (checks every second)
+		const idleInterval = setInterval(() => {
+			idleTime++;
+			if (idleTime >= 60 && !isNotClick) { // 600 seconds = 10 minutes
+				
+				KRpanoLoad();
+				resetIdleTime();
+				isNotClick=true;
+			}
+		}, 1000);
+
+		// Detect user interactions (Mouse & Touch)  
+		document.addEventListener("click", resetIdleTime);
+		document.addEventListener("touchstart", resetIdleTime);
+
+		function KRpanoLoad(isMobileDevice) {
+
+			document.getElementById("loading").style.display = "flex";
 			// Hide error message and display pano
 			document.getElementById("errorMessage").style.display = "none";
 			document.getElementById("pano").style.display = "block";
 
 			// Embed the panorama
 			embedpano({
+				safearea: "true",
+				webxr: "auto",
 				swf: "krpano.swf",
 				xml: "tour.xml",
 				target: "pano",
+				webgl: true,
+				cors: false,
 				html5: "auto",
 				mobilescale: 1.0,
 				passQueryParameters: true,
 				onready: krpanoLoaded
+
 			});
 		}
 		orientationchange();
-		window.addEventListener("resize", orientationchange);
+		// window.addEventListener("resize", orientationchange);
 		function krpanoLoaded(krpano) {
-			console.log("KRPano is ready!");
-			document.getElementById("pano").style.display = "block";
-		}
+			setTimeout(() => {
+				krpano.set("plugin[floorplan].touchzoom", true); // Ensure touch zoom is enabled
+				krpano.set("plugin[floorplan].invertzoom", false); // Set invertzoom if available
 
+				console.log("KRPano is ready!");
+				console.log("Is Mobile:", getDeviceType());
+				document.getElementById("pano").style.display = "block";
+				document.getElementById("loading").style.display = "none";
+			}, 3000);
+		} 
 	</script>
 </body>
 
