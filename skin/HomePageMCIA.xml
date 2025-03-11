@@ -23,7 +23,7 @@
 	         fovspeed="3.0"
 	         fovfriction="0.9"
 	         bouncinglimits="true"
-         touchzoom="true"
+         touchzoom="true" touchmode="drag" multitouch="true"
          trackpadzoom="true"
          capturetouch="true"
 		 usercontrol="all"

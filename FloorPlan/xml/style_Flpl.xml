@@ -16,12 +16,12 @@
     onresize="resizeLayer()"   alpha="0" onloaded="copy_param();resizeLayer();" 
 	 scalemode="scale" scalechildren="true" 
 	 x="30" y="30" 
-	 align="righttop" autoalpha="true" bgroundedge="35" bgborder="15 0xFFFFFF 1" bgcapture="true"  bg="true" bgalpha="1" bgbrightness="1" 
+	 align="righttop" autoalpha="true" bgroundedge="35" bgborder="15 0xFFFFFF 1" bgcapture="false"  bg="true" bgalpha="1" bgbrightness="1" 
 	 bgcontrast="1" bgsaturate="1" bghue="0" bginvert="0" bgsepia="0" bgblur="0" fullscr="false"  zorder="30" bgcolor="0xFFFFFF" handcursor="false" />
 	
 	<!--  Контейнер под план -->		
 	<style name="cont_fp2" keep="true" type="container" align="center" enabled="true" width="100%" height="100%"  
-	maskchildren="true" bgcapture="true" zorder="40" parent="cont_fp_all" bgcolor="0xFFFFFF"     bgroundedge="5"  
+	maskchildren="true" bgcapture="false" zorder="40" parent="cont_fp_all" bgcolor="0xFFFFFF"     bgroundedge="5"  
 	scalemode="scale" scalechildren="true" 
 	bgalpha="1" bg="true" bgbrightness="1" bgcontrast="1" bgsaturate="1" bghue="0" bginvert="0" bgsepia="0" bgblur="0"  handcursor="false"  />		
 	
