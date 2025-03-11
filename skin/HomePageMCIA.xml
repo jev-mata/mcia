@@ -90,7 +90,9 @@
 	loadscene("scene_map-new", null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic));
 	</action>
 
-	<events  onkeydown="resetIdleTimer();" />
+	<events  onkeydown="resetIdleTimer();" 
+    onclick="resetIdleTimer();" 
+    ontouchstart="resetIdleTimer();"/>
 
 	<action name="resetIdleTimer">
 		stopdelayedcall(restartScene_restartScene);

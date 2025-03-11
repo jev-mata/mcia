@@ -4606,7 +4606,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Security Check" 
+                <layer keep="true" type="text"
+                
+                            isLanguage="true"
+                                en="Security Check"
+                                japanese="セキュリティチェック"
+                                chinese="安全检查"
+                                korean="보안 검색"   
+                 text="Security Check" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4645,7 +4652,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Waterfront" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Waterfront"
+                                japanese="ウォーターフロント"
+                                chinese="海滨"
+                                korean="해안가"   
+                text="Waterfront" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4686,7 +4700,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="MCIAA Office" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="MCIAA Office"
+                                japanese="MCIAAオフィス"
+                                chinese="MCIAA办公室"
+                                korean="MCIAA 사무실"   
+                text="MCIAA Office" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4724,7 +4745,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Parking Entrance" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Parking Entrance"
+                                japanese="駐車場入口"
+                                chinese="停车场入口"
+                                korean="주차장 입구"   
+                                text="Parking Entrance" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4764,7 +4792,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Terminal 1 Arrival" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Terminal 1 Arrival"
+                                japanese="第1ターミナル到着"
+                                chinese="1 号航站楼到达"
+                                korean="제1터미널 도착"    
+                text="Terminal 1 Arrival" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4804,7 +4839,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Terminal 1 Departure" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Terminal 1 Departure"
+                                japanese="ターミナル1出発"
+                                chinese="1 号航站楼出发"
+                                korean="터미널 1 출발"   
+                text="Terminal 1 Departure" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4843,7 +4885,15 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Terminal 2 Departure" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Terminal 2 Departure"
+                                japanese="ターミナル2出発"
+                                chinese="2 号航站楼出发"
+                                korean="터미널 2 출발"   
+                
+                text="Terminal 2 Departure" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
@@ -4883,7 +4933,14 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                     </layer>
                 </layer>
                 
-                <layer keep="true" type="text" text="Terminal 2 Arrival" 
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Terminal 2 Arrival"
+                                japanese="第2ターミナル到着"
+                                chinese="2 号航站楼到达"
+                                korean="제2터미널 도착"   
+                text="Terminal 2 Arrival" 
                 bgcapture="false" 
                     enabled="false"
                 y="10%"
