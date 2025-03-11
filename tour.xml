@@ -4401,7 +4401,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         </image>
         <!-- Hotspots -->
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==true, showtext_translation(), ); "
+         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==false, showtext_translation(), ); "
           name="terminal-1" style="terminal-1"  ath="-0.157" atv="-0.043"  distorted="true" 
           en="Terminal 1 Departure"  
           chinese="1 号航站楼出发"
@@ -4409,7 +4409,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           korean="제1터미널 출발"
           linkedscene2="scene_streetview_29_terminal_1_departure_drop_off_day" use3dtransition="true" />
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==true, showtext_translation(), );"
+         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="waterfront" zorder="1" style="waterfront" ath="-0.23" atv="0.00"  
          en="Waterfront Streetview" 
           chinese="海滨街景"
@@ -4417,7 +4417,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           korean="해안가 스트리트 뷰"
           distorted="true" linkedscene2="scene_streetview_5_waterfront" use3dtransition="true" />
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==true, showtext_translation(), );"
+         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="terminal-2" style="terminal-2" ath="0.235" atv="-0.055"  
          en="Terminal 2 Arrival"
           chinese="第 2 航站楼到达"
@@ -4425,7 +4425,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           korean="제2터미널 도착"
            distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" />
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==true, showtext_translation(), );"
+         onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="caap-tower" style="caap-tower" ath="0.001" atv="-0.0395"  
          
          en="CAAP Tower"
@@ -4435,7 +4435,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
          
           distorted="true"  use3dtransition="true" />
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==true, showtext_translation(), );"
+         onhover="set(layer[get(name)].scale,0.061); if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="streetview" style="streetview" ath="0" atv="0.12" distorted="true"  linkedscene2="scene_streetview_1" use3dtransition="true"
          en="Streetview" 
           chinese="街景"
@@ -4443,7 +4443,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           korean="스트리트 뷰"
          />
         <hotspot capture="false" 
-         onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==true, showtext_translation(), );"
+         onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="MCIAa-building" style="MCIAa-building" ath="-0.088" atv="0.087"  
          
          en="MCIAA"
