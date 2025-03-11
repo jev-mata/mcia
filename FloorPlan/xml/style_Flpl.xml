@@ -166,7 +166,7 @@ if(stageheight GT stagewidth,
 		 	
 	<!-- /////////////////     КНОПКИ НА ПЛАНЕ  ////////////////////// -->
 		<style name="butt_fp" type="image" keep="true" url="%FIRSTXML%/FloorPlan/image/fullmap1.png" align="lefttop" edge="center" x="20"  y="15" width="25" height="prop"  zorder="56" alpha="0.5" parent="cont_fp_all"
-				onover="set(alpha, 1);" onout="set(alpha, 0.5);"  /> 	
+				onover="set(alpha, 1);" onout="set(alpha, 0.5);"  bgroundedge="10"/> 	
 					
 		<style name="butt_fp2" keep="true" align="lefttop" edge="center" x="20"  y="15" width="25" height="prop"  zorder="56" alpha="1" parent="cont_fp_all"
 				onover="set(alpha,0.7);" onout="set(alpha,1);"  /> 	
@@ -185,9 +185,9 @@ if(stageheight GT stagewidth,
 			
 			
 		<!--  плюс -->
-		<layer name="plus_fp" style="butt_fp" url="%FIRSTXML%/FloorPlan/image/plus_minus.png" crop="0|0|64|64" align="bottom" width="25" x="-20" y="16" ondown="zoom_b(1.02)" visible="get:plan_settings.button_plus_minus" /> 
+		<layer name="plus_fp" style="butt_fp" url="%FIRSTXML%/FloorPlan/image/plus_minus1.png" crop="0|0|64|64" align="bottom" width="55" x="-20" y="36" ondown="zoom_b(1.02)" visible="get:plan_settings.button_plus_minus" /> 
 		<!--  минус -->
-		<layer name="minus_fp" style="butt_fp" url="%FIRSTXML%/FloorPlan/image/plus_minus.png" crop="64|0|64|64" align="bottom" width="25" x="20" y="16" ondown="zoom_b(0.97)" visible="get:plan_settings.button_plus_minus" /> 
+		<layer name="minus_fp" style="butt_fp" url="%FIRSTXML%/FloorPlan/image/plus_minus1.png" crop="64|0|64|64" align="bottom" width="55" x="50" y="36" ondown="zoom_b(0.97)" visible="get:plan_settings.button_plus_minus" /> 
 		
 		
 		

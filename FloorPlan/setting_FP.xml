@@ -29,7 +29,7 @@
 			auto_height="true"
 			list_plan="false"
 			button_fullscreen="false"
-			button_plus_minus="false"
+			button_plus_minus="true"
 			angle_placemark="true"
 			drag_plan="false"
 			margin_fs="5"
@@ -345,13 +345,7 @@
 
 	<layer name="cont_fp_all" style="cont_fp" align="bottomright" edge="bottomright" scale="0.4" 
 	x.desktop="0" x.tablet="0" x.mobile="0" y.desktop="-13%" y.tablet="-13%"  y.mobile="-13%"    
-	 ondown="store(scale_temp, get(scale)); store(mouse_x, get(mouse.x)); store(mouse_y, get(mouse.y));"
-       onup="store(scale_temp, null);"
-       onhover="
-          if(scale_temp !== null,
-             set(scale, scale_temp * (1.0 + (mouse.y - mouse_y) * 0.01));
-          );
-       " 
+	
 	onclick="
 	stopdelayedcall(imageListMainContainer2_d);	
 	stopdelayedcall(introLayer_d);
@@ -364,8 +358,8 @@
 	stopdelayedcall(isFloormap_act);
 	stopdelayedcall(open_flpl_b_v); 
 	stopdelayedcall(cbsettings_a);  
-	" 
-	 enabled="true" />
+	"
+	bgcapture="true" enabled="true" />
 	
 	<!--  Container of plans and buttons  -->
 	<layer name="plan_cont_fp2" style="cont_fp2" bgalpha="0"  onclick="
