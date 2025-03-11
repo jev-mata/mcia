@@ -364,8 +364,8 @@
 	stopdelayedcall(isFloormap_act);
 	stopdelayedcall(open_flpl_b_v); 
 	stopdelayedcall(cbsettings_a);  
-	"
-	bgcapture="true" enabled="true" />
+	" 
+	 enabled="true" />
 	
 	<!--  Container of plans and buttons  -->
 	<layer name="plan_cont_fp2" style="cont_fp2" bgalpha="0"  onclick="
