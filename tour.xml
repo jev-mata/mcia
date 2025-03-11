@@ -4971,7 +4971,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
     <layer name="child_flight_grid_layout2"  
         visible="true" 
         keep="true" type="container"   width.desktop="60%"  width.mobile="85%" width.tablet="75%" height.desktop="90%"  height.tablet="70%"  height.mobile="55%"  align="top"  bgalpha="1" bgroundedge="30" bgcolor="0xFFFFFF" >  
-        <layer type="text" text="Scan QR Code To Check Your Flight!" width="100%" css="font-size:calc((4vh + 4.5vw)/2);font-weight:bold;text-align:center;" padding.mobile="20 50 20 50"  padding.tablet="20 50 20 50" padding.desktop="20 50 20 50"  bgroundedge="30"/>
+        <layer type="text" text="Scan QR Code To Check Your Flight!" width="100%" css="font-size:calc((3.5vh + 4vw)/2);font-weight:bold;text-align:center;" padding.mobile="20 50 20 50"  padding.tablet="20 50 20 50" padding.desktop="20 50 20 50"  bgroundedge="30"/>
         <layer name="qrcode"  
             visible="true"
             type="container" 
