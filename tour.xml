@@ -132,7 +132,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     >  
     <layer  
         visible="true"
-        keep="true" type="text" width.desktop="55%" width.tablet="80%" width.mobile="90%" height.desktop="90%"  height.mobile="75%" height.tablet="85%" align="center"  
+        keep="true" type="text" width.desktop="60%" width.tablet="80%" width.mobile="90%" height.desktop="90%"  height.mobile="75%" height.tablet="85%" align="center"  
         bgalpha="1" 
         maxwidth.tablet="650"
         bgroundedge="30" 
@@ -140,7 +140,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         >  
            <layer   
         visible="true"
-        keep="true" type="text" width="80%" height="90%" align="center"  
+        keep="true" type="text" width="90%" height="90%" align="center"  
         bgalpha="1"  
         bgroundedge="30"
         enabled="true" 

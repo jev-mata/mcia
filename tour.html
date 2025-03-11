@@ -118,6 +118,32 @@
 		console.log(getDeviceType()); // Test output
 
 
+		function goFullScreen() {
+			const elem = document.documentElement; // Fullscreen the entire page
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.mozRequestFullScreen) { // Firefox
+				elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { // IE/Edge
+				elem.msRequestFullscreen();
+			}
+		}
+		goFullScreen();
+		// Exit fullscreen
+		function exitFullScreen() {
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitExitFullscreen) {
+				document.webkitExitFullscreen();
+			} else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			}
+		}
+
 		// console.log("Width Pixel: "+window.innerWidth);
 		// console.log("Height Pixel: "+window.innerHeight);
 		function orientationchange() {

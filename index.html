@@ -47,7 +47,7 @@
 
 		gtag('config', 'G-ZL6LE3CVKZ');
 	</script>
-	
+
 	<script src="tour.js"></script>
 	<style>
 		html {
@@ -79,7 +79,7 @@
 	</style>
 </head>
 
-<body id="body" onload="">
+<body id="body" onload="enableFullscreen();">
 	<h1 style="display: none;">Mactan Cebu International Airport - Virtual Tour</h1>
 
 	<div id="pano" style="width:100%;height:100%;">
@@ -193,7 +193,7 @@
 			// Hide error message and display pano
 			document.getElementById("errorMessage").style.display = "none";
 			document.getElementById("pano").style.display = "block";
-
+			
 			// Embed the panorama
 			embedpano({
 				safearea: "true",

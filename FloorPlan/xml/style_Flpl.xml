@@ -33,7 +33,7 @@
  set(layer[services_BTN_filter].css,"color:black;font-size:calc(((stageheight * 0.015) + (stagewidth * 0.015))/2);");
  set(layer[food_and_brev_BTN_filter].css,"color:black;font-size:calc(((stageheight * 0.015) + (stagewidth * 0.015))/2);");
  set(layer[retail_BTN_filter].css,"color:black;font-size:calc(((stageheight * 0.015) + (stagewidth * 0.015))/2);"); -->
-	 
+ 
  <!-- set(layer[imageListContainer].width,calc(stagewidth  * 0.65)); -->
  set(layer[imageListMainContainer2].width.desktop,calc(stagewidth  * 0.7));
  set(layer[imageListMainContainer2].width.mobile,calc(stagewidth  * 0.95));

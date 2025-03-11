@@ -722,7 +722,7 @@ css="color:black;font-size:calc((1.7vh + 1.5vw)/2);line-height: 1;text-align:cen
 align.desktop="bottomleft"
 align.mobile="bottomleft"
 align.tablet="bottomleft"
-edge.desktop="bottomleft" 
+edge.desktop="topleft" 
 edge.mobile="bottomleft" 
 edge.tablet="bottomleft" 
  height="auto" width="auto"
@@ -771,7 +771,7 @@ align="lefttop"
 edge="lefttop"
                    x="0"
                    y="0"
-height.mobile="calc:(stageheight * 0.1)" height.tablet="calc:(stageheight * 0.2)" height.desktop="calc:(stageheight * 0.15)" width="96%" bgshadow="3 3 6 2 0x000000 1"  
+height.mobile="calc:(stageheight * 0.1)" height.tablet="calc:(stageheight * 0.2)" height.desktop="calc:(stageheight * 0.18)" width="96%" bgshadow="3 3 6 2 0x000000 1"  
 
                         bgroundedge="10" >
 </style>
