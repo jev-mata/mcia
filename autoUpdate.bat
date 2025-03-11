@@ -26,12 +26,12 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJHOB4n49KxJVDAGaOTmGK5Y1yaj+9++7r04UVd4SW6b6lLGWJYA=
+::Zh4grVQjdCyDJHOB4n49KxJVDAGaOTmGK5Y1yaj+9++7r04UVd4SW6b6ug==
 ::YB416Ek+ZG8=
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
 D:
-start /max "MCIA Kiosk\MCIA.exe"
+start "" /max "MCIA Kiosk\MCIA.exe"
 exit
