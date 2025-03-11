@@ -76,7 +76,7 @@
 	        onviewchange=""
 	        />
 	
-	<action name="startIdleTimer">
+	<!-- <action name="startIdleTimer">
 		delayedcall(600, restartScene);
 	</action>
 
@@ -97,7 +97,7 @@
 	<action name="resetIdleTimer">
 		stopdelayedcall(restartScene_restartScene);
 		delayedcall(restartScene_restartScene, 600, restartScene); // Reset the timer
-	</action>
+	</action> -->
 
 	<action name="skin_vrdevice_intro" autorun="onstart" scope="local" devices="mobilevr">
 		<!-- show directly a big enterVR button -->
