@@ -647,7 +647,16 @@ set(layer[floorplan].url, get(layer[floorplan].active));
 
 			
 			close_flpl(); 
-			
+			if(scene[get(xml.scene)].isFloormap,
+			,
+
+				set(close_pl_butt, false); 
+				set(layer[open_flpl_b].enabled,false);
+				tween(layer[open_flpl_b].alpha, 0, 0.5,easeInOutCubic);
+				set(layer[open_flpl_b].visible,false);
+			);
+
+
 			tween(layer[close_fp_bg].alpha,1, 0.5, easeInOutCubic); 
 			set( layer[close_fp_bg].visible,true); 
 
