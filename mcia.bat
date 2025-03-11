@@ -34,7 +34,5 @@
 @echo off
 D:
 cd "MCIA Kiosk"
-start "" /max "MCIA.exe"
-timeout /t 2 >nul
-powershell -Command "(New-Object -ComObject WScript.Shell).SendKeys('{F11}')"
+start "" /max "MCIA.exe" 
 exit
