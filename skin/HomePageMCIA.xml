@@ -76,6 +76,27 @@
 	        onviewchange=""
 	        />
 	
+	<action name="startIdleTimer">
+		delayedcall(600, restartScene);
+	</action>
+
+	<action name="restartScene">
+	
+    tween(layer[introLayer].alpha,1, 0.5, easeInOutCubic);  
+     
+	 set(layer[introLayer].enabled,true); 
+	 set(layer[introLayer].visible,true); 
+	 
+	loadscene("scene_map-new", null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic));
+	</action>
+
+	<events onviewchange="resetIdleTimer();" onkeydown="resetIdleTimer();" />
+
+	<action name="resetIdleTimer">
+		stopdelayedcall(restartScene_restartScene);
+		delayedcall(restartScene_restartScene, 600, restartScene); // Reset the timer
+	</action>
+
 	<action name="skin_vrdevice_intro" autorun="onstart" scope="local" devices="mobilevr">
 		<!-- show directly a big enterVR button -->
 		set(layer[webvr_enterbutton], 
