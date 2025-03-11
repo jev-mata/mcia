@@ -4858,53 +4858,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                 >
                 </layer>
             </layer>
-            <layer keep="true" style="imageListImageScene" type="container"    
-            name="scene_streetview_13_to_terminal_2_departure_drop_off"
-                
-                linkedscene="scene_streetview_13_to_terminal_2_departure_drop_off"  
-            >
-                
-                <layer  keep="true"  type="container"  
-                width="95%" height="60%"
-                bgroundedge="10"
-                maskchildren="true" 
-                y="10%"
-                align="topcenter"   
-                bgcapture="false" 
-                    enabled="false"
-                >
-                    <layer keep="true"  style="imageListImage_compo" type="image" 
-                    bgalpha="0"
-                    bgcolor="0xFFFFF"
-                    width="100%" height="prop"
-                    bgroundedge="10" 
-                bgcapture="false" 
-                    enabled="false"
-                    url="%FIRSTXML%/streetview/panos/streetview_13_to_terminal_2_departure_drop_off.tiles/thumb.jpg"
-                    >
-                    </layer>
-                </layer>
-                
-                <layer keep="true" type="text" 
-                
-                            isLanguage="true"
-                                en="Terminal 2 Departure"
-                                japanese="ターミナル2出発"
-                                chinese="2 号航站楼出发"
-                                korean="터미널 2 출발"   
-                
-                text="Terminal 2 Departure" 
-                bgcapture="false" 
-                    enabled="false"
-                y="10%"
-                style="imageListImage_text"  
-                 
-                height="20%" width="100%"
-                bgalpha="0" 
-                align="bottom"
-                >
-                </layer>
-            </layer>
+           
             <layer keep="true" style="imageListImageScene" type="container"    
             name="scene_streetview_20_to_terminal_2_arrival_drop_off"
                 
@@ -4952,6 +4906,53 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                 >
                 </layer>
             </layer>
+             <layer keep="true" style="imageListImageScene" type="container"    
+            name="scene_streetview_13_to_terminal_2_departure_drop_off"
+                
+                linkedscene="scene_streetview_13_to_terminal_2_departure_drop_off"  
+            >
+                
+                <layer  keep="true"  type="container"  
+                width="95%" height="60%"
+                bgroundedge="10"
+                maskchildren="true" 
+                y="10%"
+                align="topcenter"   
+                bgcapture="false" 
+                    enabled="false"
+                >
+                    <layer keep="true"  style="imageListImage_compo" type="image" 
+                    bgalpha="0"
+                    bgcolor="0xFFFFF"
+                    width="100%" height="prop"
+                    bgroundedge="10" 
+                bgcapture="false" 
+                    enabled="false"
+                    url="%FIRSTXML%/streetview/panos/streetview_13_to_terminal_2_departure_drop_off.tiles/thumb.jpg"
+                    >
+                    </layer>
+                </layer>
+                
+                <layer keep="true" type="text" 
+                
+                            isLanguage="true"
+                                en="Terminal 2 Departure"
+                                japanese="ターミナル2出発"
+                                chinese="2 号航站楼出发"
+                                korean="터미널 2 출발"   
+                
+                text="Terminal 2 Departure" 
+                bgcapture="false" 
+                    enabled="false"
+                y="10%"
+                style="imageListImage_text"  
+                 
+                height="20%" width="100%"
+                bgalpha="0" 
+                align="bottom"
+                >
+                </layer>
+            </layer>
         </layer>
          
         <!-- item list -->
@@ -4975,12 +4976,12 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
         <layer type="text" 
         
                             isLanguage="true"
-                                en="Terminal 2 Arrival"
+                                en="Scan QR Code To Check Your Flight!"
                                 japanese="QR コードをスキャンしてフライトを確認してください。"
                                 chinese="扫描二维码查看您的航班！"
                                 korean="QR 코드를 스캔하여 항공편을 확인하세요!"   
         
-        text="Scan QR Code To Check Your Flight!" width="100%" css="font-size:calc((3.5vh + 3.5vw)/2);font-weight:bold;text-align:center;" padding.mobile="20 50 20 50"  padding.tablet="20 50 20 50" padding.desktop="55 50 20 50"  bgroundedge="30"/>
+        text="Scan QR Code To Check Your Flight!" width="100%" css="font-size:calc((3.5vh + 3vw)/2);font-weight:bold;text-align:center;" padding.mobile="20 50 20 50"  padding.tablet="20 50 20 50" padding.desktop="55 50 20 50"  bgroundedge="30"/>
         <layer name="qrcode"  
             visible="true"
             type="container" 

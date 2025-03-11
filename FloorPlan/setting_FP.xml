@@ -133,7 +133,12 @@
             >
             <layer 
             name="textFloormapTitle"
-             type="text"  
+             type="text"   
+			 isLanguage="true"
+			 en=" Terminal 1 Arrival Floormap "
+			 japanese="ターミナル1到着フロアマップ"
+			 chinese="第 1 航站楼到达楼层地图"
+			 korean="터미널 1 도착 층 지도"   
                 text="Terminal 1 Arrival Floormap" 
                 align="left"
                 bgalpha="0"   
@@ -185,6 +190,11 @@
                         <layer     
                         name="floormap_arrival"
                         type="text"
+                            isLanguage="true"
+                                en=" Arrival Area "
+                                japanese="到着エリア"
+                                chinese="到达区"
+                                korean="도착지역"   
                         text=" Arrival Area " 
                         css="text-align:center;font-size:calc((1.5vh + 2.25vw)/2);color:white" 
                         onclick="areaToggle()"
@@ -208,7 +218,13 @@
 						 <layer     
                         name="floormap_departure"
                         type="text"
+                            isLanguage="true"
+                                en=" Departure Area "
+                                japanese="出発エリア"
+                                chinese="出发区"
+                                korean="출발지역"   
                         text="Departure Area" 
+						
                         css="text-align:center;font-size:calc((1.5vh + 2.25vw)/2);color:black"
                         onclick="areaToggle()"
                         bgalpha="1"   
@@ -268,6 +284,12 @@
 						edge="centermiddle"
 						enabled="false"
                         type="text"
+						
+                            isLanguage="true"
+                                en="Terminal 1"
+                                japanese="第1ターミナル"
+                                chinese="1 号航站楼"
+                                korean="제1터미널"   
                         text="Terminal 1" 
                             bgcolor="0xff7525"
 							bgalpha="0"
@@ -301,6 +323,11 @@
 						edge="centermiddle"
 						enabled="false"
                         type="text"
+                            isLanguage="true"
+                                en="Terminal 2"
+                                japanese="第2ターミナル"
+                                chinese="第2航站楼"
+                                korean="제2터미널"   
                         text="Terminal 2" 
 							bgalpha="0"
                         css="text-align:center; font-size: calc((5vh + 1vw)/2); color:black; margin-top:auto;margin-bottom:auto;" 
@@ -770,7 +797,24 @@
 set(currentActiveScene,get(xml.scene));
 if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal1",
 
-	set(layer[textFloormapTitle].text,"Terminal 1 Arrival Floormap");
+
+     if(get(selectedLanguage)==en,
+            set(layer[textFloormapTitle].text, "Terminal 1 Arrival Floormap");
+			,
+			if(contains(get(selectedLanguage),kor),
+				set(layer[textFloormapTitle].text, "터미널 1 도착 층 지도");
+				,
+				if(contains(get(selectedLanguage),chin),
+				    set(layer[textFloormapTitle].text, "第 1 航站楼到达楼层地图");
+					,
+					if(contains(get(selectedLanguage),japa),
+				        set(layer[textFloormapTitle].text, "ターミナル1到着フロアマップ");
+						,
+                        set(layer[textFloormapTitle].text, "Terminal 1 Arrival Floormap");
+					);
+				);
+			);
+		);  
 	if(get(currentActiveScene) == "scene_Terminal_1_Arrival_Exit_Area",
  
 		,
@@ -780,7 +824,24 @@ if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floor
 	,
 			
 	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal1",
-		set(layer[textFloormapTitle].text,"Terminal 1 Departure Floormap");
+
+		if(get(selectedLanguage)==en,
+            set(layer[textFloormapTitle].text, "Terminal 1 Departure Floormap");
+			,
+			if(contains(get(selectedLanguage),kor),
+				set(layer[textFloormapTitle].text, "터미널 1 출발 층 지도");
+				,
+				if(contains(get(selectedLanguage),chin),
+				    set(layer[textFloormapTitle].text, "第 1 航站楼出发楼层地图");
+					,
+					if(contains(get(selectedLanguage),japa),
+				        set(layer[textFloormapTitle].text, "ターミナル1出発フロアマップ");
+						,
+                        set(layer[textFloormapTitle].text, "Terminal 1 Departure Floormap");
+					);
+				);
+			);
+		);   
 		
 	    if(get(currentActiveScene) ==  "scene_terminal_1_departure_standee_logo",  
 			,
@@ -790,22 +851,53 @@ if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floor
 );
 if(get(selected_floormap)=="floormap_arrival" AND get(selected_terminal)=="floormap_terminal2",
 
-	set(layer[textFloormapTitle].text,"Terminal 2 Arrival Floormap");
+		if(get(selectedLanguage)==en,
+            set(layer[textFloormapTitle].text, "Terminal 2 Arrival Floormap");
+			,
+			if(contains(get(selectedLanguage),kor),
+				set(layer[textFloormapTitle].text, "터미널 2 도착 층 지도");
+				,
+				if(contains(get(selectedLanguage),chin),
+				    set(layer[textFloormapTitle].text, "第 2 航站楼到达楼层地图");
+					,
+					if(contains(get(selectedLanguage),japa),
+				        set(layer[textFloormapTitle].text, "ターミナル2到着フロアマップ");
+						,
+                        set(layer[textFloormapTitle].text, "Terminal 2 Arrival Floormap");
+					);
+				);
+			);
+		);    
 	if(get(currentActiveScene) == "scene_Terminal_2_Arrival_Middle_Area",   
 		,
 		loadscene("scene_Terminal_2_Arrival_Middle_Area", null,MERGE,BLEND(1));
 	);
 ,
 	if(get(selected_floormap)=="floormap_departure" AND get(selected_terminal)=="floormap_terminal2",
-
-		set(layer[textFloormapTitle].text,"Terminal 2 Departure Floormap");
+		if(get(selectedLanguage)==en,
+            set(layer[textFloormapTitle].text, "Terminal 2 Departure Floormap");
+			,
+			if(contains(get(selectedLanguage),kor),
+				set(layer[textFloormapTitle].text, "터미널 2 출발 층 지도");
+				,
+				if(contains(get(selectedLanguage),chin),
+				    set(layer[textFloormapTitle].text, "第 2 航站楼出发楼层地图");
+					,
+					if(contains(get(selectedLanguage),japa),
+				        set(layer[textFloormapTitle].text, "ターミナル2出発フロアマップ");
+						,
+                        set(layer[textFloormapTitle].text, "Terminal 2 Departure Floormap");
+					);
+				);
+			);
+		);     
 	    if(get(currentActiveScene) == "scene_Terminal_2_Departure_Entrance_Middle_Area",    
 		,
 			loadscene("scene_Terminal_2_Departure_Entrance_Middle_Area", null,MERGE,BLEND(1));
 		); 
 	);
 );
-	
+	  
 		
 </action>
  
