@@ -659,7 +659,7 @@ set(layer[floorplan].url, get(layer[floorplan].active));
 						if(get(scene[get(xml.scene)].isFloormap),
 						, 
 								closeFloormap(); 
-							<!-- set(minimizeFloorPlan,false); -->
+							set(minimizeFloorPlan,false);
 							
 						);
 					);
