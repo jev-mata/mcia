@@ -28,6 +28,15 @@
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
  
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
 
   onstart=""   isFloormap="true" thumburl="panos/01_Bo_s_Coffee_-_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -56,6 +65,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Luggage Deposit, Pick-up, and Drop-off Services "
+	description_chinese="行李寄存、领取和送达服务" 
+	description_korean="짐 보관, 픽업 및 드롭오프 서비스" 
+	description_japanese="荷物預かり、受け取り、降ろしサービス"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+  
  onstart=""   isFloormap="true" thumburl="panos/01_Luggage_Storage_-_Shelf_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -83,6 +104,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Beauty Salon"
+	description_chinese="美容院" 
+	description_korean="미용실" 
+	description_japanese="美容室"  
+	
+ 	OperatingHours="8 am – 9 pm"
+ 	OperatingHours_chinese="上午 8 点至晚上 9 点"
+ 	OperatingHours_korean="오전 8시 ~ 오후 9시"
+ 	OperatingHours_japanese="午前8時～午後9時"
+
+  
  onstart=""   isFloormap="true" thumburl="panos/01_Salon_De_Rose_-_Barber_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -111,6 +144,17 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+  
  onstart=""   isFloormap="true" thumburl="panos/2D__-_ATM_Right_Side.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -135,6 +179,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Bakery"
+	description_chinese="面包店" 
+	description_korean="빵집" 
+	description_japanese="ベーカリー"  
+	
+ 	OperatingHours="7 AM - 10 PM"
+ 	OperatingHours_chinese="上午 7 点至晚上 10 点"
+ 	OperatingHours_korean="오전 7시 - 오후 10시"
+ 	OperatingHours_japanese="午前7時～午後10時"
+  
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-__BreadTalk.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -161,6 +217,17 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="French Fries"
+	description_chinese="炸薯条" 
+	description_korean="감자 튀김" 
+	description_japanese="フライドポテト"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-__Potato_Corner.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -185,6 +252,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee and Pastry Shop"
+	description_chinese="咖啡和糕点店" 
+	description_korean="커피와 페이스트리 숍" 
+	description_japanese="コーヒー＆ペストリーショップ"  
+	 
+ 	OperatingHours="5am-10pm"
+ 	OperatingHours_chinese="上午 5 点至晚上 10 点"
+ 	OperatingHours_korean="오전 5시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前5時～午後10時"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-__Starbucks.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -211,6 +290,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_7_ELEVEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -226,7 +317,7 @@
 	</scene>
 
 	<scene name="scene_2D_-_Amery_Flower_Shop" 
-	title="Amery Flower Shop" 
+	title="Amery’s de Flower Bunch" 
 	title_chinese="埃默里花店" 
 	title_korean="아메리 꽃집" 
 	title_japanese="アメリーフラワーショップ"   
@@ -235,7 +326,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Amery_Flower_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+ 
+	description="Flower Shop"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="6AM - 12PM"
+ 	OperatingHours_chinese="早上 6 点至晚上 12 点"
+ 	OperatingHours_korean="6 아멘-12 미인"
+ 	OperatingHours_japanese="6 アーメン - 12 美女"
+ 
+  onstart=""   isFloormap="true" thumburl="panos/2D_-_Amery_Flower_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -259,6 +362,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+  
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_ATM_Left.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -283,6 +399,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+ 
+	description="Roasted Pig Meals for Dine-in/Take Out"
+	description_chinese="适合堂食或外带的烤猪肉餐" 
+	description_korean="식당에서 먹거나 테이크아웃할 수 있는 구운 돼지고기 요리" 
+	description_japanese="店内飲食/テイクアウト用のロースト豚料理"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+  
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Ayer_s_Lechon_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -307,6 +436,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+  
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Bo_s_Coffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -333,6 +474,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="6AM - 10PM"
+ 	OperatingHours_chinese="上午 6 点至晚上 10 点"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
+
+	
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Cafe_Laguna.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -359,6 +512,17 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Car Rental Services"
+	description_chinese="汽车租赁服务" 
+	description_korean="자동차 렌탈 서비스" 
+	description_japanese="レンタカーサービス"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+	
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Car_Rentals.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -383,6 +547,20 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
+ 
+	description="Italian Restaurant"
+	description_chinese="意大利餐厅" 
+	description_korean="이탈리안 레스토랑" 
+	description_japanese="イタリアンレストラン"  
+
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
  onstart=""   isFloormap="true" thumburl="panos/2D_-_CASA_VERDE.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -410,6 +588,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Duty_Free.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -436,6 +626,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Hotel and Resort Accommodations"
+	description_chinese="酒店及度假村住宿" 
+	description_korean="호텔 및 리조트 숙박 시설" 
+	description_japanese="ホテル＆リゾート宿泊施設"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Hotel_Booths.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -460,6 +662,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
+ 
+	description="Filipino Fast-Food Chain"
+	description_chinese="菲律宾快餐连锁店" 
+	description_korean="필리핀 패스트푸드 체인점" 
+	description_japanese="フィリピンのファーストフードチェーン"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Jollibee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -486,6 +701,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee and Pastry Shop"
+	description_chinese="咖啡和糕点店" 
+	description_korean="커피와 페이스트리 숍" 
+	description_japanese="コーヒー＆ペストリーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Krispy_Kreme.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -510,6 +737,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Luggage Deposit, Pick-up, and Drop-off Services"
+	description_chinese="行李寄存、领取和送达服务" 
+	description_korean="짐 보관, 픽업 및 드롭오프 서비스" 
+	description_japanese="荷物預かり、受け取り、降ろしサービス"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Luggage_Storage.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -536,6 +775,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+	
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Ngo_Hiong.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -560,6 +812,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+	
+	description="Japanese Restaurant"
+	description_chinese="日本餐厅" 
+	description_korean="일본식 레스토랑" 
+	description_japanese="日本料理レストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Nippon_Ramen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -584,6 +849,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Beauty Salon"
+	description_chinese="美容院" 
+	description_korean="미용실" 
+	description_japanese="美容室"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="上午 8 点至晚上 9 点"
+ 	OperatingHours_korean="오전 8시 ~ 오후 9시"
+ 	OperatingHours_japanese="午前8時～午後9時"
+
+  
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Salon_de_Rose.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -610,6 +887,7 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Seafood_Paradise_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -638,6 +916,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Travel_Store.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -664,6 +954,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+	
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Ultimate_Sandwich_Station.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -689,6 +992,20 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
+
+	
+	description="Fruit Shakes"
+	description_chinese="水果奶昔" 
+	description_korean="과일 쉐이크" 
+	description_japanese="フルーツシェイク"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/2D_-_Zip_N_Sip.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -714,6 +1031,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
+
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours="7 am – 9 pm"
+ 	OperatingHours_chinese="上午 7 点至晚上 9 点"
+ 	OperatingHours_korean="오전 7시 ~ 오후 9시"
+ 	OperatingHours_japanese="午前7時～午後9時"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/2D-_Macao_Imperial_Tea.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -741,6 +1071,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Bakery"
+	description_chinese="面包店" 
+	description_korean="빵집" 
+	description_japanese="ベーカリー"  
+	
+ 	OperatingHours="7 AM - 10 PM"
+ 	OperatingHours_chinese="上午 7 点至晚上 10 点"
+ 	OperatingHours_korean="오전 7시 - 오후 10시"
+ 	OperatingHours_japanese="午前7時～午後10時"
+  
+ 
  onstart=""   isFloormap="true" thumburl="panos/Bread_Talk_-_Counter_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -769,6 +1111,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Bakery"
+	description_chinese="面包店" 
+	description_korean="빵집" 
+	description_japanese="ベーカリー"  
+	
+ 	OperatingHours="7 AM - 10 PM"
+ 	OperatingHours_chinese="上午 7 点至晚上 10 点"
+ 	OperatingHours_korean="오전 7시 - 오후 10시"
+ 	OperatingHours_japanese="午前7時～午後10時"
+  
+ 
  onstart=""   isFloormap="true" thumburl="panos/Bread_Talk_-_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -795,6 +1149,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="6AM - 10PM"
+ 	OperatingHours_chinese="上午 6 点至晚上 10 点"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
+
+	
  onstart=""   isFloormap="true" thumburl="panos/Cafe_Laguna_-_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -822,6 +1188,20 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
+ 
+	description="Italian Restaurant"
+	description_chinese="意大利餐厅" 
+	description_korean="이탈리안 레스토랑" 
+	description_japanese="イタリアンレストラン"  
+
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
  onstart=""   isFloormap="true" thumburl="panos/Casa_Verde_-_Counter_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -848,6 +1228,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Duty_Free_-_Chocolates_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -874,6 +1266,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Duty_Free_-_Fragrance_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -903,6 +1307,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Duty_Free_-_Lacost_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -929,6 +1345,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Duty_Free_-_Liquor_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -956,6 +1384,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+
+	description="Filipino Fast-Food Chain"
+	description_chinese="菲律宾快餐连锁店" 
+	description_korean="필리핀 패스트푸드 체인점" 
+	description_japanese="フィリピンのファーストフードチェーン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Jollibee_-_Counter_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -982,6 +1423,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee and Pastry Shop"
+	description_chinese="咖啡和糕点店" 
+	description_korean="커피와 페이스트리 숍" 
+	description_japanese="コーヒー＆ペストリーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Krispy_Kreme_-_Counter_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1006,6 +1459,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours="7 am – 9 pm"
+ 	OperatingHours_chinese="上午 7 点至晚上 9 点"
+ 	OperatingHours_korean="오전 7시 ~ 오후 9시"
+ 	OperatingHours_japanese="午前7時～午後9時"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/Macao_Imperial_-_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1032,6 +1497,19 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+
+	
+	description="Japanese Restaurant"
+	description_chinese="日本餐厅" 
+	description_korean="일본식 레스토랑" 
+	description_japanese="日本料理レストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
  onstart=""   isFloormap="true" thumburl="panos/Nippon_Ramen_-_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1056,6 +1534,7 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+	
  onstart=""   isFloormap="true" thumburl="panos/Seafood_Paradise_-_Dining_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1109,6 +1588,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Coffee and Pastry Shop"
+	description_chinese="咖啡和糕点店" 
+	description_korean="커피와 페이스트리 숍" 
+	description_japanese="コーヒー＆ペストリーショップ"  
+	 
+ 	OperatingHours="5am-10pm"
+ 	OperatingHours_chinese="上午 5 点至晚上 10 点"
+ 	OperatingHours_korean="오전 5시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前5時～午後10時"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/Starbucks_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1135,6 +1626,20 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/The_Travel_Store_-_Counter_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1161,6 +1666,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/The_Travel_Store_-_Middle_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1188,6 +1705,18 @@
 	miniTitle_chinese="1 号航站楼到达" 
 	miniTitle_korean="제1터미널 도착" 
 	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
  onstart=""   isFloormap="true" thumburl="panos/The_Travel_Store_-_Others_3.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -1202,5 +1731,391 @@
 
 	</scene>
 
+	<scene name="scene_Tah-mee_s_Frozen_Yogurt" title="Tah-mee&apos;s Frozen Yogurt"
+	title_chinese="Tah-mee 的冷冻酸奶" 
+	title_korean="타미의 냉동 요거트" 
+	title_japanese="タミーのフローズンヨーグルト" 
+ 
+ 	miniTitle="Terminal 1 Arrival"
+	miniTitle_chinese="1 号航站楼到达" 
+	miniTitle_korean="제1터미널 도착" 
+	miniTitle_japanese="第1ターミナル到着" 
+ 
+	description="Frozen Yogurt"
+	description_chinese="冷冻酸奶" 
+	description_korean="프로즌 요거트" 
+	description_japanese="フローズンヨーグルト"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+  onstart="" thumburl="panos/Tah-mee_s_Frozen_Yogurt.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Tah-mee_s_Frozen_Yogurt.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Tah-mee_s_Frozen_Yogurt.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+
+	<scene name="scene_My_Islands" title="My Islands" 
+	title_chinese="我的岛屿" 
+	title_korean="나의 섬들" 
+	title_japanese="私の島"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/My_Islands.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/My_Islands.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/My_Islands.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Tesoros" title="Tesoros" 
+	title_chinese="我的岛屿" 
+	title_korean="나의 섬들" 
+	title_japanese="私の島"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Filipino Clothing and Apparel"
+	description_chinese="菲律宾服装和服饰" 
+	description_korean="필리핀 의류 및 의류" 
+	description_japanese="フィリピンの衣料品"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Tesoros.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Tesoros.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.470029" voffset="0.00">
+			<flat url="panos/Tesoros.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x602" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_Aquaflask" title="Aquaflask" 
+	title_chinese="水瓶" 
+	title_korean="아쿠아플라스크" 
+	title_japanese="アクアフラスク"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Tumblers"
+	description_chinese="玻璃杯" 
+	description_korean="텀블러" 
+	description_japanese="タンブラー"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   		isFloormap="true"
+   onstart="" thumburl="panos/Aquaflask.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Aquaflask.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Aquaflask.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+
+	<scene name="scene_Vision_Express" title="Vision Express" 
+	title_chinese="视觉快运" 
+	title_korean="비전 익스프레스  " 
+	title_japanese="ビジョンエクスプレス"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Eyewear"
+	description_chinese="眼镜" 
+	description_korean="안경" 
+	description_japanese="アイウェア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Vision_Express.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Vision_Express.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Vision_Express.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+	
+	<scene name="scene_Sim_Booths_-_Globe_Smart" title="Sim Booths - Globe Smart" 
+	title_chinese="SIM卡" 
+	title_korean="심카드" 
+	title_japanese="シムカード"   
+	
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Mobile Sim Cards"
+	description_chinese="移动 Sim 卡" 
+	description_korean="모바일 SIM 카드" 
+	description_japanese="モバイルSIMカード"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+  onstart="" thumburl="panos/Sim_Booths_-_Globe_Smart.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Sim_Booths_-_Globe_Smart.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.750403" voffset="0.00">
+			<flat url="panos/Sim_Booths_-_Globe_Smart.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1024x770,1792x1346" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_Curex_Exchange" 
+	title="Curex Exchange" 
+	title_chinese="库雷克斯" 
+	title_korean="큐렉스" 
+	title_japanese="キュレックス"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Currency Exchange"
+	description_chinese="货币兑换" 
+	description_korean="환전" 
+	description_japanese="両替"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+	 onstart=""  isFloormap="true" thumburl="panos/Curex_Exchange.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Curex_Exchange.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.520615" voffset="0.00">
+			<flat url="panos/Curex_Exchange.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
+		</image>
+
+	</scene> 
+
+	
+	
+	<scene name="scene_Food_Kiosk_-_Ayers_Lechon" title="Food Kiosk - Ayers Lechon" 
+	 
+	title_chinese="美食亭 - 艾尔斯烤乳猪" 
+	title_korean="푸드 키오스크 - 에이어스 레촌" 
+	title_japanese="フードキオスク - エアーズ レチョン"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+
+	description="Roasted Pig/Pork"
+	description_chinese="烧猪/猪肉" 
+	description_korean="구운 돼지고기" 
+	description_japanese="ローストポーク"   
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+	onstart="" thumburl="panos/Food_Kiosk_-_Ayers_Lechon.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Food_Kiosk_-_Ayers_Lechon.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Food_Kiosk_-_Ayers_Lechon.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Food_Kiosk_-_Ngohiong" title="Food Kiosk - Ho Ngohiong" 
+	 
+	title_chinese="美食亭 - Ho Ngohiong" 
+	title_korean="푸드 키오스크 - 호 응고히옹" 
+	title_japanese="フードキオスク - ホー・ゴヒオン"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"   
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart="" thumburl="panos/Food_Kiosk_-_Ngohiong.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Food_Kiosk_-_Ngohiong.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Food_Kiosk_-_Ngohiong.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Food_Kiosks_-_Potato_Corner__Leylam" title="Food Kiosks - Potato Corner, Leylam" 
+	 
+	title_chinese="食品亭 - Potato Corner, Leylam" 
+	title_korean="푸드 키오스크 - 포테이토 코너, 레이람" 
+	title_japanese="フードキオスク - ポテトコーナー、レイラム"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"   
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ onstart="" thumburl="panos/Food_Kiosks_-_Potato_Corner__Leylam.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Food_Kiosks_-_Potato_Corner__Leylam.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Food_Kiosks_-_Potato_Corner__Leylam.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Food_Kiosks_-_Zip_N__Sip__Lechon_Belly" title="Food Kiosks - Zip N&apos; Sip, Lechon Belly" 
+	 
+	title_chinese="食品亭——Zip N&apos; Sip、Lechon Belly" 
+	title_korean="푸드 키오스크 - Zip N&apos; Sip, Lechon Belly" 
+	title_japanese="フードキオスク - Zip N&apos; Sip、Lechon Belly"   
+
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"   
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart="" thumburl="panos/Food_Kiosks_-_Zip_N__Sip__Lechon_Belly.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Food_Kiosks_-_Zip_N__Sip__Lechon_Belly.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Food_Kiosks_-_Zip_N__Sip__Lechon_Belly.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
 
 </krpano>

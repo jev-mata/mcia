@@ -1,4 +1,5 @@
-﻿<krpano version="1.21" title="Terminal 1 Departure">
+﻿<krpano version="1.21" 
+title="Terminal 1 Departure">
 
 	<!-- <include url="skin/vtourskin.xml" /> -->
 
@@ -19,7 +20,7 @@
 	
 	<scene name="scene_1_Coffee_Bean" 
 	
-	title="Coffee Bean" 
+	title="Coffee Bean and Tea Leaf" 
 	title_chinese="咖啡豆" 
 	title_korean="커피 콩" 
 	title_japanese="コーヒー豆"  
@@ -30,7 +31,20 @@
 	miniTitle_japanese="第1ターミナル出発"  
 
 
-	 onstart=""   isFloormap="true" thumburl="panos/1_Coffee_Bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+	 onstart=""
+   isFloormap="true" thumburl="panos/1_Coffee_Bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -46,7 +60,7 @@
 
 	</scene>
 
-	<scene name="scene_11_-_Plug_and_Play" 
+	<!-- <scene name="scene_11_-_Plug_and_Play" 
 	
 	title="Plug and Play" 
 	title_chinese="即插即用" 
@@ -57,7 +71,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/11_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/11_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -71,7 +98,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-90.950" atv="2.099" linkedscene="scene_2d_-_plug_and_play" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2__Watch_Republic" 
 	title="Watch Republic"
@@ -83,7 +110,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2__Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/2__Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -110,7 +138,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-__Atm.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-__Atm.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -124,14 +165,15 @@
 
 	</scene>
 
-	<scene name="scene_2D_-__Aviator" 
+	<!-- <scene name="scene_2D_-__Aviator" 
 	title="Aviator" 
 	
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-__Aviator.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-__Aviator.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -143,7 +185,7 @@
 			<flat url="panos/2D_-__Aviator.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2D_-_Addidas" 
 	title="Adidas"  
@@ -155,7 +197,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Addidas.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Sports Footwear and Apparel"
+	description_chinese="运动鞋及服装" 
+	description_korean="스포츠 신발 및 의류" 
+	description_japanese="スポーツシューズとアパレル"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Addidas.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -171,12 +226,26 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_AYERS_LECHON" title="AYERS LECHON" 
+	<scene name="scene_2D_-_AYERS_LECHON" 
+title="AYERS LECHON" 
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_AYERS_LECHON.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Roasted Pig/Pork"
+	description_chinese="烧猪/猪肉" 
+	description_korean="구운 돼지고기" 
+	description_japanese="ローストポーク"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_AYERS_LECHON.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -190,12 +259,26 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_BDO_ATM" title="BDO ATM" 
+	<scene name="scene_2D_-_BDO_ATM" 
+title="BDO ATM" 
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_BDO_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_BDO_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -209,12 +292,26 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_Belgian_Waffles" title="Belgian Waffles" 
+	<scene name="scene_2D_-_Belgian_Waffles" 
+title="Famous Belgian Waffles" 
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Belgian_Waffles.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Waffles"
+	description_chinese="华夫饼" 
+	description_korean="와플" 
+	description_japanese="ワッフル"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Belgian_Waffles.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -238,7 +335,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Apparel"
+	description_chinese="服饰" 
+	description_korean="의복" 
+	description_japanese="衣服"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -254,12 +364,25 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_Bos_Coffee" title="Bos Coffee" 
+	<scene name="scene_2D_-_Bos_Coffee" 
+title="Bos Coffee" 
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Bos_Coffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Bos_Coffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -283,7 +406,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Cafe_Laguna_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+
+ 	OperatingHours="6AM - 10PM"
+ 	OperatingHours_chinese="上午 6 点至晚上 10 点"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Cafe_Laguna_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -309,7 +445,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Ceburiffic_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Center"
+	description_chinese="纪念品中心" 
+	description_korean="기념품 센터" 
+	description_japanese="お土産センター"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Ceburiffic_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -335,7 +484,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Chowking.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Chinese fast-food"
+	description_chinese="中式快餐" 
+	description_korean="중국 패스트푸드" 
+	description_japanese="中国のファストフード"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Chowking.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -360,7 +521,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_CLN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Women’s Fashion"
+	description_chinese="女士时尚" 
+	description_korean="여성 패션" 
+	description_japanese="レディースファッション"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_CLN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -377,7 +551,7 @@
 	</scene>
 
 	<scene name="scene_2D_-_Coffee_bean" 
-	title="Coffee Bean" 
+	title="Coffee Bean and Tea Leaf" 
 	title_chinese="咖啡豆" 
 	title_korean="커피 콩" 
 	title_japanese="コーヒー豆" 
@@ -386,7 +560,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Coffee_bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Coffee_bean.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -413,7 +600,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Coffee_Dream.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Coffee_Dream.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -437,7 +637,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_DBP_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_DBP_ATM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -462,7 +675,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_District_Fiesta_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Center"
+	description_chinese="纪念品中心" 
+	description_korean="기념품 센터" 
+	description_japanese="お土産センター"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_District_Fiesta_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -488,7 +714,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_District_Fiesta.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Souvenir Center"
+	description_chinese="纪念品中心" 
+	description_korean="기념품 센터" 
+	description_japanese="お土産センター"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_District_Fiesta.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -514,7 +754,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Dunkin_Donut.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Donuts"
+	description_chinese="甜甜圈" 
+	description_korean="도넛" 
+	description_japanese="ドーナツ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Dunkin_Donut.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -540,7 +794,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Food_Avenue.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="The Bakery, Nippon Ramen, Taipei Tea, Belissimo, Lolo Pinoy’s Lechon - Food Stalls"
+	description_chinese="面包店、日本拉面、台北茶、Bellissimo、Lolo Pinoy Lechon - 小吃摊" 
+	description_korean="베이커리, 닛폰 라멘, 타이페이 티, 벨리시모, 로로 피노이 레촌 - 음식 노점" 
+	description_japanese="ザ・ベーカリー、ニッポンラーメン、台北ティー、ベリッシモ、ロロ・ピノイ・レチョン - 屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Food_Avenue.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -565,7 +833,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Fraiche_Deli.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Sandwiches"
+	description_chinese="三明治" 
+	description_korean="샌드위치" 
+	description_japanese="サンドイッチ"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Fraiche_Deli.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -579,7 +861,7 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_HomeBakers" 
+	<!-- <scene name="scene_2D_-_HomeBakers" 
 	title="Home Bakers" 
 	title_chinese="家庭面包师" 
 	title_korean="홈 베이커" 
@@ -589,7 +871,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_HomeBakers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_HomeBakers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -601,7 +897,7 @@
 			<flat url="panos/2D_-_HomeBakers.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2D_-_Illy_Caffe" 
 	
@@ -614,7 +910,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Illy_Caffe.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Italian Coffee"
+	description_chinese="意大利咖啡" 
+	description_korean="이탈리아 커피" 
+	description_japanese="イタリアンコーヒー"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Illy_Caffe.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -632,15 +941,28 @@
 
 	<scene name="scene_2D_-_IQOS" 
 	
-	title="IQOS" 
-	title_chinese="IQOS" 
-	title_korean="IQOS" 
-	title_japanese="IQOS"   
+	title="IQOs Vaping Lounge" 
+	title_chinese="IQO 电子烟休息室" 
+	title_korean="IQOs 베이핑 라운지" 
+	title_japanese="IQOs ベイピングラウンジ"   
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_IQOS.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Electronic Cigarette Smoking Area"
+	description_chinese="电子烟吸烟区" 
+	description_korean="전자담배 흡연 구역" 
+	description_japanese="電子タバコ喫煙エリア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_IQOS.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -667,7 +989,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -693,7 +1029,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Island_Souvenirs.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -719,7 +1069,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Jollibee_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Filipino Fast-Food Chain"
+	description_chinese="菲律宾快餐连锁店" 
+	description_korean="필리핀 패스트푸드 체인점" 
+	description_japanese="フィリピンのファーストフードチェーン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Jollibee_1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -735,7 +1099,7 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_Jue_DIng" 
+	<!-- <scene name="scene_2D_-_Jue_DIng" 
 	
 	title="Jue DIng"  
 	title_chinese="丁珏" 
@@ -747,7 +1111,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Jue_DIng.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Jue_DIng.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -761,7 +1126,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.004" atv="-0.012" distorted="false" zoom="false" linkedscene="scene_jue_ding_360_3_0" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2D_-_k2_Pharmacy" 
 	title="k2 Pharmacy"  
@@ -775,7 +1140,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_k2_Pharmacy.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Drugstore"
+	description_chinese="药店" 
+	description_korean="약국" 
+	description_japanese="薬局"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_k2_Pharmacy.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -802,7 +1180,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Kenny_Roggers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	
+
+	description="Chicken-based Restaurant"
+	description_chinese="鸡肉餐厅" 
+	description_korean="닭고기 기반 레스토랑" 
+	description_japanese="鶏肉料理レストラン"  
+	 
+ 	OperatingHours="6AM - 1AM"
+ 	OperatingHours_chinese="早上 6 点至凌晨 1 点"
+ 	OperatingHours_korean="오전 6시-오전 1시"
+ 	OperatingHours_japanese="午前6時～午前1時"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Kenny_Roggers.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -818,7 +1211,7 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_Kidoland" 
+	<!-- <scene name="scene_2D_-_Kidoland" 
 	
 	title="Kidoland" 
 	title_chinese="儿童乐园" 
@@ -829,7 +1222,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+
+	description="Chicken-based Restaurant"
+	description_chinese="鸡肉餐厅" 
+	description_korean="닭고기 기반 레스토랑" 
+	description_japanese="鶏肉料理レストラン"  
+	 
+ 	OperatingHours="6AM - 1AM"
+ 	OperatingHours_chinese="早上 6 点至凌晨 1 点"
+ 	OperatingHours_korean="오전 6시-오전 1시"
+ 	OperatingHours_japanese="午前6時～午前1時"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -843,7 +1250,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.007" atv="-0.017" distorted="false" zoom="false" linkedscene="scene_5_-_kidoland" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2D_-_Kultura" 
 	
@@ -856,7 +1263,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Kultura.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+
+	description="Filipino Clothing and Apparel"
+	description_chinese="菲律宾服装和服饰" 
+	description_korean="필리핀 의류 및 의류" 
+	description_japanese="フィリピンの衣料品"  
+	 
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Kultura.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -883,7 +1304,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Lolo_Pinoy_Lechon_de_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Roasted Pig/Pork"
+	description_chinese="烧猪/猪肉" 
+	description_korean="구운 돼지고기" 
+	description_japanese="ローストポーク"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Lolo_Pinoy_Lechon_de_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -907,7 +1341,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Lulu_Money.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Currency Exchange"
+	description_chinese="货币兑换" 
+	description_korean="환전" 
+	description_japanese="両替"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Lulu_Money.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -931,7 +1378,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Macao.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours="7 am – 9 pm"
+ 	OperatingHours_chinese="上午 7 点至晚上 9 点"
+ 	OperatingHours_korean="오전 7시 ~ 오후 9시"
+ 	OperatingHours_japanese="午前7時～午後9時"
+ 
+
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Macao.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -955,7 +1417,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Millies_Baked_Cookies.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+
+	description="Cookies and Pastries"
+	description_chinese="饼干和糕点" 
+	description_korean="쿠키와 페이스트리" 
+	description_japanese="クッキーとペストリー"  
+	 
+ 	OperatingHours="5am – 8pm"
+ 	OperatingHours_chinese="上午 5 点至晚上 8 点"
+ 	OperatingHours_korean="오전 5시 ~ 오후 8시"
+ 	OperatingHours_japanese="午前5時～午後8時"
+ 
+
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Millies_Baked_Cookies.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -981,7 +1458,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Miniso.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+
+	description="Retail Store"
+	description_chinese="零售店" 
+	description_korean="소매점" 
+	description_japanese="小売店"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Miniso.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1008,7 +1499,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Nomad_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Nomad_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1036,7 +1541,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Nomad.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Nomad.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1062,7 +1579,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Pasalubong_Center.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1076,7 +1605,7 @@
 
 	</scene>
 
-	<scene name="scene_2D_-_Play_Ground" 
+	<!-- <scene name="scene_2D_-_Play_Ground" 
 	
 	title="Play Ground" 
 	title_chinese="操场" 
@@ -1088,7 +1617,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Play_Ground.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Play_Ground.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1100,9 +1641,9 @@
 			<flat url="panos/2D_-_Play_Ground.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
 		</image>
 
-	</scene>
+	</scene> -->
 
-	<scene name="scene_2D_-_Plug_and_Play" 
+	<!-- <scene name="scene_2D_-_Plug_and_Play" 
 	title="Plug and Play" 
 	title_chinese="即插即用" 
 	title_korean="플러그 앤 플레이" 
@@ -1112,7 +1653,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Plug_and_Play.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1126,7 +1668,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.010" atv="-0.003" distorted="false" zoom="false" linkedscene="scene_11_-_plug_and_play" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_2D_-_Potato_corners" 
 	title="Potato Corners"  
@@ -1138,7 +1680,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Potato_corners.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="French Fries"
+	description_chinese="炸薯条" 
+	description_korean="감자 튀김" 
+	description_japanese="フライドポテト"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Potato_corners.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1164,7 +1719,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Ritazza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Ritazza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1188,7 +1756,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Shakeys_Pizza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Pizza, Pasta and Fried Chicken Restaurant"
+	description_chinese="披萨、意大利面和炸鸡餐厅" 
+	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
+	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Shakeys_Pizza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1212,7 +1793,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Shakeys.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Pizza, Pasta and Fried Chicken Restaurant"
+	description_chinese="披萨、意大利面和炸鸡餐厅" 
+	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
+	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Shakeys.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1236,7 +1830,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Sweets___Stuff.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Pizza, Pasta and Fried Chicken Restaurant"
+	description_chinese="披萨、意大利面和炸鸡餐厅" 
+	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
+	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Sweets___Stuff.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1260,7 +1867,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Bakery.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Bakery"
+	description_chinese="面包店" 
+	description_korean="빵집" 
+	description_japanese="ベーカリー"  
+	
+ 	OperatingHours="7 AM - 10 PM"
+ 	OperatingHours_chinese="上午 7 点至晚上 10 点"
+ 	OperatingHours_korean="오전 7시 - 오후 10시"
+ 	OperatingHours_japanese="午前7時～午後10時"
+  
+ 
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_The_Bakery.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1284,7 +1906,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Brew_House.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_The_Brew_House.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1309,7 +1944,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_The_Spa_at_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	description="Massage and Facial Services"
+	description_chinese="按摩和面部护理" 
+	description_korean="마사지 및 얼굴 서비스" 
+	description_japanese="マッサージとフェイシャルサービス"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_The_Spa_at_Cebu.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1335,7 +1982,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Travel_Free_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Travel_Free_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1360,7 +2021,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_TSIM_SHA_TSUI.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	description="Street food"
+	description_chinese="街头美食" 
+	description_korean="길거리 음식" 
+	description_japanese="屋台の食べ物"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_TSIM_SHA_TSUI.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1384,7 +2058,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	description="Watches"
+	description_chinese="手表" 
+	description_korean="시계" 
+	description_japanese="腕時計"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_Watch_Republic.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1412,7 +2099,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_WH__Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_WH__Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1438,7 +2138,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D_-_WH_Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_WH_Smith.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1463,7 +2175,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/2D-_Wagas_ukelele_shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Ukulele Shop"
+	description_chinese="尤克里里店" 
+	description_korean="우쿨렐레 숍" 
+	description_japanese="ウクレレショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/2D-_Wagas_ukelele_shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1489,7 +2213,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/4_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+ 
+	description="Apparel"
+	description_chinese="服饰" 
+	description_korean="의복" 
+	description_japanese="衣服"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/4_-_Bench.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1504,7 +2241,7 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="167.511" atv="0.517" linkedscene="scene_2d_-_bench" linkedscene_hoffset="0.0" use3dtransition="true" />
 
 	</scene>
-
+<!-- 
 	<scene name="scene_5_-_Kidoland" 
 	title="Kidoland" 
 	title_chinese="儿童乐园" 
@@ -1515,7 +2252,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/5_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/5_-_Kidoland.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1529,7 +2267,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="171.030" atv="-3.174" linkedscene="scene_2d_-_kidoland" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_8_-_Illy_Caffee" 
 	title="Illy Caffe" 
@@ -1541,7 +2279,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/8_-_Illy_Caffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Italian Coffee"
+	description_chinese="意大利咖啡" 
+	description_korean="이탈리아 커피" 
+	description_japanese="イタリアンコーヒー"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/8_-_Illy_Caffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1569,7 +2320,18 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Adidas_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Sports Footwear and Apparel"
+	description_chinese="运动鞋及服装" 
+	description_korean="스포츠 신발 및 의류" 
+	description_japanese="スポーツシューズとアパレル"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ onstart=""
+   isFloormap="true" thumburl="panos/Adidas_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1595,7 +2357,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/ato-ni-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/ato-ni-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1612,7 +2387,7 @@
 	</scene>
 
 	<scene name="scene_Beauty_360" 
-	title="Beauty" 
+	title="Beauty Bar" 
 	title_chinese="美丽" 
 	title_korean="아름다움" 
 	title_japanese="美しさ"   
@@ -1622,7 +2397,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Beauty_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	
+ 
+	description="Beauty Products"
+	description_chinese="美容产品" 
+	description_korean="뷰티 제품" 
+	description_japanese="美容製品"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Beauty_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1635,7 +2425,7 @@
 		</image>
 
 	</scene>
-
+<!-- 
 	<scene name="scene_Bellissimo_-_2D" 
 	title="Bellissimo" 
 	title_chinese="美丽的" 
@@ -1646,7 +2436,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Bellissimo_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	
+ 
+	description="Beauty Products"
+	description_chinese="美容产品" 
+	description_korean="뷰티 제품" 
+	description_japanese="美容製品"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Bellissimo_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1658,7 +2463,7 @@
 			<flat url="panos/Bellissimo_-_2D.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_Brew_House_360" 
 	title="Brew House"  
@@ -1670,7 +2475,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Brew_House_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Brew_House_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1695,7 +2512,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Ceburiffic_Pasalubong_Center_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Ceburiffic_Pasalubong_Center_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1721,7 +2551,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/CLN_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Women’s Fashion"
+	description_chinese="女士时尚" 
+	description_korean="여성 패션" 
+	description_japanese="レディースファッション"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/CLN_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1747,7 +2590,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/district_fiesta_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Center"
+	description_chinese="纪念品中心" 
+	description_korean="기념품 센터" 
+	description_japanese="お土産センター"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/district_fiesta_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1773,7 +2628,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/District_Fiesta_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+ 
+	description="Souvenir Center"
+	description_chinese="纪念品中心" 
+	description_korean="기념품 센터" 
+	description_japanese="お土産センター"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/District_Fiesta_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1799,7 +2668,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Food_Avenue_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Food_Avenue_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1823,7 +2704,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Freshly_Made_Donuts_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Donuts"
+	description_chinese="甜甜圈" 
+	description_korean="도넛" 
+	description_japanese="ドーナツ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Freshly_Made_Donuts_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1847,7 +2740,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/IQOS_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Electronic Cigarette Smoking Area"
+	description_chinese="电子烟吸烟区" 
+	description_korean="전자담배 흡연 구역" 
+	description_japanese="電子タバコ喫煙エリア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/IQOS_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1873,7 +2779,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Island_Souvenir_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Island_Souvenir_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1899,7 +2818,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Jollibee_-_360_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Filipino Fast-Food Chain"
+	description_chinese="菲律宾快餐连锁店" 
+	description_korean="필리핀 패스트푸드 체인점" 
+	description_japanese="フィリピンのファーストフードチェーン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Jollibee_-_360_Dine_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1926,7 +2859,21 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Jollibee_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Filipino Fast-Food Chain"
+	description_chinese="菲律宾快餐连锁店" 
+	description_korean="필리핀 패스트푸드 체인점" 
+	description_japanese="フィリピンのファーストフードチェーン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Jollibee_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1942,7 +2889,7 @@
 
 	</scene>
 
-	<scene name="scene_Jue_Ding_360_3_0" 
+	<!-- <scene name="scene_Jue_Ding_360_3_0" 
 	title="Jue DIng"  
 	title_chinese="丁珏" 
 	title_korean="주에 딘" 
@@ -1952,7 +2899,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Jue_Ding_360_3_0.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/Jue_Ding_360_3_0.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1966,7 +2914,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="94.200" atv="-3.776" linkedscene="scene_2d_-_jue_ding" linkedscene_hoffset="0.0" use3dtransition="true" />
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_K2_Pharamacy_360" 
 	title="k2 Pharmacy"  
@@ -1978,7 +2926,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/K2_Pharamacy_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Drugstore"
+	description_chinese="药店" 
+	description_korean="약국" 
+	description_japanese="薬局"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/K2_Pharamacy_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2004,7 +2965,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Kenny_Rogers_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Chicken-based Restaurant"
+	description_chinese="鸡肉餐厅" 
+	description_korean="닭고기 기반 레스토랑" 
+	description_japanese="鶏肉料理レストラン"  
+	 
+ 	OperatingHours="6AM - 1AM"
+ 	OperatingHours_chinese="早上 6 点至凌晨 1 点"
+ 	OperatingHours_korean="오전 6시-오전 1시"
+ 	OperatingHours_japanese="午前6時～午前1時"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Kenny_Rogers_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2030,7 +3003,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/KULTURA_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/KULTURA_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2056,7 +3030,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Roasted Pig/Pork"
+	description_chinese="烧猪/猪肉" 
+	description_korean="구운 돼지고기" 
+	description_japanese="ローストポーク"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Lolo_Pinoy_Lechon_de_Cebu_-_2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2080,7 +3067,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Miniso_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Retail Store"
+	description_chinese="零售店" 
+	description_korean="소매점" 
+	description_japanese="小売店"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Miniso_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2097,7 +3097,7 @@
 	</scene>
 
 	<scene name="scene_nipon-2D" 
-	title="Nipon" 
+	title="Nippon" 
 	title_chinese="厚的" 
 	title_korean="두꺼운" 
 	title_japanese="厚い"   
@@ -2106,7 +3106,22 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/nipon-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	
+	description="Japanese Restaurant"
+	description_chinese="日本餐厅" 
+	description_korean="일본식 레스토랑" 
+	description_japanese="日本料理レストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/nipon-2D.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2130,7 +3145,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/NOMAD_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/NOMAD_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2156,7 +3183,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/NOMAD_2_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+
+
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/NOMAD_2_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2172,7 +3212,7 @@
 
 	</scene>
 
-	<scene name="scene_Play_Ground_-_360" 
+	<!-- <scene name="scene_Play_Ground_-_360" 
 	title="Play Ground" 
 	title_chinese="操场" 
 	title_korean="운동장" 
@@ -2182,7 +3222,8 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Play_Ground_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart=""
+   isFloormap="true" thumburl="panos/Play_Ground_-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2194,7 +3235,7 @@
 			<cube url="panos/Play_Ground_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_Restaurants_Avenue-_360" 
 	title="Restaurants Avenue" 
@@ -2206,8 +3247,20 @@
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
-	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Restaurants_Avenue-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	miniTitle_japanese="第1ターミナル出発"  
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Restaurants_Avenue-_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2231,7 +3284,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Shakey_s_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Pizza, Pasta and Fried Chicken Restaurant"
+	description_chinese="披萨、意大利面和炸鸡餐厅" 
+	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
+	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+
+	
+ onstart=""
+   isFloormap="true" thumburl="panos/Shakey_s_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2255,7 +3321,20 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/Travel_Free_Shop_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/Travel_Free_Shop_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2279,7 +3358,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/wagas-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Ukulele Shop"
+	description_chinese="尤克里里店" 
+	description_korean="우쿨렐레 숍" 
+	description_japanese="ウクレレショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/wagas-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2304,7 +3395,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/WH_Smith_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ onstart=""
+   isFloormap="true" thumburl="panos/WH_Smith_360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2328,7 +3431,19 @@
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
- onstart=""   isFloormap="true" thumburl="panos/wh-smith-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ 
+	description="Convenience Store"
+	description_chinese="便利店" 
+	description_korean="편의점" 
+	description_japanese="コンビニエンスストア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   isFloormap="true"
+ onstart="" thumburl="panos/wh-smith-360.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2342,5 +3457,1687 @@
 
 	</scene>
 
+	<scene name="scene_ATM_-_BDO__Chinabank__UnionBank" 
+title="ATM - BDO, Chinabank, UnionBank" 
+	title_chinese="ATM - BDO、中国银行、联合银行" 
+	title_korean="ATM - BDO, 중국은행, 유니온은행" 
+	title_japanese="ATM - BDO、中国銀行、ユニオン銀行"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
 
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/ATM_-_BDO__Chinabank__UnionBank.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ATM_-_BDO__Chinabank__UnionBank.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/ATM_-_BDO__Chinabank__UnionBank.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_ATM_-_RCBC" 
+title="ATM - RCBC" 
+	title_chinese="ATM - RCBC" 
+	title_korean="ATM - RCBC" 
+	title_japanese="ATM - RCBC"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/ATM_-_RCBC.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ATM_-_RCBC.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/ATM_-_RCBC.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_ATMs_-_BDO__China_Bank__RCBC" 
+title="ATMs - BDO, China Bank, RCBC" 
+	title_chinese="ATM 机 - BDO、中国银行、RCBC" 
+	title_korean="ATMs - BDO, China Bank, RCBC" 
+	title_japanese="ATM - BDO、中国銀行、RCBC"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/ATMs_-_BDO__China_Bank__RCBC.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ATMs_-_BDO__China_Bank__RCBC.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/ATMs_-_BDO__China_Bank__RCBC.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_ATMs_-_PSBank__RCBC" 
+title="ATMs - PSBank, RCBC" 
+	title_chinese="ATM 机 - PSBank、RCBC" 
+	title_korean="ATM - PSBank, RCBC" 
+	title_japanese="ATM - PSBank、RCBC"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Cash Withdrawals"
+	description_chinese="现金提款" 
+	description_korean="현금 인출" 
+	description_japanese="現金引き出し"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/ATMs_-_PSBank__RCBC.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ATMs_-_PSBank__RCBC.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/ATMs_-_PSBank__RCBC.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Forex_-_Curex_and_Lulu_Money" 
+title="Forex - Curex and Lulu Money" 
+	title_chinese="外汇 - Curex 和 Lulu Money" 
+	title_korean="외환 - Curex 및 Lulu Money" 
+	title_japanese="外国為替 - Curex と Lulu Money"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Currency Exchange"
+	description_chinese="货币兑换" 
+	description_korean="환전" 
+	description_japanese="両替"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/Forex_-_Curex_and_Lulu_Money.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Forex_-_Curex_and_Lulu_Money.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Forex_-_Curex_and_Lulu_Money.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_JTI_Smoking_Lounge" 
+title="JTI Smoking Lounge" 
+	title_chinese="JTI 吸烟室" 
+	title_korean="JTI 흡연 라운지" 
+	title_japanese="JTI喫煙ラウンジ"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Smoking Area"
+	description_chinese="吸烟区" 
+	description_korean="흡연 구역" 
+	description_japanese="喫煙エリア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+   isFloormap="true"
+   onstart=""
+ thumburl="panos/JTI_Smoking_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/JTI_Smoking_Lounge.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/JTI_Smoking_Lounge.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	
+
+	
+	<scene name="scene_Catch_a_Prize" title="Catch a Prize" onstart="" 
+	title_chinese="赢取奖品" 
+	title_korean="상품을 잡아라" 
+	title_japanese="賞品をゲット"   
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+	description="Entertainment"
+	description_chinese="娱乐" 
+	description_korean="오락" 
+	description_japanese="エンターテインメント"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+    isFloormap="true" 
+    thumburl="panos/Catch_a_Prize.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Catch_a_Prize.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Catch_a_Prize.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+
+
+	
+	<scene name="scene_Ayers_Lechon" title="Ayers Lechon" onstart="" 
+	title_chinese="艾尔斯猪肉" 
+	title_korean="에어즈 포크" 
+	title_japanese="エアーズポーク"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Roasted Pig/Pork"
+	description_chinese="烧猪/猪肉" 
+	description_korean="구운 돼지고기" 
+	description_japanese="ローストポーク"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+   isFloormap="true" 
+ thumburl="panos/Ayers_Lechon.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ayers_Lechon.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Ayers_Lechon.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Belgian_Waffle" title="Famous Belgian Waffle" onstart="" 
+	title_chinese="著名的比利时华夫饼" 
+	title_korean="유명한 벨기에 와플" 
+	title_japanese="有名なベルギーワッフル"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+	
+	description="Waffles"
+	description_chinese="华夫饼" 
+	description_korean="와플" 
+	description_japanese="ワッフル"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   isFloormap="true" 
+   thumburl="panos/Belgian_Waffle.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Belgian_Waffle.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Belgian_Waffle.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side" title="Food Kiosk Left Side" onstart="" 
+	title_chinese="美食大道左侧" 
+	title_korean="푸드 애비뉴 왼쪽" 
+	title_japanese="フードアベニュー左側"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   isFloormap="true" 
+   thumburl="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side" title="Food Avenue Right Side" 
+	title_chinese="美食大道右侧" 
+	title_korean="푸드 애비뉴 오른쪽" 
+	title_japanese="フードアベニュー右側"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+ 
+	description="Food Stalls"
+	description_chinese="小吃摊" 
+	description_korean="음식 노점" 
+	description_japanese="屋台"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   isFloormap="true" 
+   onstart="" thumburl="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Coffee_Dream" title="Coffee Dream" onstart="" 
+	title_chinese="咖啡梦" 
+	title_korean="커피 드림" 
+	title_japanese="コーヒードリーム"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Coffee Shop"
+	description_chinese="咖啡馆" 
+	description_korean="커피숍" 
+	description_japanese="コー​​ヒーショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+   isFloormap="true" 
+   thumburl="panos/Coffee_Dream.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Coffee_Dream.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Coffee_Dream.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Kusina_Sugbo" title="Kusina Sugbo" onstart="" 
+	title_chinese="咖啡梦" 
+	title_korean="커피 드림" 
+	title_japanese="コーヒードリーム"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Authentic Cebuano Cuisine"
+	description_chinese="正宗宿务美食" 
+	description_korean="정통 세부 요리" 
+	description_japanese="本格的なセブアノ料理"  
+	 
+ 	OperatingHours="6AM - 10PM"
+ 	OperatingHours_chinese="上午 6 点至晚上 10 点"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
+ 
+ 
+   isFloormap="true" 
+   thumburl="panos/Kusina_Sugbo.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Kusina_Sugbo.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Kusina_Sugbo.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Llaollao" title="Llaollao" onstart="" 
+	title_chinese="洛洛" 
+	title_korean="라올라오" 
+	title_japanese="リャオラオ"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+	description="Frozen Yogurt"
+	description_chinese="冷冻酸奶" 
+	description_korean="프로즌 요거트" 
+	description_japanese="フローズンヨーグルト"  
+	 
+ 	OperatingHours="6AM - 10PM"
+ 	OperatingHours_chinese="上午 6 点至晚上 10 点"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
+ 
+ 
+   isFloormap="true" 
+   thumburl="panos/Llaollao.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Llaollao.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Llaollao.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Zubuchon" title="Zubuchon" onstart="" 
+	title_chinese="祖布雄" 
+	title_korean="주부촌" 
+	title_japanese="ズブチョン"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Roasted Pig "
+	description_chinese="烤猪" 
+	description_korean="구운 돼지" 
+	description_japanese="ロースト豚"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   isFloormap="true" 
+   thumburl="panos/Zubuchon.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Zubuchon.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Zubuchon.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+
+
+	<scene name="scene_Crocs" title="Crocs" 
+	title_chinese="Crocs" 
+	title_korean="크록스" 
+	title_japanese="クロックス"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Footwear"
+	description_chinese="鞋类" 
+	description_korean="신발류" 
+	description_japanese="履物"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Crocs.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Crocs.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Crocs.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+<scene name="scene_Digital_Walker" title="Digital Walker" 
+	title_chinese="数字步行者" 
+	title_korean="디지털 워커" 
+	title_japanese="デジタルウォーカー"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Digital Merch"
+	description_chinese="数字商品" 
+	description_korean="디지털 상품" 
+	description_japanese="デジタルグッズ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Digital_Walker.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Digital_Walker.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Digital_Walker.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	
+	<scene name="scene_Allways" title="Allways" 
+	title_chinese="奥威斯" 
+	title_korean="항상" 
+	title_japanese="いつも"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Luggage Porter Service"
+	description_chinese="行李搬运服务" 
+	description_korean="짐 운반 서비스" 
+	description_japanese="荷物ポーターサービス"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+   		isFloormap="true"
+ onstart="" thumburl="panos/Allways.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Allways.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Allways.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+	</scene>
+
+	<scene name="scene_Plaza_Premium" title="Plaza Premium Lounge" onstart="" 
+	title_chinese="环亚机场贵宾室" 
+	title_korean="플라자 프리미엄 라운지" 
+	title_japanese="プラザプレミアムラウンジ"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+	description="Global Airport Lounge "
+	description_chinese="全球机场休息室" 
+	description_korean="글로벌 공항 라운지" 
+	description_japanese="グローバル空港ラウンジ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+   		isMultipleScene="true"
+   isFloormap="true" 
+ thumburl="panos/Plaza_Premium.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Plaza_Premium.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Plaza_Premium.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+<layer name="Scene_Multiple_MainContainer" type="container" width="100%"
+		height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
+			bgalpha="0"
+			bgcolor="0x000000"
+
+		>
+			<layer name="Scene_Multiple_MainContainer2" type="container" 
+    
+    width.desktop="calc: stagewidth * 0.3" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+			y="0"
+			maxwidth.tablet="700"
+				align="bottommiddle"
+			height.desktop="20%"   
+			height.mobile="15.5%"   
+			height.tablet="20%"    
+				bgalpha="0.4"
+				bgcolor="0x000000"
+				bgcapture="true"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+			>
+
+				<layer name="Scene_Multiple_Container" type="scrollarea"  width.desktop="auto" width.mobile="auto"
+			
+				height.desktop="90%" 
+				height.mobile="90%" 
+				height.tablet="95%"   
+				bgalpha="0"
+				bgcolor="0x000000"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+				bgcapture="true" 
+				flowoverflow.desktop="false"
+				flowoverflow.tablet="false"
+				flowoverflow.mobile="false"
+				
+							align="centermiddle"
+							edge="centermiddle" 
+				maskchildren="false"
+				scrolltype="inertia"  
+							alturl="%SWFPATH%/plugins/scrollarea.js"
+							url="%SWFPATH%/plugins/scrollarea.js"
+							direction="h"
+							draggable="true"
+							capturechildren="true" 
+							onhover_autoscrolling="false"
+							mwheel="true"  
+							overscroll="1.0"
+							momentum="0.06"
+							friction="0.95"
+							acceleration="0.08"
+							flowchildren="h"  
+							returnacceleration="0.15"    
+				>
+				<layer type="container" 
+							bgalpha="0"     
+    width.desktop="calc: stagewidth * 0.15" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+							bgcolor="0x000000" 
+							height="100%"   
+							flowchildren="h"   
+                align="center" 
+				edge="center"
+							>
+				<!-- item list -->
+				<layer style="imageListImageScene" type="container"     
+						
+						name="scene_Mabuhay_Plaza_Premium_Entrance"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Entrance"  
+                align="center" 
+						bgalpha="1"  bgcolor="0xff7525"
+				edge="center"  
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Entrance.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true" 
+
+							text="Plaza Premium Entrance" 
+							en="Plaza Premium Entrance" 
+								chinese="环亚机场贵宾室大堂" 
+								korean="플라자 프리미엄 로비" 
+								japanese="プラザプレミアムロビー"  
+
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<layer style="imageListImageScene" type="container"     
+						name="scene_Mabuhay_Plaza_Premium_Lobby"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Lobby" 
+                align="center" 
+				edge="center" 
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Lobby.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true"   
+							en="Plaza Premium Lobby" 
+							text="Plaza Premium Lobby" 
+							chinese="环亚机场贵宾室大堂" 
+							korean="플라자 프리미엄 로비" 
+							japanese="プラザプレミアムロビー"  
+
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<!-- item list -->
+					</layer>
+				</layer>
+			</layer>
+		</layer>
+	</scene>
+	
+	<scene name="scene_Mabuhay_Plaza_Premium_Entrance" title="Plaza Premium Entrance" 
+	title_chinese="环亚机场贵宾室大堂" 
+	title_korean="플라자 프리미엄 로비" 
+	title_japanese="プラザプレミアムロビー"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Global Airport Lounge"
+	description_chinese="全球机场休息室" 
+	description_korean="글로벌 공항 라운지" 
+	description_japanese="グローバル空港ラウンジ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+   		isMultipleScene="true"
+ onstart="" thumburl="panos/Mabuhay_Plaza_Premium_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Mabuhay_Plaza_Premium_Entrance.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Mabuhay_Plaza_Premium_Entrance.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+	<layer name="Scene_Multiple_MainContainer" type="container" width="100%"
+		height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
+			bgalpha="0"
+			bgcolor="0x000000"
+
+		>
+			<layer name="Scene_Multiple_MainContainer2" type="container" 
+    
+    width.desktop="calc: stagewidth * 0.3" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+			y="0"
+			maxwidth.tablet="700"
+				align="bottommiddle"
+			height.desktop="20%"   
+			height.mobile="15.5%"   
+			height.tablet="20%"    
+				bgalpha="0.4"
+				bgcolor="0x000000"
+				bgcapture="true"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+			>
+
+				<layer name="Scene_Multiple_Container" type="scrollarea"  width.desktop="auto" width.mobile="auto"
+			
+				height.desktop="90%" 
+				height.mobile="90%" 
+				height.tablet="95%"   
+				bgalpha="0"
+				bgcolor="0x000000"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+				bgcapture="true" 
+				flowoverflow.desktop="false"
+				flowoverflow.tablet="false"
+				flowoverflow.mobile="false"
+				
+							align="centermiddle"
+							edge="centermiddle" 
+				maskchildren="false"
+				scrolltype="inertia"  
+							alturl="%SWFPATH%/plugins/scrollarea.js"
+							url="%SWFPATH%/plugins/scrollarea.js"
+							direction="h"
+							draggable="true"
+							capturechildren="true" 
+							onhover_autoscrolling="false"
+							mwheel="true"  
+							overscroll="1.0"
+							momentum="0.06"
+							friction="0.95"
+							acceleration="0.08"
+							flowchildren="h"  
+							returnacceleration="0.15"    
+				>
+				<layer type="container" 
+							bgalpha="0"     
+    width.desktop="calc: stagewidth * 0.15" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+							bgcolor="0x000000" 
+							height="100%"   
+							flowchildren="h"   
+                align="center" 
+				edge="center"
+							>
+				<!-- item list -->
+				<layer style="imageListImageScene" type="container"     
+						  bgcolor="0xff7525" bgalpha="1"
+						name="scene_Mabuhay_Plaza_Premium_Entrance"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Entrance"  
+                align="center" 
+				edge="center"  
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Entrance.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true" 
+
+							text="Plaza Premium Entrance" 
+							en="Plaza Premium Entrance" 
+								chinese="环亚机场贵宾室大堂" 
+								korean="플라자 프리미엄 로비" 
+								japanese="プラザプレミアムロビー"  
+
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<layer style="imageListImageScene" type="container"     
+						name="scene_Mabuhay_Plaza_Premium_Lobby"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Lobby" 
+                align="center" 
+				edge="center" 
+						
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Lobby.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true"   
+							en="Plaza Premium Lobby" 
+							text="Plaza Premium Lobby" 
+							chinese="环亚机场贵宾室大堂" 
+							korean="플라자 프리미엄 로비" 
+							japanese="プラザプレミアムロビー"  
+
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<!-- item list -->
+					</layer>
+				</layer>
+			</layer>
+		</layer>
+	</scene>
+
+	<scene name="scene_Mabuhay_Plaza_Premium_Lobby" title="Plaza Premium Lobby" 
+		title_chinese="环亚机场贵宾室大堂" 
+		title_korean="플라자 프리미엄 로비" 
+		title_japanese="プラザプレミアムロビー"  
+	
+	
+		miniTitle="Terminal 1 Departure"
+		miniTitle_chinese="1 号航站楼出发" 
+		miniTitle_korean="제1터미널 출발" 
+		miniTitle_japanese="第1ターミナル出発" 
+	
+		description="Global Airport Lounge"
+		description_chinese="全球机场休息室" 
+		description_korean="글로벌 공항 라운지" 
+		description_japanese="グローバル空港ラウンジ"  
+		
+		OperatingHours="24 hrs"
+		OperatingHours_chinese="24 小时"
+		OperatingHours_korean="24시간"
+		OperatingHours_japanese="24時間"
+		onstart="" 
+   		isFloormap="true"
+   		isMultipleScene="true"
+		thumburl="panos/Mabuhay_Plaza_Premium_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Mabuhay_Plaza_Premium_Lobby.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Mabuhay_Plaza_Premium_Lobby.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+<layer name="Scene_Multiple_MainContainer" type="container" width="100%"
+		height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
+			bgalpha="0"
+			bgcolor="0x000000"
+
+		>
+			<layer name="Scene_Multiple_MainContainer2" type="container" 
+    
+    width.desktop="calc: stagewidth * 0.3" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+			y="0"
+			maxwidth.tablet="700"
+				align="bottommiddle"
+			height.desktop="20%"   
+			height.mobile="15.5%"   
+			height.tablet="20%"    
+				bgalpha="0.4"
+				bgcolor="0x000000"
+				bgcapture="true"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+			>
+
+				<layer name="Scene_Multiple_Container" type="scrollarea"  width.desktop="auto" width.mobile="auto"
+			
+				height.desktop="90%" 
+				height.mobile="90%" 
+				height.tablet="95%"   
+				bgalpha="0"
+				bgcolor="0x000000"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+				bgcapture="true" 
+				flowoverflow.desktop="false"
+				flowoverflow.tablet="false"
+				flowoverflow.mobile="false"
+				
+							align="centermiddle"
+							edge="centermiddle" 
+				maskchildren="false"
+				scrolltype="inertia"  
+							alturl="%SWFPATH%/plugins/scrollarea.js"
+							url="%SWFPATH%/plugins/scrollarea.js"
+							direction="h"
+							draggable="true"
+							capturechildren="true" 
+							onhover_autoscrolling="false"
+							mwheel="true"  
+							overscroll="1.0"
+							momentum="0.06"
+							friction="0.95"
+							acceleration="0.08"
+							flowchildren="h"  
+							returnacceleration="0.15"    
+				>
+				<layer type="container" 
+							bgalpha="0"     
+    width.desktop="calc: stagewidth * 0.15" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+							bgcolor="0x000000" 
+							height="100%"   
+							flowchildren="h"   
+                align="center" 
+				edge="center"
+							>
+				<!-- item list -->
+				<layer style="imageListImageScene" type="container"     
+						
+						name="scene_Mabuhay_Plaza_Premium_Entrance"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Entrance"  
+                align="center" 
+				edge="center"  
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Entrance.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true" 
+
+							text="Plaza Premium Entrance" 
+							en="Plaza Premium Entrance" 
+								chinese="环亚机场贵宾室大堂" 
+								korean="플라자 프리미엄 로비" 
+								japanese="プラザプレミアムロビー"  
+
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<layer style="imageListImageScene" type="container"     
+						name="scene_Mabuhay_Plaza_Premium_Lobby"
+						linkedscene="scene_Mabuhay_Plaza_Premium_Lobby"   bgcolor="0xff7525"
+                align="center" 
+				edge="center" 
+						bgalpha="1"
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Plaza_Premium_Lobby.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true"   
+							en="Plaza Premium Lobby" 
+							text="Plaza Premium Lobby"  
+
+						chinese="环亚机场贵宾室大堂" 
+						korean="플라자 프리미엄 로비" 
+						japanese="プラザプレミアムロビー"  
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<!-- item list -->
+					</layer>
+				</layer>
+			</layer>
+		</layer>
+	</scene>
+
+	
+	<scene name="scene_Mabuhay_Lounge" title="Mabuhay Lounge Entrance" 
+	
+		title_chinese="Mabuhay 休息室入口" 
+		title_korean="마부하이 라운지 입구" 
+		title_japanese="マブハイラウンジ入口"  
+	
+	
+		miniTitle="Terminal 1 Departure"
+		miniTitle_chinese="1 号航站楼出发" 
+		miniTitle_korean="제1터미널 출발" 
+		miniTitle_japanese="第1ターミナル出発" 
+	
+		description="Philippine Airlines Lounge for First/ Business Class Passengers/Elite Members"
+		description_chinese="菲律宾航空头等舱/商务舱乘客/精英会员休息室" 
+		description_korean="필리핀항공 퍼스트/비즈니스 클래스 승객/엘리트 회원을 위한 라운지" 
+		description_japanese="フィリピン航空ファースト/ビジネスクラス乗客/エリート会員向けラウンジ"  
+		
+		OperatingHours="24 hrs"
+		OperatingHours_chinese="24 小时"
+		OperatingHours_korean="24시간"
+		OperatingHours_japanese="24時間"
+		
+   		isMultipleScene="true"
+   		isFloormap="true"
+		onstart="" thumburl="panos/Mabuhay_Lounge_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Mabuhay_Lounge_Entrance.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Mabuhay_Lounge_Entrance.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+		<layer name="Scene_Multiple_MainContainer" type="container" width="100%"
+		height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
+			bgalpha="0"
+			bgcolor="0x000000"
+
+		>
+			<layer name="Scene_Multiple_MainContainer2" type="container" 
+    
+    width.desktop="calc: stagewidth * 0.3" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+			y="0"
+			maxwidth.tablet="700"
+				align="bottommiddle"
+			height.desktop="20%"   
+			height.mobile="15.5%"   
+			height.tablet="20%"    
+				bgalpha="0.4"
+				bgcolor="0x000000"
+				bgcapture="true"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+			>
+
+				<layer name="Scene_Multiple_Container" type="scrollarea"  width.desktop="auto" width.mobile="auto"
+			
+				height.desktop="90%" 
+				height.mobile="90%" 
+				height.tablet="95%"   
+				bgalpha="0"
+				bgcolor="0x000000"
+				bgroundedge.desktop="10"
+				bgroundedge.mobile="0"
+				bgroundedge.tablet="10"
+				bgcapture="true" 
+				flowoverflow.desktop="false"
+				flowoverflow.tablet="false"
+				flowoverflow.mobile="false"
+				
+							align="centermiddle"
+							edge="centermiddle" 
+				maskchildren="false"
+				scrolltype="inertia"  
+							alturl="%SWFPATH%/plugins/scrollarea.js"
+							url="%SWFPATH%/plugins/scrollarea.js"
+							direction="h"
+							draggable="true"
+							capturechildren="true" 
+							onhover_autoscrolling="false"
+							mwheel="true"  
+							overscroll="1.0"
+							momentum="0.06"
+							friction="0.95"
+							acceleration="0.08"
+							flowchildren="h"  
+							returnacceleration="0.15"    
+				>
+				<layer type="container" 
+							bgalpha="0"     
+    width.desktop="calc: stagewidth * 0.15" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+							bgcolor="0x000000" 
+							height="100%"   
+							flowchildren="h"   
+                align="center" 
+				edge="center"
+							>
+				<!-- item list -->
+				<layer style="imageListImageScene" type="container"     
+						
+						name="scene_Mabuhay_Lounge_Lobby"
+						linkedscene="scene_Mabuhay_Lounge_Lobby"  
+                align="center" 
+				edge="center"  
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Lounge_Lobby.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true"
+							en="Mabuhay Lounge Lobby"
+							japanese="マブハイラウンジロビー"
+							chinese="Mabuhay 休息室"
+							korean="마부하이 라운지 로비"   
+							text="Mabuhay Lounge Lobby	" 
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<layer style="imageListImageScene" type="container"     
+						name="scene_Mabuhay_Lounge"
+						linkedscene="scene_Mabuhay_Lounge"   bgcolor="0xff7525"
+                align="center" 
+				edge="center" 
+						bgalpha="1"
+					>
+						
+						<layer   type="container"  
+						width="95%" height="60%"
+						bgroundedge="10"
+						maskchildren="true" 
+						y="10%"
+						align="topcenter"  
+						bgcapture="false" 
+							enabled="false"
+						>
+							<layer  style="imageListImage_compo" type="image" 
+							bgalpha="0"
+							bgcolor="0xFFFFF"
+							width="100%" height="prop"
+							bgroundedge="10" 
+						bgcapture="false" 
+							enabled="false"
+							url="panos/Mabuhay_Lounge_Entrance.tiles/thumb.jpg"
+							>
+							</layer>
+						</layer>
+						
+						<layer type="text"
+						
+							isLanguage="true"
+							en="Mabuhay Lounge Entrance"
+							japanese="マブハイラウンジロビー"
+							chinese="Mabuhay 休息室"
+							korean="마부하이 라운지 로비"   
+							text="Mabuhay Lounge Entrance	" 
+							bgcapture="false" 
+								enabled="false"
+							y="10%"
+							style="imageListImage_text"  
+							
+							height="20%" width="100%"
+							bgalpha="0" 
+							align="bottom"
+							>
+						</layer>
+					</layer> 
+				<!-- item list -->
+					</layer>
+				</layer>
+			</layer>
+		</layer>
+	</scene>
+
+	<scene name="scene_Mabuhay_Lounge_Lobby" title="Mabuhay Lounge Lobby"  
+		title_chinese="Mabuhay 休息室" 
+		title_korean="마부하이 라운지 로비" 
+		title_japanese="マブハイラウンジロビー"  
+	
+		miniTitle="Terminal 1 Departure"
+		miniTitle_chinese="1 号航站楼出发" 
+		miniTitle_korean="제1터미널 출발" 
+		miniTitle_japanese="第1ターミナル出発" 
+	
+		description="Philippine Airlines Lounge for First/ Business Class Passengers/Elite Members"
+		description_chinese="菲律宾航空头等舱/商务舱乘客/精英会员休息室" 
+		description_korean="필리핀항공 퍼스트/비즈니스 클래스 승객/엘리트 회원을 위한 라운지" 
+		description_japanese="フィリピン航空ファースト/ビジネスクラス乗客/エリート会員向けラウンジ"  
+		
+		OperatingHours="24 hrs"
+		OperatingHours_chinese="24 小时"
+		OperatingHours_korean="24시간"
+		OperatingHours_japanese="24時間" 
+   		isFloormap="true"
+   		isMultipleScene="true"
+		onstart="" thumburl="panos/Mabuhay_Lounge_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Mabuhay_Lounge_Lobby.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Mabuhay_Lounge_Lobby.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+<layer name="Scene_Multiple_MainContainer" type="container" width="100%"
+height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
+    bgalpha="0"
+    bgcolor="0x000000"
+
+>
+    <layer name="Scene_Multiple_MainContainer2" type="container" 
+    
+    width.desktop="calc: stagewidth * 0.3" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+    y="0"
+    maxwidth.tablet="700"
+        align="bottommiddle"
+    height.desktop="20%"   
+    height.mobile="15.5%"   
+    height.tablet="20%"    
+        bgalpha="0.4"
+        bgcolor="0x000000"
+        bgcapture="true"
+        bgroundedge.desktop="10"
+        bgroundedge.mobile="0"
+        bgroundedge.tablet="10"
+    >
+
+        <layer name="Scene_Multiple_Container" type="scrollarea"  width.desktop="auto" width.mobile="auto"
+       
+        height.desktop="90%" 
+        height.mobile="90%" 
+        height.tablet="95%"   
+        bgalpha="0"
+        bgcolor="0x000000"
+        bgroundedge.desktop="10"
+        bgroundedge.mobile="0"
+        bgroundedge.tablet="10"
+        bgcapture="true" 
+        flowoverflow.desktop="false"
+        flowoverflow.tablet="false"
+        flowoverflow.mobile="false"
+        
+                    align="centermiddle"
+                    edge="centermiddle" 
+        maskchildren="false"
+         scrolltype="inertia"  
+                    alturl="%SWFPATH%/plugins/scrollarea.js"
+                    url="%SWFPATH%/plugins/scrollarea.js"
+                    direction="h"
+                    draggable="true"
+                    capturechildren="true" 
+                    onhover_autoscrolling="false"
+                    mwheel="true"  
+                    overscroll="1.0"
+                    momentum="0.06"
+                    friction="0.95"
+                    acceleration="0.08"
+                    flowchildren="h"  
+                    returnacceleration="0.15"    
+        >
+         <layer type="container" 
+                    bgalpha="0"     
+    width.desktop="calc: stagewidth * 0.15" width.mobile="100%" width.tablet="calc: stagewidth * 0.55"
+                    bgcolor="0x000000" 
+                    height="100%"   
+                    flowchildren="h"   
+                align="center" 
+				edge="center"
+                    >
+        <!-- item list -->
+         <layer style="imageListImageScene" type="container"     
+                bgcolor="0xff7525" bgalpha="1"
+						name="scene_Mabuhay_Lounge_Lobby"
+                linkedscene="scene_Mabuhay_Lounge_Lobby"  
+                align="center" 
+				edge="center" 
+            >
+                
+                <layer   type="container"  
+                width="95%" height="60%"
+                bgroundedge="10"
+                maskchildren="true" 
+                y="10%"
+                align="topcenter"  
+                bgcapture="false" 
+                    enabled="false"
+                >
+                    <layer  style="imageListImage_compo" type="image" 
+                    bgalpha="0"
+                    bgcolor="0xFFFFF"
+                    width="100%" height="prop"
+                    bgroundedge="10" 
+                bgcapture="false" 
+                    enabled="false"
+                    url="panos/Mabuhay_Lounge_Lobby.tiles/thumb.jpg"
+                    >
+                    </layer>
+                </layer>
+                
+                <layer type="text"
+                
+                    isLanguage="true"
+                    en="Mabuhay Lounge Lobby"
+                    japanese="マブハイラウンジロビー"
+                    chinese="Mabuhay 休息室"
+                    korean="마부하이 라운지 로비"   
+					text="Mabuhay Lounge Lobby	" 
+					bgcapture="false" 
+						enabled="false"
+					y="10%"
+					style="imageListImage_text"  
+					
+					height="20%" width="100%"
+					bgalpha="0" 
+					align="bottom"
+					>
+                </layer>
+            </layer> 
+          <layer style="imageListImageScene" type="container"   
+						name="scene_Mabuhay_Lounge" 
+                align="center" 
+				edge="center"
+                linkedscene="scene_Mabuhay_Lounge"   
+            >
+                
+                <layer   type="container"  
+                width="95%" height="60%"
+                bgroundedge="10"
+                maskchildren="true" 
+                y="10%"
+                align="topcenter"  
+                bgcapture="false" 
+                    enabled="false"
+                >
+                    <layer  style="imageListImage_compo" type="image" 
+                    bgalpha="0"
+                    bgcolor="0xFFFFF"
+                    width="100%" height="222"
+                    bgroundedge="10" 
+                bgcapture="false" 
+                    enabled="false"
+                    url="panos/Mabuhay_Lounge_Entrance.tiles/thumb.jpg"
+                    >
+                    </layer>
+                </layer>
+                
+                <layer type="text"
+                
+                    isLanguage="true"
+                    en="Mabuhay Lounge Entrance"
+                    japanese="マブハイラウンジロビー"
+                    chinese="Mabuhay 休息室"
+                    korean="마부하이 라운지 로비"   
+					text="Mabuhay Lounge Entrance	" 
+					bgcapture="false" 
+						enabled="false"
+					y="10%"
+					style="imageListImage_text"  
+					
+					height="20%" width="100%"
+					bgalpha="0" 
+					align="bottom"
+					>
+                </layer>
+            </layer> 
+        <!-- item list -->
+			</layer>
+		</layer>
+	</layer>
+</layer>
+	</scene>
+  
 </krpano>

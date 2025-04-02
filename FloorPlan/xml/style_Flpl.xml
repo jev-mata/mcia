@@ -11,7 +11,7 @@
 	
 	 <events onresize="resizeLayer();" onloaded="resizeLayer();" />
  	<!--  **********  Окно планов   ************* -->
-	<style name="cont_fp" type="container" keep="true"  width="50%" height="45%"  enabled="true" 
+	<style name="cont_fp" type="container" keep="true"  width.desktop="50%" width.tablet="50%" width.mobile="80%" height="45%"  enabled="true" 
 	
     onresize="resizeLayer()"   alpha="0" onloaded="copy_param();resizeLayer();" 
 	 scalemode="scale" scalechildren="true" 
@@ -103,6 +103,13 @@ if(stageheight GT stagewidth,
     set(maxWidth_cont_fp, calc(stagewidth * 0.7));
     <!-- Calculate 35% of the screen height -->
     set(maxHeight_cont_fp, calc(stageheight * 0.35));  
+	
+    set(layer[cont_fp_all].maxwidth, get(maxWidth_cont_fp));
+    
+    set(layer[cont_fp_all].maxheight, get(maxHeight_cont_fp));
+
+    set(layer[cont_fp_all].width, calc(stagewidth * 0.85));
+    set(layer[cont_fp_all].height, calc(stageheight * 0.50));
  ,
  	 if(device.tablet,
 	   
@@ -111,24 +118,32 @@ if(stageheight GT stagewidth,
 		set(maxWidth_cont_fp, calc(stagewidth * 0.65));
 		<!-- Calculate 45% of the screen height -->
 		set(maxHeight_cont_fp, calc(stageheight * 0.40));  
-	,
-		tween(layer[cont_fp_all].y, -13%,  1.0, easeInOutCubic);  
-		<!-- Calculate 50% of the screen width -->
-		set(maxWidth_cont_fp, calc(stagewidth * 0.5));
-		<!-- Calculate 45% of the screen height -->
-		set(maxHeight_cont_fp, calc(stageheight * 0.45));  
-	);
- );
- 	set(layer[cont_fp_all].x, 0);
- 
- ); 
-    <!-- Apply the calculated values to the layer --> 
+		
     set(layer[cont_fp_all].maxwidth, get(maxWidth_cont_fp));
     
     set(layer[cont_fp_all].maxheight, get(maxHeight_cont_fp));
 
     set(layer[cont_fp_all].width, calc(stagewidth * 0.45));
     set(layer[cont_fp_all].height, calc(stageheight * 0.50));
+	,
+		tween(layer[cont_fp_all].y, -13%,  1.0, easeInOutCubic);  
+		<!-- Calculate 50% of the screen width -->
+		set(maxWidth_cont_fp, calc(stagewidth * 0.5));
+		<!-- Calculate 45% of the screen height -->
+		set(maxHeight_cont_fp, calc(stageheight * 0.45));  
+		
+    set(layer[cont_fp_all].maxwidth, get(maxWidth_cont_fp));
+    
+    set(layer[cont_fp_all].maxheight, get(maxHeight_cont_fp));
+
+    set(layer[cont_fp_all].width, calc(stagewidth * 0.45));
+    set(layer[cont_fp_all].height, calc(stageheight * 0.50));
+	);
+ );
+ 	set(layer[cont_fp_all].x, 0);
+ 
+ ); 
+    <!-- Apply the calculated values to the layer --> 
     <!-- set(layer[miniTitle].text, get(maxHeight_cont_fp)); -->
     <!-- set(layer[cont_fp_all].width, maxWidth_cont_fp);
     set(layer[cont_fp_all].height, maxHeight_cont_fp); -->

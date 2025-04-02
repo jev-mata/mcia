@@ -367,7 +367,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             korean="자동 현금 인출기" type="text" text="ATM" />
                         </layer>
                         
-                        <!-- <layer    
+                        <layer    
                         name="simcardbooths"
                         style="filterListItem" 
                          
@@ -375,7 +375,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         tagArea="Arrival"
                         terminal="1"
                          
-                        linkedscene="scene_2D_-_Sim_Cards_1"
+                        linkedscene="scene_Sim_Booths_-_Globe_Smart"
                         scale="1"
                          
                         isFilterItems="true"
@@ -384,7 +384,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         >
                             <layer     
                             style="filterListItemImg"
-                            url="terminal 1 arrival esta/panos/2D_-_Sim_Cards_1.tiles/thumb.jpg" 
+                            url="terminal 1 arrival esta/panos/Sim_Booths_-_Globe_Smart.tiles/thumb.jpg" 
                             />
                             <layer name="simcardbooths_text" 
                             
@@ -397,8 +397,8 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="SIMカードブース"
                             chinese="SIM卡亭"
                             korean="SIM 카드 부스" type="text" text="Sim Card Booths" />
-                        </layer> -->
-                        <!-- <layer    
+                        </layer>
+                        <layer    
                         name="curexmoneychanger"
                         style="filterListItem"
                          
@@ -409,12 +409,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         scale="1"
                          
                         isFilterItems="true"
-                        linkedscene="scene_2D_-_Curex"
+                        linkedscene="scene_Curex_Exchange"
                         searchText="[curex, money, changer, kwarta, coin]"
                         >
                             <layer     
                             style="filterListItemImg"
-                        url="terminal 1 arrival esta/panos/2D_-_Curex.tiles/thumb.jpg" 
+                        url="terminal 1 arrival esta/panos/Curex_Exchange.tiles/thumb.jpg" 
                             />
                             <layer name="curexmoneychanger_text" 
                             
@@ -427,8 +427,8 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="Curex両替商"
                             chinese="Curex 货币兑换商"
                             korean="큐렉스 환전소" type="text" text="Curex Money Changer" />
-                        </layer> -->
-                        <layer     
+                        </layer>
+                        <!-- <layer     
                         style="filterListItem"
                          
                         tag="Services"
@@ -457,7 +457,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="ハーツ レンタカー"
                             chinese="赫兹租车"
                             korean="헤르츠 자동차 렌털" type="text" text="Hertz Car Rental" />
-                        </layer>
+                        </layer> -->
                         <layer     
                         style="filterListItem"
                          
@@ -608,7 +608,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             chinese="博咖啡"
                             korean="보아스커피"  type="text" text="Bo's Coffee" />
                         </layer>
-                        <!-- <layer     
+                        <layer     
                         style="filterListItem" 
                          
                         tag="Food"
@@ -618,26 +618,118 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         scale="1"
                          
                         isFilterItems="true"
-                        linkedscene="scene_2D_-_Food_Avenue"
+                        linkedscene="scene_Food_Kiosk_-_Ayers_Lechon"
                         
-                        searchText="[potato, corner, leylam, lechon, belly, zip]"
+                        searchText="[Food, Kiosk, Ayers ,Lechon]"
                         >
                             <layer     
                             style="filterListItemImg"
-                        url="terminal 1 arrival esta/panos/2D_-_Food_Avenue.tiles/thumb.jpg" 
+                        url="terminal 1 arrival esta/panos/Food_Kiosk_-_Ayers_Lechon.tiles/thumb.jpg" 
                             />
                             <layer  
                             
 
-                            isLanguage="true"
-                            bgcapture="false"
-                            enabled="false"
-                            style="filterListItemText"   
-                            en="Food Kiosks"
-                            japanese="食品キオスク"
-                            chinese="食品亭"
-                            korean="식품 키오스크"  type="text" text="Food Kiosks" />
-                        </layer> -->
+                                isLanguage="true"
+                                bgcapture="false"
+                                enabled="false"
+                                style="filterListItemText"   
+                                en="Food Kiosk - Ayers Lechon"
+                                chinese="美食亭 - 艾尔斯烤乳猪" 
+                                korean="푸드 키오스크 - 에이어스 레촌" 
+                                japanese="フードキオスク - エアーズ レチョン"    
+                                type="text" text="Food Kiosk - Ayers Lechon" />
+                        </layer>
+                        <layer     
+                        style="filterListItem" 
+                         
+                        tag="Food"
+                        tagArea="Arrival"
+                        terminal="1"
+                         
+                        scale="1"
+                         
+                        isFilterItems="true"
+                        linkedscene="scene_Food_Kiosk_-_Ngohiong"
+                        
+                        searchText="[Food, Kiosk, Ayers ,Lechon]"
+                        >
+                            <layer     
+                            style="filterListItemImg"
+                        url="terminal 1 arrival esta/panos/Food_Kiosk_-_Ngohiong.tiles/thumb.jpg" 
+                            />
+                            <layer  
+                            
+
+                                isLanguage="true"
+                                bgcapture="false"
+                                enabled="false"
+                                style="filterListItemText"    
+                                en="Food Kiosk - Ho Ngohiong" 
+                                chinese="美食亭 - Ho Ngohiong" 
+                                korean="푸드 키오스크 - 호 응고히옹" 
+                                japanese="フードキオスク - ホー・ゴヒオン"   
+ 
+                                type="text" text="Food Kiosk - Ho Ngohiong" />
+                        </layer>
+                        <layer     
+                        style="filterListItem" 
+                         
+                        tag="Food"
+                        tagArea="Arrival"
+                        terminal="1"
+                         
+                        scale="1"
+                         
+                        isFilterItems="true"
+                        linkedscene="scene_Food_Kiosk_-_Potato_Corner__Leylam"
+                        
+                        searchText="[Food, Kiosk, Ayers ,Lechon]"
+                        >
+                            <layer     
+                            style="filterListItemImg"
+                        url="terminal 1 arrival esta/panos/Food_Kiosks_-_Potato_Corner__Leylam.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                isLanguage="true"
+                                bgcapture="false"
+                                enabled="false"
+                                style="filterListItemText"    
+                                en="Food Kiosks - Potato Corner, Leylam"    
+                                chinese="食品亭 - Potato Corner, Leylam" 
+                                korean="푸드 키오스크 - 포테이토 코너, 레이람" 
+                                japanese="フードキオスク - ポテトコーナー、レイラム"   
+                                type="text" text="Food Kiosk - Potato Corner, Leylam" />
+                        </layer>
+                        <layer     
+                        style="filterListItem" 
+                         
+                        tag="Food"
+                        tagArea="Arrival"
+                        terminal="1"
+                         
+                        scale="1"
+                         
+                        isFilterItems="true"
+                        linkedscene="scene_Food_Kiosks_-_Zip_N__Sip__Lechon_Belly"
+                        
+                        searchText="[Food, Kiosk, Ayers ,Lechon]"
+                        >
+                            <layer     
+                            style="filterListItemImg"
+                        url="terminal 1 arrival esta/panos/Food_Kiosks_-_Zip_N__Sip__Lechon_Belly.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                isLanguage="true"
+                                bgcapture="false"
+                                enabled="false"
+                                style="filterListItemText"     
+	text="Food Kiosks - Zip N&apos; Sip, Lechon Belly" 
+	en="Food Kiosks - Zip N&apos; Sip, Lechon Belly" 
+	chinese="食品亭——Zip N&apos; Sip、Lechon Belly" 
+	korean="푸드 키오스크 - Zip N&apos; Sip, Lechon Belly" 
+	japanese="フードキオスク - Zip N&apos; Sip、Lechon Belly"   
+                                type="text"   />
+                        </layer>
                         <layer     
                         style="filterListItem" 
                          
@@ -1040,7 +1132,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         </layer>
 
 <!-- ___________________________Departure_______________________________________ -->
-<!-- 
+
                         <layer     
                         style="filterListItem" 
                          
@@ -1052,12 +1144,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                          
                         isFilterItems="true"
                         
-                        searchText="[Travel, Store, convenient]"
-                        linkedscene="scene_2D_-_Curex"
+                        searchText="[Curex, Exchange, convenient]"
+                        linkedscene="scene_Forex_-_Curex_and_Lulu_Money"
                         >
                             <layer     
                             style="filterListItemImg"
-                        url="terminal 1 departure esta/panos/2D_-_Curex.tiles/thumb.jpg" 
+                        url="terminal 1 departure esta/panos/Forex_-_Curex_and_Lulu_Money.tiles/thumb.jpg" 
                             />
                             <layer   
                             
@@ -1070,8 +1162,284 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="外国為替"
                             chinese="外汇"
                             korean="외환"   type="text" text="Forex" />
-                        </layer> -->
+                        </layer>
 
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_ATM_-_RCBC"
+                            searchText="[ATM, RCBC, Bank,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/ATM_-_RCBC.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                                isLanguage="true"
+                                bgcapture="false"
+                                enabled="false"
+                                style="filterListItemText"  
+                                en="ATM - RCBC"
+                                japanese="ATM - RCBC"
+                                chinese="ATM - RCBC"
+                                korean="ATM - RCBC"   type="text" text="ATM - RCBC" />
+                        </layer>
+ 
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Plaza_Premium"
+                            searchText="[Plaza, Premium, Lounge,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Plaza_Premium.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="Plaza Premium Lounge"
+                            japanese="プラザプレミアムラウンジ"
+                            chinese="环亚机场贵宾室"
+                            korean="플라자 프리미엄 라운지"   type="text" text="Plaza Premium Lounge" />
+                        </layer>
+                        
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Catch_a_Prize"
+                            searchText="[Catch, a, Prize,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Catch_a_Prize.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="Catch a Prize"
+                            japanese="賞品をゲット"
+                            chinese="赢取奖品"
+                            korean="상품을 잡아라"   type="text" text="Catch a Prize" />
+                        </layer>
+                        
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_ATMs_-_BDO__China_Bank__RCBC"
+                            searchText="[ATM, BDO, Bank,China,RCBC,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/ATMs_-_BDO__China_Bank__RCBC.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="ATMs - BDO, China Bank, RCBC"
+                            japanese="ATM - BDO、中国銀行、RCBC"
+                            chinese="ATM 机 - BDO、中国银行、RCBC"
+                            korean="ATMs - BDO, China Bank, RCBC"   type="text" text="ATMs - BDO, China Bank, RCBC" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Forex_-_Curex_and_Lulu_Money"
+                            searchText="[Curex, Forex, Lulu,Money,Changer,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Forex_-_Curex_and_Lulu_Money.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="Forex - Curex and Lulu Money"
+                            japanese="外国為替 - Curex と Lulu Money"
+                            chinese="外汇 - Curex 和 Lulu Money"
+                            korean="외환 - Curex 및 Lulu Money"   type="text" text="Forex - Curex and Lulu Money" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_JTI_Smoking_Lounge"
+                            searchText="[JTI, Smoking, Lounge,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/JTI_Smoking_Lounge.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="JTI Smoking Lounge"
+                            japanese="JTI喫煙ラウンジ"
+                            chinese="JTI 吸烟室"
+                            korean="JTI 흡연 라운지"   type="text" text="JTI Smoking Lounge" />
+                        </layer>
+
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Mabuhay_Lounge"
+                            searchText="[Mabuhay, Lounge,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Mabuhay_Lounge.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="Mabuhay Lounge"
+                            japanese="マブハイラウンジ"
+                            chinese="Mabuhay 休息室"
+                            korean="마부하이 라운지"   type="text" text="Mabuhay Lounge" />
+                        </layer>
+
+                        
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_ATMs_-_PSBank__RCBC"
+                            searchText="[ATM, BDO, Bank,China,RCBC,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/ATMs_-_PSBank__RCBC.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="ATMs - PSBank, RCBC"
+                            japanese="ATM - PSBank、RCBC"
+                            chinese="ATM 机 - PSBank、RCBC"
+                            korean="ATM - PSBank, RCBC"   type="text" text="ATMs - PSBank, RCBC" />
+                        </layer>
+
+                        
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="1"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_ATM_-_BDO__Chinabank__UnionBank"
+                            searchText="[ATM, BDO, Chinabank,UnionBank,convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/ATM_-_BDO__Chinabank__UnionBank.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="ATM - BDO, Chinabank, UnionBank"
+                            japanese="ATM - BDO、中国銀行、ユニオン銀行"
+                            chinese="ATM - BDO、中国银行、联合银行"
+                            korean="ATM - BDO, 중국은행, 유니온은행"   type="text" text="ATM - BDO, Chinabank, UnionBank" />
+                        </layer>
+ 
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -1101,7 +1469,6 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             chinese="自动提款机"
                             korean="자동 현금 인출기"   type="text" text="ATM" />
                         </layer>
- 
                         <!-- <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -1310,7 +1677,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 chinese="捕获奖品"
                                 korean="캐치어프라이즈"   type="text" text="Catch-A-Prize" />
                         </layer> -->
-
+<!--__________________________________________food__________________________________________-->
 
                         <layer     
                             style="filterListItem" 
@@ -1507,10 +1874,10 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcapture="false"
                             enabled="false"
                             style="filterListItemText"  
-                                en="Food Stalls"
-                                japanese="屋台"
-                                chinese="小吃摊"
-                                korean="음식 가판대"   type="text" text="Food Stalls" />
+                                en="Food Avenue"
+                                japanese="フードアベニュー"
+                                chinese="美食大道"
+                                korean="푸드 애비뉴"   type="text" text="Food Avenue" />
                         </layer>
 
                         <layer     
@@ -1597,6 +1964,244 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="ミリーのクッキー"
                                 chinese="米莉的饼干"
                                 korean="밀리의 쿠키"   type="text" text="Milie's Cookies" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_Ayers_Lechon"
+                            searchText="[Ayers, Lechon, Foods, eatery, snacks]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Ayers_Lechon.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Ayers Lechon"
+                                japanese="エアーズポーク"
+                                chinese="艾尔斯猪肉"
+                                korean="에어즈 포크"   type="text" text="Ayers Lechon" />
+                        </layer>
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_Belgian_Waffle"
+                            searchText="[Belgian, Waffle, Foods, eatery, snacks]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Belgian_Waffle.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Famous Belgian Waffle"
+                                japanese="有名なベルギーワッフル"
+                                chinese="著名的比利时华夫饼"
+                                korean="유명한 벨기에 와플"   type="text" text="Famous Belgian Waffle" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side"
+                            searchText="[Belgian, Waffle, Foods, eatery, snacks,Food, Avenue, Left, Side]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Left_Side.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Food Avenue Left Side"
+                                japanese="フードアベニュー左側"
+                                chinese="美食大道左侧"
+                                korean="푸드 애비뉴 왼쪽"   type="text" text="Food Avenue Left Side" />
+                        </layer>
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side"
+                            searchText="[Belgian, Waffle, Foods, eatery, snacks,Food, Avenue, Right, Side]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Food Avenue Right Side"
+                                japanese="フードアベニュー右側"
+                                chinese="美食大道右侧"
+                                korean="푸드 애비뉴 오른쪽"   type="text" text="Food Avenue Right Side" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Coffee_Dream"
+                            searchText="[Coffee Dream, Foods, eatery, snacks,Food]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Coffee_Dream.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Coffee Dream"
+                                japanese="コーヒードリーム"
+                                chinese="咖啡梦"
+                                korean="커피 드림"   type="text" text="Coffee Dream" />
+                        </layer>
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Kusina_Sugbo"
+                            searchText="[Kusina, Sugbo, Foods, eatery, snacks,Food]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Kusina_Sugbo.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Kusina Sugbo"
+                                japanese="クシナ・スグボ"
+                                chinese="库西纳·苏格博"
+                                korean="쿠시나 수그보"   type="text" text="Kusina Sugbo" />
+                        </layer>
+
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Llaollao"
+                            searchText="[Llaollao, Foods, eatery, snacks,Food]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Llaollao.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Llaollao"
+                                japanese="リャオラオ"
+                                chinese="洛洛"
+                                korean="라올라오"   type="text" text="Llaollao" />
+                        </layer>
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            linkedscene="scene_Zubuchon"
+                            searchText="[Zubuchon, Foods, eatery, snacks,Food]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Zubuchon.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Zubuchon"
+                                japanese="ズブチョン"
+                                chinese="祖布雄"
+                                korean="주부촌"   type="text" text="Zubuchon" />
                         </layer>
 
                         <!-- <layer     
@@ -1724,12 +2329,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_2D_-_Kenny_Roggers"
+                        linkedscene="scene_district_fiesta_-_360"
                             searchText="[Distric , Fiesta]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/2D_-_Kenny_Roggers.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/District_Fiesta_360.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -1831,7 +2436,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 korean="공항인사말"   type="text" text="Airport Pasalubong" />
                         </layer>
 
-                        <!-- <layer     
+                        <layer     
                             style="filterListItem" 
                             bgalpha="0"   
                             tag="Retail"
@@ -1840,12 +2445,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_2D_-_Pasalubong_Center"
+                        linkedscene="scene_Crocs"
                             searchText="[Distric , Fiesta]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/2D_-_Pasalubong_Center.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/Crocs.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -1858,7 +2463,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="クロックス"
                                 chinese="卡骆驰"
                                 korean="악어"   type="text" text="Crocs" />
-                        </layer> -->
+                        </layer>
 
 
                         <layer     
@@ -1978,7 +2583,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 chinese="旅行免费商店：巧克力"
                                 korean="여행 자유 상점: 초콜릿"   type="text" text="Travel Free Shop: Chocolates" />
                         </layer>
-
+<!-- 
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -2006,7 +2611,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="パグアンドプレイ"
                                 chinese="哈巴狗玩耍"
                                 korean="퍼그 앤 플레이"   type="text" text="Plug N Play" />
-                        </layer>
+                        </layer> -->
 
                         <layer     
                             style="filterListItem" 
@@ -2269,7 +2874,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 chinese="美容吧"
                                 korean="뷰티바"   type="text" text="Beauty Bar" />
                         </layer>
-                        <!-- <layer     
+                        <layer     
                             style="filterListItem" 
                             bgalpha="0"   
                             tag="Retail"
@@ -2278,12 +2883,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_Adidas_360"
+                        linkedscene="scene_Tesoros"
                             searchText="[Tesoros ]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Adidas_360.tiles/thumb.jpg" 
+                                url="terminal 1 arrival esta/panos/Tesoros.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2306,12 +2911,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_Adidas_360"
+                        linkedscene="scene_Aquaflask"
                             searchText="[Aquaflask ]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Adidas_360.tiles/thumb.jpg" 
+                                url="terminal 1 arrival esta/panos/Aquaflask.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2334,12 +2939,38 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_Adidas_360"
+                        linkedscene="scene_Vision_Express"
+                            searchText="[Vision,  Express]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 arrival esta/panos/Vision_Express.tiles/thumb.jpg" 
+                            />
+                            <layer    
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Vision Express"
+                                japanese="ビジョンエクスプレス"
+                                chinese="视觉快运"
+                                korean="비전 익스프레스"   type="text" text="Vision Express" />
+                        </layer>
+                        <!-- <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Retail"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_Digital_Walker"
                             searchText="[Digital,  Walker]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Adidas_360.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/Digital_Walker.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2383,7 +3014,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 korean="도시화"   type="text" text="Urbanize" />
                         </layer> -->
 
-                        <!-- <layer     
+                        <layer     
                             style="filterListItem" 
                             bgalpha="0"   
                             tag="Retail"
@@ -2392,12 +3023,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_Adidas_360"
+                        linkedscene="scene_My_Islands"
                             searchText="[Islands, My ]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Adidas_360.tiles/thumb.jpg" 
+                                url="terminal 1 arrival esta/panos/My_Islands.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2410,7 +3041,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="島々"
                                 chinese="岛屿"
                                 korean="섬"   type="text" text="My Islands" />
-                        </layer>  -->
+                        </layer> 
 
   <!-- __________________________________________________terminal 2__________________________________________________ -->
 
@@ -2600,6 +3231,95 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Camden Food Co" />
 </layer>
 
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Arrival"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_The_Lemon_Co"
+    searchText="[The, Lemon, Co]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 arrival esta/panos/The_Lemon_Co.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="The Lemon Co"
+        japanese="レモンカンパニー"
+        chinese="柠檬公司"
+        korean="레몬 주식회사" 
+        type="text" text="The Lemon Co" />
+</layer>
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Arrival"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Chowking"
+    searchText="[Chowking, Chow, king]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 arrival esta/panos/Chowking.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Chowking"
+        japanese="チョウキング"
+        chinese="超群"
+        korean="쩝쩝거리며" 
+        type="text" text="Chowking" />
+</layer>
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Arrival"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Banh_Mi_Kitchen"
+    searchText="[Banh, Mi, Kitchen]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 arrival esta/panos/Banh_Mi_Kitchen.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Banh Mi Kitchen"
+        japanese="バインミーキッチン"
+        chinese="越南面包厨房"
+        korean="반미 키친" 
+        type="text" text="Banh Mi Kitchen" />
+</layer>
 <!-- <layer     
     style="filterListItem" 
     bgalpha="0"   
@@ -2751,6 +3471,35 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Duty Free" />
 </layer>
 
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Arrival"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Nomad_Express"
+    searchText="[Nomad, Express]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 arrival esta/panos/Nomad_Express.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Nomad Express"
+        japanese="ノマドエクスプレス"
+        chinese="游牧快运"
+        korean="노매드 익스프레스" 
+        type="text" text="Nomad Express" />
+</layer>
 <!-- <layer     
     style="filterListItem" 
     bgalpha="0"   
@@ -2931,6 +3680,93 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         chinese="Lulu 兑换处"
         korean="루루 환전소" 
         type="text" text="Lulu Exchange" />
+</layer>
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Services"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    searchText="[Lulu, Exchange]"
+    linkedscene="scene_Mabuhay_Lounge_t2"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Mabuhay_Lounge.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Mabuhay Lounge"
+        japanese="ライブラウンジ"
+        chinese="现场休息室"
+        korean="라이브 라운지" 
+        type="text" text="Mabuhay Lounge" />
+</layer>
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Services"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    searchText="[Plaza, Premium, Lounge]"
+    linkedscene="scene_Plaza_Premium_Lounge"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Plaza_Premium_Lounge.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Plaza Premium Lounge"
+        japanese="プラザプレミアムラウンジ"
+        chinese="ルル両替所"
+        korean="플라자 프리미엄 라운지" 
+        type="text" text="Plaza Premium Lounge" />
+</layer>
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Services"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    searchText="[rest, and,go]"
+    linkedscene="scene_Rest_and_Go"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Rest_and_Go.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Rest and Go"
+        japanese="休んで出発"
+        chinese="休息并离开"
+        korean="쉬고 가세요" 
+        type="text" text="Rest and Go" />
 </layer>
 <!-- 
 <layer     
@@ -3263,6 +4099,65 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         chinese="Ritazza 咖啡店"
         korean="카페 리타짜" 
         type="text" text="Cafe Ritazza" />
+</layer>
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Fruitas"
+    searchText="[Fruitas, Fruit]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Fruitas.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Fruitas"
+        japanese="フルータス"
+        chinese="弗鲁塔斯"
+        korean="프루타스" 
+        type="text" text="Fruitas" />
+</layer>
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Leylam_Shawarma"
+    searchText="[Cafe, Ritazza]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Leylam_Shawarma.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Leylam Shawarma"
+        japanese="レイラム シャワルマ"
+        chinese="莱兰沙威玛"
+        korean="레이람 샤와르마" 
+        type="text" text="Leylam Shawarma" />
 </layer>
 <!-- 
 <layer     
@@ -3655,6 +4550,68 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="New Era" />
 </layer>
 
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Tabacalera"
+    searchText="[Tabacalera]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Tabacalera.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Tabacalera"
+        japanese="タバカレラ"
+        chinese="塔巴卡莱拉"
+        korean="타바칼레라" 
+        type="text" text="Tabacalera" />
+</layer>
+
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Wagas_Ukulele"
+    searchText="[Wagas ,  Ukulele]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Wagas_Ukulele.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Wagas Ukulele"
+        japanese="ワガスウクレレ"
+        chinese="Wagas 尤克里里"
+        korean="와가스 우쿨렐레" 
+        type="text" text="Wagas Ukulele" />
+</layer>
+
 <!-- <layer     
     style="filterListItem" 
     bgalpha="0"   
@@ -3684,37 +4641,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         korean="타바칼레라" 
         type="text" text="Tabacalera" />
 </layer> -->
-
-<layer     
-    style="filterListItem" 
-    bgalpha="0"   
-    tag="Retail"
-    tagArea="Departure"
-    terminal="2"
-    scale="1"
-     
-    isFilterItems="true"
-    linkedscene="scene_2d-nomad"
-    searchText="[Nomad]"
-    >
-    <layer     
-        style="filterListItemImg"
-        url="terminal 2 departure esta/panos/2d-nomad.tiles/thumb.jpg" 
-    />
-    <layer   
-        
-
-                            isLanguage="true"
-                            bgcapture="false"
-                            enabled="false"
-                            style="filterListItemText"  
-        en="Nomad"
-        japanese="ノマド"
-        chinese="Nomad"
-        korean="노마드" 
-        type="text" text="Nomad" />
-</layer>
-
+ 
 <layer name="bottomLayer" keep="true"  
                         type="container"
                             width="100%"
@@ -3781,7 +4708,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         japanese="全て  "
                         chinese="全部"
                         korean="모두"
-                            css="color:white;font-size:calc((1.5vh + 1.5vw)/2);text-align:center"
+                            css="color:white;font-size:calc((1.5vh + 1.5vw)/2);line-height: 1;text-align:center"
                             
                             tagArea="all"
                             tag="all"
@@ -3806,7 +4733,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         chinese="离开"
                         korean="출발"
                             
-                            css="color:white;font-size:calc((1.5vh + 1.5vw)/2);text-align:center"
+                            css="color:white;font-size:calc((1.5vh + 1.5vw)/2);line-height: 1;text-align:center"
                             bgcolor="0xff7525"  
                             bgcolor_active="0xff7525"  
                             bgcolor_passive="0xFFFFFF"  
@@ -3858,10 +4785,10 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         style="filter"
                         name="food_and_brev_BTN_filter"
                         type="text"
-                        text="Food and Breverage"
+                        text="Food and Beverage"
                         
         isLanguage="true" 
-                        en="Food and Breverage"
+                        en="Food and Beverage"
                         japanese="食品と飲料"
                         chinese="食品和饮料"
                         korean="음식과 음료"
@@ -3894,7 +4821,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                     </layer> 
                     <layer type="container" height="calc: (stageheight * 0.01)" width="100%"/>
                     <layer   
-                        keep="true" type="container" width.desktop="auto" width.mobile="100%" width.tablet="100%" height="auto"   bgalpha="1"  
+                        keep="true" type="container" width.desktop="auto" width.mobile="100%" width.tablet="100%" height="auto"   bgalpha="0"  
                         align.desktop="topcenter"
                         edge.desktop="bottom"
 
@@ -4088,7 +5015,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     <combobox name="cbsettings" design="rounded" 
     align.desktop="leftbottom" align.mobile="leftbottom"  align.tablet="leftbottom" 
     edge.desktop="leftbottom" edge.mobile="leftbottom" edge.tablet="leftbottom" 
-    y.desktop="12%" y.mobile="6.75%" y.tablet="12%" 
+    y.desktop="12%" y.mobile="8.5%" y.tablet="12%" 
     x="0.7%" 
     zorder="5"  scale="1" onchange="">
     <item name="item0" onclick="onClickLanguage_en();"
@@ -4161,10 +5088,13 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
             scale="1"
             edge="centertop" 
             align="centertop" 
-            height.desktop="20%"
-            height.tablet="10%"
-            width="prop"  
             height.mobile="10%"
+            height.tablet="10%"  
+            height.desktop="prop"
+            width.desktop="40%"
+            maxwidth="500px"
+            width.tablet="prop"
+            width.mobile="prop"
             enabled="false"
             bgcapture="false"
             />      
@@ -4478,7 +5408,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
             enabled="false" bgcapture="false"
    >
         <layer name="welcomeAvatar"  url="%FIRSTXML%/skin/new-skin/v2/MCIA PSA Female_cropped.png"
-            alpha="1" visible="true" align="bottomright" height.desktop="50%"  height.tablet="40%" height.mobile="30%" width="prop"
+            alpha="1" visible="true" align="bottomright" height.desktop="calc:((stagewidth * 0.3) + (stageheight * 0.25 )) / 2"  height.tablet="40%" height.mobile="30%" width="prop"
             enabled="false" bgcapture="false"
             x.desktop="-45%"  
             x.mobile="-45%"  
@@ -4515,6 +5445,31 @@ bgalpha="0"
  
 </layer>
 
+<layer name="bottomMiddleDescription" keep="true" width="100%"
+align="bottom"
+edge="bottom"
+height="20%"
+flowchildren="v"
+bgalpha="0"
+bgcolor="0x000000"
+type="container"
+zorder="9"
+> 
+        <layer name="description" type="text" keep="true" width="auto" height="auto" 
+        align="center"
+            text="MCIA"
+bgalpha="0"
+            css="font-size:calc((2.6vh + 1.7vw)/2);  font-weight:bold;color:white;"
+        />
+        <layer name="OperatingHours"  type="text" keep="true" width="auto" height="auto" 
+        maxwidth="calc: stagewidth * 0.6"
+        align="center"
+            text="Hello World" 
+bgalpha="0"
+            css="font-size:calc((1.3vh + 1.3vw)/2);  font-weight:bolder;color:white;"
+        />
+ 
+</layer>
 <layer name="imageListMainContainer" keep="true" type="container" width="100%"
 height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
     bgalpha="0"
@@ -4961,7 +5916,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
 </layer>
 <layer name="flight_grid_layout"  onloaded="set(contextmenu.versioninfo,false);"
     visible="true"
-    keep="true" type="container" width="100%" height.desktop="89.5%"  height.mobile="94%" height.tablet="92%" alpha="0"  safearea="false" zorder="99" flowchildren="v"
+    keep="true" type="container" width="100%" height.desktop="89.5%"  height.mobile="92%" height.tablet="92%" alpha="0"  safearea="false" zorder="99" flowchildren="v"
     onclick="open_flightInfo();" bgcapture="true" bgalpha="0.8" bgcolor="0x000000" enabled="false">  
 
     <layer name="child_flight_grid_layout"  
@@ -4985,11 +5940,21 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
         <layer name="qrcode"  
             visible="true"
             type="container" 
-            keep="true" url="skin/new-skin/v2/MCIA Skytrax Linktree QR Code-NEW.png" width.desktop="prop" width.mobile="80%" width.tablet="prop" height.desktop="65%" height.mobile="prop" height.tablet="65%" scale="1" 
+            keep="true" url="skin/new-skin/v2/MCIA Skytrax Linktree QR Code-NEW.png" width.desktop="prop" width.mobile="75%" width.tablet="prop" 
+            height.desktop="65%" height.mobile="prop" height.tablet="65%" scale="1" 
             align="bottomcenter" edge="bottomcenter"   
-            y.desktop="15%"  y.mobile="10%" y.tablet="10%"
+            y.desktop="15%"  y.mobile="15%" y.tablet="10%"
             bgalpha="1" bgroundedge="30" bgcolor="0xFFFFF"/>  
+         <layer type="text" 
         
+                            isLanguage="true"
+                                en="Note: Please connect to the airport's public Wi-Fi to view flight details."
+                                japanese="注意: フライトの詳細を表示するには、空港の公衆 Wi-Fi に接続してください。"
+                                chinese="注：请连接至机场公共Wi-Fi以查看航班详情。"
+                                korean="참고: 항공편 정보를 보려면 공항의 공용 Wi-Fi에 연결하세요."   
+        align="bottom" edge="bottom" y="5%"
+        text="Note: Please connect to the airport's public Wi-Fi to view flight details." width="100%" css="font-size:calc((1.8vh + 1.8vw)/2);font-weight:bold;text-align:center;"  bgroundedge="30"/>
+
 
     </layer>
         
@@ -5000,7 +5965,7 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
         width="100%" 
         bgcolor="0xFFFFFF" 
         height.desktop="10.5%"     
-        height.mobile="6%"      
+        height.mobile="8%"      
         height.tablet="8%"     
         zorder="98"  
         align="centerbottom"
@@ -5107,10 +6072,17 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
     <!-- <include url="terminal 2 departure esta/terminal 2 departure esta.xml" />   -->
     <events onloadcomplete="initSceneAuto();"/> 
  <action name="initSceneAuto">  
+ if(isvalue(scene[get(xml.scene)].isMultipleScene),
+                    set(layer[bottomMiddleDescription].height,37%); 
+                 , 
+                    set(layer[bottomMiddleDescription].height,20%); 
+                ); 
  set(scene[scene_streetview_2_security_stop].imgpr,0|-162.706|0);
     if(get(selectedLanguage)==en,
         set(layer[mainTitle].text,get(scene[get(xml.scene)].title));
         set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle));
+        set(layer[description].text,get(scene[get(xml.scene)].description));
+        set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours));
         
     ,
         if(get(selectedLanguage)==korean,
@@ -5123,6 +6095,16 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                 set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle_korean));
              ,
                 set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle));
+            );
+            if(isvalue(scene[get(xml.scene)].description_korean),
+                set(layer[description].text,get(scene[get(xml.scene)].description_korean));
+             ,
+                set(layer[description].text,get(scene[get(xml.scene)].description));
+            );
+            if(isvalue(scene[get(xml.scene)].OperatingHours_korean),
+                set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours_korean));
+             ,
+                set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours));
             );
         ,
         
@@ -5137,6 +6119,16 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                  ,
                     set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle));
                 );
+                if(isvalue(scene[get(xml.scene)].description_chinese),
+                    set(layer[description].text,get(scene[get(xml.scene)].description_chinese));
+                 ,
+                    set(layer[description].text,get(scene[get(xml.scene)].description));
+                );
+                if(isvalue(scene[get(xml.scene)].OperatingHours_chinese),
+                    set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours_chinese));
+                ,
+                    set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours));
+                );
             ,
                 if(get(selectedLanguage)==japanese,
                     
@@ -5149,6 +6141,16 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
                         set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle_japanese));
                      ,
                         set(layer[miniTitle].text,get(scene[get(xml.scene)].miniTitle));
+                    );
+                    if(isvalue(scene[get(xml.scene)].description_japanese),
+                        set(layer[description].text,get(scene[get(xml.scene)].description_japanese));
+                     ,
+                        set(layer[description].text,get(scene[get(xml.scene)].description));
+                    );
+                    if(isvalue(scene[get(xml.scene)].OperatingHours_japanese),
+                        set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours_japanese));
+                     ,
+                        set(layer[OperatingHours].text,get(scene[get(xml.scene)].OperatingHours));
                     );
                 ,
                 

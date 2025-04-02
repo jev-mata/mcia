@@ -194,26 +194,43 @@
 		// Function to reset idle time
 		function resetIdleTime() {
 			idleTime = 0;
-			isNotClick=false;
+			isNotClick = false;
 		}
 
 		// Idle timer logic (checks every second)
 		const idleInterval = setInterval(() => {
 			idleTime++;
-			if (idleTime >= 60 && !isNotClick) { // 600 seconds = 10 minutes
-				
+			if (idleTime >= 1200 && !isNotClick) { // 600 seconds = 10 minutes
+
 				KRpanoLoad();
 				resetIdleTime();
-				isNotClick=true;
+				isNotClick = true;
 			}
 		}, 1000);
 
 		// Detect user interactions (Mouse & Touch)  
 		document.addEventListener("click", resetIdleTime);
 		document.addEventListener("touchstart", resetIdleTime);
+		(function () {
+			const checkDevTools = () => {
+				const devToolsOpened = window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100;
+				if (devToolsOpened) {
+					window.location.href = './error.html';  // Redirect the user
+				}
+			};
 
+			// Check every second
+			setInterval(checkDevTools, 300);
+		})();
 		function KRpanoLoad(isMobileDevice) {
 
+			// let win = nw.Window.get(); 
+
+			// // Enter kiosk mode
+			// win.enterKioskMode();
+			// setTimeout(() => {
+			// win.leaveKioskMode();
+			// }, 20000); // Exit after 10 seconds (for testing)
 			document.getElementById("loading").style.display = "flex";
 			// Hide error message and display pano
 			document.getElementById("errorMessage").style.display = "none";
@@ -230,7 +247,7 @@
 				cors: false,
 				html5: "auto",
 				mobilescale: 1.0,
-				passQueryParameters: true,
+				passQueryParameters: false,
 				onready: krpanoLoaded
 
 			});
@@ -247,7 +264,15 @@
 				document.getElementById("pano").style.display = "block";
 				document.getElementById("loading").style.display = "none";
 			}, 3000);
-		} 
+		}
+
+		document.onkeydown = function (e) {
+			if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+				
+					window.location.href = './error.html';  // Redirect the user
+				return false;
+			}
+		};
 	</script>
 </body>
 

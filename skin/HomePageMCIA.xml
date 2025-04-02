@@ -750,7 +750,7 @@ for(set(i, 0), i LT layer.count, inc(i),
 </action>
 
 <style name="filter"  bgcolor="0xFFFFFF"
-css="color:black;font-size:calc((1.7vh + 1.5vw)/2);line-height: 1;text-align:center;"
+css="color:black;font-size:calc((1.5vh + 1.5vw)/2);line-height: 1;text-align:center;"
 align.desktop="bottomleft"
 align.mobile="bottomleft"
 align.tablet="bottomleft"
@@ -782,7 +782,7 @@ bgcolor="0x000000"
 height.desktop="auto" 
 height.mobile="auto" 
 height.tablet="auto" 
-width.desktop="24.99%" 
+width.desktop="24.89%" 
 scale="1"
 width.mobile="49.9%"   
 width.tablet="49.9%"  
