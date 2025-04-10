@@ -110,7 +110,7 @@
 	description_korean="미용실" 
 	description_japanese="美容室"  
 	
- 	OperatingHours="8 am – 9 pm"
+ 	OperatingHours="8:00 AM – 9:00 PM"
  	OperatingHours_chinese="上午 8 点至晚上 9 点"
  	OperatingHours_korean="오전 8시 ~ 오후 9시"
  	OperatingHours_japanese="午前8時～午後9時"
@@ -333,10 +333,10 @@
 	description_korean="편의점" 
 	description_japanese="コンビニエンスストア"  
 	 
- 	OperatingHours="6AM - 12PM"
- 	OperatingHours_chinese="早上 6 点至晚上 12 点"
- 	OperatingHours_korean="6 아멘-12 미인"
- 	OperatingHours_japanese="6 アーメン - 12 美女"
+ 	OperatingHours="6:00 AM – 12:00 AM"
+ 	OperatingHours_chinese="上午 6:00 – 晚上 12:00"
+ 	OperatingHours_korean="오전 6시 ~ 오전 12시"
+ 	OperatingHours_japanese="午前6時～午前12時"
  
   onstart=""   isFloormap="true" thumburl="panos/2D_-_Amery_Flower_Shop.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -855,7 +855,7 @@
 	description_korean="미용실" 
 	description_japanese="美容室"  
 	
- 	OperatingHours="24 hrs"
+ 	OperatingHours="8:00 AM – 9:00 PM"
  	OperatingHours_chinese="上午 8 点至晚上 9 点"
  	OperatingHours_korean="오전 8시 ~ 오후 9시"
  	OperatingHours_japanese="午前8時～午後9時"
@@ -1033,12 +1033,12 @@
 	miniTitle_japanese="第1ターミナル到着" 
 	
 
-	description="Beverage"
-	description_chinese="饮料" 
-	description_korean="음료" 
-	description_japanese="飲料"  
+	description="COFFEE AND TEA SHOP"
+	description_chinese="咖啡和茶饮店" 
+	description_korean="커피와 티숍" 
+	description_japanese="コーヒー＆ティーショップ"  
 	 
- 	OperatingHours="7 am – 9 pm"
+ 	OperatingHours="7:00 AM – 9:00 PM"
  	OperatingHours_chinese="上午 7 点至晚上 9 点"
  	OperatingHours_korean="오전 7시 ~ 오후 9시"
  	OperatingHours_japanese="午前7時～午後9時"
@@ -1950,10 +1950,11 @@
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
  
-	description="Currency Exchange"
-	description_chinese="货币兑换" 
-	description_korean="환전" 
-	description_japanese="両替"  
+	description="INDICATE NORTHWING &amp;
+SOUTHWING AREA"
+	description_chinese="标明北翼和南翼区域" 
+	description_korean="북익 및 남익 구역 표시" 
+	description_japanese="北側と南側のエリアを示す"  
 	 
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"

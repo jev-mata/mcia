@@ -366,6 +366,10 @@ title="Famous Belgian Waffles"
 
 	<scene name="scene_2D_-_Bos_Coffee" 
 title="Bos Coffee" 
+	title_chinese="博斯咖啡" 
+	title_korean="보스 커피" 
+	title_japanese="ボスコーヒー"   
+
 	miniTitle="Terminal 1 Departure"
 	miniTitle_chinese="1 号航站楼出发" 
 	miniTitle_korean="제1터미널 출발" 
@@ -820,6 +824,7 @@ title="Bos Coffee"
 			<flat url="panos/2D_-_Food_Avenue.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x866,3200x1666,6400x3332" />
 		</image>
 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0" atv="0" linkedscene="scene_Food_Avenue_-_360" linkedscene_hoffset="0.0" use3dtransition="true" distorted="false" scale="0.05" />
 	</scene>
 
 	<scene name="scene_2D_-_Fraiche_Deli" 
@@ -1799,10 +1804,10 @@ title="Bos Coffee"
 	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
 	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
 	 
- 	OperatingHours="24 hrs"
- 	OperatingHours_chinese="24 小时"
- 	OperatingHours_korean="24시간"
- 	OperatingHours_japanese="24時間"
+ 	OperatingHours="6:00 AM – 10:00 PM"
+ 	OperatingHours_chinese="上午 6:00 – 晚上 10:00"
+ 	OperatingHours_korean="오전 6시 ~ 오후 10시"
+ 	OperatingHours_japanese="午前6時～午後10時"
 
 	
  onstart=""
@@ -2692,6 +2697,7 @@ title="Bos Coffee"
 			<cube url="panos/Food_Avenue_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="3.620" atv="-1.100" linkedscene="scene_2D_-_Food_Avenue" linkedscene_hoffset="0.0" use3dtransition="true" />
 	</scene>
 
 	<scene name="scene_Freshly_Made_Donuts_-_2D" 
@@ -3868,6 +3874,7 @@ title="JTI Smoking Lounge"
 			<flat url="panos/Chowking__Shakey_s__Macao__Lolo_Pinoy_s_-_Right_Side.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
 		</image>
 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="33.620" atv="-1.100" linkedscene="scene_2d_-_coffee_bean" linkedscene_hoffset="0.0" use3dtransition="true" />
 	</scene>
 
 	<scene name="scene_Coffee_Dream" title="Coffee Dream" onstart="" 
@@ -5140,4 +5147,143 @@ height.desktop="89%" height.tablet="89%" height.mobile="93.5%" zorder="2"
 </layer>
 	</scene>
   
+	
+	<scene name="scene_Bacio" title="Bacio" onstart="" 
+	title_chinese="著名的比利时华夫饼" 
+	title_korean="유명한 벨기에 와플" 
+	title_japanese="有名なベルギーワッフル"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+	
+	description=""
+	description_chinese="" 
+	description_korean="" 
+	description_japanese=""  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+   isFloormap="true" 
+   thumburl="panos/Bacio.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Bacio.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Bacio.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<!-- <scene name="scene_Bo_s_Coffee" title="Bo&apos;s Coffee" onstart="" 
+	title_chinese="著名的比利时华夫饼" 
+	title_korean="유명한 벨기에 와플" 
+	title_japanese="有名なベルギーワッフル"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+	
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+   isFloormap="true" thumburl="panos/Bo_s_Coffee.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Bo_s_Coffee.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Bo_s_Coffee.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene> -->
+<!-- 
+	<scene name="scene_Fraiche_Deli" title="Fraiche Deli" onstart="" 
+	title_chinese="著名的比利时华夫饼" 
+	title_korean="유명한 벨기에 와플" 
+	title_japanese="有名なベルギーワッフル"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+	
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+   isFloormap="true" 
+   thumburl="panos/Fraiche_Deli.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Fraiche_Deli.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Fraiche_Deli.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene> -->
+
+	<scene name="scene_Sula_Spirits" title="Sula Spirits" onstart=""
+	title_chinese="苏拉烈酒" 
+	title_korean="술라 스피릿" 
+	title_japanese="スーラスピリッツ"  
+ 
+	miniTitle="Terminal 1 Departure"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+	
+	description="Beverage"
+	description_chinese="饮料" 
+	description_korean="음료" 
+	description_japanese="飲料"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+   isFloormap="true" 
+    thumburl="panos/Sula_Spirits.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Sula_Spirits.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Sula_Spirits.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
 </krpano>

@@ -681,7 +681,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         scale="1"
                          
                         isFilterItems="true"
-                        linkedscene="scene_Food_Kiosk_-_Potato_Corner__Leylam"
+                        linkedscene="scene_Food_Kiosks_-_Potato_Corner__Leylam"
                         
                         searchText="[Food, Kiosk, Ayers ,Lechon]"
                         >
@@ -1133,7 +1133,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 
 <!-- ___________________________Departure_______________________________________ -->
 
-                        <layer     
+                        <!-- <layer     
                         style="filterListItem" 
                          
                         tag="Services"
@@ -1162,7 +1162,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="外国為替"
                             chinese="外汇"
                             korean="외환"   type="text" text="Forex" />
-                        </layer>
+                        </layer> -->
 
                         <layer     
                             style="filterListItem" 
@@ -1801,6 +1801,129 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
+                        linkedscene="scene_2D_-_Bos_Coffee"
+                             
+                            isFilterItems="true"
+                            searchText="[Drinks, drinks, eatery, jolly, bee]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/2D_-_Bos_Coffee.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="Bo's Coffee"
+                                japanese="ボスコーヒー"
+                                chinese="博斯咖啡"
+                                korean="보스 커피"   type="text" text="Bo's Coffee" />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                        linkedscene="scene_2D_-_Fraiche_Deli"
+                             
+                            isFilterItems="true"
+                            searchText="[Drinks, drinks, eatery, jolly, bee]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/2D_-_Fraiche_Deli.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            text="Fraiche Deli"  
+                            en="Fraiche Deli"  
+                            chinese="法式鲜美熟食店" 
+                            korean="프라이쉬 델리" 
+                            japanese="フレッシュデリ"    
+                            type="text"  />
+                        </layer>
+
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                        linkedscene="scene_Sula_Spirits"
+                             
+                            isFilterItems="true"
+                            searchText="[Drinks, drinks, eatery, jolly, bee]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Sula_Spirits.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            text="Sula Spirits" 
+                            en="Sula Spirits"
+                            chinese="苏拉烈酒" 
+                            korean="술라 스피릿" 
+                            japanese="スーラスピリッツ"   
+                            type="text"  />
+                        </layer>
+
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                        linkedscene="scene_Bacio"
+                             
+                            isFilterItems="true"
+                            searchText="[Drinks, drinks, eatery, jolly, bee]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/Bacio.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            text="Bacio" 
+                            en="Bacio"
+                            chinese="著名的比利时华夫饼" 
+                            korean="유명한 벨기에 와플" 
+                            japanese="有名なベルギーワッフル"   
+                            type="text"  />
+                        </layer>
+
+                        <!-- <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Food"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
                              
                             isFilterItems="true"
                         linkedscene="scene_Food_Avenue_-_360"
@@ -1821,7 +1944,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="フードアベニュー"
                                 chinese="美食大道"
                                 korean="푸드 애비뉴"   type="text" text="Food Avenue" />
-                        </layer>
+                        </layer> -->
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -2329,12 +2452,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             scale="1"
                              
                             isFilterItems="true"
-                        linkedscene="scene_district_fiesta_-_360"
+                        linkedscene="scene_2d_-_district_fiesta"
                             searchText="[Distric , Fiesta]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/District_Fiesta_360.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/2D_-_District_Fiesta.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2343,12 +2466,40 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcapture="false"
                             enabled="false"
                             style="filterListItemText"  
-                                en="Distric Fiesta"
+                                en="District Fiesta"
                                 japanese="地区フェスタ"
                                 chinese="区嘉年华"
-                                korean="디스트릭트 피에스타"   type="text" text="Distric Fiesta" />
+                                korean="디스트릭트 피에스타"   type="text" text="District Fiesta" />
                         </layer>
 
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Retail"
+                            tagArea="Departure"
+                            terminal="1"
+                            scale="1"
+                             
+                            isFilterItems="true"
+                        linkedscene="scene_2d_-_district_fiesta_2"
+                            searchText="[Distric , Fiesta]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 1 departure esta/panos/2D_-_District_Fiesta_2.tiles/thumb.jpg" 
+                            />
+                            <layer   
+                                
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                                en="District Fiesta"
+                                japanese="地区フェスタ"
+                                chinese="区嘉年华"
+                                korean="디스트릭트 피에스타"   type="text" text="District Fiesta" />
+                        </layer>
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -2956,7 +3107,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 chinese="视觉快运"
                                 korean="비전 익스프레스"   type="text" text="Vision Express" />
                         </layer>
-                        <!-- <layer     
+                        <layer     
                             style="filterListItem" 
                             bgalpha="0"   
                             tag="Retail"
@@ -2983,7 +3134,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="デジタルウォーカー"
                                 chinese="数码助行器"
                                 korean="디지털워커"   type="text" text="Digital Walker" />
-                        </layer> -->
+                        </layer>
 
                         <!-- <layer     
                             style="filterListItem" 
@@ -3542,7 +3693,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
      
     isFilterItems="true" 
     searchText="[Curex, Money Changer]"
-    linkedscene="scene_2D_-_Curex"
+    linkedscene="scene_2d-curex"
     >
     <layer     
         style="filterListItemImg"
@@ -3562,6 +3713,66 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Curex Money Changer" />
 </layer>
 
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Services"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true" 
+    searchText="[Curex, Money Changer]"
+    linkedscene="scene_Allways"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Allways.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"   
+         en="Allways" 
+	chinese="奥威斯" 
+	korean="항상" 
+	japanese="いつも"  
+        type="text" 
+         text="Allways"  />
+</layer>
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Services"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true" 
+    searchText="[Curex, Money Changer]"
+    linkedscene="scene_2d-curex2"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/2d-curex2.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Curex Money Changer"
+        japanese="キュレックス両替所"
+        chinese="Curex 兑换处"
+        korean="큐렉스 환전소" 
+        type="text" text="Curex Money Changer" />
+</layer>
 <layer     
     style="filterListItem" 
     bgalpha="0"   
@@ -3891,6 +4102,38 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Asian Kitchen" />
 </layer>
 
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Food"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Momento_Sula_Spirits"
+    searchText="[Asian, Kitchen]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Momento_Sula_Spirits.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"   
+        en="Momento Sula Spirits" 
+	chinese="Momento Sula 烈酒" 
+	korean="모멘토 술라 스피릿" 
+	japanese="モメント・スーラ・スピリッツ"  
+	
+        type="text" text="Momento Sula Spirits" />
+</layer>
+
 <layer     
     style="filterListItem" 
     bgalpha="0"   
@@ -4094,11 +4337,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcapture="false"
                             enabled="false"
                             style="filterListItemText"  
-        en="Cafe Ritazza"
+        en="CAFÉ RITAZZA"
         japanese="カフェリタッツァ"
         chinese="Ritazza 咖啡店"
         korean="카페 리타짜" 
-        type="text" text="Cafe Ritazza" />
+        type="text" text="CAFÉ RITAZZA" />
 </layer>
 
 <layer     
@@ -4220,7 +4463,38 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Leylam Shawarma" />
 </layer> -->
 
-<!-- _____________________________ReTAIL________________________________________ --><layer     
+<!-- _____________________________ReTAIL________________________________________ -->
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_20__MCIAA_-Mactan_Travel_Pod_Beauty_2"
+    searchText="[Beauty, Duty Free]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/20__MCIAA_-Mactan_Travel_Pod_Beauty_2.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Mactan Travel POD 1"
+        japanese="マクタン トラベル POD 1"
+        chinese="Mactan 旅行 POD 1"
+        korean="막탄 여행 POD 1" 
+        type="text" text="Mactan Travel POD 1" />
+</layer>
+
+<layer     
     style="filterListItem" 
     bgalpha="0"   
     tag="Retail"
@@ -4428,6 +4702,67 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         chinese="Nomad Express"
         korean="노마드 익스프레스" 
         type="text" text="Nomad Express" />
+</layer>
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Nomad_Kiosk"
+    searchText="[Nomad, Express]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Nomad_Kiosk.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+        en="Nomad Kiosk"
+        japanese="ノマドキオスク"
+        chinese="游牧亭"
+        korean="노마드 키오스크" 
+        type="text" text="Nomad Kiosk" />
+</layer>
+
+
+<layer     
+    style="filterListItem" 
+    bgalpha="0"   
+    tag="Retail"
+    tagArea="Departure"
+    terminal="2"
+    scale="1"
+     
+    isFilterItems="true"
+    linkedscene="scene_Momento"
+    searchText="[Nomad, Express]"
+    >
+    <layer     
+        style="filterListItemImg"
+        url="terminal 2 departure esta/panos/Momento.tiles/thumb.jpg" 
+    />
+    <layer   
+        
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"   
+                            en="Momento" 
+	chinese="时刻" 
+	korean="모멘토" 
+	japanese="モーメント"   
+        type="text"  text="Momento"/>
 </layer>
 
 <layer     

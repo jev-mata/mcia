@@ -1653,10 +1653,10 @@
 	description_korean="커피숍" 
 	description_japanese="コー​​ヒーショップ"  
 	 
- 	OperatingHours="24 hrs"
- 	OperatingHours_chinese="24 小时"
- 	OperatingHours_korean="24시간"
- 	OperatingHours_japanese="24時間"
+ 	OperatingHours="6:00 AM – 12:00 AM"
+ 	OperatingHours_chinese="上午 6:00 – 晚上 12:00"
+ 	OperatingHours_korean="오전 6시 ~ 오전 12시"
+ 	OperatingHours_japanese="午前6時～午前12時"
 
 	
  onstart=""  isFloormap="true"  thumburl="panos/2d-ritazza.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
@@ -2594,4 +2594,148 @@
 		</image>
 
 	</scene>
+
+	
+	<scene name="scene_Allways" title="Allways" 
+	title_chinese="奥威斯" 
+	title_korean="항상" 
+	title_japanese="いつも"  
+	
+	miniTitle="Terminal 2 Departure"
+	miniTitle_chinese="2 号航站楼出发" 
+	miniTitle_korean="제2터미널 출발" 
+	miniTitle_japanese="第2ターミナル出発" 
+
+	description="Luggage Wrapping Services and Travel Accessories"
+	description_chinese="行李包装服务及旅行配件" 
+	description_korean="짐 포장 서비스 및 여행 용품" 
+	description_japanese="荷物ラッピングサービスと旅行用アクセサリー"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+  isFloormap="true"  
+	onstart="" thumburl="panos/Allways.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Allways.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Allways.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_Momento_Sula_Spirits" title="Momento Sula Spirits" 
+	title_chinese="Momento Sula 烈酒" 
+	title_korean="모멘토 술라 스피릿" 
+	title_japanese="モメント・スーラ・スピリッツ"  
+	
+	miniTitle="Terminal 2 Departure"
+	miniTitle_chinese="2 号航站楼出发" 
+	miniTitle_korean="제2터미널 출발" 
+	miniTitle_japanese="第2ターミナル出発" 
+
+	description="FOOD AND BEVERAGE"
+	description_chinese="食品和饮料" 
+	description_korean="음식과 음료" 
+	description_japanese="食品と飲料"  
+	 
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+  isFloormap="true"  
+	onstart="" thumburl="panos/Momento_Sula_Spirits.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Momento_Sula_Spirits.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Momento_Sula_Spirits.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_Momento" title="Momento" 
+	title_chinese="时刻" 
+	title_korean="모멘토" 
+	title_japanese="モーメント"  
+	
+	miniTitle="Terminal 2 Departure"
+	miniTitle_chinese="2 号航站楼出发" 
+	miniTitle_korean="제2터미널 출발" 
+	miniTitle_japanese="第2ターミナル出発" 
+
+	description=""
+	description_chinese="" 
+	description_korean="" 
+	description_japanese=""  
+
+ 	OperatingHours=""
+ 	OperatingHours_chinese=""
+ 	OperatingHours_korean=""
+ 	OperatingHours_japanese=""
+ 
+ 
+  isFloormap="true"  
+	onstart="" thumburl="panos/Momento.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Momento.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Momento.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Nomad_Kiosk" title="Nomad Kiosk" 
+	title_chinese="游牧亭" 
+	title_korean="노마드 키오스크" 
+	title_japanese="ノマドキオスク"  
+	
+	miniTitle="Terminal 2 Departure"
+	miniTitle_chinese="2 号航站楼出发" 
+	miniTitle_korean="제2터미널 출발" 
+	miniTitle_japanese="第2ターミナル出発" 
+
+	description="Souvenir Shop Kiosk"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+  isFloormap="true"  
+	onstart="" thumburl="panos/Nomad_Kiosk.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Nomad_Kiosk.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Nomad_Kiosk.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+
 </krpano>
