@@ -255,11 +255,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         isFilterItems="true"
                         
                         searchText="[Luggage,Storage]"
-                        linkedscene="scene_01_Luggage_Storage_-_Shelf_Area"
+                        linkedscene="scene_2D_-_Luggage_Storage"
                         >
                             <layer     
                             style="filterListItemImg"
-                            url="terminal 1 arrival esta/panos/01_Luggage_Storage_-_Shelf_Area.tiles/thumb.jpg"  
+                            url="terminal 1 arrival esta/panos/2D_-_Luggage_Storage.tiles/thumb.jpg"  
                             />
                             <layer   
                             
@@ -409,12 +409,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         scale="1"
                          
                         isFilterItems="true"
-                        linkedscene="scene_Curex_Exchange"
+                        linkedscene="scene_Curex_Exchange2"
                         searchText="[curex, money, changer, kwarta, coin]"
                         >
                             <layer     
                             style="filterListItemImg"
-                        url="terminal 1 arrival esta/panos/Curex_Exchange.tiles/thumb.jpg" 
+                        url="terminal 1 arrival esta/panos/Curex_Exchange2.tiles/thumb.jpg" 
                             />
                             <layer name="curexmoneychanger_text" 
                             
@@ -633,11 +633,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 bgcapture="false"
                                 enabled="false"
                                 style="filterListItemText"   
-                                en="Food Kiosk - Ayers Lechon"
+                                en="Ayers Lechon"
                                 chinese="美食亭 - 艾尔斯烤乳猪" 
                                 korean="푸드 키오스크 - 에이어스 레촌" 
                                 japanese="フードキオスク - エアーズ レチョン"    
-                                type="text" text="Food Kiosk - Ayers Lechon" />
+                                type="text" text="Ayers Lechon" />
                         </layer>
                         <layer     
                         style="filterListItem" 
@@ -664,12 +664,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 bgcapture="false"
                                 enabled="false"
                                 style="filterListItemText"    
-                                en="Food Kiosk - Ho Ngohiong" 
+                                en="Ho Ngohiong" 
                                 chinese="美食亭 - Ho Ngohiong" 
                                 korean="푸드 키오스크 - 호 응고히옹" 
                                 japanese="フードキオスク - ホー・ゴヒオン"   
  
-                                type="text" text="Food Kiosk - Ho Ngohiong" />
+                                type="text" text="Ho Ngohiong" />
                         </layer>
                         <layer     
                         style="filterListItem" 
@@ -694,11 +694,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 bgcapture="false"
                                 enabled="false"
                                 style="filterListItemText"    
-                                en="Food Kiosks - Potato Corner, Leylam"    
+                                en="Potato Corner, Leylam"    
                                 chinese="食品亭 - Potato Corner, Leylam" 
                                 korean="푸드 키오스크 - 포테이토 코너, 레이람" 
                                 japanese="フードキオスク - ポテトコーナー、レイラム"   
-                                type="text" text="Food Kiosk - Potato Corner, Leylam" />
+                                type="text" text="Potato Corner, Leylam" />
                         </layer>
                         <layer     
                         style="filterListItem" 
@@ -723,8 +723,8 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 bgcapture="false"
                                 enabled="false"
                                 style="filterListItemText"     
-	text="Food Kiosks - Zip N&apos; Sip, Lechon Belly" 
-	en="Food Kiosks - Zip N&apos; Sip, Lechon Belly" 
+	text="Zip N&apos; Sip, Lechon Belly" 
+	en="Zip N&apos; Sip, Lechon Belly" 
 	chinese="食品亭——Zip N&apos; Sip、Lechon Belly" 
 	korean="푸드 키오스크 - Zip N&apos; Sip, Lechon Belly" 
 	japanese="フードキオスク - Zip N&apos; Sip、Lechon Belly"   
@@ -851,7 +851,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             korean="빵 이야기"  type="text" text="Breadtalk" />
                         </layer>
 
-                        <layer     
+                        <!-- <layer     
                         style="filterListItem"
                          
                         tag="Food"
@@ -880,7 +880,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             japanese="ホー・ゴヒオン"
                             chinese="何五雄"
                             korean="호 응오히옹"  type="text" text="Ho Ngohiong" />
-                        </layer>
+                        </layer> -->
 
                         <layer     
                         style="filterListItem" 
@@ -952,7 +952,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         tagArea="Arrival"
                         terminal="1"
                          
-                        linkedscene="scene_Jollibee_-_Counter_Area"
+                        linkedscene="scene_2D_-_Jollibee"
                         scale="1"
                          
                         isFilterItems="true"
@@ -961,7 +961,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         >
                             <layer     
                             style="filterListItemImg"
-                        url="terminal 1 arrival esta/panos/Jollibee_-_Counter_Area.tiles/thumb.jpg" 
+                        url="terminal 1 arrival esta/panos/2D_-_Jollibee.tiles/thumb.jpg" 
                             />
                             <layer   
                             
@@ -1771,14 +1771,14 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
-                        linkedscene="scene_Jollibee_-_360"
+                        linkedscene="scene_2D_-_Jollibee_1"
                              
                             isFilterItems="true"
                             searchText="[Drinks, drinks, eatery, jolly, bee]"
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Jollibee_-_360.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/2D_-_Jollibee_1.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -2148,7 +2148,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 korean="유명한 벨기에 와플"   type="text" text="Famous Belgian Waffle" />
                         </layer>
 
-                        <layer     
+                        <!-- <layer     
                             style="filterListItem" 
                             bgalpha="0"   
                             tag="Food"
@@ -2175,8 +2175,8 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="フードアベニュー左側"
                                 chinese="美食大道左侧"
                                 korean="푸드 애비뉴 왼쪽"   type="text" text="Food Avenue Left Side" />
-                        </layer>
-
+                        </layer> -->
+<!-- 
 
                         <layer     
                             style="filterListItem" 
@@ -2205,7 +2205,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                                 japanese="フードアベニュー右側"
                                 chinese="美食大道右侧"
                                 korean="푸드 애비뉴 오른쪽"   type="text" text="Food Avenue Right Side" />
-                        </layer>
+                        </layer> -->
 
                         <layer     
                             style="filterListItem" 
@@ -4323,12 +4323,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     scale="1"
      
     isFilterItems="true"
-    linkedscene="scene_2d-ritazza"
+    linkedscene="scene_2d-ritazza2"
     searchText="[Cafe, Ritazza]"
     >
     <layer     
         style="filterListItemImg"
-        url="terminal 2 departure esta/panos/2d-ritazza.tiles/thumb.jpg" 
+        url="terminal 2 departure esta/panos/2d-ritazza2.tiles/thumb.jpg" 
     />
     <layer   
         
@@ -4337,11 +4337,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcapture="false"
                             enabled="false"
                             style="filterListItemText"  
-        en="CAFÉ RITAZZA"
+        en="Cafe Ritazza"
         japanese="カフェリタッツァ"
         chinese="Ritazza 咖啡店"
         korean="카페 리타짜" 
-        type="text" text="CAFÉ RITAZZA" />
+        type="text" text="Cafe Ritazza" />
 </layer>
 
 <layer     

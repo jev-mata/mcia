@@ -445,10 +445,10 @@
 
 	<scene name="scene_2D_Hotels_-_2" 
 	
-	title="Hotels"  
-	title_chinese="酒店" 
-	title_korean="호텔" 
-	title_japanese="ホテル"    
+	title="Hotel Counters"  
+	title_chinese="酒店柜台" 
+	title_korean="호텔 카운터" 
+	title_japanese="ホテルカウンター"    
 
 	miniTitle="Terminal 2 Arrival" 
 	miniTitle_chinese="第 2 航廈到達" 

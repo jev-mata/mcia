@@ -964,10 +964,10 @@
 
 	</scene>
 
-	<scene name="scene_2d-cabin" title="Cabin"   
-	title_chinese="舱" 
-	title_korean="선실" 
-	title_japanese="キャビン" 
+	<scene name="scene_2d-cabin" title="Cabin Bar"   
+	title_chinese="小屋酒吧" 
+	title_korean="캐빈 바" 
+	title_japanese="キャビンバー" 
 
 	miniTitle="Terminal 2 Departure"
 	miniTitle_chinese="2 号航站楼出发" 
@@ -1648,10 +1648,10 @@
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
  
-	description="Coffee Shop"
-	description_chinese="咖啡馆" 
-	description_korean="커피숍" 
-	description_japanese="コー​​ヒーショップ"  
+	description="Coffee, Bread and Pastries"
+	description_chinese="咖啡、面包和糕点" 
+	description_korean="커피, 빵, 페이스트리" 
+	description_japanese="コーヒー、パン、ペストリー"  
 	 
  	OperatingHours="6:00 AM – 12:00 AM"
  	OperatingHours_chinese="上午 6:00 – 晚上 12:00"
@@ -1687,10 +1687,10 @@
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
  
-	description="Coffee Shop"
-	description_chinese="咖啡馆" 
-	description_korean="커피숍" 
-	description_japanese="コー​​ヒーショップ"  
+	description="British Cafe"
+	description_chinese="英式咖啡馆" 
+	description_korean="영국 카페" 
+	description_japanese="ブリティッシュカフェ"  
 	 
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"

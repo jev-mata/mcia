@@ -411,10 +411,11 @@ title="Bos Coffee"
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
  
-	description="Coffee Shop"
-	description_chinese="咖啡馆" 
-	description_korean="커피숍" 
-	description_japanese="コー​​ヒーショップ"  
+
+	description="Filipino restaurant"
+	description_chinese="菲律宾餐厅" 
+	description_korean="필리핀 레스토랑" 
+	description_japanese="フィリピン料理レストラン"  
 
  	OperatingHours="6AM - 10PM"
  	OperatingHours_chinese="上午 6 点至晚上 10 点"
@@ -680,11 +681,11 @@ title="Bos Coffee"
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
  
-	description="Souvenir Center"
-	description_chinese="纪念品中心" 
-	description_korean="기념품 센터" 
-	description_japanese="お土産センター"  
-	 
+	description="Souvenir Shop"
+	description_chinese="纪念品商店" 
+	description_korean="기념품 가게" 
+	description_japanese="土産物店"  
+	
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"
  	OperatingHours_korean="24시간"
@@ -748,6 +749,147 @@ title="Bos Coffee"
 
 	</scene>
 
+
+	<scene name="scene_Tesoros" title="Tesoros" 
+	title_chinese="我的岛屿" 
+	title_korean="나의 섬들" 
+	title_japanese="私の島"  
+ 
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Filipino Clothing and Apparel"
+	description_chinese="菲律宾服装和服饰" 
+	description_korean="필리핀 의류 및 의류" 
+	description_japanese="フィリピンの衣料品"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Tesoros.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Tesoros.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.470029" voffset="0.00">
+			<flat url="panos/Tesoros.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x602" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_Aquaflask" title="Aquaflask" 
+	title_chinese="水瓶" 
+	title_korean="아쿠아플라스크" 
+	title_japanese="アクアフラスク"  
+ 
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Tumblers"
+	description_chinese="玻璃杯" 
+	description_korean="텀블러" 
+	description_japanese="タンブラー"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+   		isFloormap="true"
+   onstart="" thumburl="panos/Aquaflask.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Aquaflask.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Aquaflask.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+	
+
+	<scene name="scene_My_Islands" title="My Islands" 
+	title_chinese="我的岛屿" 
+	title_korean="나의 섬들" 
+	title_japanese="私の島"  
+ 
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/My_Islands.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/My_Islands.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/My_Islands.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
+
+	<scene name="scene_Vision_Express" title="Vision Express" 
+	title_chinese="视觉快运" 
+	title_korean="비전 익스프레스  " 
+	title_japanese="ビジョンエクスプレス"  
+ 
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+ 
+	description="Eyewear"
+	description_chinese="眼镜" 
+	description_korean="안경" 
+	description_japanese="アイウェア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+   		isFloormap="true"
+ onstart="" thumburl="panos/Vision_Express.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Vision_Express.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Vision_Express.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
+	
 	<scene name="scene_2D_-_Dunkin_Donut" 
 	title="Dunkin Donut" 
 	title_chinese="던킨 도넛" 
@@ -1762,10 +1904,10 @@ title="Bos Coffee"
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
  
-	description="Pizza, Pasta and Fried Chicken Restaurant"
-	description_chinese="披萨、意大利面和炸鸡餐厅" 
-	description_korean="피자, 파스타, 프라이드 치킨 레스토랑" 
-	description_japanese="ピザ、パスタ、フライドチキンのレストラン"  
+	description="Pizzas and Pastas"
+	description_chinese="披萨和意大利面" 
+	description_korean="피자와 파스타" 
+	description_japanese="ピザとパスタ"  
 	 
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"
@@ -2596,10 +2738,10 @@ title="Bos Coffee"
 	miniTitle_korean="제1터미널 출발" 
 	miniTitle_japanese="第1ターミナル出発" 
  
-	description="Souvenir Center"
-	description_chinese="纪念品中心" 
-	description_korean="기념품 센터" 
-	description_japanese="お土産センター"  
+	description="Souvenir Shop"
+	description_chinese="纪念品商店" 
+	description_korean="기념품 가게" 
+	description_japanese="土産物店"  
 	 
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"
@@ -2635,11 +2777,11 @@ title="Bos Coffee"
 	miniTitle_japanese="第1ターミナル出発" 
 	
  
-	description="Souvenir Center"
-	description_chinese="纪念品中心" 
-	description_korean="기념품 센터" 
-	description_japanese="お土産センター"  
-	 
+	description="Souvenir Shop"
+	description_chinese="纪念品商店" 
+	description_korean="기념품 가게" 
+	description_japanese="土産物店"  
+
  	OperatingHours="24 hrs"
  	OperatingHours_chinese="24 小时"
  	OperatingHours_korean="24시간"
@@ -2815,7 +2957,7 @@ title="Bos Coffee"
 	</scene>
 
 	<scene name="scene_Jollibee_-_360_Dine_Area" 
-	title="Jollibee - Dine Area" 
+	title="Jollibee" 
 	title_chinese="快乐蜂" 
 	title_korean="졸리비" 
 	title_japanese="ジョリビー"  
@@ -2891,8 +3033,8 @@ title="Bos Coffee"
 			<cube url="panos/Jollibee_-_360.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="89.132" atv="-1.243" linkedscene="scene_jollibee_-_360_dine_area" linkedscene_hoffset="5.35" use3dtransition="true" />
-
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="89.132" atv="-1.243" linkedscene="scene_jollibee_-_360_dine_area" linkedscene_hoffset="5.35" use3dtransition="true" /> 
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-166.033" atv="-2.825" linkedscene="scene_2d_-_jollibee_1" linkedscene_hoffset="0.0" use3dtransition="true" />
 	</scene>
 
 	<!-- <scene name="scene_Jue_Ding_360_3_0" 
@@ -4075,16 +4217,16 @@ title="JTI Smoking Lounge"
  	OperatingHours_korean="24시간"
  	OperatingHours_japanese="24時間"
    		isFloormap="true"
- onstart="" thumburl="panos/Digital_Walker.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+ onstart="" thumburl="panos/Digital_Walker2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/Digital_Walker.tiles/preview.jpg" />
+		<preview url="panos/Digital_Walker2.tiles/preview.jpg" />
 
 		<image hfov="1.00" vfov="0.562785" voffset="0.00">
-			<flat url="panos/Digital_Walker.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+			<flat url="panos/Digital_Walker2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
 		</image>
 
 	</scene>
