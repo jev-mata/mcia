@@ -23,7 +23,7 @@
 	title_korean="아시안 주방" 
 	title_japanese="アジアンキッチン" 
     
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -57,7 +57,7 @@
 	title_chinese="IQOS" 
 	title_korean="IQOS" 
 	title_japanese="IQOS"   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -86,14 +86,14 @@
 		</image>
 
 	</scene>
-
+<!-- 
 	<scene name="scene_11__MCIAA_-_Island_Souveiner"
 	title="Island Souvenirs"  
 	title_chinese="岛屿纪念品" 
 	title_korean="섬 기념품" 
 	title_japanese="島のお土産"  
 	  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -121,15 +121,51 @@
 			<cube url="panos/11__MCIAA_-_Island_Souveiner.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene>
+	</scene> -->
 
+	<scene name="scene_Island_Souveiner"
+	title="Island Souvenirs"  
+	title_chinese="岛屿纪念品" 
+	title_korean="섬 기념품" 
+	title_japanese="島のお土産"  
+	  
+	miniTitle="Terminal 2 Departures"
+	miniTitle_chinese="2 号航站楼出发" 
+	miniTitle_korean="제2터미널 출발" 
+	miniTitle_japanese="第2ターミナル出発" 
+ 
+	description="Souvenir Shop"
+	description_chinese="纪念品店" 
+	description_korean="기념품 가게" 
+	description_japanese="お土産ショップ"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+ 
+ onstart=""  isFloormap="true"  thumburl="panos/Island_Souveiner.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+	
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Island_Souvenirs.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/Island_Souvenirs.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+
+	</scene>
 	<scene name="scene_12__MCIAA_-_Lacoste_1" 
 	title="Lacoste"   
 	title_chinese="鳄鱼" 
 	title_korean="라코스테" 
 	title_japanese="ラコステ"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -167,7 +203,7 @@
 	title_korean="라코스테" 
 	title_japanese="ラコステ"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -205,7 +241,7 @@
 	title_korean="막탄 여행용 포드" 
 	title_japanese="マクタン トラベル ポッド"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -244,7 +280,7 @@
 	title_korean="막탄 여행 포드 2: 코치, 발리, 투미, 케이트 스페이드" 
 	title_japanese="マクタン トラベル ポッド 2: コーチ、バリー、トゥミ、ケイト スペード"  
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -282,7 +318,7 @@
 	title_korean="막탄 여행용 포드" 
 	title_japanese="マクタン トラベル ポッド"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -317,7 +353,7 @@
 	title_korean="막탄 여행용 포드" 
 	title_japanese="マクタン トラベル ポッド"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -355,7 +391,7 @@
    
 
  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -391,7 +427,7 @@
 	title_japanese="マクタン トラベル ポッド ビューティー"   
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -428,7 +464,7 @@
 	title_korean="버거킹" 
 	title_japanese="バーガーキング" 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -466,7 +502,7 @@
 
    
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -503,7 +539,7 @@
 	title_korean="순간" 
 	title_japanese="一瞬"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -540,7 +576,7 @@
 	title_korean="순간" 
 	title_japanese="一瞬"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -577,7 +613,7 @@
 	title_korean="새로운 시대" 
 	title_japanese="新しい時代"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -612,7 +648,7 @@
 	title_korean="일본라면" 
 	title_japanese="にっぽんラーメン"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -649,7 +685,7 @@
 	title_korean="플러그 앤 플레이" 
 	title_japanese="プラグアンドプレイ"  
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -684,7 +720,7 @@
 	title_korean="세부의 스파" 
 	title_japanese="ザ・スパ・アット・セブ"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -720,7 +756,7 @@
 	title_korean="타미 힐피거" 
 	title_japanese="トミー ヒルフィガー"  
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -755,7 +791,7 @@
 	title_korean="WH 스미스" 
 	title_japanese="WH・スミス"   
  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -790,7 +826,7 @@
 	title_korean="아름다움" 
 	title_japanese="美しさ"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -827,7 +863,7 @@
 	title_japanese="アジアンキッチン" 
    
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -862,7 +898,7 @@
 	title_korean="자동 현금 인출기" 
 	title_japanese="エーティーエム"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -897,7 +933,7 @@
 	title_korean="본촌" 
 	title_japanese="ボンション" 
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -935,7 +971,7 @@
 	title_japanese="バーガーキング" 
    
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -969,7 +1005,7 @@
 	title_korean="캐빈 바" 
 	title_japanese="キャビンバー" 
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1004,7 +1040,7 @@
 	title_korean="커피 콩" 
 	title_japanese="コーヒー豆" 
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1040,7 +1076,7 @@
 	title_korean="큐렉스" 
 	title_japanese="キュレックス"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1075,7 +1111,7 @@
 	title_korean="큐렉스" 
 	title_japanese="キュレックス"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1110,7 +1146,7 @@
 	title_korean="면세점" 
 	title_japanese="免税"  
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1145,7 +1181,7 @@
 	title_korean="긴텔" 
 	title_japanese="ギンテル"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1169,7 +1205,7 @@
 	title_korean="하루포토부스" 
 	title_japanese="ハルフォトブース"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1192,7 +1228,7 @@
 	title_chinese="IQOS" 
 	title_korean="IQOS" 
 	title_japanese="IQOS"   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1230,7 +1266,7 @@
 	 
 
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1266,7 +1302,7 @@
 	title_korean="보석상" 
 	title_japanese="宝石商"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1296,7 +1332,7 @@
 	</scene>
 
 	<scene name="scene_2d-k2pharmacy" title="K2 Pharmacy"  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1333,7 +1369,7 @@
 	title_japanese="ラコステ"   
     
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1369,7 +1405,7 @@
 	title_korean="룰루머니" 
 	title_japanese="ルルマネー"   
  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1400,7 +1436,7 @@
 	</scene>
 
 	<scene name="scene_2d-mactantravel-beauty" title="Mactan Travel Beauty"  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1437,7 +1473,7 @@
 	title_japanese="一瞬"   
   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1474,7 +1510,7 @@
 	title_japanese="新しい時代"   
    
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発"  
@@ -1509,7 +1545,7 @@
 	title_korean="일본라면" 
 	title_japanese="にっぽんラーメン"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1546,7 +1582,7 @@
 	title_korean="유목민" 
 	title_japanese="遊牧民"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1584,7 +1620,7 @@
 	title_japanese="パンドラ"   
   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1608,7 +1644,7 @@
 	title_korean="플러그 앤 플레이" 
 	title_japanese="プラグアンドプレイ"   
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1643,7 +1679,7 @@
 	title_korean="리타차" 
 	title_japanese="リタッツァ"   
    
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1682,7 +1718,7 @@
    
   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1717,7 +1753,7 @@
 	title_korean="스와로브스키" 
 	title_japanese="スワロフスキー"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1741,7 +1777,7 @@
 	title_korean="세부의 스파" 
 	title_japanese="ザ・スパ・アット・セブ"   
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1775,7 +1811,7 @@
 	title_chinese="售票区" 
 	title_korean="매표소" 
 	title_japanese="発券エリア"    
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1809,7 +1845,7 @@
 	title_chinese="售票区" 
 	title_korean="매표소" 
 	title_japanese="発券エリア"    
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1842,7 +1878,7 @@
 	title_chinese="售票区" 
 	title_korean="매표소" 
 	title_japanese="発券エリア"    
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1877,7 +1913,7 @@
 	title_korean="매표소" 
 	title_japanese="発券エリア"      
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1913,7 +1949,7 @@
 	title_japanese="トミー ヒルフィガー"  
    
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1948,7 +1984,7 @@
 	title_korean="여행 친구" 
 	title_japanese="トラベルバディ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -1984,7 +2020,7 @@
 	title_japanese="ヴィクトリアシークレット"  
 	
 
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2010,7 +2046,7 @@
 	title_korean="WH 스미스" 
 	title_japanese="WH・スミス"   
  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2046,7 +2082,7 @@
 	title_korean="커피 콩" 
 	title_japanese="コーヒー豆" 
 	  
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2082,7 +2118,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2121,7 +2157,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2160,7 +2196,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2200,7 +2236,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2240,7 +2276,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2280,7 +2316,7 @@
 	title_japanese="免税"  
 
   
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2319,10 +2355,10 @@
 	title_korean="흡연 구역" 
 	title_japanese="喫煙所"  
 	
-	miniTitle="Terminal 2 Departure"
-	miniTitle_chinese="2 号航站楼出发" 
-	miniTitle_korean="제2터미널 출발" 
-	miniTitle_japanese="第2ターミナル出発" 
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
 
 	description="Smoking Area"
 	description_chinese="电子烟吸烟区" 
@@ -2353,7 +2389,7 @@
 	title_korean="프루타스" 
 	title_japanese="フルータス"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発"  
@@ -2388,7 +2424,7 @@
 	title_korean="레이람 샤와르마" 
 	title_japanese="レイラム シャワルマ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2424,7 +2460,7 @@
 	title_korean="타바칼레라" 
 	title_japanese="タバカレラ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2459,7 +2495,7 @@
 	title_korean="와가스 우쿨렐레" 
 	title_japanese="ワガスウクレレ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2495,7 +2531,7 @@
 	title_korean="라이브 라운지" 
 	title_japanese="ライブラウンジ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発"  
@@ -2530,7 +2566,7 @@
 	title_korean="플라자 프리미엄 라운지" 
 	title_japanese="プラザプレミアムラウンジ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2565,7 +2601,7 @@
 	title_korean="쉬고 가세요" 
 	title_japanese="休んで出発"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2601,7 +2637,7 @@
 	title_korean="항상" 
 	title_japanese="いつも"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2636,7 +2672,7 @@
 	title_korean="모멘토 술라 스피릿" 
 	title_japanese="モメント・スーラ・スピリッツ"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2671,7 +2707,7 @@
 	title_korean="모멘토" 
 	title_japanese="モーメント"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2707,7 +2743,7 @@
 	title_korean="노마드 키오스크" 
 	title_japanese="ノマドキオスク"  
 	
-	miniTitle="Terminal 2 Departure"
+	miniTitle="Terminal 2 Departures"
 	miniTitle_chinese="2 号航站楼出发" 
 	miniTitle_korean="제2터미널 출발" 
 	miniTitle_japanese="第2ターミナル出発" 
@@ -2737,5 +2773,46 @@
 		</image>
 
 	</scene>
+	
+	<scene name="scene_2D_-_IQOS_T2" 
+	
+	title="IQOs Vaping Lounge" 
+	title_chinese="IQO 电子烟休息室" 
+	title_korean="IQOs 베이핑 라운지" 
+	title_japanese="IQOs ベイピングラウンジ"   
+	miniTitle="Terminal 1 Departures"
+	miniTitle_chinese="1 号航站楼出发" 
+	miniTitle_korean="제1터미널 출발" 
+	miniTitle_japanese="第1ターミナル出発" 
+
+	description="Electronic Cigarette Smoking Area"
+	description_chinese="电子烟吸烟区" 
+	description_korean="전자담배 흡연 구역" 
+	description_japanese="電子タバコ喫煙エリア"  
+	 
+ 	OperatingHours="24 hrs"
+ 	OperatingHours_chinese="24 小时"
+ 	OperatingHours_korean="24시간"
+ 	OperatingHours_japanese="24時間"
+ 
+
+ onstart=""
+   isFloormap="true" thumburl="panos/2D_-_IQOS_T2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2D_-_IQOS_T2.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.562785" voffset="0.00">
+			<flat url="panos/2D_-_IQOS_T2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1024x576,1792x1010,3584x2018,6912x3890" />
+		</image>
+		<!-- <hotspot name="spot1" style="skin_hotspotstyle" ath="0.158" atv="-0.016" distorted="false" zoom="false" linkedscene="scene_iqos_360" linkedscene_hoffset="0.0" use3dtransition="true" /> -->
+
+	</scene>
+
+
 
 </krpano>

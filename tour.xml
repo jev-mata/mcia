@@ -1528,6 +1528,36 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             chinese="IQOS 电子烟休息室"
                             korean="아이코스 베이핑 라운지"   type="text" text="IQOS Vaping Lounge" />
                         </layer>
+                        <layer     
+                            style="filterListItem" 
+                            bgalpha="0"   
+                            tag="Services"
+                            tagArea="Departure"
+                            terminal="2"
+                            
+                            scale="1"
+                             
+                            isFilterItems="true"
+                            
+                        linkedscene="scene_2D_-_IQOS_T2"
+                            searchText="[Travel, Store, convenient]"
+                            >
+                            <layer     
+                                style="filterListItemImg"
+                                url="terminal 2 departure esta/panos/2D_-_IQOS_T2.tiles/thumb.jpg" 
+                            />
+                        <layer   
+                            
+
+                            isLanguage="true"
+                            bgcapture="false"
+                            enabled="false"
+                            style="filterListItemText"  
+                            en="Forex"
+                            japanese="IQOSベイピングラウンジ"
+                            chinese="IQOS 电子烟休息室"
+                            korean="아이코스 베이핑 라운지"   type="text" text="IQOS Vaping Lounge" />
+                        </layer>
                         <!-- <layer     
                             style="filterListItem" 
                             bgalpha="0"   
@@ -3011,7 +3041,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Beauty_360.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/Beauty_360.tiles/preview.jpg" 
                             />
                             <layer   
                                 
@@ -3121,7 +3151,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             >
                             <layer     
                                 style="filterListItemImg"
-                                url="terminal 1 departure esta/panos/Digital_Walker.tiles/thumb.jpg" 
+                                url="terminal 1 departure esta/panos/Digital_Walker2.tiles/thumb.jpg" 
                             />
                             <layer   
                                 
@@ -4046,7 +4076,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     bgalpha="0"   
     tag="Services"
     tagArea="Departure"
-    terminal="2"
+    terminal="1"
     scale="1"
      
     isFilterItems="true"
@@ -4064,11 +4094,11 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcapture="false"
                             enabled="false"
                             style="filterListItemText"  
-        en="IQOS Vaping Lounge"
-        japanese="IQOS ベイピングラウンジ"
-        chinese="IQOS 电子烟休息室"
-        korean="IQOS 베이핑 라운지" 
-        type="text" text="IQOS Vaping Lounge" />
+        en="Smoking Area"
+	chinese="电子烟吸烟区" 
+	korean="전자담배 흡연 구역" 
+	japanese="電子タバコ喫煙エリア"  
+        type="text" text="Smoking Area" />
 </layer>
 
 <!-- ________________________________Food____________________________________________ -->
@@ -4494,7 +4524,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         type="text" text="Mactan Travel POD 1" />
 </layer>
 
-<layer     
+<!-- <layer     
     style="filterListItem" 
     bgalpha="0"   
     tag="Retail"
@@ -4522,7 +4552,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         chinese="Mactan 旅行 POD 1"
         korean="막탄 여행 POD 1" 
         type="text" text="Mactan Travel POD 1" />
-</layer>
+</layer> -->
 
 <layer     
     style="filterListItem" 
@@ -4804,12 +4834,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
     scale="1"
      
     isFilterItems="true"
-    linkedscene="scene_11__MCIAA_-_Island_Souveiner"
+    linkedscene="scene_Island_Souveiner"
     searchText="[Island, Souvenirs]"
     >
     <layer     
         style="filterListItemImg"
-        url="terminal 2 departure esta/panos/11__MCIAA_-_Island_Souveiner.tiles/thumb.jpg" 
+        url="terminal 2 departure esta/panos/Island_Souvenirs.tiles/thumb.jpg" 
     />
     <layer   
         
@@ -5689,6 +5719,16 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           japanese="第2ターミナル到着"
           korean="제2터미널 도착"
            distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" />
+           
+        <!-- <hotspot capture="false" 
+        type="text"
+        height="10"
+        name="terminal-2-text" ath="0.235" atv="-0.055"  
+         en="International Terminal"
+          chinese="第 2 航站楼到达"
+          japanese="第2ターミナル到着"
+          korean="제2터미널 도착"
+           distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" /> -->
         <hotspot capture="false" 
          onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="caap-tower" style="caap-tower" ath="0.001" atv="-0.0395"  
