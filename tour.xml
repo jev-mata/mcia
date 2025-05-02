@@ -5,6 +5,7 @@
     <include url="actions/filterSearch.xml" /> 
     <include url="actions/floormapactions.xml" /> 
     <plugin name="gyro" url="plugins/gyro2.js" enabled="true" />
+<plugin name="webgl" contextlost="true" />
 
     <include url="skin/HomePageMCIA.xml" />
 <include url="FloorPlan/xml/floorplan_SM.xml" /> 
@@ -247,7 +248,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer    
                         name="Luggage"
                        style="filterListItem"  
-                        tag="Services"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1" 
                         scale="1"
@@ -278,7 +279,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         name="RentCar"
                         style="filterListItem"
                          
-                        tag="Services"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -308,7 +309,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         name="HotelCounters"
                         style="filterListItem"
                          
-                        tag="Services"
+                        tag="Indoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -340,7 +341,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         name="ATMs"
                         style="filterListItem"
                          
-                        tag="Services"
+                        tag="Indoor"
                         tagArea="Arrival"
                         terminal="1"
                          linkedscene="scene_2d-atm"
@@ -371,7 +372,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         name="simcardbooths"
                         style="filterListItem" 
                          
-                        tag="Services"
+                        tag="Indoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -402,7 +403,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         name="curexmoneychanger"
                         style="filterListItem"
                          
-                        tag="Services"
+                        tag="Indoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -461,7 +462,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem"
                          
-                        tag="Services"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -491,7 +492,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Services"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -521,7 +522,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -551,7 +552,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -581,7 +582,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -611,7 +612,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -642,7 +643,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -674,7 +675,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -703,7 +704,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -733,7 +734,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -761,7 +762,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem"
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -792,7 +793,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -823,7 +824,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem"
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -885,7 +886,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -917,7 +918,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem"
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                         linkedscene="scene_Starbucks_360"
@@ -948,7 +949,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem"
                          
-                        tag="Food"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -1041,7 +1042,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Retail"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -1072,7 +1073,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Retail"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -1103,7 +1104,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                         style="filterListItem" 
                          
-                        tag="Retail"
+                        tag="Outdoor"
                         tagArea="Arrival"
                         terminal="1"
                          
@@ -1167,7 +1168,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1198,7 +1199,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1229,7 +1230,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1259,7 +1260,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1289,7 +1290,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1319,7 +1320,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1351,7 +1352,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1382,7 +1383,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1413,7 +1414,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1443,7 +1444,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1501,7 +1502,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1531,7 +1532,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="2"
                             
@@ -1592,7 +1593,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Services"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             
@@ -1712,7 +1713,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1740,7 +1741,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Check-in"
                             tagArea="Departure"
                             terminal="1"
                         linkedscene="scene_2D_-_Coffee_bean"
@@ -1768,7 +1769,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1797,7 +1798,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1827,7 +1828,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1856,7 +1857,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1888,7 +1889,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1919,7 +1920,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -1978,7 +1979,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Check-in"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2007,7 +2008,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2036,7 +2037,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2064,7 +2065,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2093,7 +2094,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Check-in"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2122,7 +2123,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2152,7 +2153,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2240,7 +2241,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2270,7 +2271,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2301,7 +2302,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2331,7 +2332,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Food"
+                            tag="Check-in"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2419,7 +2420,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2447,7 +2448,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2476,7 +2477,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2505,7 +2506,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2533,7 +2534,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2562,7 +2563,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2591,7 +2592,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2620,7 +2621,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2650,7 +2651,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2680,7 +2681,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2709,7 +2710,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2739,7 +2740,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2797,7 +2798,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2827,7 +2828,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2856,7 +2857,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2884,7 +2885,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2913,7 +2914,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2943,7 +2944,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -2972,7 +2973,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Outdoor"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3001,7 +3002,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3030,7 +3031,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3058,7 +3059,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Check-in"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3086,7 +3087,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3114,7 +3115,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3140,7 +3141,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3198,7 +3199,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                         <layer     
                             style="filterListItem" 
                             bgalpha="0"   
-                            tag="Retail"
+                            tag="Departure"
                             tagArea="Departure"
                             terminal="1"
                             scale="1"
@@ -3229,7 +3230,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Indoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3259,7 +3260,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Indoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3289,7 +3290,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3319,7 +3320,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3353,7 +3354,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3385,7 +3386,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3415,7 +3416,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3445,7 +3446,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3475,7 +3476,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3625,7 +3626,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Indoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3655,7 +3656,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Outdoor"
     tagArea="Arrival"
     terminal="2"
     scale="1"
@@ -3716,7 +3717,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3746,7 +3747,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3777,7 +3778,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Outdoor"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3806,7 +3807,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3836,7 +3837,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3866,7 +3867,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3896,7 +3897,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3925,7 +3926,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3938,23 +3939,21 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
         style="filterListItemImg"
         url="terminal 2 departure esta/panos/Mabuhay_Lounge.tiles/thumb.jpg" 
     />
-    <layer   
-        
-
-                            isLanguage="true"
-                            bgcapture="false"
-                            enabled="false"
-                            style="filterListItemText"  
-        en="Mabuhay Lounge"
-        japanese="ライブラウンジ"
-        chinese="现场休息室"
-        korean="라이브 라운지" 
-        type="text" text="Mabuhay Lounge" />
+            <layer   
+            isLanguage="true"
+            bgcapture="false"
+            enabled="false"
+            style="filterListItemText"  
+            en="Mabuhay Lounge"
+            japanese="ライブラウンジ"
+            chinese="现场休息室"
+            korean="라이브 라운지" 
+            type="text" text="Mabuhay Lounge" />
 </layer>
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -3983,7 +3982,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4074,7 +4073,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Services"
+    tag="Departure"
     tagArea="Departure"
     terminal="1"
     scale="1"
@@ -4105,7 +4104,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4136,7 +4135,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4167,7 +4166,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4197,7 +4196,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4227,7 +4226,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4257,7 +4256,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4287,7 +4286,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4317,7 +4316,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4347,7 +4346,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4377,7 +4376,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4406,7 +4405,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Food"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4497,7 +4496,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4557,7 +4556,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4587,7 +4586,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4617,7 +4616,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4647,7 +4646,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4677,7 +4676,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4707,7 +4706,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4737,7 +4736,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4768,7 +4767,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4798,7 +4797,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4828,7 +4827,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4888,7 +4887,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4919,7 +4918,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Departure"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -4950,7 +4949,7 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
 <layer     
     style="filterListItem" 
     bgalpha="0"   
-    tag="Retail"
+    tag="Check-in"
     tagArea="Departure"
     terminal="2"
     scale="1"
@@ -5130,12 +5129,12 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             />  
                         <layer    
                         style="filter"
-                        name="services_BTN_filter"
+                        name="Indoor_BTN_filter"
                         type="text"
-                        text="Services"
+                        text="Indoor"
                         
         isLanguage="true" 
-                        en="Services"
+                        en="Indoor"
                         japanese="サービス"
                         chinese="服务"
                         korean="서비스"
@@ -5143,17 +5142,17 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcolor_active="0xff7525"  
                             bgcolor_passive="0xFFFFFF"  
                             
-                            tag="Services"
+                            tag="Indoor"
                              
                             />  
                         <layer    
                         style="filter"
-                        name="food_and_brev_BTN_filter"
+                        name="Outdoor_BTN_filter"
                         type="text"
-                        text="Food and Beverage"
+                        text="Outdoor"
                         
         isLanguage="true" 
-                        en="Food and Beverage"
+                        en="Outdoor"
                         japanese="食品と飲料"
                         chinese="食品和饮料"
                         korean="음식과 음료"
@@ -5161,17 +5160,17 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcolor_active="0xff7525"  
                             bgcolor_passive="0xFFFFFF"  
                             
-                            tag="Food"
+                            tag="Outdoor"
                              
                             />  
                         <layer    
                         style="filter"
-                        name="retail_BTN_filter" 
+                        name="Checkin_BTN_filter" 
                         type="text"
-                        text="Retail"
+                        text="Check-in"
                         
         isLanguage="true" 
-                        en="Retail"
+                        en="Check-in"
                         japanese="小売り"
                         chinese="零售"
                         korean="소매"
@@ -5179,7 +5178,26 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
                             bgcolor_active="0xff7525"  
                             bgcolor_passive="0xFFFFFF"  
                             
-                            tag="Retail"
+                            tag="Check-in"
+                             
+                            />   
+                           
+                        <layer    
+                        style="filter"
+                        name="tag_departure_BTN_filter" 
+                        type="text"
+                        text="Departure"
+                        
+        isLanguage="true" 
+                        en="Departure"
+                        japanese="小売り"
+                        chinese="零售"
+                        korean="소매"
+                            
+                            bgcolor_active="0xff7525"  
+                            bgcolor_passive="0xFFFFFF"  
+                            
+                            tag="Departure"
                              
                             />   
                            
@@ -5719,16 +5737,32 @@ onclick="loadscene(get(linkedscene), null,MERGE,ZOOMBLEND(0.8,0.4,easeInOutCubic
           japanese="第2ターミナル到着"
           korean="제2터미널 도착"
            distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" />
+
+           <hotspot name="International" ath="0.255" atv="-0.025"  scale="0.01"
+		   bgborder="1 0xFFFFFF 1"
+           bgcolor="0x000000" width="100" height="prop"
+           distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" 
+         type="image" url="%FIRSTXML%/skin/assets/Internaltional Terminal.png" 
+		 linkedscene="scene_terminal_1_departure_standee_logo"   use3dtransition="true" />
+           <hotspot name="Domestic"  ath="-0.157" atv="-0.043"   scale="0.01"
+		   bgborder="1 0xFFFFFF 1"
+           bgcolor="0x000000" width="100" height="prop"
+           distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" 
+         type="image" url="%FIRSTXML%/skin/assets/Domestic Terminal.png" 
+		 linkedscene="scene_terminal_1_departure_standee_logo"   use3dtransition="true" />
+
+         
+        <hotspot capture="false"  
+        isLanguage="true"  
+        bgcolor="0x097600"
+        bgalpha="1"
+        bgroundedge="2" 
+        align="center"
+        name="terminal-2-text" ath="0.235" atv="-0.055"  scale="0.01"
+        
+        css="color:black;font-size:calc((1vh + 1vw)/2);text-align:center; font-weight:bold;height:auto; width:auto"
+          />
            
-        <!-- <hotspot capture="false" 
-        type="text"
-        height="10"
-        name="terminal-2-text" ath="0.235" atv="-0.055"  
-         en="International Terminal"
-          chinese="第 2 航站楼到达"
-          japanese="第2ターミナル到着"
-          korean="제2터미널 도착"
-           distorted="true" linkedscene2="scene_Terminal_2_Arrival_Drop-off_Area" use3dtransition="true" /> -->
         <hotspot capture="false" 
          onhover="set(layer[get(name)].scale,0.061);if(layer[showtooltip].isShow==false, showtext_translation(), );"
          name="caap-tower" style="caap-tower" ath="0.001" atv="-0.0395"  

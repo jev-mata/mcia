@@ -78,12 +78,15 @@
         
         if(layer[get(name)].tag === "all", 
             set(thisTag,"all");,
-            if(layer[get(name)].tag === "Services", 
-                set(thisTag,"Services");,
-                if(layer[get(name)].tag === "Food", 
-                    set(thisTag,"Food");,
-                    if(layer[get(name)].tag === "Retail", 
-                        set(thisTag,"Retail");, 
+            if(layer[get(name)].tag === "Indoor", 
+                set(thisTag,"Indoor");,
+                if(layer[get(name)].tag === "Outdoor", 
+                    set(thisTag,"Outdoor");,
+                    if(layer[get(name)].tag === "Check-in", 
+                        set(thisTag,"Check-in");, 
+                            if(layer[get(name)].tag === "Departure", 
+                                set(thisTag,"Departure");, 
+                            );
                     );
                 );
             );
@@ -92,25 +95,106 @@
         if(device.mobile,
         
             if(layer[departure_BTN_filter2].bgcolor == layer[departure_BTN_filter2].bgcolor_active,
-                set(thisArea,'Departure');,
-                set(thisArea,'Arrival');
+                set(thisArea,'Departure'); 
+                if(get(thisTerminal)==1,
+                    set(layer[Indoor_BTN_filter].alpha,0.6);
+                    set(layer[Checkin_BTN_filter].alpha,1);
+                    set(layer[tag_departure_BTN_filter].alpha,1);
+                    
+                    set(layer[Indoor_BTN_filter].enabled,false);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,true);
+                    set(layer[tag_departure_BTN_filter].enabled,true);
+                    ,
+                    set(layer[Indoor_BTN_filter].alpha,0.6);
+                    set(layer[Checkin_BTN_filter].alpha,1);
+                    set(layer[tag_departure_BTN_filter].alpha,1);
+                    
+                    set(layer[Indoor_BTN_filter].enabled,false);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,true);
+                    set(layer[tag_departure_BTN_filter].enabled,true);
+
+                );
+                ,
+                set(thisArea,'Arrival'); 
+                if(get(thisTerminal)==1,
+                    set(layer[Indoor_BTN_filter].alpha,1);
+                    set(layer[Checkin_BTN_filter].alpha,0.6);
+                    set(layer[tag_departure_BTN_filter].alpha,0.6);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,false);
+                    set(layer[tag_departure_BTN_filter].enabled,false);
+                    set(layer[Indoor_BTN_filter].enabled,true);
+                ,
+
+                    set(layer[Indoor_BTN_filter].alpha,1);
+                    set(layer[Checkin_BTN_filter].alpha,0.6);
+                    set(layer[tag_departure_BTN_filter].alpha,0.6);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,false);
+                    set(layer[tag_departure_BTN_filter].enabled,false);
+                    set(layer[Indoor_BTN_filter].enabled,true);
+                );
 
             );
             ,
             if(layer[departure_BTN_filter].bgcolor == layer[departure_BTN_filter].bgcolor_active,
-                set(thisArea,'Departure');,
+                set(thisArea,'Departure');
+                if(get(thisTerminal)==1,
+                    set(layer[Indoor_BTN_filter].enabled,false);
+
+                    set(layer[Checkin_BTN_filter].enabled,true);
+                    set(layer[tag_departure_BTN_filter].enabled,true);
+
+                    set(layer[Indoor_BTN_filter].alpha,0.6);
+                    set(layer[Checkin_BTN_filter].alpha,1);
+                    set(layer[tag_departure_BTN_filter].alpha,1);
+                    ,
+                    set(layer[Indoor_BTN_filter].enabled,false);
+
+                    set(layer[Checkin_BTN_filter].enabled,true);
+                    set(layer[tag_departure_BTN_filter].enabled,true);
+
+                    set(layer[Indoor_BTN_filter].alpha,0.6);
+                    set(layer[Checkin_BTN_filter].alpha,1);
+                    set(layer[tag_departure_BTN_filter].alpha,1);
+
+                );
+                ,
                 set(thisArea,'Arrival');
+                if(get(thisTerminal)==1,
+                    set(layer[Indoor_BTN_filter].alpha,1);
+                    set(layer[Checkin_BTN_filter].alpha,0.6);
+                    set(layer[tag_departure_BTN_filter].alpha,0.6);
+                    
+                    set(layer[Indoor_BTN_filter].enabled,true);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,false);
+                    set(layer[tag_departure_BTN_filter].enabled,false);
+                    ,
+
+                    set(layer[Indoor_BTN_filter].alpha,1);
+                    set(layer[Checkin_BTN_filter].alpha,0.6);
+                    set(layer[tag_departure_BTN_filter].alpha,0.6);
+                    
+                    set(layer[Indoor_BTN_filter].enabled,true);
+                    
+                    set(layer[Checkin_BTN_filter].enabled,false);
+                    set(layer[tag_departure_BTN_filter].enabled,false);
+                );
 
             );
         );  
         action(filterItems);
         </action>
         <action name="filter_init">
-         set(thisTag,"all");
-          set(thisArea,'Departure');
-          set(thisTerminal,'1');
-action(filterItems);
-</action>
+            set(thisTag,"all");
+            set(thisArea,'Departure');
+            set(thisTerminal,'1');
+            action(filterItems);
+            action(startFilter);
+        </action>
 <action name="filterItems">
 <!-- get all layers and loop it to check one by one -->
 for(set(i,0),i LT get(layer.count), inc(i),
@@ -169,12 +253,14 @@ for(set(i,0),i LT get(layer.count), inc(i),
     
     </action> 
     <action name="resetTagButton"> 
-    set(layer[services_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;");  
-    set(layer[services_BTN_filter].bgcolor, get(layer[services_BTN_filter].bgcolor_passive)); 
-    set(layer[food_and_brev_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
-    set(layer[food_and_brev_BTN_filter].bgcolor, get(layer[food_and_brev_BTN_filter].bgcolor_passive));  
-    set(layer[retail_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
-    set(layer[retail_BTN_filter].bgcolor, get(layer[retail_BTN_filter].bgcolor_passive));   
+    set(layer[Indoor_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;");  
+    set(layer[Indoor_BTN_filter].bgcolor, get(layer[Indoor_BTN_filter].bgcolor_passive)); 
+    set(layer[Outdoor_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[Outdoor_BTN_filter].bgcolor, get(layer[Outdoor_BTN_filter].bgcolor_passive));  
+    set(layer[tag_departure_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[tag_departure_BTN_filter].bgcolor, get(layer[tag_departure_BTN_filter].bgcolor_passive));   
+    set(layer[Checkin_BTN_filter].css,"color:black;font-size:calc((1.5vh + 1.5vw) / 2);line-height: 1;text-align:center;"); 
+    set(layer[Checkin_BTN_filter].bgcolor, get(layer[Checkin_BTN_filter].bgcolor_passive));   
     
     </action>  
     <action name="showtext_translation">  

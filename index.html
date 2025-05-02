@@ -211,22 +211,22 @@
 		// Detect user interactions (Mouse & Touch)  
 		document.addEventListener("click", resetIdleTime);
 		document.addEventListener("touchstart", resetIdleTime);
-		(function () {
-			const checkDevTools = () => {
-				const devToolsOpened = window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100;
-				if (devToolsOpened) {
-					window.location.href = './error.html';  // Redirect the user
-				}
-			};
+		// (function () {
+		// 	const checkDevTools = () => {
+		// 		const devToolsOpened = window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100;
+		// 		if (devToolsOpened) {
+		// 			window.location.href = './error.html';  // Redirect the user
+		// 		}
+		// 	};
 
-			// Check every second
-			setInterval(checkDevTools, 300);
-		})();
+		// 	// Check every second
+		// 	setInterval(checkDevTools, 300);
+		// })();
 		function KRpanoLoad(isMobileDevice) {
 
 			// let win = nw.Window.get(); 
 
-			// // Enter kiosk mode
+			// Enter kiosk mode
 			// win.enterKioskMode();
 			// setTimeout(() => {
 			// win.leaveKioskMode();
