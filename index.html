@@ -200,7 +200,7 @@
 		// Idle timer logic (checks every second)
 		const idleInterval = setInterval(() => {
 			idleTime++;
-			if (idleTime >= 1200 && !isNotClick) { // 600 seconds = 10 minutes
+			if (idleTime >= 120 && !isNotClick) { // 600 seconds = 10 minutes
 
 				KRpanoLoad();
 				resetIdleTime();
